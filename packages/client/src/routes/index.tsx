@@ -46,6 +46,11 @@ export function Index() {
     setEntries(prev => prev.filter((_, i) => i !== index));
   }, [setEntries]);
 
+  const handleDeleteEntries = useCallback((indices: number[]) => {
+    const indexSet = new Set(indices);
+    setEntries(prev => prev.filter((_, i) => !indexSet.has(i)));
+  }, [setEntries]);
+
   return (
     <div
       className={`
@@ -108,6 +113,7 @@ export function Index() {
           <TimerEntriesTable
             entries={entries}
             onDeleteEntry={handleDeleteEntry}
+            onDeleteEntries={handleDeleteEntries}
           />
         </div>
       </div>
