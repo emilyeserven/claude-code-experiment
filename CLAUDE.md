@@ -83,7 +83,7 @@ React 19 SPA with:
 - **Path alias**: `@/` maps to `./src/` (configured in `vite.config.ts`).
 - **Styling**: Tailwind CSS 4 with `cn()` utility (`clsx` + `tailwind-merge`) in `src/lib/utils.ts`.
 - **Dark mode**: Class-based theme switching via `ThemeProvider` context + `useTheme` hook, persisted in localStorage.
-- **Component library**: shadcn/ui components with Radix primitives and `class-variance-authority`.
+- **Component library**: shadcn/ui components with Radix primitives and `class-variance-authority`. If a needed shadcn component doesn't exist yet, manually install it from the [shadcn/ui website](https://ui.shadcn.com/) following their installation instructions.
 - **Data fetching**: TanStack Query; fetch functions live in `src/utils/fetchFunctions.ts`.
 
 ## Code Conventions
