@@ -1,7 +1,5 @@
 import type { ColumnDef, SortingState } from "@tanstack/react-table";
 
-import { useState } from "react";
-
 import {
   flexRender,
   getCoreRowModel,
@@ -12,6 +10,7 @@ import { ArrowDown, ArrowUp, ArrowUpDown, EllipsisVertical } from "lucide-react"
 
 import { Button } from "@/components/Button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { cn } from "@/lib/utils";
 
 interface TimerEntry {
@@ -113,7 +112,7 @@ export function TimerEntriesTable({
   entries,
   onDeleteEntry,
 }: TimerEntriesTableProps) {
-  const [sorting, setSorting] = useState<SortingState>([]);
+  const [sorting, setSorting] = useLocalStorage<SortingState>("timer-table-sorting", []);
 
   const table = useReactTable({
     data: entries,

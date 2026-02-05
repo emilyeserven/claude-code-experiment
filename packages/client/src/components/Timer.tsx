@@ -14,7 +14,15 @@ export function Timer({
   onTick,
   onRunningChange,
 }: TimerProps) {
-  const [elapsedMs, setElapsedMs] = useState(0);
+  const [elapsedMs, setElapsedMs] = useState(() => {
+    try {
+      const saved = localStorage.getItem("timer-elapsed-ms");
+      return saved !== null ? JSON.parse(saved) as number : 0;
+    }
+    catch {
+      return 0;
+    }
+  });
   const [isRunning, setIsRunning] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const startTimeRef = useRef<number>(0);
@@ -43,15 +51,25 @@ export function Timer({
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
+    const currentElapsed = Date.now() - startTimeRef.current;
+    try {
+      localStorage.setItem("timer-elapsed-ms", JSON.stringify(currentElapsed));
+    }
+    catch { /* noop */ }
   }, [isRunning]);
 
   useEffect(() => {
+    // Sync restored elapsed time to parent on mount
+    if (elapsedMs > 0) {
+      onTickRef.current?.(elapsedMs);
+    }
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
         intervalRef.current = null;
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const reset = useCallback(() => {
@@ -63,6 +81,10 @@ export function Timer({
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
+    try {
+      localStorage.setItem("timer-elapsed-ms", JSON.stringify(0));
+    }
+    catch { /* noop */ }
   }, []);
 
   return (

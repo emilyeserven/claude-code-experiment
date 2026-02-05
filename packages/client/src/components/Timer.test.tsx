@@ -1,9 +1,9 @@
 import { render, screen, fireEvent, act } from "@testing-library/react";
 import { beforeEach, afterEach, describe, expect, it, vi } from "vitest";
 
-import { Timer } from "./Timer";
-
 import { formatTime } from "@/utils/formatTime";
+
+import { Timer } from "./Timer";
 
 describe("formatTime", () => {
   it("formats zero milliseconds", () => {
@@ -17,6 +17,7 @@ describe("formatTime", () => {
 
 describe("Timer", () => {
   beforeEach(() => {
+    localStorage.clear();
     vi.useFakeTimers();
   });
 

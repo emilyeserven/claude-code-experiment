@@ -5,6 +5,7 @@ import { Index } from "@/routes/index";
 
 describe("Index", () => {
   beforeEach(() => {
+    localStorage.clear();
     vi.useFakeTimers();
   });
 
