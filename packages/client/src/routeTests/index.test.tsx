@@ -1,7 +1,16 @@
 import { render, screen, fireEvent, act } from "@testing-library/react";
 import { beforeEach, afterEach, describe, expect, it, vi } from "vitest";
 
+import { TooltipProvider } from "@/components/Tooltip";
 import { Index } from "@/routes/index";
+
+function renderIndex() {
+  return render(
+    <TooltipProvider>
+      <Index />
+    </TooltipProvider>,
+  );
+}
 
 describe("Index", () => {
   beforeEach(() => {
@@ -13,7 +22,7 @@ describe("Index", () => {
   });
 
   it("renders the input field and submit button", () => {
-    render(<Index />);
+    renderIndex();
     expect(screen.getByTestId("timer-input")).toBeInTheDocument();
     expect(screen.getByTestId("timer-submit-button")).toHaveTextContent(
       "Submit",
@@ -21,7 +30,7 @@ describe("Index", () => {
   });
 
   it("updates the input value when typing", () => {
-    render(<Index />);
+    renderIndex();
     const input = screen.getByTestId("timer-input");
     fireEvent.change(input, {
       target: {
@@ -32,20 +41,20 @@ describe("Index", () => {
   });
 
   it("shows empty state when there are no entries", () => {
-    render(<Index />);
+    renderIndex();
     expect(screen.getByTestId("timer-entries-empty")).toBeInTheDocument();
     expect(screen.queryAllByTestId("timer-entry")).toHaveLength(0);
   });
 
   it("does not submit when input is empty", () => {
-    render(<Index />);
+    renderIndex();
     fireEvent.click(screen.getByTestId("timer-submit-button"));
     expect(screen.getByTestId("timer-entries-empty")).toBeInTheDocument();
     expect(screen.queryAllByTestId("timer-entry")).toHaveLength(0);
   });
 
   it("does not submit when input is only whitespace", () => {
-    render(<Index />);
+    renderIndex();
     const input = screen.getByTestId("timer-input");
     fireEvent.change(input, {
       target: {
@@ -59,7 +68,7 @@ describe("Index", () => {
 
   it("submits an entry with text and current timestamp", () => {
     vi.setSystemTime(new Date(0));
-    render(<Index />);
+    renderIndex();
 
     fireEvent.click(screen.getByTestId("timer-start-button"));
 
@@ -83,7 +92,7 @@ describe("Index", () => {
   });
 
   it("clears the input after submission", () => {
-    render(<Index />);
+    renderIndex();
     const input = screen.getByTestId("timer-input");
     fireEvent.change(input, {
       target: {
@@ -96,7 +105,7 @@ describe("Index", () => {
 
   it("submits multiple entries and displays all of them", () => {
     vi.setSystemTime(new Date(0));
-    render(<Index />);
+    renderIndex();
 
     fireEvent.click(screen.getByTestId("timer-start-button"));
 
@@ -133,7 +142,7 @@ describe("Index", () => {
   });
 
   it("submits an entry when pressing Enter", () => {
-    render(<Index />);
+    renderIndex();
     const input = screen.getByTestId("timer-input");
     fireEvent.change(input, {
       target: {
@@ -150,7 +159,7 @@ describe("Index", () => {
   });
 
   it("captures timestamp at 00:00:00.000 when timer has not started", () => {
-    render(<Index />);
+    renderIndex();
     const input = screen.getByTestId("timer-input");
     fireEvent.change(input, {
       target: {

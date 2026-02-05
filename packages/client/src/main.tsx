@@ -4,9 +4,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { createRoot } from "react-dom/client";
 
-import { routeTree } from "./routeTree.gen.ts";
-
+import { TooltipProvider } from "@/components/Tooltip";
 import { ThemeProvider } from "@/context/ThemeProvider.tsx";
+
+import { routeTree } from "./routeTree.gen.ts";
 
 const router = createRouter({
   routeTree,
@@ -33,7 +34,9 @@ if (!rootElement.innerHTML) {
           defaultTheme="light"
           storageKey="vite-ui-theme"
         >
-          <RouterProvider router={router} />
+          <TooltipProvider>
+            <RouterProvider router={router} />
+          </TooltipProvider>
         </ThemeProvider>
       </QueryClientProvider>
     </StrictMode>,

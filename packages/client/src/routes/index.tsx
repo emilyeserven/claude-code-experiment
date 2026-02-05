@@ -6,6 +6,7 @@ import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
 import { Timer } from "@/components/Timer";
 import { TimerEntriesTable } from "@/components/TimerEntriesTable";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/Tooltip";
 import { formatTime } from "@/utils/formatTime";
 
 interface TimerEntry {
@@ -20,10 +21,15 @@ export const Route = createFileRoute("/")({
 export function Index() {
   const [inputValue, setInputValue] = useState("");
   const [entries, setEntries] = useState<TimerEntry[]>([]);
+  const [isTimerRunning, setIsTimerRunning] = useState(false);
   const elapsedMsRef = useRef(0);
 
   const handleTick = useCallback((elapsedMs: number) => {
     elapsedMsRef.current = elapsedMs;
+  }, []);
+
+  const handleRunningChange = useCallback((running: boolean) => {
+    setIsTimerRunning(running);
   }, []);
 
   const handleSubmit = useCallback(() => {
@@ -43,24 +49,38 @@ export function Index() {
       `}
     >
       <h3 className="text-3xl font-bold">Welcome Home!</h3>
-      <div className="mt-8 flex flex-col items-center gap-6">
-        <Timer onTick={handleTick} />
-        <div className="flex w-full max-w-md gap-2">
-          <Input
-            value={inputValue}
-            onChange={e => setInputValue(e.target.value)}
-            onKeyDown={e => e.key === "Enter" && handleSubmit()}
-            placeholder="Enter text..."
-            data-testid="timer-input"
-          />
-          <Button
-            onClick={handleSubmit}
-            data-testid="timer-submit-button"
-          >
-            Submit
-          </Button>
+      <div className="mt-8 flex flex-col items-center gap-8">
+        <Timer
+          onTick={handleTick}
+          onRunningChange={handleRunningChange}
+        />
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <div className="flex w-full max-w-md gap-2">
+              <Input
+                value={inputValue}
+                onChange={e => setInputValue(e.target.value)}
+                onKeyDown={e => e.key === "Enter" && handleSubmit()}
+                placeholder="Enter text..."
+                data-testid="timer-input"
+              />
+              <Button
+                onClick={handleSubmit}
+                data-testid="timer-submit-button"
+              >
+                Submit
+              </Button>
+            </div>
+          </TooltipTrigger>
+          {!isTimerRunning && (
+            <TooltipContent sideOffset={8}>
+              Start the timer before adding notes
+            </TooltipContent>
+          )}
+        </Tooltip>
+        <div className="mt-4 flex w-full justify-center">
+          <TimerEntriesTable entries={entries} />
         </div>
-        <TimerEntriesTable entries={entries} />
       </div>
     </div>
   );
