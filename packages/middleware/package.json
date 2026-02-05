@@ -1,5 +1,5 @@
 {
-  "name": "@emstack/middleware",
+  "name": "@cc-experiments/middleware",
   "description": "",
   "version": "1.0.0",
   "dependencies": {
@@ -10,7 +10,7 @@
     "fastify": "^5.6.2"
   },
   "devDependencies": {
-    "@emstack/types": "workspace:*",
+    "@cc-experiments/types": "workspace:*",
     "@fastify/type-provider-json-schema-to-ts": "^5.0.0",
     "@types/node": "^24.10.1",
     "eslint": "^9.39.1",

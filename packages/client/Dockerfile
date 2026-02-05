@@ -29,7 +29,7 @@ ENV FASTIFY_ADDRESS=0.0.0.0
 
 RUN pnpm run -r build
 
-RUN pnpm deploy --filter=@emstack/client --prod appout
+RUN pnpm deploy --filter=@cc-experiments/client --prod appout
 
 # Stage 3: The `final` stage creates a small, clean production image.
 # It only includes the necessary files to run the app, not the build tools.

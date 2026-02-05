@@ -1,5 +1,5 @@
 {
-  "name": "emstack",
+  "name": "cc-experiments",
   "description": "",
   "version": "1.0.0",
   "dependencies": {
@@ -22,10 +22,10 @@
   "scripts": {
     "build": "pnpm run -r build",
     "test": "pnpm run -r test",
-    "dev": "concurrently -n \"models,server,ui\" -c \"yellow,blue,green\" \"pnpm --filter=@emstack/types --stream run dev\" \"pnpm --filter=@emstack/middleware --stream run dev\" \"pnpm --filter=@emstack/client --stream run dev\"",
+    "dev": "concurrently -n \"models,server,ui\" -c \"yellow,blue,green\" \"pnpm --filter=@cc-experiments/types --stream run dev\" \"pnpm --filter=@cc-experiments/middleware --stream run dev\" \"pnpm --filter=@cc-experiments/client --stream run dev\"",
     "lint": "eslint .",
     "lint:fix": "eslint .. --fix",
-    "storybook": "pnpm --filter=@emstack/client run storybook",
+    "storybook": "pnpm --filter=@cc-experiments/client run storybook",
     "prepare": "husky"
   },
   "lint-staged": {
