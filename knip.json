@@ -1,4 +1,8 @@
 {
+  "playwright": {
+    "config": ["playwright.config.ts"]
+  },
+  "entry": ["e2e/**/*.spec.ts"],
   "workspaces": {
     "packages/client": {
       "vite": {
