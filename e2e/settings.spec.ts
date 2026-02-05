@@ -45,23 +45,31 @@ test.describe("Settings and dark mode", () => {
     expect(stillDark).toBe(false);
   });
 
-  test("dark mode toggle button label changes between Dark and Light", async ({
+  test("dark mode toggle switch state reflects the current theme", async ({
     page,
   }) => {
     await page.getByTestId("settings-trigger").click();
 
     const toggle = page.getByTestId("dark-mode-toggle");
 
-    // Default theme is light, so button should say "Dark"
-    await expect(toggle).toContainText("Dark");
+    // Default theme is light, so switch should be unchecked
+    await expect(toggle).toHaveAttribute("data-state", "unchecked");
 
     // Click to enable dark mode
     await toggle.click();
-    await expect(toggle).toContainText("Light");
+    await expect(toggle).toHaveAttribute("data-state", "checked");
 
     // Click again to go back to light
     await toggle.click();
-    await expect(toggle).toContainText("Dark");
+    await expect(toggle).toHaveAttribute("data-state", "unchecked");
+  });
+
+  test("dark mode toggle is rendered as a switch with role='switch'", async ({
+    page,
+  }) => {
+    await page.getByTestId("settings-trigger").click();
+    const toggle = page.getByTestId("dark-mode-toggle");
+    await expect(toggle).toHaveRole("switch");
   });
 
   test("dark mode preference persists across page reloads", async ({
