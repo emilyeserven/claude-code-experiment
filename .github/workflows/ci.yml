@@ -41,7 +41,7 @@ jobs:
 
       - name: Install Playwright browsers
         run: |
-          cd packages/client && npx playwright install --with-deps chromium
+          (cd packages/client && npx playwright install --with-deps chromium)
           npx playwright install chromium
 
       - name: Run lint fix
