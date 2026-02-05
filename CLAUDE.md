@@ -182,3 +182,4 @@ The client can be deployed as a static site to GitHub Pages. When `GITHUB_PAGES=
 - When running `pnpm dev`, all three packages start concurrently (types in watch mode feeds the others)
 - Environment variables are validated via `@fastify/env` schema — see `packages/middleware/src/services/env.ts`
 - Dependencies between workspace packages use `workspace:*` protocol
+- Before pushing, check if `origin/master` has new commits. If it does, pull master and rebase the current branch onto it (`git fetch origin master && git rebase origin/master`) before pushing.
