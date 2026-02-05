@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { Timer } from "@/components/Timer";
+
 export const Route = createFileRoute("/")({
   component: Index,
 });
@@ -13,6 +15,9 @@ function Index() {
       `}
     >
       <h3 className="text-3xl font-bold">Welcome Home!</h3>
+      <div className="mt-8">
+        <Timer />
+      </div>
     </div>
   );
 }

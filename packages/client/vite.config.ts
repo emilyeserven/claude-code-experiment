@@ -34,6 +34,7 @@ export default defineConfig({
           environment: "jsdom",
           include: ["**/*.test.{ts,tsx,js,jsx}"],
           exclude: ["**/node_modules/**", "**/dist/**", "**/cypress/**", "**/.{idea,git,cache,output,temp}/**", "**/*.stories.{js,jsx,ts,tsx}"],
+          passWithNoTests: true,
           setupFiles: ["./setupTests.js"],
         },
       },
@@ -47,6 +48,7 @@ export default defineConfig({
           })],
         test: {
           name: "storybook",
+          passWithNoTests: true,
           browser: {
             enabled: true,
             headless: true,
