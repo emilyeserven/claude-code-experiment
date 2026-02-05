@@ -10,6 +10,7 @@ import { ThemeProvider } from "@/context/ThemeProvider.tsx";
 
 const router = createRouter({
   routeTree,
+  basepath: import.meta.env.BASE_URL,
 });
 
 declare module "@tanstack/react-router" {

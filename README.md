@@ -2,6 +2,8 @@
 
 messing around with claude code while I am (allegedly) on vacation.
 
+**Deployed at:** http://emilyserven.net/claude-code-experiment/
+
 # The Stack
 
 This template exists because I don't really like fullstack frameworks.
