@@ -174,6 +174,8 @@ jobs:
 
   e2e:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -201,7 +203,105 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run E2E tests
-        run: pnpm e2e
+        id: e2e
+        run: pnpm e2e -- --reporter=github,json
+        env:
+          PLAYWRIGHT_JSON_OUTPUT_NAME: e2e-results.json
+        continue-on-error: true
+
+      - name: Comment E2E results on PR
+        if: github.event_name == 'pull_request' && !cancelled()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            if (!fs.existsSync('e2e-results.json')) return;
+            const results = JSON.parse(fs.readFileSync('e2e-results.json', 'utf8'));
+
+            const suites = results.suites || [];
+            const stats = results.stats || {};
+            const expected = stats.expected || 0;
+            const unexpected = stats.unexpected || 0;
+            const flaky = stats.flaky || 0;
+            const skipped = stats.skipped || 0;
+            const total = expected + unexpected + flaky + skipped;
+            const passed = stats.expected || 0;
+            const duration = ((stats.duration || 0) / 1000).toFixed(1);
+
+            const status = unexpected > 0 ? '❌ Failed' : '✅ Passed';
+
+            let body = `## 🎭 Playwright E2E Results — ${status}\n\n`;
+            body += `| Metric | Count |\n|--------|-------|\n`;
+            body += `| Total | ${total} |\n`;
+            body += `| Passed | ${passed} |\n`;
+            body += `| Failed | ${unexpected} |\n`;
+            body += `| Flaky | ${flaky} |\n`;
+            body += `| Skipped | ${skipped} |\n`;
+            body += `| Duration | ${duration}s |\n\n`;
+
+            // List failed tests with error details
+            function collectTests(suites) {
+              const tests = [];
+              for (const suite of suites) {
+                for (const spec of (suite.specs || [])) {
+                  for (const test of (spec.tests || [])) {
+                    tests.push({
+                      title: `${suite.title} > ${spec.title}`,
+                      status: test.status,
+                      results: test.results || [],
+                    });
+                  }
+                }
+                if (suite.suites) {
+                  tests.push(...collectTests(suite.suites));
+                }
+              }
+              return tests;
+            }
+
+            const allTests = collectTests(suites);
+            const failed = allTests.filter(t => t.status === 'unexpected');
+
+            if (failed.length > 0) {
+              body += `### Failed Tests\n\n`;
+              for (const t of failed) {
+                body += `- **${t.title}**\n`;
+                const lastResult = t.results[t.results.length - 1];
+                if (lastResult?.error?.message) {
+                  const msg = lastResult.error.message.slice(0, 500);
+                  body += `  \`\`\`\n  ${msg}\n  \`\`\`\n`;
+                }
+              }
+              body += '\n';
+            }
+
+            if (body.length > 65000) {
+              body = body.slice(0, 65000) + '\n\n... (output truncated)';
+            }
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes('## 🎭 Playwright E2E Results')
+            );
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
 
       - name: Upload Playwright report
         if: ${{ !cancelled() }}
@@ -210,6 +310,10 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+
+      - name: Fail if E2E tests failed
+        if: steps.e2e.outcome == 'failure'
+        run: exit 1
 
   knip:
     runs-on: ubuntu-latest
