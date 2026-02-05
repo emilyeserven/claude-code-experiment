@@ -41,6 +41,10 @@ export function Index() {
     setInputValue("");
   }, [inputValue]);
 
+  const handleDeleteEntry = useCallback((index: number) => {
+    setEntries(prev => prev.filter((_, i) => i !== index));
+  }, []);
+
   return (
     <div
       className={`
@@ -81,7 +85,7 @@ export function Index() {
           </Tooltip>
         </TooltipProvider>
         <div className="mt-4 flex w-full justify-center">
-          <TimerEntriesTable entries={entries} />
+          <TimerEntriesTable entries={entries} onDeleteEntry={handleDeleteEntry} />
         </div>
       </div>
     </div>
