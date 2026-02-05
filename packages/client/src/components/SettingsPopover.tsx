@@ -1,15 +1,19 @@
 import React from "react";
 
 import { Moon, Settings, Sun } from "lucide-react";
+import { Switch as SwitchPrimitive } from "radix-ui";
 
 import { Button } from "@/components/Button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
 import { useTheme } from "@/hooks/useTheme";
+import { cn } from "@/lib/utils";
 
 const SettingsPopover: React.FunctionComponent = () => {
   const {
     theme, setTheme,
   } = useTheme();
+
+  const isDark = theme === "dark";
 
   return (
     <Popover>
@@ -31,28 +35,42 @@ const SettingsPopover: React.FunctionComponent = () => {
           <h4 className="text-sm leading-none font-medium">Settings</h4>
           <div className="flex items-center justify-between">
             <span className="text-sm">Dark Mode</span>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => { setTheme(theme === "dark" ? "light" : "dark"); }}
+            <SwitchPrimitive.Root
+              checked={isDark}
+              onCheckedChange={(checked) => { setTheme(checked ? "dark" : "light"); }}
               data-testid="dark-mode-toggle"
+              className={cn(
+                `
+                  relative inline-flex h-7 w-14 shrink-0 cursor-pointer
+                  items-center rounded-full border-2 border-transparent
+                  shadow-xs transition-colors
+                  focus-visible:ring-2 focus-visible:ring-ring
+                  focus-visible:ring-offset-2
+                  focus-visible:ring-offset-background
+                  focus-visible:outline-none
+                  data-[state=checked]:bg-primary
+                  data-[state=unchecked]:bg-input
+                `,
+              )}
             >
-              {theme === "dark"
-                ? (
-                  <>
-                    <Sun className="mr-1 size-4" />
-                    {" "}
-                    Light
-                  </>
-                )
-                : (
-                  <>
-                    <Moon className="mr-1 size-4" />
-                    {" "}
-                    Dark
-                  </>
+              <Sun className="absolute left-1 size-3.5 text-amber-500" />
+              <Moon className="absolute right-1 size-3.5 text-slate-300" />
+              <SwitchPrimitive.Thumb
+                className={cn(
+                  `
+                    pointer-events-none z-10 flex size-5 items-center
+                    justify-center rounded-full bg-background shadow-lg ring-0
+                    transition-transform
+                    data-[state=checked]:translate-x-7.5
+                    data-[state=unchecked]:translate-x-0.5
+                  `,
                 )}
-            </Button>
+              >
+                {isDark
+                  ? <Moon className="size-3 text-primary" />
+                  : <Sun className="size-3 text-amber-500" />}
+              </SwitchPrimitive.Thumb>
+            </SwitchPrimitive.Root>
           </div>
         </div>
       </PopoverContent>
