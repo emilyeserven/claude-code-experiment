@@ -113,7 +113,7 @@ jobs:
           echo "Lint failed with errors. See output above."
           exit 1
 
-  test:
+  unit-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -138,11 +138,58 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Test middleware
+        run: pnpm --filter=@cc-experiments/middleware run test
+
+      - name: Test client (unit)
+        run: pnpm --filter=@cc-experiments/client exec vitest run --project unit-tests
+
+  storybook-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
+
+      - name: Configure npm registry for private packages
+        run: |
+          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Get Playwright version
+        id: playwright-version
+        run: echo "version=$(cd packages/client && npx playwright --version)" >> $GITHUB_OUTPUT
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        id: playwright-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-browsers-${{ steps.playwright-version.outputs.version }}
+
       - name: Install Playwright browsers
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: cd packages/client && npx playwright install --with-deps chromium
 
-      - name: Test
-        run: pnpm test
+      - name: Install Playwright system dependencies
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: cd packages/client && npx playwright install-deps chromium
+
+      - name: Test client (storybook)
+        run: pnpm --filter=@cc-experiments/client exec vitest run --project storybook
 
   build:
     runs-on: ubuntu-latest
@@ -171,6 +218,165 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+  e2e:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
+
+      - name: Configure npm registry for private packages
+        run: |
+          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Get Playwright version
+        id: playwright-version
+        run: echo "version=$(npx playwright --version)" >> $GITHUB_OUTPUT
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        id: playwright-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-browsers-${{ steps.playwright-version.outputs.version }}
+
+      - name: Install Playwright browsers
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Install Playwright system dependencies
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium
+
+      - name: Run E2E tests
+        id: e2e
+        run: npx playwright test --reporter=github,json
+        env:
+          PLAYWRIGHT_JSON_OUTPUT_NAME: e2e-results.json
+        continue-on-error: true
+
+      - name: Comment E2E results on PR
+        if: github.event_name == 'pull_request' && !cancelled()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            if (!fs.existsSync('e2e-results.json')) return;
+            const results = JSON.parse(fs.readFileSync('e2e-results.json', 'utf8'));
+
+            const suites = results.suites || [];
+            const stats = results.stats || {};
+            const expected = stats.expected || 0;
+            const unexpected = stats.unexpected || 0;
+            const flaky = stats.flaky || 0;
+            const skipped = stats.skipped || 0;
+            const total = expected + unexpected + flaky + skipped;
+            const passed = stats.expected || 0;
+            const duration = ((stats.duration || 0) / 1000).toFixed(1);
+
+            const status = unexpected > 0 ? '❌ Failed' : '✅ Passed';
+
+            let body = `## 🎭 Playwright E2E Results — ${status}\n\n`;
+            body += `| Metric | Count |\n|--------|-------|\n`;
+            body += `| Total | ${total} |\n`;
+            body += `| Passed | ${passed} |\n`;
+            body += `| Failed | ${unexpected} |\n`;
+            body += `| Flaky | ${flaky} |\n`;
+            body += `| Skipped | ${skipped} |\n`;
+            body += `| Duration | ${duration}s |\n\n`;
+
+            // List failed tests with error details
+            function collectTests(suites) {
+              const tests = [];
+              for (const suite of suites) {
+                for (const spec of (suite.specs || [])) {
+                  for (const test of (spec.tests || [])) {
+                    tests.push({
+                      title: `${suite.title} > ${spec.title}`,
+                      status: test.status,
+                      results: test.results || [],
+                    });
+                  }
+                }
+                if (suite.suites) {
+                  tests.push(...collectTests(suite.suites));
+                }
+              }
+              return tests;
+            }
+
+            const allTests = collectTests(suites);
+            const failed = allTests.filter(t => t.status === 'unexpected');
+
+            if (failed.length > 0) {
+              body += `### Failed Tests\n\n`;
+              for (const t of failed) {
+                body += `- **${t.title}**\n`;
+                const lastResult = t.results[t.results.length - 1];
+                if (lastResult?.error?.message) {
+                  const msg = lastResult.error.message.slice(0, 500);
+                  body += `  \`\`\`\n  ${msg}\n  \`\`\`\n`;
+                }
+              }
+              body += '\n';
+            }
+
+            if (body.length > 65000) {
+              body = body.slice(0, 65000) + '\n\n... (output truncated)';
+            }
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes('## 🎭 Playwright E2E Results')
+            );
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
+
+      - name: Upload Playwright report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
+
+      - name: Fail if E2E tests failed
+        if: steps.e2e.outcome == 'failure'
+        run: exit 1
 
   knip:
     runs-on: ubuntu-latest
