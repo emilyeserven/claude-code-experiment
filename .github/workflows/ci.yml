@@ -113,7 +113,38 @@ jobs:
           echo "Lint failed with errors. See output above."
           exit 1
 
-  test:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
+
+      - name: Configure npm registry for private packages
+        run: |
+          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Test middleware
+        run: pnpm --filter=@cc-experiments/middleware run test
+
+      - name: Test client (unit)
+        run: pnpm --filter=@cc-experiments/client run test -- --project=unit-tests --run
+
+  storybook-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -141,8 +172,8 @@ jobs:
       - name: Install Playwright browsers
         run: cd packages/client && npx playwright install --with-deps chromium
 
-      - name: Test
-        run: pnpm test
+      - name: Test client (storybook)
+        run: pnpm --filter=@cc-experiments/client run test -- --project=storybook --run
 
   build:
     runs-on: ubuntu-latest
@@ -204,7 +235,7 @@ jobs:
 
       - name: Run E2E tests
         id: e2e
-        run: pnpm e2e -- --reporter=github,json
+        run: npx playwright test --reporter=github,json
         env:
           PLAYWRIGHT_JSON_OUTPUT_NAME: e2e-results.json
         continue-on-error: true
