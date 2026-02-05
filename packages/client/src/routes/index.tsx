@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
 });
 
 export function Index() {
-  const [inputValue, setInputValue] = useLocalStorage("timer-input", "");
+  const [inputValue, setInputValue] = useState("");
   const [entries, setEntries] = useLocalStorage<TimerEntry[]>("timer-entries", []);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const elapsedMsRef = useRef(0);
@@ -40,7 +40,7 @@ export function Index() {
       timestamp: formatTime(elapsedMsRef.current),
     }]);
     setInputValue("");
-  }, [inputValue, setEntries, setInputValue]);
+  }, [inputValue, setEntries]);
 
   const handleDeleteEntry = useCallback((index: number) => {
     setEntries(prev => prev.filter((_, i) => i !== index));

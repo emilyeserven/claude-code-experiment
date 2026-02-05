@@ -17,7 +17,6 @@ describe("formatTime", () => {
 
 describe("Timer", () => {
   beforeEach(() => {
-    localStorage.clear();
     vi.useFakeTimers();
   });
 
