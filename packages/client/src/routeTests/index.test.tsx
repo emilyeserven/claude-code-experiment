@@ -1,15 +1,10 @@
 import { render, screen, fireEvent, act } from "@testing-library/react";
 import { beforeEach, afterEach, describe, expect, it, vi } from "vitest";
 
-import { TooltipProvider } from "@/components/Tooltip";
 import { Index } from "@/routes/index";
 
 function renderIndex() {
-  return render(
-    <TooltipProvider>
-      <Index />
-    </TooltipProvider>,
-  );
+  return render(<Index />);
 }
 
 describe("Index", () => {
