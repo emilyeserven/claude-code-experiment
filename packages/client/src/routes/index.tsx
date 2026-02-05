@@ -85,7 +85,10 @@ export function Index() {
           </Tooltip>
         </TooltipProvider>
         <div className="mt-4 flex w-full justify-center">
-          <TimerEntriesTable entries={entries} onDeleteEntry={handleDeleteEntry} />
+          <TimerEntriesTable
+            entries={entries}
+            onDeleteEntry={handleDeleteEntry}
+          />
         </div>
       </div>
     </div>

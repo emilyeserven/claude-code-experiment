@@ -4,9 +4,9 @@ import { Button } from "@/components/Button";
 import { formatTime } from "@/utils/formatTime";
 
 interface TimerProps {
-  // eslint-disable-next-line no-unused-vars
+
   onTick?: (elapsedMs: number) => void;
-  // eslint-disable-next-line no-unused-vars
+
   onRunningChange?: (isRunning: boolean) => void;
 }
 

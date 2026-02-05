@@ -75,7 +75,9 @@ const columns: ColumnDef<TimerEntry>[] = [
       row,
       table,
     }) => {
-      const { onDeleteEntry } = table.options.meta as TableMeta;
+      const {
+        onDeleteEntry,
+      } = table.options.meta as TableMeta;
       return (
         <Popover>
           <PopoverTrigger asChild>
@@ -87,7 +89,10 @@ const columns: ColumnDef<TimerEntry>[] = [
               <EllipsisVertical className="size-4" />
             </Button>
           </PopoverTrigger>
-          <PopoverContent align="end" className="w-40 p-1">
+          <PopoverContent
+            align="end"
+            className="w-40 p-1"
+          >
             <Button
               variant="ghost"
               size="sm"

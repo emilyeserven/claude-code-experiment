@@ -9,6 +9,17 @@ const clientEntryPoint = path.resolve(import.meta.dirname, "packages/client/src/
 export default tseslint.config([
   ...emstackConfig,
   {
+    rules: {
+      "no-unused-vars": "off",
+    },
+  },
+  {
+    files: ["**/*.{ts,tsx}"],
+    rules: {
+      "@typescript-eslint/no-unused-vars": "error",
+    },
+  },
+  {
     files: ["packages/client/**/*.{ts,tsx}"],
     settings: {
       "better-tailwindcss": {
