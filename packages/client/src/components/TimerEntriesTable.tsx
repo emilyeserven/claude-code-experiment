@@ -8,8 +8,10 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, EllipsisVertical } from "lucide-react";
 
+import { Button } from "@/components/Button";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
 import { cn } from "@/lib/utils";
 
 interface TimerEntry {
@@ -19,6 +21,11 @@ interface TimerEntry {
 
 interface TimerEntriesTableProps {
   entries: TimerEntry[];
+  onDeleteEntry: (index: number) => void;
+}
+
+interface TableMeta {
+  onDeleteEntry: (index: number) => void;
 }
 
 const columns: ColumnDef<TimerEntry>[] = [
@@ -59,10 +66,52 @@ const columns: ColumnDef<TimerEntry>[] = [
       </span>
     ),
   },
+  {
+    id: "actions",
+    meta: {
+      className: "w-10",
+    },
+    cell: ({
+      row,
+      table,
+    }) => {
+      const {
+        onDeleteEntry,
+      } = table.options.meta as TableMeta;
+      return (
+        <Popover>
+          <PopoverTrigger asChild>
+            <Button
+              variant="ghost"
+              size="icon-xs"
+              data-testid="entry-actions-trigger"
+            >
+              <EllipsisVertical className="size-4" />
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent
+            align="end"
+            className="w-40 p-1"
+          >
+            <Button
+              variant="ghost"
+              size="sm"
+              className="w-full justify-start text-destructive"
+              onClick={() => onDeleteEntry(row.index)}
+              data-testid="delete-entry-button"
+            >
+              Delete Entry
+            </Button>
+          </PopoverContent>
+        </Popover>
+      );
+    },
+  },
 ];
 
 export function TimerEntriesTable({
   entries,
+  onDeleteEntry,
 }: TimerEntriesTableProps) {
   const [sorting, setSorting] = useState<SortingState>([]);
 
@@ -75,6 +124,9 @@ export function TimerEntriesTable({
     onSortingChange: setSorting,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
+    meta: {
+      onDeleteEntry,
+    },
   });
 
   return (
