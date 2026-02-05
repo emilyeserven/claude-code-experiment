@@ -1,7 +1,19 @@
 import { render, screen, fireEvent, act } from "@testing-library/react";
 import { beforeEach, afterEach, describe, expect, it, vi } from "vitest";
 
+import { formatTime } from "@/utils/formatTime";
+
 import { Timer } from "./Timer";
+
+describe("formatTime", () => {
+  it("formats zero milliseconds", () => {
+    expect(formatTime(0)).toBe("00:00:00.000");
+  });
+
+  it("formats milliseconds into HH:MM:SS.mmm", () => {
+    expect(formatTime(3661001)).toBe("01:01:01.001");
+  });
+});
 
 describe("Timer", () => {
   beforeEach(() => {
@@ -98,5 +110,38 @@ describe("Timer", () => {
   it("disables stop button while not running", () => {
     render(<Timer />);
     expect(screen.getByTestId("timer-stop-button")).toBeDisabled();
+  });
+
+  it("calls onTick with elapsed milliseconds on each interval", () => {
+    const onTick = vi.fn();
+    vi.setSystemTime(new Date(0));
+    render(<Timer onTick={onTick} />);
+
+    fireEvent.click(screen.getByTestId("timer-start-button"));
+
+    act(() => {
+      vi.setSystemTime(new Date(1000));
+      vi.advanceTimersByTime(10);
+    });
+
+    expect(onTick).toHaveBeenCalledWith(1010);
+  });
+
+  it("calls onTick with 0 when timer is reset", () => {
+    const onTick = vi.fn();
+    vi.setSystemTime(new Date(0));
+    render(<Timer onTick={onTick} />);
+
+    fireEvent.click(screen.getByTestId("timer-start-button"));
+
+    act(() => {
+      vi.setSystemTime(new Date(1000));
+      vi.advanceTimersByTime(10);
+    });
+
+    onTick.mockClear();
+    fireEvent.click(screen.getByTestId("timer-reset-button"));
+
+    expect(onTick).toHaveBeenCalledWith(0);
   });
 });

@@ -1,29 +1,31 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 
 import { Button } from "@/components/Button";
+import { formatTime } from "@/utils/formatTime";
 
-function formatTime(ms: number): string {
-  const totalSeconds = Math.floor(ms / 1000);
-  const hours = Math.floor(totalSeconds / 3600);
-  const minutes = Math.floor((totalSeconds % 3600) / 60);
-  const seconds = totalSeconds % 60;
-  const milliseconds = ms % 1000;
-
-  return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}.${String(milliseconds).padStart(3, "0")}`;
+interface TimerProps {
+  // eslint-disable-next-line no-unused-vars
+  onTick?: (elapsedMs: number) => void;
 }
 
-export function Timer() {
+export function Timer({
+  onTick,
+}: TimerProps) {
   const [elapsedMs, setElapsedMs] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const startTimeRef = useRef<number>(0);
+  const onTickRef = useRef(onTick);
+  onTickRef.current = onTick;
 
   const start = useCallback(() => {
     if (isRunning) return;
     setIsRunning(true);
     startTimeRef.current = Date.now() - elapsedMs;
     intervalRef.current = setInterval(() => {
-      setElapsedMs(Date.now() - startTimeRef.current);
+      const newElapsed = Date.now() - startTimeRef.current;
+      setElapsedMs(newElapsed);
+      onTickRef.current?.(newElapsed);
     }, 10);
   }, [isRunning, elapsedMs]);
 
@@ -48,6 +50,7 @@ export function Timer() {
   const reset = useCallback(() => {
     setIsRunning(false);
     setElapsedMs(0);
+    onTickRef.current?.(0);
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
