@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 
 import { Button } from "@/components/Button";
 
@@ -35,6 +35,15 @@ export function Timer() {
       intervalRef.current = null;
     }
   }, [isRunning]);
+
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+  }, []);
 
   const reset = useCallback(() => {
     setIsRunning(false);
