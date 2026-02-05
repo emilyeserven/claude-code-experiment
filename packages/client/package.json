@@ -69,7 +69,7 @@
   },
   "lint-staged": {
     "*": "eslint --fix",
-    "*.{js,ts,jsx,tsx}": "vitest related --run --passWithNoTests"
+    "*.{js,ts,jsx,tsx}": "vitest related --run --passWithNoTests --project unit-tests"
   },
   "type": "module"
 }

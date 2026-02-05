@@ -163,4 +163,65 @@ describe("Index", () => {
     const entries = screen.getAllByTestId("timer-entry");
     expect(entries[0]).toHaveTextContent("00:00:00.000");
   });
+
+  describe("multiselect and delete", () => {
+    function addEntries(count: number) {
+      const input = screen.getByTestId("timer-input");
+      const labels = ["alpha", "beta", "gamma", "delta", "epsilon"];
+      for (let i = 0; i < count; i++) {
+        fireEvent.change(input, {
+          target: {
+            value: labels[i],
+          },
+        });
+        fireEvent.click(screen.getByTestId("timer-submit-button"));
+      }
+    }
+
+    it("can select rows and delete them via bulk delete", () => {
+      render(<Index />);
+      addEntries(3);
+
+      expect(screen.getAllByTestId("timer-entry")).toHaveLength(3);
+
+      const checkboxes = screen.getAllByTestId("row-checkbox");
+      fireEvent.click(checkboxes[0]);
+      fireEvent.click(checkboxes[2]);
+
+      fireEvent.click(screen.getByTestId("delete-selected-button"));
+      fireEvent.click(screen.getByTestId("confirm-delete-button"));
+
+      const remaining = screen.getAllByTestId("timer-entry");
+      expect(remaining).toHaveLength(1);
+      expect(remaining[0]).toHaveTextContent("beta");
+    });
+
+    it("bulk delete removes all entries and shows empty state", () => {
+      render(<Index />);
+      addEntries(2);
+
+      const checkboxes = screen.getAllByTestId("row-checkbox");
+      fireEvent.click(checkboxes[0]);
+      fireEvent.click(checkboxes[1]);
+
+      fireEvent.click(screen.getByTestId("delete-selected-button"));
+      fireEvent.click(screen.getByTestId("confirm-delete-button"));
+
+      expect(screen.getByTestId("timer-entries-empty")).toBeInTheDocument();
+      expect(screen.queryAllByTestId("timer-entry")).toHaveLength(0);
+    });
+
+    it("cancelling bulk delete preserves all entries", () => {
+      render(<Index />);
+      addEntries(3);
+
+      const checkboxes = screen.getAllByTestId("row-checkbox");
+      fireEvent.click(checkboxes[0]);
+
+      fireEvent.click(screen.getByTestId("delete-selected-button"));
+      fireEvent.click(screen.getByTestId("cancel-delete-button"));
+
+      expect(screen.getAllByTestId("timer-entry")).toHaveLength(3);
+    });
+  });
 });
