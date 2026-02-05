@@ -43,6 +43,8 @@ jobs:
         run: pnpm run lint:fix
 
       - name: Commit lint fixes
+        env:
+          HUSKY: "0"
         run: |
           if git diff --quiet; then
             echo "No lint fixes to commit"
