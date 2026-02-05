@@ -58,32 +58,51 @@ export function Index() {
           onTick={handleTick}
           onRunningChange={handleRunningChange}
         />
-        <TooltipProvider>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <div className="flex w-full max-w-md gap-2">
-                <Input
-                  value={inputValue}
-                  onChange={e => setInputValue(e.target.value)}
-                  onKeyDown={e => e.key === "Enter" && handleSubmit()}
-                  placeholder="Enter text..."
-                  data-testid="timer-input"
-                />
-                <Button
-                  onClick={handleSubmit}
-                  data-testid="timer-submit-button"
+        <div className="flex w-full max-w-md flex-col items-center gap-1">
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <div className="flex w-full gap-2">
+                  <Input
+                    value={inputValue}
+                    onChange={e => setInputValue(e.target.value)}
+                    onKeyDown={e => e.key === "Enter" && handleSubmit()}
+                    placeholder="Enter text..."
+                    data-testid="timer-input"
+                  />
+                  <Button
+                    onClick={handleSubmit}
+                    data-testid="timer-submit-button"
+                  >
+                    Submit
+                  </Button>
+                </div>
+              </TooltipTrigger>
+              {!isTimerRunning && (
+                <TooltipContent
+                  className={`
+                    hidden
+                    md:block
+                  `}
+                  sideOffset={8}
                 >
-                  Submit
-                </Button>
-              </div>
-            </TooltipTrigger>
-            {!isTimerRunning && (
-              <TooltipContent sideOffset={8}>
-                Start the timer before adding notes
-              </TooltipContent>
-            )}
-          </Tooltip>
-        </TooltipProvider>
+                  Start the timer before adding notes
+                </TooltipContent>
+              )}
+            </Tooltip>
+          </TooltipProvider>
+          {!isTimerRunning && (
+            <p
+              className={`
+                text-sm text-muted-foreground
+                md:hidden
+              `}
+              data-testid="timer-warning-text"
+            >
+              Start the timer before adding notes
+            </p>
+          )}
+        </div>
         <div className="mt-4 flex w-full justify-center">
           <TimerEntriesTable
             entries={entries}
