@@ -110,6 +110,7 @@ React 19 SPA with:
 ### Linting & Formatting
 
 - ESLint uses a custom shared config: `@emilyeserven/eslint-config`
+- **Always run `pnpm lint:fix` before attempting manual lint fixes.** The auto-fixer handles class ordering (Tailwind), line wrapping, stylistic formatting, and many other rules automatically. Only fix remaining errors by hand after the auto-fixer has run.
 - Pre-commit hook runs `lint-staged` via Husky, which applies `eslint --fix` to all staged files
 - Pre-push hook also runs `lint-staged`
 - Client and middleware additionally run tests on staged `.ts`/`.tsx`/`.js` files
