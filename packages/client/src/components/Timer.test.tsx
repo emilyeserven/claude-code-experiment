@@ -1,9 +1,9 @@
 import { render, screen, fireEvent, act } from "@testing-library/react";
 import { beforeEach, afterEach, describe, expect, it, vi } from "vitest";
 
-import { formatTime } from "@/utils/formatTime";
-
 import { Timer } from "./Timer";
+
+import { formatTime } from "@/utils/formatTime";
 
 describe("formatTime", () => {
   it("formats zero milliseconds", () => {
