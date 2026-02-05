@@ -12,6 +12,7 @@ const dirname = typeof __dirname !== "undefined" ? __dirname : path.dirname(file
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
+  // eslint-disable-next-line no-undef -- process is available in Node config files
   base: process.env.GITHUB_PAGES === "true" ? "/claude-code-experiment/" : "/",
   preview: {
     port: 4173,
