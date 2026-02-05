@@ -60,9 +60,7 @@ export function Index() {
             Submit
           </Button>
         </div>
-        {entries.length > 0 && (
-          <TimerEntriesTable entries={entries} />
-        )}
+        <TimerEntriesTable entries={entries} />
       </div>
     </div>
   );

@@ -31,10 +31,17 @@ describe("Index", () => {
     expect(input).toHaveValue("hello");
   });
 
+  it("shows empty state when there are no entries", () => {
+    render(<Index />);
+    expect(screen.getByTestId("timer-entries-empty")).toBeInTheDocument();
+    expect(screen.queryAllByTestId("timer-entry")).toHaveLength(0);
+  });
+
   it("does not submit when input is empty", () => {
     render(<Index />);
     fireEvent.click(screen.getByTestId("timer-submit-button"));
-    expect(screen.queryByTestId("timer-entries-list")).not.toBeInTheDocument();
+    expect(screen.getByTestId("timer-entries-empty")).toBeInTheDocument();
+    expect(screen.queryAllByTestId("timer-entry")).toHaveLength(0);
   });
 
   it("does not submit when input is only whitespace", () => {
@@ -46,7 +53,8 @@ describe("Index", () => {
       },
     });
     fireEvent.click(screen.getByTestId("timer-submit-button"));
-    expect(screen.queryByTestId("timer-entries-list")).not.toBeInTheDocument();
+    expect(screen.getByTestId("timer-entries-empty")).toBeInTheDocument();
+    expect(screen.queryAllByTestId("timer-entry")).toHaveLength(0);
   });
 
   it("submits an entry with text and current timestamp", () => {
