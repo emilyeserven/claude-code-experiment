@@ -29,7 +29,7 @@ ENV FASTIFY_ADDRESS=0.0.0.0
 
 RUN pnpm run -r build
 
-RUN pnpm deploy --filter=@emstack/middleware --prod appout
+RUN pnpm deploy --filter=@cc-experiments/middleware --prod appout
 
 RUN ls
 
