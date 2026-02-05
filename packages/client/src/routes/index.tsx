@@ -7,6 +7,7 @@ import { Input } from "@/components/Input";
 import { Timer } from "@/components/Timer";
 import { TimerEntriesTable } from "@/components/TimerEntriesTable";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/Tooltip";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { formatTime } from "@/utils/formatTime";
 
 interface TimerEntry {
@@ -20,7 +21,7 @@ export const Route = createFileRoute("/")({
 
 export function Index() {
   const [inputValue, setInputValue] = useState("");
-  const [entries, setEntries] = useState<TimerEntry[]>([]);
+  const [entries, setEntries] = useLocalStorage<TimerEntry[]>("timer-entries", []);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const elapsedMsRef = useRef(0);
 
@@ -39,11 +40,11 @@ export function Index() {
       timestamp: formatTime(elapsedMsRef.current),
     }]);
     setInputValue("");
-  }, [inputValue]);
+  }, [inputValue, setEntries]);
 
   const handleDeleteEntry = useCallback((index: number) => {
     setEntries(prev => prev.filter((_, i) => i !== index));
-  }, []);
+  }, [setEntries]);
 
   return (
     <div
