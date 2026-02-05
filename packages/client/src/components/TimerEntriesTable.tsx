@@ -77,26 +77,48 @@ export function TimerEntriesTable({
           ))}
         </thead>
         <tbody>
-          {table.getRowModel().rows.map(row => (
-            <tr
-              key={row.id}
-              className={`
-                border-b
-                last:border-b-0
-                dark:border-gray-600
-              `}
-              data-testid="timer-entry"
-            >
-              {row.getVisibleCells().map(cell => (
+          {table.getRowModel().rows.length > 0
+            ? table.getRowModel().rows.map(row => (
+              <tr
+                key={row.id}
+                className={`
+                  border-b
+                  last:border-b-0
+                  dark:border-gray-600
+                `}
+                data-testid="timer-entry"
+              >
+                {row.getVisibleCells().map(cell => (
+                  <td
+                    key={cell.id}
+                    className="px-3 py-2"
+                  >
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </td>
+                ))}
+              </tr>
+            ))
+            : (
+              <tr>
                 <td
-                  key={cell.id}
-                  className="px-3 py-2"
+                  colSpan={columns.length}
+                  className="px-3 py-6 text-center"
+                  data-testid="timer-entries-empty"
                 >
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  <p className="text-sm text-muted-foreground">
+                    {"No entries yet. Start the timer, type in the input field, and press "}
+                    <kbd className="rounded border px-1 py-0.5 text-xs">
+                      Enter
+                    </kbd>
+                    {" or click "}
+                    <strong>
+                      Submit
+                    </strong>
+                    {" to add an entry."}
+                  </p>
                 </td>
-              ))}
-            </tr>
-          ))}
+              </tr>
+            )}
         </tbody>
       </table>
     </div>
