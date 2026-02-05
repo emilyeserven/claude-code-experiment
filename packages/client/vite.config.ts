@@ -12,7 +12,7 @@ const dirname = typeof __dirname !== "undefined" ? __dirname : path.dirname(file
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
-  base: process.env.GITHUB_PAGES === "true" ? "/claude-code-experiment/" : "/",
+  base: process.env.GITHUB_PAGES === "true" ? "/claude-code-experiment" : "/",
   preview: {
     port: 4173,
   },
