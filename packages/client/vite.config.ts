@@ -1,3 +1,4 @@
+/* global process */
 /// <reference types="vitest/config" />
 import { fileURLToPath } from "node:url";
 import path from "path";
