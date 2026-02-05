@@ -1,6 +1,6 @@
 import type { ColumnDef, Row, RowSelectionState, SortingState } from "@tanstack/react-table";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   flexRender,
@@ -172,6 +172,11 @@ export function TimerEntriesTable({
   const [sorting, setSorting] = useState<SortingState>([]);
   const [rowSelection, setRowSelection] = useState<RowSelectionState>({});
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
+
+  // Clear selection when entries change (e.g. individual row deletion shifts indices)
+  useEffect(() => {
+    setRowSelection({});
+  }, [entries]);
 
   const table = useReactTable({
     data: entries,
