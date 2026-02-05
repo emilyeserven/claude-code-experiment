@@ -13,8 +13,11 @@ cc-experiments/
 ├── packages/
 │   ├── types/          # @cc-experiments/types — Shared TypeScript type definitions
 │   ├── middleware/      # @cc-experiments/middleware — Fastify backend server (port 3001)
-│   └── client/         # @cc-experiments/client — React frontend app (port 3000)
+│   └── client/         # @cc-experiments/client — React frontend app (port 5173 dev / 3000 prod)
+├── e2e/                # Playwright end-to-end tests
+├── .github/workflows/  # CI, deploy, and Claude Code automation workflows
 ├── .husky/             # Git hooks (pre-commit, pre-push run lint-staged)
+├── playwright.config.ts # Playwright E2E config
 ├── docker-compose.yml  # Docker orchestration for both services
 ├── pnpm-workspace.yaml # Workspace definition
 ├── eslint.config.js    # Root ESLint config (uses @emilyeserven/eslint-config)
@@ -32,7 +35,7 @@ cc-experiments/
 | Data fetching | TanStack Query |
 | Backend | Fastify 5 with JSON Schema type providers |
 | API docs | @fastify/swagger + swagger-ui |
-| Testing | Vitest (client), node:test (middleware), Storybook 10 |
+| Testing | Vitest (client), node:test (middleware), Playwright (E2E), Storybook 10 |
 | Package manager | pnpm 10.13.1 |
 | Containerization | Docker multi-stage builds (Node 22, distroless final images) |
 
@@ -47,6 +50,9 @@ pnpm build                # Build all packages (runs `pnpm run -r build`)
 pnpm test                 # Run tests across all packages (runs `pnpm run -r test`)
 pnpm lint                 # Lint the entire codebase with ESLint
 pnpm lint:fix             # Auto-fix lint issues
+pnpm e2e                  # Run Playwright end-to-end tests
+pnpm e2e:ui               # Run Playwright E2E tests with interactive UI
+pnpm knip                 # Detect unused dependencies and exports
 pnpm storybook            # Launch Storybook for the client package (port 6006)
 ```
 
@@ -96,6 +102,7 @@ React 19 SPA with:
 - **Utilities/services**: camelCase files (e.g., `fetchFunctions.ts`, `swaggerOptions.ts`)
 - **Types/interfaces**: PascalCase (e.g., `Test`, `DynamicTest`)
 - **Test files**: `*.test.ts` or `*.test.tsx` suffix
+- **E2E test files**: `*.spec.ts` suffix (in `e2e/` directory)
 - **Story files**: `*.stories.tsx` suffix
 
 ### Patterns
@@ -135,6 +142,15 @@ Two test projects configured in `vite.config.ts`:
 
 Uses Node's built-in test runner with `assert` module. Test files use `*.test.js` extension.
 
+### E2E (Playwright)
+
+End-to-end tests live in the `e2e/` directory at the repo root. Configured via `playwright.config.ts`:
+- Tests run against `http://localhost:5173` (Vite dev server, started automatically)
+- Uses Chromium only
+- In CI: single worker, 2 retries, `github` reporter
+- Locally: parallel workers, no retries, `html` reporter
+- Test files use `*.spec.ts` suffix
+
 ## Docker
 
 ```bash
@@ -142,8 +158,21 @@ docker compose up --build    # Build and start both services
 ```
 
 - **middleware**: Exposed on port 3001
-- **client**: Exposed on port 3000, depends on middleware
+- **client**: Exposed on port 3000 (production via `server.js`), port 5173 during local development (`pnpm dev`)
 - Both use multi-stage builds with `node:22-bookworm-slim` base and `distroless` final images
+
+## CI/CD & Deployment
+
+### GitHub Actions Workflows (`.github/workflows/`)
+
+- **`ci.yml`** — Runs on all pushes and PRs. Steps: lint fix (auto-commits fixes), lint (posts warnings as PR comments), test, build, E2E tests, and knip unused code report (posted as PR comment). Playwright HTML reports are uploaded as artifacts.
+- **`deploy-pages.yml`** — Deploys the built client to GitHub Pages on pushes to `main`/`master`. Sets `GITHUB_PAGES=true` env var, which configures Vite to use `/claude-code-experiment/` as the base path.
+- **`claude.yml`** — Triggers Claude Code on issue comments and PR reviews.
+- **`claude-code-review.yml`** — Automated code review using Claude Code.
+
+### GitHub Pages
+
+The client can be deployed as a static site to GitHub Pages. When `GITHUB_PAGES=true` is set during build, Vite uses `/claude-code-experiment/` as the base path instead of `/`.
 
 ## Important Notes
 
