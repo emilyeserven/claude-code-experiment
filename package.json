@@ -24,7 +24,7 @@
     "test": "pnpm run -r test",
     "dev": "concurrently -n \"models,server,ui\" -c \"yellow,blue,green\" \"pnpm --filter=@cc-experiments/types --stream run dev\" \"pnpm --filter=@cc-experiments/middleware --stream run dev\" \"pnpm --filter=@cc-experiments/client --stream run dev\"",
     "lint": "eslint .",
-    "lint:fix": "eslint .. --fix",
+    "lint:fix": "eslint . --fix",
     "knip": "knip",
     "storybook": "pnpm --filter=@cc-experiments/client run storybook",
     "prepare": "husky"
