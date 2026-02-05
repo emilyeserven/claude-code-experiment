@@ -1,4 +1,4 @@
-import type { ColumnDef, SortingState } from "@tanstack/react-table";
+import type { ColumnDef, Row, SortingState } from "@tanstack/react-table";
 
 import { useState } from "react";
 
@@ -26,6 +26,46 @@ interface TimerEntriesTableProps {
 
 interface TableMeta {
   onDeleteEntry: (index: number) => void;
+}
+
+function ActionsCell({
+  row, onDeleteEntry,
+}: { row: Row<TimerEntry>;
+  onDeleteEntry: (index: number) => void; }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <Popover
+      open={open}
+      onOpenChange={setOpen}
+    >
+      <PopoverTrigger asChild>
+        <Button
+          variant="ghost"
+          size="icon-xs"
+          data-testid="entry-actions-trigger"
+        >
+          <EllipsisVertical className="size-4" />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent
+        align="end"
+        className="w-40 p-1"
+      >
+        <Button
+          variant="ghost"
+          size="sm"
+          className="w-full justify-start text-destructive"
+          onClick={() => {
+            setOpen(false);
+            onDeleteEntry(row.index);
+          }}
+          data-testid="delete-entry-button"
+        >
+          Delete Entry
+        </Button>
+      </PopoverContent>
+    </Popover>
+  );
 }
 
 const columns: ColumnDef<TimerEntry>[] = [
@@ -79,31 +119,10 @@ const columns: ColumnDef<TimerEntry>[] = [
         onDeleteEntry,
       } = table.options.meta as TableMeta;
       return (
-        <Popover>
-          <PopoverTrigger asChild>
-            <Button
-              variant="ghost"
-              size="icon-xs"
-              data-testid="entry-actions-trigger"
-            >
-              <EllipsisVertical className="size-4" />
-            </Button>
-          </PopoverTrigger>
-          <PopoverContent
-            align="end"
-            className="w-40 p-1"
-          >
-            <Button
-              variant="ghost"
-              size="sm"
-              className="w-full justify-start text-destructive"
-              onClick={() => onDeleteEntry(row.index)}
-              data-testid="delete-entry-button"
-            >
-              Delete Entry
-            </Button>
-          </PopoverContent>
-        </Popover>
+        <ActionsCell
+          row={row}
+          onDeleteEntry={onDeleteEntry}
+        />
       );
     },
   },
