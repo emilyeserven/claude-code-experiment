@@ -3,17 +3,24 @@ name: CI
 on:
   push:
     branches: ["*"]
+  pull_request:
+    branches: ["*"]
 
 concurrency:
-  group: ci-${{ github.ref }}
+  group: ci-${{ github.event.pull_request.head.ref || github.ref }}
   cancel-in-progress: true
 
 jobs:
   ci:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -32,8 +39,74 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Run lint fix
+        run: pnpm lint -- --fix
+
+      - name: Commit lint fixes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git reset -- .npmrc 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No lint fixes to commit"
+          else
+            git commit -m "Ran lint fix in CI"
+            git push
+          fi
+
       - name: Lint
-        run: pnpm lint
+        id: lint
+        run: |
+          set -o pipefail
+          pnpm lint 2>&1 | tee lint-output.txt
+        continue-on-error: true
+
+      - name: Comment lint warnings on PR
+        if: github.event_name == 'pull_request' && steps.lint.outcome != 'skipped'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            if (!fs.existsSync('lint-output.txt')) return;
+            const output = fs.readFileSync('lint-output.txt', 'utf8');
+            const hasWarnings = /\d+\s+warning/.test(output);
+            if (!hasWarnings) return;
+
+            const truncated = output.length > 60000
+              ? output.slice(0, 60000) + '\n\n... (output truncated)'
+              : output;
+            const body = `## ⚠️ ESLint Warnings\n\n\`\`\`\n${truncated}\n\`\`\``;
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes('## ⚠️ ESLint Warnings')
+            );
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
+
+      - name: Fail if lint errored
+        if: steps.lint.outcome == 'failure'
+        run: |
+          echo "Lint failed with errors. See output above."
+          exit 1
 
       - name: Test
         run: pnpm test
@@ -42,4 +115,46 @@ jobs:
         run: pnpm build
 
       - name: Report unused code with knip
-        run: pnpm knip
+        id: knip
+        run: |
+          set -o pipefail
+          pnpm knip 2>&1 | tee knip-output.txt || true
+
+      - name: Comment knip results on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            if (!fs.existsSync('knip-output.txt')) return;
+            const output = fs.readFileSync('knip-output.txt', 'utf8').trim();
+            if (output.length === 0) return;
+
+            const truncated = output.length > 60000
+              ? output.slice(0, 60000) + '\n\n... (output truncated)'
+              : output;
+            const body = `## 📦 Knip - Unused Code Report\n\n\`\`\`\n${truncated}\n\`\`\``;
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes('## 📦 Knip')
+            );
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
