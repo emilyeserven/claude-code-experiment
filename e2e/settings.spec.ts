@@ -90,8 +90,10 @@ test.describe("Settings and dark mode", () => {
     await page.getByTestId("settings-trigger").click();
     await page.getByTestId("dark-mode-toggle").click();
 
-    const storedTheme = await page.evaluate(() =>
-      localStorage.getItem("vite-ui-theme"));
+    const storedTheme = await page.evaluate(() => {
+      const raw = localStorage.getItem("vite-ui-theme");
+      return raw !== null ? JSON.parse(raw) : null;
+    });
     expect(storedTheme).toBe("dark");
   });
 });
