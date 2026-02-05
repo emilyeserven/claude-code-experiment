@@ -3,16 +3,16 @@ import type { ComponentProps } from "react";
 import { Input } from "@/components/Input";
 import { useFieldContext } from "@/hooks/useFormContext";
 
-interface TextFieldProps {
+interface FormInputProps {
   label?: string;
   placeholder?: string;
   type?: ComponentProps<"input">["type"];
   className?: string;
 }
 
-function TextField({
+function FormInput({
   label, placeholder, type, className,
-}: TextFieldProps) {
+}: FormInputProps) {
   const field = useFieldContext<string>();
 
   return (
@@ -60,4 +60,4 @@ function TextField({
   );
 }
 
-export { TextField };
+export { FormInput };
