@@ -5,6 +5,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
 import { Timer } from "@/components/Timer";
+import { TimerEntriesTable } from "@/components/TimerEntriesTable";
 import { formatTime } from "@/utils/formatTime";
 
 interface TimerEntry {
@@ -60,26 +61,7 @@ export function Index() {
           </Button>
         </div>
         {entries.length > 0 && (
-          <ul
-            className="w-full max-w-md space-y-2"
-            data-testid="timer-entries-list"
-          >
-            {entries.map((entry, index) => (
-              <li
-                key={index}
-                className={`
-                  flex justify-between rounded-md border px-3 py-2
-                  dark:border-gray-600
-                `}
-                data-testid="timer-entry"
-              >
-                <span>{entry.text}</span>
-                <span className="font-mono text-sm text-muted-foreground">
-                  {entry.timestamp}
-                </span>
-              </li>
-            ))}
-          </ul>
+          <TimerEntriesTable entries={entries} />
         )}
       </div>
     </div>
