@@ -40,9 +40,8 @@ export const OpenPopover: Story = {
     canvasElement,
   }) => {
     const canvas = within(canvasElement);
-    const trigger = canvas.getByTestId("settings-trigger");
 
-    await userEvent.click(trigger);
+    await userEvent.click(canvas.getByTestId("settings-trigger"));
 
     // Popover content renders in a portal outside canvasElement, so query the document body
     const body = within(document.body);
@@ -50,6 +49,25 @@ export const OpenPopover: Story = {
       name: "Settings",
     })).toBeInTheDocument();
     await expect(body.getByText("Dark Mode")).toBeInTheDocument();
+
+    // The toggle should be a switch element
+    const toggle = body.getByTestId("dark-mode-toggle");
+    await expect(toggle).toHaveAttribute("role", "switch");
+  },
+};
+
+export const SwitchUncheckedInLightMode: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("settings-trigger"));
+
+    const body = within(document.body);
+    const toggle = body.getByTestId("dark-mode-toggle");
+
+    await expect(toggle).toHaveAttribute("data-state", "unchecked");
   },
 };
 
@@ -64,7 +82,6 @@ export const DarkModeToggle: Story = {
     const body = within(document.body);
     const toggle = body.getByTestId("dark-mode-toggle");
 
-    await expect(toggle).toHaveAttribute("role", "switch");
     await expect(toggle).toHaveAttribute("data-state", "unchecked");
 
     // Toggle dark mode on
@@ -74,5 +91,47 @@ export const DarkModeToggle: Story = {
     // Toggle dark mode off
     await userEvent.click(toggle);
     await expect(toggle).toHaveAttribute("data-state", "unchecked");
+  },
+};
+
+export const SunAndMoonIcons: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("settings-trigger"));
+
+    const body = within(document.body);
+    const toggle = body.getByTestId("dark-mode-toggle");
+
+    // The switch track should contain both sun and moon SVG icons
+    const svgs = toggle.querySelectorAll(":scope > svg");
+    await expect(svgs.length).toBe(2);
+  },
+};
+
+export const DarkModeDefault: Story = {
+  decorators: [
+    Story => (
+      <ThemeProvider
+        defaultTheme="dark"
+        storageKey="storybook-theme-dark"
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("settings-trigger"));
+
+    const body = within(document.body);
+    const toggle = body.getByTestId("dark-mode-toggle");
+
+    await expect(toggle).toHaveAttribute("data-state", "checked");
   },
 };
