@@ -142,7 +142,7 @@ jobs:
         run: pnpm --filter=@cc-experiments/middleware run test
 
       - name: Test client (unit)
-        run: pnpm --filter=@cc-experiments/client run test -- --project=unit-tests --run
+        run: pnpm --filter=@cc-experiments/client exec vitest run --project unit-tests
 
   storybook-tests:
     runs-on: ubuntu-latest
@@ -189,7 +189,7 @@ jobs:
         run: cd packages/client && npx playwright install-deps chromium
 
       - name: Test client (storybook)
-        run: pnpm --filter=@cc-experiments/client run test -- --project=storybook --run
+        run: pnpm --filter=@cc-experiments/client exec vitest run --project storybook
 
   build:
     runs-on: ubuntu-latest
