@@ -2,9 +2,9 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { expect, userEvent, within } from "@storybook/test";
 
-import { SettingsPopover } from "./SettingsPopover";
-
 import { ThemeProvider } from "@/context/ThemeProvider";
+
+import { SettingsPopover } from "./SettingsPopover";
 
 const meta = {
   component: SettingsPopover,
@@ -108,6 +108,59 @@ export const SunAndMoonIcons: Story = {
     // The switch track should contain both sun and moon SVG icons
     const svgs = toggle.querySelectorAll(":scope > svg");
     await expect(svgs.length).toBe(2);
+  },
+};
+
+export const ResetLocalStorageButton: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("settings-trigger"));
+
+    const body = within(document.body);
+    const resetButton = body.getByTestId("reset-localstorage-trigger");
+    await expect(resetButton).toBeInTheDocument();
+    await expect(resetButton).toHaveTextContent("Reset Local Storage");
+  },
+};
+
+export const ResetLocalStorageDialog: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("settings-trigger"));
+
+    const body = within(document.body);
+    await userEvent.click(body.getByTestId("reset-localstorage-trigger"));
+
+    await expect(body.getByText("Reset Local Storage?")).toBeInTheDocument();
+    await expect(body.getByText(/This will clear all locally saved data/)).toBeInTheDocument();
+    await expect(body.getByTestId("reset-localstorage-cancel")).toBeInTheDocument();
+    await expect(body.getByTestId("reset-localstorage-confirm")).toBeInTheDocument();
+  },
+};
+
+export const ResetLocalStorageCancelCloses: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("settings-trigger"));
+
+    const body = within(document.body);
+    await userEvent.click(body.getByTestId("reset-localstorage-trigger"));
+
+    await expect(body.getByText("Reset Local Storage?")).toBeInTheDocument();
+
+    await userEvent.click(body.getByTestId("reset-localstorage-cancel"));
+
+    // After cancelling, the dialog title should no longer be visible
+    await expect(body.queryByText("Reset Local Storage?")).not.toBeInTheDocument();
   },
 };
 
