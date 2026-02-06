@@ -1,72 +1,51 @@
 import { expect, test } from "@playwright/test";
 
 test.describe("Navigation", () => {
-  test("renders the navigation bar with Home and About links", async ({
+  test("renders nav bar with Home and About links, and settings button", async ({
     page,
   }) => {
     await page.goto("/");
 
-    const homeLink = page.getByRole("link", {
+    await expect(page.getByRole("link", {
       name: "Home",
-    });
-    const aboutLink = page.getByRole("link", {
+    })).toBeVisible();
+    await expect(page.getByRole("link", {
       name: "About",
-    });
-
-    await expect(homeLink).toBeVisible();
-    await expect(aboutLink).toBeVisible();
+    })).toBeVisible();
+    await expect(page.getByTestId("settings-trigger")).toBeVisible();
   });
 
-  test("Home link is active on the home page", async ({
+  test("active link styling matches the current route", async ({
     page,
   }) => {
     await page.goto("/");
-
-    const homeLink = page.getByRole("link", {
+    await expect(page.getByRole("link", {
       name: "Home",
-    });
-    await expect(homeLink).toHaveClass(/active/);
+    })).toHaveClass(/active/);
+
+    await page.goto("/about");
+    await expect(page.getByRole("link", {
+      name: "About",
+    })).toHaveClass(/active/);
   });
 
-  test("navigates from Home to About", async ({
+  test("navigates between Home and About pages", async ({
     page,
   }) => {
     await page.goto("/");
+
+    // Home -> About
     await page.getByRole("link", {
       name: "About",
     }).click();
-
     await expect(page).toHaveURL(/\/about/);
     await expect(page.getByText("Hello from About!")).toBeVisible();
-  });
 
-  test("navigates from About to Home", async ({
-    page,
-  }) => {
-    await page.goto("/about");
+    // About -> Home
     await page.getByRole("link", {
       name: "Home",
     }).click();
-
     await expect(page).toHaveURL(/\/$/);
     await expect(page.getByTestId("timer-display")).toBeVisible();
-  });
-
-  test("About link is active on the about page", async ({
-    page,
-  }) => {
-    await page.goto("/about");
-
-    const aboutLink = page.getByRole("link", {
-      name: "About",
-    });
-    await expect(aboutLink).toHaveClass(/active/);
-  });
-
-  test("settings button is visible in the navigation bar", async ({
-    page,
-  }) => {
-    await page.goto("/");
-    await expect(page.getByTestId("settings-trigger")).toBeVisible();
   });
 });
