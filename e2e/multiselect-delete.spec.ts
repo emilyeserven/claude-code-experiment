@@ -8,8 +8,11 @@ test.describe.skip("Multiselect and delete", () => {
   }) => {
     await page.goto("/");
 
-    // Clear any persisted entries
-    await page.evaluate(() => localStorage.removeItem("timer-entries"));
+    // Clear any persisted sessions
+    await page.evaluate(() => {
+      localStorage.removeItem("timer-sessions");
+      localStorage.removeItem("timer-active-session");
+    });
     await page.reload();
 
     // Add three entries for testing

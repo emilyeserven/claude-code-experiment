@@ -1,13 +1,14 @@
 import { useCallback, useState } from "react";
 
-export function useLocalStorage<T>(key: string, defaultValue: T): [T, (value: T | ((prev: T) => T)) => void] {
+export function useLocalStorage<T>(key: string, defaultValue: T | (() => T)): [T, (value: T | ((prev: T) => T)) => void] {
   const [storedValue, setStoredValue] = useState<T>(() => {
     try {
       const item = localStorage.getItem(key);
-      return item !== null ? JSON.parse(item) as T : defaultValue;
+      if (item !== null) return JSON.parse(item) as T;
+      return defaultValue instanceof Function ? defaultValue() : defaultValue;
     }
     catch {
-      return defaultValue;
+      return defaultValue instanceof Function ? defaultValue() : defaultValue;
     }
   });
 
