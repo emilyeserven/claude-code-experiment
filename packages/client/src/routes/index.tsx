@@ -37,6 +37,7 @@ export function Index() {
     renameSession,
     deleteSession,
     addEntry,
+    updateEntry,
     deleteEntry,
     deleteEntries,
   } = useSession();
@@ -57,6 +58,11 @@ export function Index() {
     });
     setInputValue("");
   }, [inputValue, addEntry]);
+
+  const handleEditEntry = useCallback((index: number, entry: { text: string;
+    timestamp: string; }) => {
+    updateEntry(index, entry);
+  }, [updateEntry]);
 
   const handleDeleteEntry = useCallback((index: number) => {
     deleteEntry(index);
@@ -139,6 +145,7 @@ export function Index() {
         <div className="mt-4 flex w-full justify-center">
           <TimerEntriesTable
             entries={activeSession.entries}
+            onEditEntry={handleEditEntry}
             onDeleteEntry={handleDeleteEntry}
             onDeleteEntries={handleDeleteEntries}
           />

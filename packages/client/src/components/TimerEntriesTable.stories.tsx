@@ -23,6 +23,7 @@ const meta = {
   component: TimerEntriesTable,
   args: {
     entries: sampleEntries,
+    onEditEntry: fn(),
     onDeleteEntry: fn(),
     onDeleteEntries: fn(),
   },
@@ -191,5 +192,75 @@ export const DeleteConfirmed: Story = {
 
     // Selection should be cleared (delete button gone)
     await expect(canvas.queryByTestId("delete-selected-button")).not.toBeInTheDocument();
+  },
+};
+
+export const EditEntryDialogOpens: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    // Open the actions menu on the first row
+    const triggers = canvas.getAllByTestId("entry-actions-trigger");
+    await userEvent.click(triggers[0]);
+
+    // Edit button should be visible
+    const body = within(document.body);
+    await expect(body.getByTestId("edit-entry-button")).toBeInTheDocument();
+
+    // Click edit button
+    await userEvent.click(body.getByTestId("edit-entry-button"));
+
+    // Edit dialog should open with the entry text
+    await expect(body.getByTestId("edit-entry-input")).toBeInTheDocument();
+    await expect(body.getByTestId("edit-entry-input")).toHaveValue("First task");
+    await expect(body.getByTestId("save-edit-button")).toBeInTheDocument();
+    await expect(body.getByTestId("cancel-edit-button")).toBeInTheDocument();
+  },
+};
+
+export const EditEntryCancelled: Story = {
+  play: async ({
+    canvasElement, args,
+  }) => {
+    const canvas = within(canvasElement);
+
+    // Open actions menu and click edit
+    const triggers = canvas.getAllByTestId("entry-actions-trigger");
+    await userEvent.click(triggers[0]);
+    const body = within(document.body);
+    await userEvent.click(body.getByTestId("edit-entry-button"));
+
+    // Cancel the edit
+    await userEvent.click(body.getByTestId("cancel-edit-button"));
+
+    // onEditEntry should not have been called
+    await expect(args.onEditEntry).not.toHaveBeenCalled();
+  },
+};
+
+export const EditEntrySaved: Story = {
+  play: async ({
+    canvasElement, args,
+  }) => {
+    const canvas = within(canvasElement);
+
+    // Open actions menu and click edit
+    const triggers = canvas.getAllByTestId("entry-actions-trigger");
+    await userEvent.click(triggers[0]);
+    const body = within(document.body);
+    await userEvent.click(body.getByTestId("edit-entry-button"));
+
+    // Clear input and type new text
+    const input = body.getByTestId("edit-entry-input");
+    await userEvent.clear(input);
+    await userEvent.type(input, "Updated task");
+
+    // Save the edit
+    await userEvent.click(body.getByTestId("save-edit-button"));
+
+    // onEditEntry should have been called with the updated entry
+    await expect(args.onEditEntry).toHaveBeenCalledTimes(1);
   },
 };

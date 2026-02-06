@@ -1,6 +1,6 @@
 import type { ColumnDef, Row, RowSelectionState, SortingState, VisibilityState } from "@tanstack/react-table";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import {
   flexRender,
@@ -8,7 +8,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { ArrowDown, ArrowUp, ArrowUpDown, EllipsisVertical, ListChecks, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, EllipsisVertical, ListChecks, Pencil, Trash2 } from "lucide-react";
 
 import {
   AlertDialog,
@@ -22,6 +22,14 @@ import {
 } from "@/components/AlertDialog";
 import { Button } from "@/components/Button";
 import { Checkbox } from "@/components/Checkbox";
+import {
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/Dialog";
+import { Input } from "@/components/Input";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { cn } from "@/lib/utils";
@@ -33,52 +41,144 @@ interface TimerEntry {
 
 interface TimerEntriesTableProps {
   entries: TimerEntry[];
+  onEditEntry: (index: number, entry: TimerEntry) => void;
   onDeleteEntry: (index: number) => void;
   onDeleteEntries: (indices: number[]) => void;
 }
 
 interface TableMeta {
+  onEditEntry: (index: number, entry: TimerEntry) => void;
   onDeleteEntry: (index: number) => void;
   isMobile: boolean;
 }
 
+function EditEntryDialog({
+  entry,
+  open,
+  onOpenChange,
+  onSave,
+}: {
+  entry: TimerEntry;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+  onSave: (entry: TimerEntry) => void;
+}) {
+  const [text, setText] = useState(entry.text);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (open) {
+      setText(entry.text);
+    }
+  }, [open, entry.text]);
+
+  const handleSave = () => {
+    const trimmed = text.trim();
+    if (trimmed && trimmed !== entry.text) {
+      onSave({
+        ...entry,
+        text: trimmed,
+      });
+    }
+    onOpenChange(false);
+  };
+
+  return (
+    <Dialog
+      open={open}
+      onOpenChange={onOpenChange}
+    >
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Edit Entry</DialogTitle>
+        </DialogHeader>
+        <Input
+          ref={inputRef}
+          value={text}
+          onChange={e => setText(e.target.value)}
+          onKeyDown={e => e.key === "Enter" && handleSave()}
+          data-testid="edit-entry-input"
+        />
+        <DialogFooter>
+          <Button
+            variant="outline"
+            onClick={() => onOpenChange(false)}
+            data-testid="cancel-edit-button"
+          >
+            Cancel
+          </Button>
+          <Button
+            onClick={handleSave}
+            data-testid="save-edit-button"
+          >
+            Save
+          </Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+  );
+}
+
 function ActionsCell({
-  row, onDeleteEntry,
+  row, onEditEntry, onDeleteEntry,
 }: { row: Row<TimerEntry>;
+  onEditEntry: (index: number, entry: TimerEntry) => void;
   onDeleteEntry: (index: number) => void; }) {
   const [open, setOpen] = useState(false);
+  const [editOpen, setEditOpen] = useState(false);
   return (
-    <Popover
-      open={open}
-      onOpenChange={setOpen}
-    >
-      <PopoverTrigger asChild>
-        <Button
-          variant="ghost"
-          size="icon-xs"
-          data-testid="entry-actions-trigger"
-        >
-          <EllipsisVertical className="size-4" />
-        </Button>
-      </PopoverTrigger>
-      <PopoverContent
-        align="end"
-        className="w-40 p-1"
+    <>
+      <Popover
+        open={open}
+        onOpenChange={setOpen}
       >
-        <Button
-          variant="ghost"
-          size="sm"
-          className="w-full justify-start text-destructive"
-          onClick={() => {
-            setOpen(false);
-            onDeleteEntry(row.index);
-          }}
-          data-testid="delete-entry-button"
+        <PopoverTrigger asChild>
+          <Button
+            variant="ghost"
+            size="icon-xs"
+            data-testid="entry-actions-trigger"
+          >
+            <EllipsisVertical className="size-4" />
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent
+          align="end"
+          className="w-40 p-1"
         >
-          Delete Entry
-        </Button>
-      </PopoverContent>
-    </Popover>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="w-full justify-start"
+            onClick={() => {
+              setOpen(false);
+              setEditOpen(true);
+            }}
+            data-testid="edit-entry-button"
+          >
+            <Pencil className="mr-2 size-4" />
+            Edit Entry
+          </Button>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="w-full justify-start text-destructive"
+            onClick={() => {
+              setOpen(false);
+              onDeleteEntry(row.index);
+            }}
+            data-testid="delete-entry-button"
+          >
+            Delete Entry
+          </Button>
+        </PopoverContent>
+      </Popover>
+      <EditEntryDialog
+        entry={row.original}
+        open={editOpen}
+        onOpenChange={setEditOpen}
+        onSave={entry => onEditEntry(row.index, entry)}
+      />
+    </>
   );
 }
 
@@ -160,11 +260,13 @@ const columns: ColumnDef<TimerEntry>[] = [
       table,
     }) => {
       const {
+        onEditEntry,
         onDeleteEntry,
       } = table.options.meta as TableMeta;
       return (
         <ActionsCell
           row={row}
+          onEditEntry={onEditEntry}
           onDeleteEntry={onDeleteEntry}
         />
       );
@@ -174,6 +276,7 @@ const columns: ColumnDef<TimerEntry>[] = [
 
 export function TimerEntriesTable({
   entries,
+  onEditEntry,
   onDeleteEntry,
   onDeleteEntries,
 }: TimerEntriesTableProps) {
@@ -214,6 +317,7 @@ export function TimerEntriesTable({
     getSortedRowModel: getSortedRowModel(),
     enableRowSelection: true,
     meta: {
+      onEditEntry,
       onDeleteEntry,
       isMobile,
     },

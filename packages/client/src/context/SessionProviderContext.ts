@@ -19,6 +19,7 @@ export interface SessionProviderState {
   renameSession: (id: string, name: string) => void;
   switchSession: (id: string) => void;
   addEntry: (entry: TimerEntry) => void;
+  updateEntry: (index: number, entry: TimerEntry) => void;
   deleteEntry: (index: number) => void;
   deleteEntries: (indices: number[]) => void;
 }
@@ -37,6 +38,7 @@ const initialState: SessionProviderState = {
   renameSession: () => null,
   switchSession: () => null,
   addEntry: () => null,
+  updateEntry: () => null,
   deleteEntry: () => null,
   deleteEntries: () => null,
 };
