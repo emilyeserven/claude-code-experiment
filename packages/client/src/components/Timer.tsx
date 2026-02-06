@@ -77,29 +77,31 @@ export function Timer({
         {formatTime(elapsedMs)}
       </div>
       <div className="flex gap-3">
-        <Button
-          onClick={start}
-          variant={isRunning ? "secondary" : "default"}
-          disabled={isRunning}
-          data-testid="timer-start-button"
-        >
-          Start Timer
-        </Button>
-        <Button
-          onClick={stop}
-          variant={isRunning ? "default" : "secondary"}
-          disabled={!isRunning}
-          data-testid="timer-stop-button"
-        >
-          Stop Timer
-        </Button>
-        <Button
-          onClick={reset}
-          variant="destructive"
-          data-testid="timer-reset-button"
-        >
-          Reset Timer
-        </Button>
+        {!isRunning && (
+          <Button
+            onClick={start}
+            data-testid="timer-start-button"
+          >
+            Start Timer
+          </Button>
+        )}
+        {isRunning && (
+          <Button
+            onClick={stop}
+            data-testid="timer-stop-button"
+          >
+            Stop Timer
+          </Button>
+        )}
+        {elapsedMs > 0 && (
+          <Button
+            onClick={reset}
+            variant="destructive"
+            data-testid="timer-reset-button"
+          >
+            Reset Timer
+          </Button>
+        )}
       </div>
     </div>
   );

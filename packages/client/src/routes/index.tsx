@@ -58,7 +58,6 @@ export function Index() {
         dark:bg-gray-800 dark:text-white
       `}
     >
-      <h3 className="text-3xl font-bold">Welcome Home!</h3>
       <div className="mt-8 flex flex-col items-center gap-8">
         <Timer
           onTick={handleTick}
