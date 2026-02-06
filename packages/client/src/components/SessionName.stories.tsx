@@ -65,6 +65,7 @@ export const CancelRename: Story = {
     canvasElement, args,
   }) => {
     const canvas = within(canvasElement);
+    args.onRename.mockClear();
 
     await userEvent.click(canvas.getByTestId("session-name-edit-button"));
 
@@ -100,6 +101,7 @@ export const CancelViaEscape: Story = {
     canvasElement, args,
   }) => {
     const canvas = within(canvasElement);
+    args.onRename.mockClear();
 
     await userEvent.click(canvas.getByTestId("session-name-edit-button"));
 
@@ -117,6 +119,7 @@ export const EmptyNameNotSaved: Story = {
     canvasElement, args,
   }) => {
     const canvas = within(canvasElement);
+    args.onRename.mockClear();
 
     await userEvent.click(canvas.getByTestId("session-name-edit-button"));
 

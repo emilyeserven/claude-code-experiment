@@ -58,6 +58,9 @@ export default defineConfig({
             provider: "playwright",
             instances: [{
               browser: "chromium",
+              launch: {
+                args: ["--no-sandbox", "--no-zygote"],
+              },
             }],
           },
           setupFiles: [".storybook/vitest.setup.ts"],
