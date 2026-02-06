@@ -3,6 +3,17 @@ import React from "react";
 import { Moon, Settings, Sun } from "lucide-react";
 import { Switch as SwitchPrimitive } from "radix-ui";
 
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/AlertDialog";
 import { Button } from "@/components/Button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
 import { useTheme } from "@/hooks/useTheme";
@@ -71,6 +82,45 @@ const SettingsPopover: React.FunctionComponent = () => {
                   : <Sun className="size-3 text-amber-500" />}
               </SwitchPrimitive.Thumb>
             </SwitchPrimitive.Root>
+          </div>
+          <div className="border-t pt-4">
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  className="w-full"
+                  data-testid="reset-localstorage-trigger"
+                >
+                  Reset Local Storage
+                </Button>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Reset Local Storage?</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    This will clear all locally saved data including theme
+                    preferences and timer entries. The page will reload
+                    to apply defaults.
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel data-testid="reset-localstorage-cancel">
+                    Cancel
+                  </AlertDialogCancel>
+                  <AlertDialogAction
+                    variant="destructive"
+                    data-testid="reset-localstorage-confirm"
+                    onClick={() => {
+                      localStorage.clear();
+                      window.location.reload();
+                    }}
+                  >
+                    Reset
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
           </div>
         </div>
       </PopoverContent>
