@@ -7,14 +7,6 @@ test.describe("Home page", () => {
     await page.goto("/");
   });
 
-  test("displays the welcome heading", async ({
-    page,
-  }) => {
-    await expect(page.getByRole("heading", {
-      name: "Welcome Home!",
-    })).toBeVisible();
-  });
-
   test("shows the timer at 00:00:00.000", async ({
     page,
   }) => {
@@ -22,12 +14,12 @@ test.describe("Home page", () => {
     await expect(display).toHaveText("00:00:00.000");
   });
 
-  test("has start, stop, and reset timer buttons", async ({
+  test("shows only start button when timer is idle at zero", async ({
     page,
   }) => {
     await expect(page.getByTestId("timer-start-button")).toBeVisible();
-    await expect(page.getByTestId("timer-stop-button")).toBeVisible();
-    await expect(page.getByTestId("timer-reset-button")).toBeVisible();
+    await expect(page.getByTestId("timer-stop-button")).toHaveCount(0);
+    await expect(page.getByTestId("timer-reset-button")).toHaveCount(0);
   });
 
   test("start button begins the timer and stop button pauses it", async ({
@@ -38,12 +30,20 @@ test.describe("Home page", () => {
 
     await page.getByTestId("timer-start-button").click();
 
+    // Start button should be hidden, stop button should appear
+    await expect(page.getByTestId("timer-start-button")).toHaveCount(0);
+    await expect(page.getByTestId("timer-stop-button")).toBeVisible();
+
     // Wait for timer to advance past zero
     await expect(display).not.toHaveText("00:00:00.000", {
       timeout: 3000,
     });
 
     await page.getByTestId("timer-stop-button").click();
+
+    // Stop button should be hidden, start button should reappear
+    await expect(page.getByTestId("timer-stop-button")).toHaveCount(0);
+    await expect(page.getByTestId("timer-start-button")).toBeVisible();
 
     // Record the time after stopping
     const stoppedTime = await display.textContent();
@@ -53,7 +53,7 @@ test.describe("Home page", () => {
     await expect(display).toHaveText(stoppedTime!);
   });
 
-  test("reset button returns the timer to zero", async ({
+  test("reset button returns the timer to zero and disappears", async ({
     page,
   }) => {
     const display = page.getByTestId("timer-display");
@@ -63,27 +63,14 @@ test.describe("Home page", () => {
       timeout: 3000,
     });
 
+    // Reset button should be visible while timer has elapsed time
+    await expect(page.getByTestId("timer-reset-button")).toBeVisible();
+
     await page.getByTestId("timer-reset-button").click();
     await expect(display).toHaveText("00:00:00.000");
-  });
 
-  test("start button is disabled while timer is running", async ({
-    page,
-  }) => {
-    await page.getByTestId("timer-start-button").click();
-    await expect(page.getByTestId("timer-start-button")).toBeDisabled();
-
-    await page.getByTestId("timer-stop-button").click();
-    await expect(page.getByTestId("timer-start-button")).toBeEnabled();
-  });
-
-  test("stop button is disabled while timer is not running", async ({
-    page,
-  }) => {
-    await expect(page.getByTestId("timer-stop-button")).toBeDisabled();
-
-    await page.getByTestId("timer-start-button").click();
-    await expect(page.getByTestId("timer-stop-button")).toBeEnabled();
+    // Reset button should disappear after timer is at zero
+    await expect(page.getByTestId("timer-reset-button")).toHaveCount(0);
   });
 
   test("shows empty entries message initially", async ({

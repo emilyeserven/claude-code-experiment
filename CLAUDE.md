@@ -108,6 +108,7 @@ React 19 SPA with:
 ### Patterns
 
 - **React components** use functional components with interface-typed props (not inline types). Include `data-testid` attributes for testability.
+- **Storybook requirement**: All new React components must have a corresponding Storybook story file (`*.stories.tsx`). All unit tests for components should be written in the Storybook file using `play()` functions rather than in separate `*.test.tsx` files.
 - **Fastify routes** are defined as async default-exported functions receiving `FastifyInstance`, with `as const` JSON Schema objects for type-safe request validation.
 - **Context pattern**: Provider component + separate context file + custom hook (see `ThemeProvider.tsx`, `ThemeProviderContext.ts`, `useTheme.ts`).
 - **Barrel exports**: The types package uses `export * from` re-exports in `index.ts`.

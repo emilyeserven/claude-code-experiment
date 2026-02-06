@@ -31,17 +31,13 @@ describe("Timer", () => {
     );
   });
 
-  it("renders start, stop, and reset buttons", () => {
+  it("renders only start button when timer is idle at zero", () => {
     render(<Timer />);
     expect(screen.getByTestId("timer-start-button")).toHaveTextContent(
       "Start Timer",
     );
-    expect(screen.getByTestId("timer-stop-button")).toHaveTextContent(
-      "Stop Timer",
-    );
-    expect(screen.getByTestId("timer-reset-button")).toHaveTextContent(
-      "Reset Timer",
-    );
+    expect(screen.queryByTestId("timer-stop-button")).not.toBeInTheDocument();
+    expect(screen.queryByTestId("timer-reset-button")).not.toBeInTheDocument();
   });
 
   it("starts the timer when start is clicked", () => {
@@ -71,6 +67,7 @@ describe("Timer", () => {
       vi.advanceTimersByTime(10);
     });
 
+    expect(screen.getByTestId("timer-stop-button")).toBeInTheDocument();
     fireEvent.click(screen.getByTestId("timer-stop-button"));
 
     act(() => {
@@ -99,17 +96,35 @@ describe("Timer", () => {
     expect(screen.getByTestId("timer-display")).toHaveTextContent(
       "00:00:00.000",
     );
+    expect(screen.queryByTestId("timer-reset-button")).not.toBeInTheDocument();
   });
 
-  it("disables start button while running", () => {
+  it("hides start button and shows stop button while running", () => {
     render(<Timer />);
     fireEvent.click(screen.getByTestId("timer-start-button"));
-    expect(screen.getByTestId("timer-start-button")).toBeDisabled();
+    expect(screen.queryByTestId("timer-start-button")).not.toBeInTheDocument();
+    expect(screen.getByTestId("timer-stop-button")).toBeInTheDocument();
   });
 
-  it("disables stop button while not running", () => {
+  it("hides stop button while not running", () => {
     render(<Timer />);
-    expect(screen.getByTestId("timer-stop-button")).toBeDisabled();
+    expect(screen.queryByTestId("timer-stop-button")).not.toBeInTheDocument();
+  });
+
+  it("hides reset button when timer is at zero", () => {
+    render(<Timer />);
+    expect(screen.queryByTestId("timer-reset-button")).not.toBeInTheDocument();
+  });
+
+  it("shows reset button when timer has elapsed time", () => {
+    vi.setSystemTime(new Date(0));
+    render(<Timer />);
+    fireEvent.click(screen.getByTestId("timer-start-button"));
+    act(() => {
+      vi.setSystemTime(new Date(1000));
+      vi.advanceTimersByTime(10);
+    });
+    expect(screen.getByTestId("timer-reset-button")).toBeInTheDocument();
   });
 
   it("calls onTick with elapsed milliseconds on each interval", () => {
