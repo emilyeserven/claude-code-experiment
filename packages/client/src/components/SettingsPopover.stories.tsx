@@ -4,6 +4,7 @@ import { expect, userEvent, waitFor, within } from "@storybook/test";
 
 import { SettingsPopover } from "./SettingsPopover";
 
+import { SessionProvider } from "@/context/SessionProvider";
 import { ThemeProvider } from "@/context/ThemeProvider";
 
 const meta = {
@@ -14,7 +15,9 @@ const meta = {
         defaultTheme="light"
         storageKey="storybook-theme"
       >
-        <Story />
+        <SessionProvider>
+          <Story />
+        </SessionProvider>
       </ThemeProvider>
     ),
   ],
@@ -53,6 +56,10 @@ export const OpenPopover: Story = {
     // The toggle should be a switch element
     const toggle = body.getByTestId("dark-mode-toggle");
     await expect(toggle).toHaveAttribute("role", "switch");
+
+    // Session switcher button should be visible
+    await expect(body.getByTestId("switch-session-trigger")).toBeInTheDocument();
+    await expect(body.getByTestId("switch-session-trigger")).toHaveTextContent("Switch Session");
   },
 };
 
@@ -173,7 +180,9 @@ export const DarkModeDefault: Story = {
         defaultTheme="dark"
         storageKey="storybook-theme-dark"
       >
-        <Story />
+        <SessionProvider>
+          <Story />
+        </SessionProvider>
       </ThemeProvider>
     ),
   ],

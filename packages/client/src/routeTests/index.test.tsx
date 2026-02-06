@@ -1,7 +1,16 @@
 import { render, screen, fireEvent, act } from "@testing-library/react";
 import { beforeEach, afterEach, describe, expect, it, vi } from "vitest";
 
+import { SessionProvider } from "@/context/SessionProvider";
 import { Index } from "@/routes/index";
+
+function renderIndex() {
+  return render(
+    <SessionProvider>
+      <Index />
+    </SessionProvider>,
+  );
+}
 
 describe("Index", () => {
   beforeEach(() => {
@@ -14,15 +23,20 @@ describe("Index", () => {
   });
 
   it("renders the input field and submit button", () => {
-    render(<Index />);
+    renderIndex();
     expect(screen.getByTestId("timer-input")).toBeInTheDocument();
     expect(screen.getByTestId("timer-submit-button")).toHaveTextContent(
       "Submit",
     );
   });
 
+  it("renders the session name", () => {
+    renderIndex();
+    expect(screen.getByTestId("session-name-text")).toHaveTextContent("Default Session");
+  });
+
   it("updates the input value when typing", () => {
-    render(<Index />);
+    renderIndex();
     const input = screen.getByTestId("timer-input");
     fireEvent.change(input, {
       target: {
@@ -33,20 +47,20 @@ describe("Index", () => {
   });
 
   it("shows empty state when there are no entries", () => {
-    render(<Index />);
+    renderIndex();
     expect(screen.getByTestId("timer-entries-empty")).toBeInTheDocument();
     expect(screen.queryAllByTestId("timer-entry")).toHaveLength(0);
   });
 
   it("does not submit when input is empty", () => {
-    render(<Index />);
+    renderIndex();
     fireEvent.click(screen.getByTestId("timer-submit-button"));
     expect(screen.getByTestId("timer-entries-empty")).toBeInTheDocument();
     expect(screen.queryAllByTestId("timer-entry")).toHaveLength(0);
   });
 
   it("does not submit when input is only whitespace", () => {
-    render(<Index />);
+    renderIndex();
     const input = screen.getByTestId("timer-input");
     fireEvent.change(input, {
       target: {
@@ -60,7 +74,7 @@ describe("Index", () => {
 
   it("submits an entry with text and current timestamp", () => {
     vi.setSystemTime(new Date(0));
-    render(<Index />);
+    renderIndex();
 
     fireEvent.click(screen.getByTestId("timer-start-button"));
 
@@ -84,7 +98,7 @@ describe("Index", () => {
   });
 
   it("clears the input after submission", () => {
-    render(<Index />);
+    renderIndex();
     const input = screen.getByTestId("timer-input");
     fireEvent.change(input, {
       target: {
@@ -97,7 +111,7 @@ describe("Index", () => {
 
   it("submits multiple entries and displays all of them", () => {
     vi.setSystemTime(new Date(0));
-    render(<Index />);
+    renderIndex();
 
     fireEvent.click(screen.getByTestId("timer-start-button"));
 
@@ -134,7 +148,7 @@ describe("Index", () => {
   });
 
   it("submits an entry when pressing Enter", () => {
-    render(<Index />);
+    renderIndex();
     const input = screen.getByTestId("timer-input");
     fireEvent.change(input, {
       target: {
@@ -151,7 +165,7 @@ describe("Index", () => {
   });
 
   it("captures timestamp at 00:00:00.000 when timer has not started", () => {
-    render(<Index />);
+    renderIndex();
     const input = screen.getByTestId("timer-input");
     fireEvent.change(input, {
       target: {
@@ -162,6 +176,11 @@ describe("Index", () => {
 
     const entries = screen.getAllByTestId("timer-entry");
     expect(entries[0]).toHaveTextContent("00:00:00.000");
+  });
+
+  it("shows the delete session button", () => {
+    renderIndex();
+    expect(screen.getByTestId("delete-session-button")).toHaveTextContent("Delete Session");
   });
 
   describe("multiselect and delete", () => {
@@ -179,7 +198,7 @@ describe("Index", () => {
     }
 
     it("can select rows and delete them via bulk delete", () => {
-      render(<Index />);
+      renderIndex();
       addEntries(3);
 
       expect(screen.getAllByTestId("timer-entry")).toHaveLength(3);
@@ -197,7 +216,7 @@ describe("Index", () => {
     });
 
     it("bulk delete removes all entries and shows empty state", () => {
-      render(<Index />);
+      renderIndex();
       addEntries(2);
 
       const checkboxes = screen.getAllByTestId("row-checkbox");
@@ -212,7 +231,7 @@ describe("Index", () => {
     });
 
     it("cancelling bulk delete preserves all entries", () => {
-      render(<Index />);
+      renderIndex();
       addEntries(3);
 
       const checkboxes = screen.getAllByTestId("row-checkbox");
@@ -222,6 +241,33 @@ describe("Index", () => {
       fireEvent.click(screen.getByTestId("cancel-delete-button"));
 
       expect(screen.getAllByTestId("timer-entry")).toHaveLength(3);
+    });
+  });
+
+  describe("session delete", () => {
+    it("shows delete session confirmation dialog", () => {
+      renderIndex();
+      fireEvent.click(screen.getByTestId("delete-session-button"));
+
+      expect(screen.getByText("Delete Session?")).toBeInTheDocument();
+      expect(screen.getByText(/Are you sure you want to delete/)).toBeInTheDocument();
+    });
+
+    it("cancelling delete session preserves the session", () => {
+      renderIndex();
+      fireEvent.click(screen.getByTestId("delete-session-button"));
+      fireEvent.click(screen.getByTestId("cancel-delete-session"));
+
+      expect(screen.getByTestId("session-name-text")).toHaveTextContent("Default Session");
+    });
+
+    it("confirming delete session creates a new default session", () => {
+      renderIndex();
+      fireEvent.click(screen.getByTestId("delete-session-button"));
+      fireEvent.click(screen.getByTestId("confirm-delete-session"));
+
+      expect(screen.getByTestId("session-name-text")).toHaveTextContent("Default Session");
+      expect(screen.getByTestId("timer-entries-empty")).toBeInTheDocument();
     });
   });
 });

@@ -1,19 +1,26 @@
 import { useCallback, useRef, useState } from "react";
 
 import { createFileRoute } from "@tanstack/react-router";
+import { Trash2 } from "lucide-react";
 
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/AlertDialog";
 import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
+import { SessionName } from "@/components/SessionName";
 import { Timer } from "@/components/Timer";
 import { TimerEntriesTable } from "@/components/TimerEntriesTable";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/Tooltip";
-import { useLocalStorage } from "@/hooks/useLocalStorage";
+import { useSession } from "@/hooks/useSession";
 import { formatTime } from "@/utils/formatTime";
-
-interface TimerEntry {
-  text: string;
-  timestamp: string;
-}
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -21,9 +28,18 @@ export const Route = createFileRoute("/")({
 
 export function Index() {
   const [inputValue, setInputValue] = useState("");
-  const [entries, setEntries] = useLocalStorage<TimerEntry[]>("timer-entries", []);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
+  const [showDeleteSessionDialog, setShowDeleteSessionDialog] = useState(false);
   const elapsedMsRef = useRef(0);
+
+  const {
+    activeSession,
+    renameSession,
+    deleteSession,
+    addEntry,
+    deleteEntry,
+    deleteEntries,
+  } = useSession();
 
   const handleTick = useCallback((elapsedMs: number) => {
     elapsedMsRef.current = elapsedMs;
@@ -35,21 +51,29 @@ export function Index() {
 
   const handleSubmit = useCallback(() => {
     if (!inputValue.trim()) return;
-    setEntries(prev => [...prev, {
+    addEntry({
       text: inputValue.trim(),
       timestamp: formatTime(elapsedMsRef.current),
-    }]);
+    });
     setInputValue("");
-  }, [inputValue, setEntries]);
+  }, [inputValue, addEntry]);
 
   const handleDeleteEntry = useCallback((index: number) => {
-    setEntries(prev => prev.filter((_, i) => i !== index));
-  }, [setEntries]);
+    deleteEntry(index);
+  }, [deleteEntry]);
 
   const handleDeleteEntries = useCallback((indices: number[]) => {
-    const indexSet = new Set(indices);
-    setEntries(prev => prev.filter((_, i) => !indexSet.has(i)));
-  }, [setEntries]);
+    deleteEntries(indices);
+  }, [deleteEntries]);
+
+  const handleRename = useCallback((name: string) => {
+    renameSession(activeSession.id, name);
+  }, [renameSession, activeSession.id]);
+
+  const handleDeleteSession = useCallback(() => {
+    deleteSession(activeSession.id);
+    setShowDeleteSessionDialog(false);
+  }, [deleteSession, activeSession.id]);
 
   return (
     <div
@@ -59,6 +83,10 @@ export function Index() {
       `}
     >
       <div className="mt-8 flex flex-col items-center gap-8">
+        <SessionName
+          name={activeSession.name}
+          onRename={handleRename}
+        />
         <Timer
           onTick={handleTick}
           onRunningChange={handleRunningChange}
@@ -110,12 +138,51 @@ export function Index() {
         </div>
         <div className="mt-4 flex w-full justify-center">
           <TimerEntriesTable
-            entries={entries}
+            entries={activeSession.entries}
             onDeleteEntry={handleDeleteEntry}
             onDeleteEntries={handleDeleteEntries}
           />
         </div>
+        <div className="mb-8">
+          <Button
+            variant="destructive"
+            size="sm"
+            onClick={() => setShowDeleteSessionDialog(true)}
+            data-testid="delete-session-button"
+          >
+            <Trash2 className="size-4" />
+            Delete Session
+          </Button>
+        </div>
       </div>
+
+      <AlertDialog
+        open={showDeleteSessionDialog}
+        onOpenChange={setShowDeleteSessionDialog}
+      >
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Delete Session?</AlertDialogTitle>
+            <AlertDialogDescription>
+              Are you sure you want to delete &quot;
+              {activeSession.name}
+              &quot;? All entries in this session will be permanently removed. This action cannot be undone.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel data-testid="cancel-delete-session">
+              Cancel
+            </AlertDialogCancel>
+            <AlertDialogAction
+              variant="destructive"
+              onClick={handleDeleteSession}
+              data-testid="confirm-delete-session"
+            >
+              Delete
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 }
