@@ -49,9 +49,7 @@ test.describe("Navigation", () => {
     }).click();
 
     await expect(page).toHaveURL(/\/$/);
-    await expect(page.getByRole("heading", {
-      name: "Welcome Home!",
-    })).toBeVisible();
+    await expect(page.getByTestId("timer-display")).toBeVisible();
   });
 
   test("About link is active on the about page", async ({
