@@ -1,4 +1,4 @@
-import type { ColumnDef, Row, RowSelectionState, SortingState } from "@tanstack/react-table";
+import type { ColumnDef, Row, RowSelectionState, SortingState, VisibilityState } from "@tanstack/react-table";
 
 import { useEffect, useState } from "react";
 
@@ -8,7 +8,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { ArrowDown, ArrowUp, ArrowUpDown, EllipsisVertical, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, EllipsisVertical, ListChecks, Trash2 } from "lucide-react";
 
 import {
   AlertDialog,
@@ -23,6 +23,7 @@ import {
 import { Button } from "@/components/Button";
 import { Checkbox } from "@/components/Checkbox";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
+import { useIsMobile } from "@/hooks/useIsMobile";
 import { cn } from "@/lib/utils";
 
 interface TimerEntry {
@@ -38,6 +39,7 @@ interface TimerEntriesTableProps {
 
 interface TableMeta {
   onDeleteEntry: (index: number) => void;
+  isMobile: boolean;
 }
 
 function ActionsCell({
@@ -89,21 +91,27 @@ const columns: ColumnDef<TimerEntry>[] = [
     header: () => null,
     cell: ({
       row,
-    }) => (
-      <Checkbox
-        checked={row.getIsSelected()}
-        onCheckedChange={value => row.toggleSelected(!!value)}
-        aria-label="Select row"
-        data-testid="row-checkbox"
-        className={cn(
-          "transition-opacity",
-          !row.getIsSelected() && `
-            opacity-0
-            group-hover/row:opacity-100
-          `,
-        )}
-      />
-    ),
+      table,
+    }) => {
+      const {
+        isMobile,
+      } = table.options.meta as TableMeta;
+      return (
+        <Checkbox
+          checked={row.getIsSelected()}
+          onCheckedChange={value => row.toggleSelected(!!value)}
+          aria-label="Select row"
+          data-testid="row-checkbox"
+          className={cn(
+            "transition-opacity",
+            !isMobile && !row.getIsSelected() && `
+              opacity-0
+              group-hover/row:opacity-100
+            `,
+          )}
+        />
+      );
+    },
   },
   {
     accessorKey: "text",
@@ -172,11 +180,25 @@ export function TimerEntriesTable({
   const [sorting, setSorting] = useState<SortingState>([]);
   const [rowSelection, setRowSelection] = useState<RowSelectionState>({});
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
+  const [multiselectEnabled, setMultiselectEnabled] = useState(false);
+  const isMobile = useIsMobile();
+
+  const columnVisibility: VisibilityState = {
+    select: !isMobile || multiselectEnabled,
+  };
 
   // Clear selection when entries change (e.g. individual row deletion shifts indices)
   useEffect(() => {
     setRowSelection({});
   }, [entries]);
+
+  // Clear selection and disable multiselect when switching to desktop
+  useEffect(() => {
+    if (!isMobile) {
+      setMultiselectEnabled(false);
+      setRowSelection({});
+    }
+  }, [isMobile]);
 
   const table = useReactTable({
     data: entries,
@@ -184,6 +206,7 @@ export function TimerEntriesTable({
     state: {
       sorting,
       rowSelection,
+      columnVisibility,
     },
     onSortingChange: setSorting,
     onRowSelectionChange: setRowSelection,
@@ -192,6 +215,7 @@ export function TimerEntriesTable({
     enableRowSelection: true,
     meta: {
       onDeleteEntry,
+      isMobile,
     },
   });
 
@@ -206,6 +230,13 @@ export function TimerEntriesTable({
     setShowDeleteDialog(false);
   };
 
+  const handleToggleMultiselect = () => {
+    if (multiselectEnabled) {
+      setRowSelection({});
+    }
+    setMultiselectEnabled(prev => !prev);
+  };
+
   return (
     <div
       className={`
@@ -214,11 +245,19 @@ export function TimerEntriesTable({
       `}
       data-testid="timer-entries-list"
     >
-      {selectedCount > 0 && (
-        <div
-          className="mb-2 flex items-center justify-end"
-          data-testid="bulk-actions"
-        >
+      <div className="mb-2 flex items-center justify-end gap-2">
+        {isMobile && entries.length > 0 && (
+          <Button
+            variant={multiselectEnabled ? "secondary" : "outline"}
+            size="sm"
+            onClick={handleToggleMultiselect}
+            data-testid="toggle-multiselect-button"
+          >
+            <ListChecks className="size-4" />
+            {multiselectEnabled ? "Cancel Multiselect" : "Enable Multiselect"}
+          </Button>
+        )}
+        {selectedCount > 0 && (
           <Button
             variant="destructive"
             size="sm"
@@ -232,8 +271,8 @@ export function TimerEntriesTable({
             {" "}
             {selectedCount === 1 ? "Entry" : "Entries"}
           </Button>
-        </div>
-      )}
+        )}
+      </div>
 
       <table className="w-full border-collapse">
         <thead>
@@ -302,7 +341,7 @@ export function TimerEntriesTable({
             : (
               <tr>
                 <td
-                  colSpan={columns.length}
+                  colSpan={table.getVisibleLeafColumns().length}
                   className="px-3 py-6 text-center"
                   data-testid="timer-entries-empty"
                 >
