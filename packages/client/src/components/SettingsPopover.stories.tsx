@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { expect, userEvent, within } from "@storybook/test";
-
-import { SettingsPopover } from "./SettingsPopover";
+import { expect, userEvent, waitFor, within } from "@storybook/test";
 
 import { ThemeProvider } from "@/context/ThemeProvider";
+
+import { SettingsPopover } from "./SettingsPopover";
 
 const meta = {
   component: SettingsPopover,
@@ -159,8 +159,10 @@ export const ResetLocalStorageCancelCloses: Story = {
 
     await userEvent.click(body.getByTestId("reset-localstorage-cancel"));
 
-    // After cancelling, the dialog title should no longer be visible
-    await expect(body.queryByText("Reset Local Storage?")).not.toBeInTheDocument();
+    // After cancelling, wait for the close animation to finish
+    await waitFor(() => {
+      expect(body.queryByText("Reset Local Storage?")).not.toBeInTheDocument();
+    });
   },
 };
 
