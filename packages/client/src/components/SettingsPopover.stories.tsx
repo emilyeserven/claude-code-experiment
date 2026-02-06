@@ -2,9 +2,9 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { expect, userEvent, waitFor, within } from "@storybook/test";
 
-import { ThemeProvider } from "@/context/ThemeProvider";
-
 import { SettingsPopover } from "./SettingsPopover";
+
+import { ThemeProvider } from "@/context/ThemeProvider";
 
 const meta = {
   component: SettingsPopover,
