@@ -20,6 +20,7 @@ import { Timer } from "@/components/Timer";
 import { TimerEntriesTable } from "@/components/TimerEntriesTable";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/Tooltip";
 import { useSession } from "@/hooks/useSession";
+import { useTimestampSettings } from "@/hooks/useTimestampSettings";
 import { formatTime } from "@/utils/formatTime";
 
 export const Route = createFileRoute("/")({
@@ -30,7 +31,11 @@ export function Index() {
   const [inputValue, setInputValue] = useState("");
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [showDeleteSessionDialog, setShowDeleteSessionDialog] = useState(false);
+  const [typingStartMs, setTypingStartMs] = useState<number | null>(null);
   const elapsedMsRef = useRef(0);
+  const {
+    timestampMode,
+  } = useTimestampSettings();
 
   const {
     activeSession,
@@ -49,14 +54,25 @@ export function Index() {
     setIsTimerRunning(running);
   }, []);
 
+  const handleInputChange = useCallback((value: string) => {
+    if (inputValue === "" && value !== "" && timestampMode === "typing-start") {
+      setTypingStartMs(elapsedMsRef.current);
+    }
+    setInputValue(value);
+  }, [inputValue, timestampMode]);
+
   const handleSubmit = useCallback(() => {
     if (!inputValue.trim()) return;
+    const timestampMs = timestampMode === "typing-start" && typingStartMs !== null
+      ? typingStartMs
+      : elapsedMsRef.current;
     addEntry({
       text: inputValue.trim(),
-      timestamp: formatTime(elapsedMsRef.current),
+      timestamp: formatTime(timestampMs),
     });
     setInputValue("");
-  }, [inputValue, addEntry]);
+    setTypingStartMs(null);
+  }, [inputValue, addEntry, timestampMode, typingStartMs]);
 
   const handleDeleteEntry = useCallback((index: number) => {
     deleteEntry(index);
@@ -98,7 +114,7 @@ export function Index() {
                 <div className="flex w-full gap-2">
                   <Input
                     value={inputValue}
-                    onChange={e => setInputValue(e.target.value)}
+                    onChange={e => handleInputChange(e.target.value)}
                     onKeyDown={e => e.key === "Enter" && handleSubmit()}
                     placeholder="Enter text..."
                     data-testid="timer-input"
@@ -133,6 +149,14 @@ export function Index() {
               data-testid="timer-warning-text"
             >
               Start the timer before adding notes
+            </p>
+          )}
+          {timestampMode === "typing-start" && typingStartMs !== null && (
+            <p
+              className="text-sm text-muted-foreground"
+              data-testid="typing-start-timestamp"
+            >
+              Timestamp: {formatTime(typingStartMs)}
             </p>
           )}
         </div>

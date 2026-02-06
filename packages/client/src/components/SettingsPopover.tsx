@@ -19,6 +19,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
 import { SessionSwitcherDialog } from "@/components/SessionSwitcherDialog";
 import { useSession } from "@/hooks/useSession";
 import { useTheme } from "@/hooks/useTheme";
+import { useTimestampSettings } from "@/hooks/useTimestampSettings";
 import { cn } from "@/lib/utils";
 
 const SettingsPopover: React.FunctionComponent = () => {
@@ -28,9 +29,13 @@ const SettingsPopover: React.FunctionComponent = () => {
   const {
     sessions, activeSession, switchSession, createSession,
   } = useSession();
+  const {
+    timestampMode, setTimestampMode,
+  } = useTimestampSettings();
   const [sessionDialogOpen, setSessionDialogOpen] = useState(false);
 
   const isDark = theme === "dark";
+  const isTypingStart = timestampMode === "typing-start";
 
   return (
     <>
@@ -88,6 +93,38 @@ const SettingsPopover: React.FunctionComponent = () => {
                     ? <Moon className="size-3 text-primary" />
                     : <Sun className="size-3 text-amber-500" />}
                 </SwitchPrimitive.Thumb>
+              </SwitchPrimitive.Root>
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-sm">Timestamp on Typing Start</span>
+              <SwitchPrimitive.Root
+                checked={isTypingStart}
+                onCheckedChange={(checked) => { setTimestampMode(checked ? "typing-start" : "submit"); }}
+                data-testid="timestamp-mode-toggle"
+                className={cn(
+                  `
+                    relative inline-flex h-5 w-9 shrink-0 cursor-pointer
+                    items-center rounded-full border-2 border-transparent
+                    shadow-xs transition-colors
+                    focus-visible:ring-2 focus-visible:ring-ring
+                    focus-visible:ring-offset-2
+                    focus-visible:ring-offset-background
+                    focus-visible:outline-none
+                    data-[state=checked]:bg-primary
+                    data-[state=unchecked]:bg-input
+                  `,
+                )}
+              >
+                <SwitchPrimitive.Thumb
+                  className={cn(
+                    `
+                      pointer-events-none block size-4 rounded-full
+                      bg-background shadow-lg ring-0 transition-transform
+                      data-[state=checked]:translate-x-4
+                      data-[state=unchecked]:translate-x-0
+                    `,
+                  )}
+                />
               </SwitchPrimitive.Root>
             </div>
             <div className="border-t pt-4">
