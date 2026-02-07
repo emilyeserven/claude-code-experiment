@@ -2,11 +2,11 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { expect, userEvent, waitFor, within } from "@storybook/test";
 
+import { SettingsPopover } from "./SettingsPopover";
+
 import { SessionProvider } from "@/context/SessionProvider";
 import { ThemeProvider } from "@/context/ThemeProvider";
 import { TimestampSettingsProvider } from "@/context/TimestampSettingsProvider";
-
-import { SettingsPopover } from "./SettingsPopover";
 
 const meta = {
   component: SettingsPopover,
