@@ -13,14 +13,11 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/AlertDialog";
-import { Button } from "@/components/Button";
-import { Input } from "@/components/Input";
 import { SessionName } from "@/components/SessionName";
 import { Timer } from "@/components/Timer";
 import { TimerEntriesTable } from "@/components/TimerEntriesTable";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/Tooltip";
-import { useSession } from "@/hooks/useSession";
-import { useTimestampSettings } from "@/hooks/useTimestampSettings";
+import { Button, Input, Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui";
+import { useSession, useTimestampSettings } from "@/hooks";
 import { formatTime } from "@/utils/formatTime";
 
 export const Route = createFileRoute("/")({

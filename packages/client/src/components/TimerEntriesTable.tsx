@@ -2,12 +2,7 @@ import type { ColumnDef, Row, RowSelectionState, SortingState, VisibilityState }
 
 import { useEffect, useState } from "react";
 
-import {
-  flexRender,
-  getCoreRowModel,
-  getSortedRowModel,
-  useReactTable,
-} from "@tanstack/react-table";
+import { flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from "@tanstack/react-table";
 import { ArrowDown, ArrowUp, ArrowUpDown, ClipboardCopy, EllipsisVertical, ListChecks, Pencil, Trash2 } from "lucide-react";
 
 import {
@@ -20,8 +15,6 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/AlertDialog";
-import { Button } from "@/components/Button";
-import { Checkbox } from "@/components/Checkbox";
 import {
   Dialog,
   DialogContent,
@@ -30,9 +23,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/Dialog";
-import { Input } from "@/components/Input";
 import { MarkdownExportDialog } from "@/components/MarkdownExportDialog";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
+import { Button, Checkbox, Input, Popover, PopoverContent, PopoverTrigger } from "@/components/ui";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { cn } from "@/lib/utils";
 
