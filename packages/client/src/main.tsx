@@ -8,6 +8,7 @@ import { routeTree } from "./routeTree.gen.ts";
 
 import { SessionProvider } from "@/context/SessionProvider.tsx";
 import { ThemeProvider } from "@/context/ThemeProvider.tsx";
+import { TimestampSettingsProvider } from "@/context/TimestampSettingsProvider.tsx";
 
 const router = createRouter({
   routeTree,
@@ -34,9 +35,11 @@ if (!rootElement.innerHTML) {
           defaultTheme="light"
           storageKey="vite-ui-theme"
         >
-          <SessionProvider>
-            <RouterProvider router={router} />
-          </SessionProvider>
+          <TimestampSettingsProvider>
+            <SessionProvider>
+              <RouterProvider router={router} />
+            </SessionProvider>
+          </TimestampSettingsProvider>
         </ThemeProvider>
       </QueryClientProvider>
     </StrictMode>,

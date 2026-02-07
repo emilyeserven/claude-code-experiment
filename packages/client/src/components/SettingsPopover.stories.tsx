@@ -6,6 +6,7 @@ import { SettingsPopover } from "./SettingsPopover";
 
 import { SessionProvider } from "@/context/SessionProvider";
 import { ThemeProvider } from "@/context/ThemeProvider";
+import { TimestampSettingsProvider } from "@/context/TimestampSettingsProvider";
 
 const meta = {
   component: SettingsPopover,
@@ -15,9 +16,11 @@ const meta = {
         defaultTheme="light"
         storageKey="storybook-theme"
       >
-        <SessionProvider>
-          <Story />
-        </SessionProvider>
+        <TimestampSettingsProvider>
+          <SessionProvider>
+            <Story />
+          </SessionProvider>
+        </TimestampSettingsProvider>
       </ThemeProvider>
     ),
   ],
@@ -56,6 +59,11 @@ export const OpenPopover: Story = {
     // The toggle should be a switch element
     const toggle = body.getByTestId("dark-mode-toggle");
     await expect(toggle).toHaveAttribute("role", "switch");
+
+    // Timestamp mode toggle should be visible
+    await expect(body.getByText("Timestamp on Typing Start")).toBeInTheDocument();
+    const timestampToggle = body.getByTestId("timestamp-mode-toggle");
+    await expect(timestampToggle).toHaveAttribute("role", "switch");
 
     // Session switcher button should be visible
     await expect(body.getByTestId("switch-session-trigger")).toBeInTheDocument();
@@ -173,6 +181,30 @@ export const ResetLocalStorageCancelCloses: Story = {
   },
 };
 
+export const TimestampModeToggle: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("settings-trigger"));
+
+    const body = within(document.body);
+    const toggle = body.getByTestId("timestamp-mode-toggle");
+
+    await expect(toggle).toHaveAttribute("role", "switch");
+    await expect(toggle).toHaveAttribute("data-state", "unchecked");
+
+    // Toggle to typing-start mode
+    await userEvent.click(toggle);
+    await expect(toggle).toHaveAttribute("data-state", "checked");
+
+    // Toggle back to submit mode
+    await userEvent.click(toggle);
+    await expect(toggle).toHaveAttribute("data-state", "unchecked");
+  },
+};
+
 export const DarkModeDefault: Story = {
   decorators: [
     Story => (
@@ -180,9 +212,11 @@ export const DarkModeDefault: Story = {
         defaultTheme="dark"
         storageKey="storybook-theme-dark"
       >
-        <SessionProvider>
-          <Story />
-        </SessionProvider>
+        <TimestampSettingsProvider>
+          <SessionProvider>
+            <Story />
+          </SessionProvider>
+        </TimestampSettingsProvider>
       </ThemeProvider>
     ),
   ],
