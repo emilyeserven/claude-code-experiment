@@ -8,7 +8,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { ArrowDown, ArrowUp, ArrowUpDown, EllipsisVertical, ListChecks, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, ClipboardCopy, EllipsisVertical, ListChecks, Trash2 } from "lucide-react";
 
 import {
   AlertDialog,
@@ -22,6 +22,7 @@ import {
 } from "@/components/AlertDialog";
 import { Button } from "@/components/Button";
 import { Checkbox } from "@/components/Checkbox";
+import { MarkdownExportDialog } from "@/components/MarkdownExportDialog";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { cn } from "@/lib/utils";
@@ -180,6 +181,7 @@ export function TimerEntriesTable({
   const [sorting, setSorting] = useState<SortingState>([]);
   const [rowSelection, setRowSelection] = useState<RowSelectionState>({});
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
+  const [showMarkdownDialog, setShowMarkdownDialog] = useState(false);
   const [multiselectEnabled, setMultiselectEnabled] = useState(false);
   const isMobile = useIsMobile();
 
@@ -361,6 +363,26 @@ export function TimerEntriesTable({
             )}
         </tbody>
       </table>
+
+      {entries.length > 0 && (
+        <div className="mt-2 flex justify-end">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setShowMarkdownDialog(true)}
+            data-testid="export-markdown-button"
+          >
+            <ClipboardCopy className="size-4" />
+            Export as Markdown
+          </Button>
+        </div>
+      )}
+
+      <MarkdownExportDialog
+        open={showMarkdownDialog}
+        onOpenChange={setShowMarkdownDialog}
+        entries={entries}
+      />
 
       <AlertDialog
         open={showDeleteDialog}
