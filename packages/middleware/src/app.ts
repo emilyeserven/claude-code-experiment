@@ -6,9 +6,7 @@ import { JsonSchemaToTsProvider } from "@fastify/type-provider-json-schema-to-ts
 import Fastify from "fastify";
 
 import routes from "./routes/routes.ts";
-import { makeEnvOptions } from "./services/env.ts";
-import swaggerOptions from "./services/swaggerOptions.ts";
-import swaggerUiOptions from "./services/swaggerUiOptions.ts";
+import { makeEnvOptions, swaggerOptions, swaggerUiOptions } from "./services/index.ts";
 import { fileURLToPath } from "url";
 import path from "path";
 

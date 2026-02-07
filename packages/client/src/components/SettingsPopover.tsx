@@ -17,9 +17,7 @@ import {
 import { Button } from "@/components/Button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
 import { SessionSwitcherDialog } from "@/components/SessionSwitcherDialog";
-import { useSession } from "@/hooks/useSession";
-import { useTheme } from "@/hooks/useTheme";
-import { useTimestampSettings } from "@/hooks/useTimestampSettings";
+import { useSession, useTheme, useTimestampSettings } from "@/hooks";
 import { cn } from "@/lib/utils";
 
 const SettingsPopover: React.FunctionComponent = () => {
