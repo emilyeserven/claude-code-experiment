@@ -115,6 +115,16 @@ export function SessionProvider({
         : s));
   }, [setSessions, activeSessionId]);
 
+  const editEntry = useCallback((index: number, entry: TimerEntry) => {
+    setSessions(prev => prev.map(s =>
+      s.id === activeSessionId
+        ? {
+          ...s,
+          entries: s.entries.map((e, i) => i === index ? entry : e),
+        }
+        : s));
+  }, [setSessions, activeSessionId]);
+
   const deleteEntry = useCallback((index: number) => {
     setSessions(prev => prev.map(s =>
       s.id === activeSessionId
@@ -144,9 +154,10 @@ export function SessionProvider({
     renameSession,
     switchSession,
     addEntry,
+    editEntry,
     deleteEntry,
     deleteEntries,
-  }), [sessions, activeSession, createSession, deleteSession, renameSession, switchSession, addEntry, deleteEntry, deleteEntries]);
+  }), [sessions, activeSession, createSession, deleteSession, renameSession, switchSession, addEntry, editEntry, deleteEntry, deleteEntries]);
 
   return (
     <SessionProviderContext.Provider value={value}>

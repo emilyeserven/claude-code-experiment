@@ -8,7 +8,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { ArrowDown, ArrowUp, ArrowUpDown, ClipboardCopy, EllipsisVertical, ListChecks, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, ClipboardCopy, EllipsisVertical, ListChecks, Pencil, Trash2 } from "lucide-react";
 
 import {
   AlertDialog,
@@ -22,6 +22,15 @@ import {
 } from "@/components/AlertDialog";
 import { Button } from "@/components/Button";
 import { Checkbox } from "@/components/Checkbox";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/Dialog";
+import { Input } from "@/components/Input";
 import { MarkdownExportDialog } from "@/components/MarkdownExportDialog";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
 import { useIsMobile } from "@/hooks/useIsMobile";
@@ -34,18 +43,21 @@ interface TimerEntry {
 
 interface TimerEntriesTableProps {
   entries: TimerEntry[];
+  onEditEntry: (index: number, entry: TimerEntry) => void;
   onDeleteEntry: (index: number) => void;
   onDeleteEntries: (indices: number[]) => void;
 }
 
 interface TableMeta {
+  onEditEntry: (index: number, entry: TimerEntry) => void;
   onDeleteEntry: (index: number) => void;
   isMobile: boolean;
 }
 
 function ActionsCell({
-  row, onDeleteEntry,
+  row, onEditEntry, onDeleteEntry,
 }: { row: Row<TimerEntry>;
+  onEditEntry: (index: number) => void;
   onDeleteEntry: (index: number) => void; }) {
   const [open, setOpen] = useState(false);
   return (
@@ -66,6 +78,19 @@ function ActionsCell({
         align="end"
         className="w-40 p-1"
       >
+        <Button
+          variant="ghost"
+          size="sm"
+          className="w-full justify-start"
+          onClick={() => {
+            setOpen(false);
+            onEditEntry(row.index);
+          }}
+          data-testid="edit-entry-button"
+        >
+          <Pencil className="mr-2 size-4" />
+          Edit Entry
+        </Button>
         <Button
           variant="ghost"
           size="sm"
@@ -161,11 +186,13 @@ const columns: ColumnDef<TimerEntry>[] = [
       table,
     }) => {
       const {
+        onEditEntry,
         onDeleteEntry,
       } = table.options.meta as TableMeta;
       return (
         <ActionsCell
           row={row}
+          onEditEntry={(index: number) => onEditEntry(index, row.original)}
           onDeleteEntry={onDeleteEntry}
         />
       );
@@ -175,6 +202,7 @@ const columns: ColumnDef<TimerEntry>[] = [
 
 export function TimerEntriesTable({
   entries,
+  onEditEntry,
   onDeleteEntry,
   onDeleteEntries,
 }: TimerEntriesTableProps) {
@@ -182,6 +210,10 @@ export function TimerEntriesTable({
   const [rowSelection, setRowSelection] = useState<RowSelectionState>({});
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [showMarkdownDialog, setShowMarkdownDialog] = useState(false);
+  const [editingEntry, setEditingEntry] = useState<{ index: number;
+    entry: TimerEntry; } | null>(null);
+  const [editText, setEditText] = useState("");
+  const [editTimestamp, setEditTimestamp] = useState("");
   const [multiselectEnabled, setMultiselectEnabled] = useState(false);
   const isMobile = useIsMobile();
 
@@ -216,6 +248,14 @@ export function TimerEntriesTable({
     getSortedRowModel: getSortedRowModel(),
     enableRowSelection: true,
     meta: {
+      onEditEntry: (index: number, entry: TimerEntry) => {
+        setEditingEntry({
+          index,
+          entry,
+        });
+        setEditText(entry.text);
+        setEditTimestamp(entry.timestamp);
+      },
       onDeleteEntry,
       isMobile,
     },
@@ -237,6 +277,15 @@ export function TimerEntriesTable({
       setRowSelection({});
     }
     setMultiselectEnabled(prev => !prev);
+  };
+
+  const handleEditSave = () => {
+    if (editingEntry === null || !editText.trim()) return;
+    onEditEntry(editingEntry.index, {
+      text: editText.trim(),
+      timestamp: editTimestamp,
+    });
+    setEditingEntry(null);
   };
 
   return (
@@ -418,6 +467,66 @@ export function TimerEntriesTable({
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+
+      <Dialog
+        open={editingEntry !== null}
+        onOpenChange={open => !open && setEditingEntry(null)}
+      >
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Edit Entry</DialogTitle>
+            <DialogDescription>
+              Modify the text and timestamp for this entry.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-2">
+            <div className="grid gap-2">
+              <label
+                htmlFor="edit-entry-text"
+                className="text-sm font-medium"
+              >
+                Text
+              </label>
+              <Input
+                id="edit-entry-text"
+                value={editText}
+                onChange={e => setEditText(e.target.value)}
+                onKeyDown={e => e.key === "Enter" && handleEditSave()}
+                data-testid="edit-entry-text-input"
+              />
+            </div>
+            <div className="grid gap-2">
+              <label
+                htmlFor="edit-entry-timestamp"
+                className="text-sm font-medium"
+              >
+                Timestamp
+              </label>
+              <Input
+                id="edit-entry-timestamp"
+                value={editTimestamp}
+                onChange={e => setEditTimestamp(e.target.value)}
+                data-testid="edit-entry-timestamp-input"
+              />
+            </div>
+          </div>
+          <DialogFooter>
+            <Button
+              variant="outline"
+              onClick={() => setEditingEntry(null)}
+              data-testid="cancel-edit-button"
+            >
+              Cancel
+            </Button>
+            <Button
+              onClick={handleEditSave}
+              data-testid="save-edit-button"
+            >
+              Save
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

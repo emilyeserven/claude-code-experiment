@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { fn, within, expect, userEvent } from "@storybook/test";
+import { fn, within, expect, userEvent, waitFor } from "@storybook/test";
 
 import { TimerEntriesTable } from "./TimerEntriesTable";
 
@@ -23,6 +23,7 @@ const meta = {
   component: TimerEntriesTable,
   args: {
     entries: sampleEntries,
+    onEditEntry: fn(),
     onDeleteEntry: fn(),
     onDeleteEntries: fn(),
   },
@@ -220,5 +221,81 @@ export const DeleteConfirmed: Story = {
 
     // Selection should be cleared (delete button gone)
     await expect(canvas.queryByTestId("delete-selected-button")).not.toBeInTheDocument();
+  },
+};
+
+export const EditEntryOpensDialog: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+    const triggers = canvas.getAllByTestId("entry-actions-trigger");
+
+    // Open the context menu for the first row
+    await userEvent.click(triggers[0]);
+
+    // Edit button should be visible
+    const body = within(document.body);
+    await expect(body.getByTestId("edit-entry-button")).toBeInTheDocument();
+
+    // Click edit
+    await userEvent.click(body.getByTestId("edit-entry-button"));
+
+    // Edit dialog should appear with pre-filled values
+    await expect(body.getByTestId("edit-entry-text-input")).toBeInTheDocument();
+    await expect(body.getByTestId("edit-entry-timestamp-input")).toBeInTheDocument();
+    await expect(body.getByTestId("edit-entry-text-input")).toHaveValue("First task");
+    await expect(body.getByTestId("edit-entry-timestamp-input")).toHaveValue("00:01:23.456");
+  },
+};
+
+export const EditEntrySave: Story = {
+  play: async ({
+    canvasElement, args,
+  }) => {
+    const canvas = within(canvasElement);
+    const triggers = canvas.getAllByTestId("entry-actions-trigger");
+
+    // Open context menu and click edit
+    await userEvent.click(triggers[0]);
+    const body = within(document.body);
+    await userEvent.click(body.getByTestId("edit-entry-button"));
+
+    // Clear and type new text
+    const textInput = body.getByTestId("edit-entry-text-input");
+    await userEvent.clear(textInput);
+    await userEvent.type(textInput, "Updated task");
+
+    // Click save
+    await userEvent.click(body.getByTestId("save-edit-button"));
+
+    // onEditEntry should have been called with updated values
+    await expect(args.onEditEntry).toHaveBeenCalledTimes(1);
+  },
+};
+
+export const EditEntryCancelled: Story = {
+  play: async ({
+    canvasElement, args,
+  }) => {
+    const canvas = within(canvasElement);
+    const triggers = canvas.getAllByTestId("entry-actions-trigger");
+
+    // Open context menu and click edit
+    await userEvent.click(triggers[0]);
+    const body = within(document.body);
+    await userEvent.click(body.getByTestId("edit-entry-button"));
+
+    // Record call count before cancel
+    const callsBefore = (args.onEditEntry as ReturnType<typeof fn>).mock.calls.length;
+
+    // Click cancel
+    await userEvent.click(body.getByTestId("cancel-edit-button"));
+
+    // onEditEntry should not have been called again
+    await expect(args.onEditEntry).toHaveBeenCalledTimes(callsBefore);
+
+    // Dialog should be closed (wait for exit animation)
+    await waitFor(() => expect(body.queryByTestId("edit-entry-text-input")).not.toBeInTheDocument());
   },
 };
