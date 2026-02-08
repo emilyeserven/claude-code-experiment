@@ -3,7 +3,7 @@ import type { ColumnDef, Row, RowSelectionState, SortingState, VisibilityState }
 import { useEffect, useState } from "react";
 
 import { flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from "@tanstack/react-table";
-import { ArrowDown, ArrowUp, ArrowUpDown, ClipboardCopy, EllipsisVertical, ListChecks, Pencil, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, ClipboardCopy, EllipsisVertical, Keyboard, ListChecks, Pencil, Send, Trash2 } from "lucide-react";
 
 import {
   AlertDialog,
@@ -24,13 +24,14 @@ import {
   DialogTitle,
 } from "@/components/Dialog";
 import { MarkdownExportDialog } from "@/components/MarkdownExportDialog";
-import { Button, Checkbox, Input, Popover, PopoverContent, PopoverTrigger } from "@/components/ui";
+import { Button, Checkbox, Input, Popover, PopoverContent, PopoverTrigger, Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { cn } from "@/lib/utils";
 
 interface TimerEntry {
   text: string;
   timestamp: string;
+  mode?: "submit" | "typing-start";
 }
 
 interface TimerEntriesTableProps {
@@ -128,6 +129,40 @@ const columns: ColumnDef<TimerEntry>[] = [
             `,
           )}
         />
+      );
+    },
+  },
+  {
+    id: "mode",
+    meta: {
+      className: "w-10",
+    },
+    header: () => null,
+    cell: ({
+      row,
+    }) => {
+      const mode = row.original.mode;
+      if (!mode) return null;
+      return (
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <span
+                className="inline-flex text-muted-foreground"
+                data-testid="entry-mode-icon"
+              >
+                {mode === "typing-start"
+                  ? <Keyboard className="size-4" />
+                  : <Send className="size-4" />}
+              </span>
+            </TooltipTrigger>
+            <TooltipContent>
+              {mode === "typing-start"
+                ? "Timestamp captured on typing start"
+                : "Timestamp captured on submit"}
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       );
     },
   },
