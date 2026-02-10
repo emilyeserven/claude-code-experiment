@@ -1,19 +1,9 @@
 import { useCallback, useRef, useState } from "react";
 
 import { createFileRoute } from "@tanstack/react-router";
-import { Trash2 } from "lucide-react";
 
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "@/components/AlertDialog";
 import { SessionName } from "@/components/SessionName";
+import { SessionSettingsMenu } from "@/components/SessionSettingsMenu";
 import { Timer } from "@/components/Timer";
 import { TimerEntriesTable } from "@/components/TimerEntriesTable";
 import { Button, Input, Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui";
@@ -27,7 +17,6 @@ export const Route = createFileRoute("/")({
 export function Index() {
   const [inputValue, setInputValue] = useState("");
   const [isTimerRunning, setIsTimerRunning] = useState(false);
-  const [showDeleteSessionDialog, setShowDeleteSessionDialog] = useState(false);
   const [typingStartMs, setTypingStartMs] = useState<number | null>(null);
   const elapsedMsRef = useRef(0);
   const {
@@ -92,7 +81,6 @@ export function Index() {
 
   const handleDeleteSession = useCallback(() => {
     deleteSession(activeSession.id);
-    setShowDeleteSessionDialog(false);
   }, [deleteSession, activeSession.id]);
 
   return (
@@ -103,10 +91,17 @@ export function Index() {
       `}
     >
       <div className="mt-8 flex flex-col items-center gap-8">
-        <SessionName
-          name={activeSession.name}
-          onRename={handleRename}
-        />
+        <div className="flex items-center gap-1">
+          <SessionName
+            name={activeSession.name}
+            onRename={handleRename}
+          />
+          <SessionSettingsMenu
+            sessionName={activeSession.name}
+            entries={activeSession.entries}
+            onDeleteSession={handleDeleteSession}
+          />
+        </div>
         <Timer
           onTick={handleTick}
           onRunningChange={handleRunningChange}
@@ -172,46 +167,7 @@ export function Index() {
             onDeleteEntries={handleDeleteEntries}
           />
         </div>
-        <div className="mb-8">
-          <Button
-            variant="destructive"
-            size="sm"
-            onClick={() => setShowDeleteSessionDialog(true)}
-            data-testid="delete-session-button"
-          >
-            <Trash2 className="size-4" />
-            Delete Session
-          </Button>
-        </div>
       </div>
-
-      <AlertDialog
-        open={showDeleteSessionDialog}
-        onOpenChange={setShowDeleteSessionDialog}
-      >
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Delete Session?</AlertDialogTitle>
-            <AlertDialogDescription>
-              Are you sure you want to delete &quot;
-              {activeSession.name}
-              &quot;? All entries in this session will be permanently removed. This action cannot be undone.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel data-testid="cancel-delete-session">
-              Cancel
-            </AlertDialogCancel>
-            <AlertDialogAction
-              variant="destructive"
-              onClick={handleDeleteSession}
-              data-testid="confirm-delete-session"
-            >
-              Delete
-            </AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
     </div>
   );
 }

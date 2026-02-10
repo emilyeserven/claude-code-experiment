@@ -55,9 +55,6 @@ export const Default: Story = {
 
     // No delete button when nothing is selected
     await expect(canvas.queryByTestId("delete-selected-button")).not.toBeInTheDocument();
-
-    // Export as Markdown button should be visible
-    await expect(canvas.getByTestId("export-markdown-button")).toBeInTheDocument();
   },
 };
 
@@ -72,9 +69,6 @@ export const Empty: Story = {
 
     await expect(canvas.getByTestId("timer-entries-empty")).toBeInTheDocument();
     await expect(canvas.queryAllByTestId("timer-entry")).toHaveLength(0);
-
-    // Export button should not be visible when there are no entries
-    await expect(canvas.queryByTestId("export-markdown-button")).not.toBeInTheDocument();
   },
 };
 
@@ -138,29 +132,6 @@ export const Deselection: Story = {
 
     // Delete button should disappear
     await expect(canvas.queryByTestId("delete-selected-button")).not.toBeInTheDocument();
-  },
-};
-
-export const ExportMarkdownDialog: Story = {
-  play: async ({
-    canvasElement,
-  }) => {
-    const canvas = within(canvasElement);
-
-    // Click the export button
-    await userEvent.click(canvas.getByTestId("export-markdown-button"));
-
-    // Dialog should open with markdown content
-    const body = within(document.body);
-    const textarea = body.getByTestId("markdown-export-textarea") as HTMLTextAreaElement;
-    await expect(textarea).toBeInTheDocument();
-    await expect(textarea.value).toContain("| Text | Timestamp | Mode |");
-    await expect(textarea.value).toContain("| First task | 00:01:23.456 | Submit |");
-    await expect(textarea.value).toContain("| Second task | 00:05:10.200 | Typing Start |");
-    await expect(textarea.value).toContain("| Third task | 00:12:45.789 | Submit |");
-
-    // Copy button should be present
-    await expect(body.getByTestId("copy-markdown-button")).toHaveTextContent("Copy to Clipboard");
   },
 };
 

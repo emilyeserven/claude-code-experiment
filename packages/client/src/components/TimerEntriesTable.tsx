@@ -3,7 +3,7 @@ import type { ColumnDef, Row, RowSelectionState, SortingState, VisibilityState }
 import { useEffect, useState } from "react";
 
 import { flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from "@tanstack/react-table";
-import { ArrowDown, ArrowUp, ArrowUpDown, ClipboardCopy, EllipsisVertical, Keyboard, ListChecks, Pencil, Send, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, EllipsisVertical, Keyboard, ListChecks, Pencil, Send, Trash2 } from "lucide-react";
 
 import {
   AlertDialog,
@@ -23,7 +23,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/Dialog";
-import { MarkdownExportDialog } from "@/components/MarkdownExportDialog";
 import { Button, Checkbox, Input, Popover, PopoverContent, PopoverTrigger, Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { cn } from "@/lib/utils";
@@ -236,7 +235,6 @@ export function TimerEntriesTable({
   const [sorting, setSorting] = useState<SortingState>([]);
   const [rowSelection, setRowSelection] = useState<RowSelectionState>({});
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
-  const [showMarkdownDialog, setShowMarkdownDialog] = useState(false);
   const [editingEntry, setEditingEntry] = useState<{ index: number;
     entry: TimerEntry; } | null>(null);
   const [editText, setEditText] = useState("");
@@ -439,26 +437,6 @@ export function TimerEntriesTable({
             )}
         </tbody>
       </table>
-
-      {entries.length > 0 && (
-        <div className="mt-2 flex justify-end">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowMarkdownDialog(true)}
-            data-testid="export-markdown-button"
-          >
-            <ClipboardCopy className="size-4" />
-            Export as Markdown
-          </Button>
-        </div>
-      )}
-
-      <MarkdownExportDialog
-        open={showMarkdownDialog}
-        onOpenChange={setShowMarkdownDialog}
-        entries={entries}
-      />
 
       <AlertDialog
         open={showDeleteDialog}
