@@ -1,13 +1,4 @@
 services:
-  middleware:
-    build:
-      context: ./
-      dockerfile: ./packages/middleware/Dockerfile
-    container_name: middleware
-    ports:
-      - "3001:3001"
-    environment:
-      - VALUE="Hi there!"
   client:
     build:
       context: ./
@@ -15,5 +6,3 @@ services:
     container_name: client
     ports:
       - "3000:3000"
-    depends_on:
-      - middleware

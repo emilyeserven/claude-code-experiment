@@ -4,21 +4,19 @@ This file provides guidance for AI assistants working with the **cc-experiments*
 
 ## Project Overview
 
-cc-experiments is based on Emstack, a full-stack TypeScript web application template, built as a **pnpm monorepo**. It uses React for the frontend and Fastify for the backend, intentionally avoiding fullstack frameworks.
+cc-experiments is a frontend TypeScript web application, built as a **pnpm monorepo**. It uses React for the frontend, intentionally avoiding fullstack frameworks.
 
 ## Repository Structure
 
 ```
 cc-experiments/
 ├── packages/
-│   ├── types/          # @cc-experiments/types — Shared TypeScript type definitions
-│   ├── middleware/      # @cc-experiments/middleware — Fastify backend server (port 3001)
 │   └── client/         # @cc-experiments/client — React frontend app (port 5173 dev / 3000 prod)
 ├── e2e/                # Playwright end-to-end tests
 ├── .github/workflows/  # CI, deploy, and Claude Code automation workflows
 ├── .husky/             # Git hooks (pre-commit, pre-push run lint-staged)
 ├── playwright.config.ts # Playwright E2E config
-├── docker-compose.yml  # Docker orchestration for both services
+├── docker-compose.yml  # Docker orchestration for the client service
 ├── pnpm-workspace.yaml # Workspace definition
 ├── eslint.config.js    # Root ESLint config (uses @emilyeserven/eslint-config)
 ├── knip.json           # Unused dependency detection config
@@ -33,9 +31,7 @@ cc-experiments/
 | Frontend | React 19, Vite 7, Tailwind CSS 4, shadcn/ui + Radix |
 | Routing (FE) | TanStack Router (file-based) |
 | Data fetching | TanStack Query |
-| Backend | Fastify 5 with JSON Schema type providers |
-| API docs | @fastify/swagger + swagger-ui |
-| Testing | Vitest (client), node:test (middleware), Playwright (E2E), Storybook 10 |
+| Testing | Vitest (client), Playwright (E2E), Storybook 10 |
 | Package manager | pnpm 10.13.1 |
 | Containerization | Docker multi-stage builds (Node 22, distroless final images) |
 
@@ -45,7 +41,7 @@ All commands run from the repository root unless noted otherwise.
 
 ```bash
 pnpm install              # Install all dependencies
-pnpm dev                  # Start all 3 packages concurrently (types watch, middleware, client)
+pnpm dev                  # Start the client dev server
 pnpm build                # Build all packages (runs `pnpm run -r build`)
 pnpm test                 # Run tests across all packages (runs `pnpm run -r test`)
 pnpm lint                 # Lint the entire codebase with ESLint
@@ -60,8 +56,6 @@ pnpm storybook            # Launch Storybook for the client package (port 6006)
 
 | Package | `dev` | `build` | `test` |
 |---------|-------|---------|--------|
-| **types** | `tsc --watch` | `tsc -p tsconfig.build.json` | — |
-| **middleware** | `nodemon --exec tsx src/app.ts` | `tsc + tsc-alias` | `node --test` |
 | **client** | `vite` | `vite build` | `vitest` |
 
 Additional client commands:
@@ -69,18 +63,6 @@ Additional client commands:
 - `pnpm --filter=@cc-experiments/client run routeTree` — Regenerate TanStack Router route tree
 
 ## Architecture & Package Details
-
-### @cc-experiments/types
-
-Shared type definitions consumed by both middleware and client via `workspace:*` dependency. Exports from `src/index.ts` using barrel re-exports. Zero runtime dependencies.
-
-### @cc-experiments/middleware
-
-Fastify 5 server with:
-- **Route structure**: `src/routes/routes.ts` is the top-level router, delegating to `./root.ts` and `./api/routes.ts` (prefixed `/api`).
-- **Type-safe routes**: Uses `@fastify/type-provider-json-schema-to-ts` with `as const` schema objects for full request/response type inference.
-- **Environment config**: `@fastify/env` with schema validation (see `src/services/env.ts`).
-- **Path aliases**: `@/*` maps to `./src/*` (resolved at build time by `tsc-alias`).
 
 ### @cc-experiments/client
 
@@ -99,7 +81,7 @@ React 19 SPA with:
 - **Packages**: `@cc-experiments/<name>` namespace
 - **React components**: PascalCase files (e.g., `Test.tsx`, `ThemeProvider.tsx`)
 - **Hooks**: camelCase with `use` prefix (e.g., `useTheme.ts`)
-- **Utilities/services**: camelCase files (e.g., `fetchFunctions.ts`, `swaggerOptions.ts`)
+- **Utilities/services**: camelCase files (e.g., `fetchFunctions.ts`)
 - **Types/interfaces**: PascalCase (e.g., `Test`, `DynamicTest`)
 - **Test files**: `*.test.ts` or `*.test.tsx` suffix
 - **E2E test files**: `*.spec.ts` suffix (in `e2e/` directory)
@@ -109,11 +91,9 @@ React 19 SPA with:
 
 - **React components** use functional components with interface-typed props (not inline types). Include `data-testid` attributes for testability.
 - **Storybook requirement**: All new React components must have a corresponding Storybook story file (`*.stories.tsx`). All unit tests for components should be written in the Storybook file using `play()` functions rather than in separate `*.test.tsx` files.
-- **Fastify routes** are defined as async default-exported functions receiving `FastifyInstance`, with `as const` JSON Schema objects for type-safe request validation.
 - **Context pattern**: Provider component + separate context file + custom hook (see `ThemeProvider.tsx`, `ThemeProviderContext.ts`, `useTheme.ts`).
-- **Barrel exports**: The types package uses `export * from` re-exports in `index.ts`.
 - **Module system**: All packages use `"type": "module"` (ESM).
-- **Import style**: Use explicit `.ts`/`.tsx` extensions in import paths within the middleware package. Client uses Vite's resolution (no extensions needed).
+- **Import style**: Client uses Vite's resolution (no extensions needed).
 
 ### Linting & Formatting
 
@@ -121,7 +101,7 @@ React 19 SPA with:
 - **Always run `pnpm lint:fix` before attempting manual lint fixes.** The auto-fixer handles class ordering (Tailwind), line wrapping, stylistic formatting, and many other rules automatically. Only fix remaining errors by hand after the auto-fixer has run.
 - Pre-commit hook runs `lint-staged` via Husky, which applies `eslint --fix` to all staged files
 - Pre-push hook also runs `lint-staged`
-- Client and middleware additionally run tests on staged `.ts`/`.tsx`/`.js` files
+- Client additionally runs tests on staged `.ts`/`.tsx`/`.js` files
 
 ### TypeScript
 
@@ -129,7 +109,7 @@ React 19 SPA with:
 - `noImplicitAny: true`
 - `noUncheckedSideEffectImports: true`
 - Target: ES2022 with bundler module resolution
-- Each package has its own `tsconfig.build.json` for production builds
+- Client has its own `tsconfig.build.json` for production builds
 
 ## Testing
 
@@ -138,10 +118,6 @@ React 19 SPA with:
 Two test projects configured in `vite.config.ts`:
 1. **unit-tests**: jsdom environment, `*.test.{ts,tsx}` files, setup via `setupTests.js` (@testing-library/jest-dom)
 2. **storybook**: Browser tests via Playwright (headless Chromium), runs Storybook story `play()` functions
-
-### Middleware (node:test)
-
-Uses Node's built-in test runner with `assert` module. Test files use `*.test.js` extension.
 
 ### E2E (Playwright)
 
@@ -155,12 +131,11 @@ End-to-end tests live in the `e2e/` directory at the repo root. Configured via `
 ## Docker
 
 ```bash
-docker compose up --build    # Build and start both services
+docker compose up --build    # Build and start the client service
 ```
 
-- **middleware**: Exposed on port 3001
 - **client**: Exposed on port 3000 (production via `server.js`), port 5173 during local development (`pnpm dev`)
-- Both use multi-stage builds with `node:22-bookworm-slim` base and `distroless` final images
+- Uses multi-stage builds with `node:22-bookworm-slim` base and `distroless` final images
 
 ## CI/CD & Deployment
 
@@ -179,8 +154,4 @@ The client can be deployed as a static site to GitHub Pages. When `GITHUB_PAGES=
 
 - The CI pipeline must succeed before merging any changes. Verify that linting (`pnpm lint`), building (`pnpm build`), and tests (`pnpm test`) all pass.
 - `src/routeTree.gen.ts` is auto-generated by TanStack Router — do not edit manually
-- The `@cc-experiments/types` package must be built before middleware or client can consume its types
-- When running `pnpm dev`, all three packages start concurrently (types in watch mode feeds the others)
-- Environment variables are validated via `@fastify/env` schema — see `packages/middleware/src/services/env.ts`
-- Dependencies between workspace packages use `workspace:*` protocol
 - Before pushing, check if `origin/master` has new commits. If it does, pull master and rebase the current branch onto it (`git fetch origin master && git rebase origin/master`) before pushing.

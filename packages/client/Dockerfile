@@ -25,8 +25,6 @@ COPY . .
 # by preventing re-downloads of packages.
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 
-ENV FASTIFY_ADDRESS=0.0.0.0
-
 RUN pnpm run -r build
 
 RUN pnpm deploy --filter=@cc-experiments/client --prod appout

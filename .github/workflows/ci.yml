@@ -138,9 +138,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Test middleware
-        run: pnpm --filter=@cc-experiments/middleware run test
-
       - name: Test client (unit)
         run: pnpm --filter=@cc-experiments/client exec vitest run --project unit-tests
 
