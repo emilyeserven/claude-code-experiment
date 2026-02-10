@@ -242,8 +242,17 @@ export function TimerEntriesTable({
   const [multiselectEnabled, setMultiselectEnabled] = useState(false);
   const isMobile = useIsMobile();
 
+  // Determine if all entries share the same mode
+  const entriesWithMode = entries.filter(e => e.mode != null);
+  const hasMixedModes = entriesWithMode.length > 0
+    && !entriesWithMode.every(e => e.mode === entriesWithMode[0].mode);
+  const uniformMode = entriesWithMode.length > 0 && !hasMixedModes
+    ? entriesWithMode[0].mode
+    : null;
+
   const columnVisibility: VisibilityState = {
     select: !isMobile || multiselectEnabled,
+    mode: hasMixedModes,
   };
 
   // Clear selection when entries change (e.g. individual row deletion shifts indices)
@@ -321,33 +330,65 @@ export function TimerEntriesTable({
       `}
       data-testid="timer-entries-list"
     >
-      <div className="mb-2 flex items-center justify-end gap-2">
-        {isMobile && entries.length > 0 && (
-          <Button
-            variant={multiselectEnabled ? "secondary" : "outline"}
-            size="sm"
-            onClick={handleToggleMultiselect}
-            data-testid="toggle-multiselect-button"
-          >
-            <ListChecks className="size-4" />
-            {multiselectEnabled ? "Cancel Multiselect" : "Enable Multiselect"}
-          </Button>
+      <h2
+        className="mb-1 text-lg font-semibold"
+        data-testid="entries-header"
+      >
+        Entries
+      </h2>
+      <div
+        className="mb-2 flex items-center gap-2"
+        data-testid="entries-toolbar"
+      >
+        {uniformMode !== null && (
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <span
+                  className="inline-flex text-muted-foreground"
+                  data-testid="toolbar-mode-icon"
+                >
+                  {uniformMode === "typing-start"
+                    ? <Keyboard className="size-4" />
+                    : <Send className="size-4" />}
+                </span>
+              </TooltipTrigger>
+              <TooltipContent>
+                {uniformMode === "typing-start"
+                  ? "All entries captured on typing start"
+                  : "All entries captured on submit"}
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         )}
-        {selectedCount > 0 && (
-          <Button
-            variant="destructive"
-            size="sm"
-            onClick={() => setShowDeleteDialog(true)}
-            data-testid="delete-selected-button"
-          >
-            <Trash2 className="size-4" />
-            Delete
-            {" "}
-            {selectedCount}
-            {" "}
-            {selectedCount === 1 ? "Entry" : "Entries"}
-          </Button>
-        )}
+        <div className="ml-auto flex items-center gap-2">
+          {isMobile && entries.length > 0 && (
+            <Button
+              variant={multiselectEnabled ? "secondary" : "outline"}
+              size="sm"
+              onClick={handleToggleMultiselect}
+              data-testid="toggle-multiselect-button"
+            >
+              <ListChecks className="size-4" />
+              {multiselectEnabled ? "Cancel Multiselect" : "Enable Multiselect"}
+            </Button>
+          )}
+          {selectedCount > 0 && (
+            <Button
+              variant="destructive"
+              size="sm"
+              onClick={() => setShowDeleteDialog(true)}
+              data-testid="delete-selected-button"
+            >
+              <Trash2 className="size-4" />
+              Delete
+              {" "}
+              {selectedCount}
+              {" "}
+              {selectedCount === 1 ? "Entry" : "Entries"}
+            </Button>
+          )}
+        </div>
       </div>
 
       <table className="w-full border-collapse">
