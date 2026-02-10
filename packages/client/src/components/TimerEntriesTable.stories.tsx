@@ -22,6 +22,24 @@ const sampleEntries = [
   },
 ];
 
+const uniformModeEntries = [
+  {
+    text: "First task",
+    timestamp: "00:01:23.456",
+    mode: "submit" as const,
+  },
+  {
+    text: "Second task",
+    timestamp: "00:05:10.200",
+    mode: "submit" as const,
+  },
+  {
+    text: "Third task",
+    timestamp: "00:12:45.789",
+    mode: "submit" as const,
+  },
+];
+
 const meta = {
   component: TimerEntriesTable,
   args: {
@@ -41,6 +59,17 @@ export const Default: Story = {
     canvasElement,
   }) => {
     const canvas = within(canvasElement);
+
+    // Renders Entries header
+    await expect(canvas.getByTestId("entries-header")).toHaveTextContent("Entries");
+
+    // Renders toolbar
+    await expect(canvas.getByTestId("entries-toolbar")).toBeInTheDocument();
+
+    // Mixed modes: no toolbar mode icon, mode icons appear in rows
+    await expect(canvas.queryByTestId("toolbar-mode-icon")).not.toBeInTheDocument();
+    const modeIcons = canvas.getAllByTestId("entry-mode-icon");
+    await expect(modeIcons.length).toBeGreaterThan(0);
 
     // Renders all entries
     const rows = canvas.getAllByTestId("timer-entry");
@@ -271,5 +300,24 @@ export const EditEntryCancelled: Story = {
 
     // Dialog should be closed (wait for exit animation)
     await waitFor(() => expect(body.queryByTestId("edit-entry-text-input")).not.toBeInTheDocument());
+  },
+};
+
+export const UniformMode: Story = {
+  args: {
+    entries: uniformModeEntries,
+  },
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    // Uniform mode: toolbar shows mode icon, no per-row mode icons
+    await expect(canvas.getByTestId("toolbar-mode-icon")).toBeInTheDocument();
+    await expect(canvas.queryAllByTestId("entry-mode-icon")).toHaveLength(0);
+
+    // Entries header and toolbar are present
+    await expect(canvas.getByTestId("entries-header")).toHaveTextContent("Entries");
+    await expect(canvas.getByTestId("entries-toolbar")).toBeInTheDocument();
   },
 };
