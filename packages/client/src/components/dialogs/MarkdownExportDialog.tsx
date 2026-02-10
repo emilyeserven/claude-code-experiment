@@ -10,7 +10,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/components/Dialog";
+} from "@/components/dialogs/Dialog";
 
 interface TimerEntry {
   text: string;
