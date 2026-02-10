@@ -67,6 +67,7 @@ export function Index() {
     addEntry({
       text: inputValue.trim(),
       timestamp: formatTime(timestampMs),
+      mode: timestampMode,
     });
     setInputValue("");
     setTypingStartMs(null);

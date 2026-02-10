@@ -1,8 +1,11 @@
+import type { TimestampMode } from "./TimestampSettingsContext.ts";
+
 import { createContext } from "react";
 
 export interface TimerEntry {
   text: string;
   timestamp: string;
+  mode?: TimestampMode;
 }
 
 export interface Session {

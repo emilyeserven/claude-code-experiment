@@ -15,6 +15,7 @@ import {
 interface TimerEntry {
   text: string;
   timestamp: string;
+  mode?: "submit" | "typing-start";
 }
 
 interface MarkdownExportDialogProps {
@@ -23,9 +24,24 @@ interface MarkdownExportDialogProps {
   entries: TimerEntry[];
 }
 
+function formatMode(mode?: "submit" | "typing-start"): string {
+  if (mode === "typing-start") return "Typing Start";
+  if (mode === "submit") return "Submit";
+  return "";
+}
+
 function entriesToMarkdown(entries: TimerEntry[]): string {
   if (entries.length === 0) {
     return "";
+  }
+
+  const hasMode = entries.some(entry => entry.mode !== undefined);
+
+  if (hasMode) {
+    const header = "| Text | Timestamp | Mode |";
+    const separator = "| --- | --- | --- |";
+    const rows = entries.map(entry => `| ${entry.text} | ${entry.timestamp} | ${formatMode(entry.mode)} |`);
+    return [header, separator, ...rows].join("\n");
   }
 
   const header = "| Text | Timestamp |";

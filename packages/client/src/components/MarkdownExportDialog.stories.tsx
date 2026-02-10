@@ -8,14 +8,17 @@ const sampleEntries = [
   {
     text: "First task",
     timestamp: "00:01:23.456",
+    mode: "submit" as const,
   },
   {
     text: "Second task",
     timestamp: "00:05:10.200",
+    mode: "typing-start" as const,
   },
   {
     text: "Third task",
     timestamp: "00:12:45.789",
+    mode: "submit" as const,
   },
 ];
 
@@ -42,10 +45,10 @@ export const Default: Story = {
     // Textarea should contain markdown table
     const textarea = body.getByTestId("markdown-export-textarea") as HTMLTextAreaElement;
     await expect(textarea).toBeInTheDocument();
-    await expect(textarea.value).toContain("| Text | Timestamp |");
-    await expect(textarea.value).toContain("| First task | 00:01:23.456 |");
-    await expect(textarea.value).toContain("| Second task | 00:05:10.200 |");
-    await expect(textarea.value).toContain("| Third task | 00:12:45.789 |");
+    await expect(textarea.value).toContain("| Text | Timestamp | Mode |");
+    await expect(textarea.value).toContain("| First task | 00:01:23.456 | Submit |");
+    await expect(textarea.value).toContain("| Second task | 00:05:10.200 | Typing Start |");
+    await expect(textarea.value).toContain("| Third task | 00:12:45.789 | Submit |");
 
     // Textarea should be readonly
     await expect(textarea).toHaveAttribute("readonly");
