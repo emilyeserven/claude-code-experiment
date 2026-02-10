@@ -19,8 +19,10 @@ test.describe("Sessions", () => {
     await expect(page.getByTestId("session-name-edit-button")).toBeVisible();
     await expect(page.getByTestId("session-settings-trigger")).toBeVisible();
 
-    // Open settings menu and verify delete session option
+    // Open settings menu and verify both export and delete options
     await page.getByTestId("session-settings-trigger").click();
+    await expect(page.getByTestId("export-markdown-button")).toBeVisible();
+    await expect(page.getByTestId("export-markdown-button")).toContainText("Export as Markdown");
     await expect(page.getByTestId("delete-session-button")).toBeVisible();
     await expect(page.getByTestId("delete-session-button")).toContainText("Delete Session");
   });
@@ -127,6 +129,81 @@ test.describe("Sessions", () => {
     await expect(page.getByTestId("session-name-text")).toHaveText("Default Session");
     await expect(page.getByTestId("timer-entry")).toHaveCount(1);
     await expect(page.getByTestId("timer-entry").first()).toContainText("Session 1 Entry");
+  });
+});
+
+test.describe("Export as Markdown", () => {
+  test.beforeEach(async ({
+    page,
+  }) => {
+    await page.goto("/");
+    await page.evaluate(() => {
+      localStorage.removeItem("timer-sessions");
+      localStorage.removeItem("timer-active-session");
+    });
+    await page.reload();
+  });
+
+  test("export markdown button is disabled when session has no entries", async ({
+    page,
+  }) => {
+    await page.getByTestId("session-settings-trigger").click();
+    await expect(page.getByTestId("export-markdown-button")).toBeDisabled();
+  });
+
+  test("export markdown button is enabled when session has entries", async ({
+    page,
+  }) => {
+    await page.getByTestId("timer-start-button").click();
+    const input = page.getByTestId("timer-input");
+    await input.fill("test entry");
+    await input.press("Enter");
+
+    await page.getByTestId("session-settings-trigger").click();
+    await expect(page.getByTestId("export-markdown-button")).toBeEnabled();
+  });
+
+  test("export markdown dialog shows markdown table with entries", async ({
+    page,
+  }) => {
+    await page.getByTestId("timer-start-button").click();
+    const input = page.getByTestId("timer-input");
+    await input.fill("First entry");
+    await input.press("Enter");
+    await input.fill("Second entry");
+    await input.press("Enter");
+
+    await page.getByTestId("session-settings-trigger").click();
+    await page.getByTestId("export-markdown-button").click();
+
+    await expect(page.getByRole("heading", {
+      name: "Export as Markdown",
+    })).toBeVisible();
+    await expect(page.getByText("Copy the markdown below to use your entries elsewhere.")).toBeVisible();
+
+    const textarea = page.getByTestId("markdown-export-textarea");
+    await expect(textarea).toBeVisible();
+
+    const markdownContent = await textarea.inputValue();
+    expect(markdownContent).toContain("| Text | Timestamp |");
+    expect(markdownContent).toContain("| --- | --- |");
+    expect(markdownContent).toContain("First entry");
+    expect(markdownContent).toContain("Second entry");
+  });
+
+  test("copy to clipboard button is present in export dialog", async ({
+    page,
+  }) => {
+    await page.getByTestId("timer-start-button").click();
+    const input = page.getByTestId("timer-input");
+    await input.fill("test entry");
+    await input.press("Enter");
+
+    await page.getByTestId("session-settings-trigger").click();
+    await page.getByTestId("export-markdown-button").click();
+
+    await expect(page.getByTestId("copy-markdown-button")).toBeVisible();
+    await expect(page.getByTestId("copy-markdown-button")).toContainText("Copy to Clipboard");
   });
 });
 
