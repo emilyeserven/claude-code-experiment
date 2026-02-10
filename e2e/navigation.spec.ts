@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 test.describe("Navigation", () => {
-  test("renders nav bar with Home and About links, and settings button", async ({
+  test("renders nav bar with Home and Capture links, and settings button", async ({
     page,
   }) => {
     await page.goto("/");
@@ -10,7 +10,7 @@ test.describe("Navigation", () => {
       name: "Home",
     })).toBeVisible();
     await expect(page.getByRole("link", {
-      name: "About",
+      name: "Capture",
     })).toBeVisible();
     await expect(page.getByTestId("settings-trigger")).toBeVisible();
   });
@@ -23,25 +23,25 @@ test.describe("Navigation", () => {
       name: "Home",
     })).toHaveClass(/active/);
 
-    await page.goto("/about");
+    await page.goto("/capture");
     await expect(page.getByRole("link", {
-      name: "About",
+      name: "Capture",
     })).toHaveClass(/active/);
   });
 
-  test("navigates between Home and About pages", async ({
+  test("navigates between Home and Capture pages", async ({
     page,
   }) => {
     await page.goto("/");
 
-    // Home -> About
+    // Home -> Capture
     await page.getByRole("link", {
-      name: "About",
+      name: "Capture",
     }).click();
-    await expect(page).toHaveURL(/\/about/);
-    await expect(page.getByText("Hello from About!")).toBeVisible();
+    await expect(page).toHaveURL(/\/capture/);
+    await expect(page.getByTestId("capture-heading")).toBeVisible();
 
-    // About -> Home
+    // Capture -> Home
     await page.getByRole("link", {
       name: "Home",
     }).click();
