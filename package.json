@@ -2,9 +2,6 @@
   "name": "cc-experiments",
   "description": "",
   "version": "1.0.0",
-  "dependencies": {
-    "concurrently": "^9.2.1"
-  },
   "devDependencies": {
     "@emilyeserven/eslint-config": "1.0.31",
     "@playwright/test": "1.56.1",
@@ -23,7 +20,7 @@
   "scripts": {
     "build": "pnpm run -r build",
     "test": "pnpm run -r test",
-    "dev": "concurrently -n \"models,server,ui\" -c \"yellow,blue,green\" \"pnpm --filter=@cc-experiments/types --stream run dev\" \"pnpm --filter=@cc-experiments/middleware --stream run dev\" \"pnpm --filter=@cc-experiments/client --stream run dev\"",
+    "dev": "pnpm --filter=@cc-experiments/client --stream run dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "knip": "knip",

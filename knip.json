@@ -15,16 +15,6 @@
         "tailwindcss"
       ]
     },
-    "packages/types": {
-      "project": [
-        "src/*.{js,ts}"
-      ]
-    },
-    "packages/middleware": {
-      "project": [
-        "src/**/*.ts"
-      ]
-    }
   },
   "ignoreDependencies": [
     "syncpack"

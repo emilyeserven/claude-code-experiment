@@ -38,9 +38,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build types
-        run: pnpm --filter=@cc-experiments/types run build
-
       - name: Build client
         run: pnpm --filter=@cc-experiments/client run build
         env:
