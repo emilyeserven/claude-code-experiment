@@ -11,8 +11,8 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@/components/AlertDialog";
-import { MarkdownExportDialog } from "@/components/MarkdownExportDialog";
+} from "@/components/dialogs/AlertDialog";
+import { MarkdownExportDialog } from "@/components/dialogs/MarkdownExportDialog";
 import { Button, Popover, PopoverContent, PopoverTrigger } from "@/components/ui";
 
 interface TimerEntry {

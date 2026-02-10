@@ -13,7 +13,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/components/Dialog";
+} from "@/components/dialogs/Dialog";
 import { Input } from "@/components/Input";
 import { cn } from "@/lib/utils";
 

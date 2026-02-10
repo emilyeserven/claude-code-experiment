@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { ArrowLeftRight, Moon, Settings, Sun } from "lucide-react";
 import { Switch as SwitchPrimitive } from "radix-ui";
 
+import { Button } from "@/components/Button";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -13,10 +14,9 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/AlertDialog";
-import { Button } from "@/components/Button";
+} from "@/components/dialogs/AlertDialog";
+import { SessionSwitcherDialog } from "@/components/dialogs/SessionSwitcherDialog";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/Popover";
-import { SessionSwitcherDialog } from "@/components/SessionSwitcherDialog";
 import { useSession, useTheme, useTimestampSettings } from "@/hooks";
 import { cn } from "@/lib/utils";
 
