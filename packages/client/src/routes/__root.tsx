@@ -17,10 +17,10 @@ const RootComponent: React.FunctionComponent = () => {
           </Link>
 
           <Link
-            to="/about"
+            to="/capture"
             className="[&.active]:font-bold"
           >
-            About
+            Capture
           </Link>
         </div>
 
