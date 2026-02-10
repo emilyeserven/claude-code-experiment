@@ -47,7 +47,7 @@ jobs:
           GITHUB_PAGES: "true"
 
       - name: Build Storybook
-        run: pnpm --filter=@cc-experiments/client run build-storybook -- --output-dir dist/storybook
+        run: pnpm --filter=@cc-experiments/client run build-storybook
         env:
           GITHUB_PAGES: "true"
 
