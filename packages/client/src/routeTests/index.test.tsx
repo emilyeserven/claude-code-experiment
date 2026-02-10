@@ -178,8 +178,14 @@ describe("Index", () => {
     expect(entries[0]).toHaveTextContent("00:00:00.000");
   });
 
-  it("shows the delete session button", () => {
+  it("shows the session settings menu trigger", () => {
     renderIndex();
+    expect(screen.getByTestId("session-settings-trigger")).toBeInTheDocument();
+  });
+
+  it("shows delete session option in session settings menu", () => {
+    renderIndex();
+    fireEvent.click(screen.getByTestId("session-settings-trigger"));
     expect(screen.getByTestId("delete-session-button")).toHaveTextContent("Delete Session");
   });
 
@@ -247,6 +253,7 @@ describe("Index", () => {
   describe("session delete", () => {
     it("shows delete session confirmation dialog", () => {
       renderIndex();
+      fireEvent.click(screen.getByTestId("session-settings-trigger"));
       fireEvent.click(screen.getByTestId("delete-session-button"));
 
       expect(screen.getByText("Delete Session?")).toBeInTheDocument();
@@ -255,6 +262,7 @@ describe("Index", () => {
 
     it("cancelling delete session preserves the session", () => {
       renderIndex();
+      fireEvent.click(screen.getByTestId("session-settings-trigger"));
       fireEvent.click(screen.getByTestId("delete-session-button"));
       fireEvent.click(screen.getByTestId("cancel-delete-session"));
 
@@ -263,6 +271,7 @@ describe("Index", () => {
 
     it("confirming delete session creates a new default session", () => {
       renderIndex();
+      fireEvent.click(screen.getByTestId("session-settings-trigger"));
       fireEvent.click(screen.getByTestId("delete-session-button"));
       fireEvent.click(screen.getByTestId("confirm-delete-session"));
 
