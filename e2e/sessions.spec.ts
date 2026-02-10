@@ -12,11 +12,15 @@ test.describe("Sessions", () => {
     await page.reload();
   });
 
-  test("shows default session with edit and delete buttons", async ({
+  test("shows default session with edit and settings menu buttons", async ({
     page,
   }) => {
     await expect(page.getByTestId("session-name-text")).toHaveText("Default Session");
     await expect(page.getByTestId("session-name-edit-button")).toBeVisible();
+    await expect(page.getByTestId("session-settings-trigger")).toBeVisible();
+
+    // Open settings menu and verify delete session option
+    await page.getByTestId("session-settings-trigger").click();
     await expect(page.getByTestId("delete-session-button")).toBeVisible();
     await expect(page.getByTestId("delete-session-button")).toContainText("Delete Session");
   });
@@ -59,6 +63,7 @@ test.describe("Sessions", () => {
     await input.fill("test entry");
     await input.press("Enter");
 
+    await page.getByTestId("session-settings-trigger").click();
     await page.getByTestId("delete-session-button").click();
     await expect(page.getByText("Delete Session?")).toBeVisible();
     await expect(page.getByText(/Are you sure you want to delete/)).toBeVisible();
@@ -79,6 +84,7 @@ test.describe("Sessions", () => {
     await input.press("Enter");
     await expect(page.getByTestId("timer-entry")).toHaveCount(1);
 
+    await page.getByTestId("session-settings-trigger").click();
     await page.getByTestId("delete-session-button").click();
     await page.getByTestId("confirm-delete-session").click();
 
