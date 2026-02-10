@@ -46,6 +46,11 @@ jobs:
         env:
           GITHUB_PAGES: "true"
 
+      - name: Build Storybook
+        run: pnpm --filter=@cc-experiments/client run build-storybook -- --output-dir dist/storybook
+        env:
+          GITHUB_PAGES: "true"
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

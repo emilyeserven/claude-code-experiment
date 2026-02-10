@@ -16,5 +16,11 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
+  async viteFinal(config) {
+    if (process.env.GITHUB_PAGES === "true") {
+      config.base = "/claude-code-experiment/storybook/";
+    }
+    return config;
+  },
 };
 export default config;
