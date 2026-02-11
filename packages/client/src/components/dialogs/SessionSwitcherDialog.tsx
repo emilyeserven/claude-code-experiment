@@ -69,8 +69,8 @@ export function SessionSwitcherDialog({
     >
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Switch Session</DialogTitle>
-          <DialogDescription>
+          <DialogTitle data-testid="switch-session-title">Switch Session</DialogTitle>
+          <DialogDescription data-testid="switch-session-description">
             Select a session or create a new one.
           </DialogDescription>
         </DialogHeader>

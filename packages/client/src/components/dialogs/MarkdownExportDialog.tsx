@@ -79,8 +79,8 @@ export function MarkdownExportDialog({
     >
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Export as Markdown</DialogTitle>
-          <DialogDescription>
+          <DialogTitle data-testid="export-markdown-title">Export as Markdown</DialogTitle>
+          <DialogDescription data-testid="export-markdown-description">
             Copy the markdown below to use your entries elsewhere.
           </DialogDescription>
         </DialogHeader>

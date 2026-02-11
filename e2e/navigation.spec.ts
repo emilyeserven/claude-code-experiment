@@ -6,12 +6,8 @@ test.describe("Navigation", () => {
   }) => {
     await page.goto("/");
 
-    await expect(page.getByRole("link", {
-      name: "Home",
-    })).toBeVisible();
-    await expect(page.getByRole("link", {
-      name: "Capture",
-    })).toBeVisible();
+    await expect(page.getByTestId("nav-home-link")).toBeVisible();
+    await expect(page.getByTestId("nav-capture-link")).toBeVisible();
     await expect(page.getByTestId("settings-trigger")).toBeVisible();
   });
 
@@ -19,14 +15,10 @@ test.describe("Navigation", () => {
     page,
   }) => {
     await page.goto("/");
-    await expect(page.getByRole("link", {
-      name: "Home",
-    })).toHaveClass(/active/);
+    await expect(page.getByTestId("nav-home-link")).toHaveClass(/active/);
 
     await page.goto("/capture");
-    await expect(page.getByRole("link", {
-      name: "Capture",
-    })).toHaveClass(/active/);
+    await expect(page.getByTestId("nav-capture-link")).toHaveClass(/active/);
   });
 
   test("navigates between Home and Capture pages", async ({
@@ -35,16 +27,12 @@ test.describe("Navigation", () => {
     await page.goto("/");
 
     // Home -> Capture
-    await page.getByRole("link", {
-      name: "Capture",
-    }).click();
+    await page.getByTestId("nav-capture-link").click();
     await expect(page).toHaveURL(/\/capture/);
     await expect(page.getByTestId("capture-heading")).toBeVisible();
 
     // Capture -> Home
-    await page.getByRole("link", {
-      name: "Home",
-    }).click();
+    await page.getByTestId("nav-home-link").click();
     await expect(page).toHaveURL(/\/$/);
     await expect(page.getByTestId("timer-display")).toBeVisible();
   });

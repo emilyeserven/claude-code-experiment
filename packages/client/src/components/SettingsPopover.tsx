@@ -53,9 +53,19 @@ const SettingsPopover: React.FunctionComponent = () => {
           className="w-64"
         >
           <div className="space-y-4">
-            <h4 className="text-sm leading-none font-medium">Settings</h4>
+            <h4
+              className="text-sm leading-none font-medium"
+              data-testid="settings-heading"
+            >
+              Settings
+            </h4>
             <div className="flex items-center justify-between">
-              <span className="text-sm">Dark Mode</span>
+              <span
+                className="text-sm"
+                data-testid="dark-mode-label"
+              >
+                Dark Mode
+              </span>
               <SwitchPrimitive.Root
                 checked={isDark}
                 onCheckedChange={(checked) => { setTheme(checked ? "dark" : "light"); }}
