@@ -1,6 +1,6 @@
 import type { TimestampMode } from "./TimestampSettingsContext.ts";
 
-import { createContext } from "react";
+import { createSafeContext } from "@/lib/createSafeContext";
 
 export interface TimerEntry {
   text: string;
@@ -27,23 +27,4 @@ export interface SessionProviderState {
   deleteEntries: (indices: number[]) => void;
 }
 
-const defaultSession: Session = {
-  id: "default",
-  name: "Default Session",
-  entries: [],
-};
-
-const initialState: SessionProviderState = {
-  sessions: [defaultSession],
-  activeSession: defaultSession,
-  createSession: () => defaultSession,
-  deleteSession: () => null,
-  renameSession: () => null,
-  switchSession: () => null,
-  addEntry: () => null,
-  editEntry: () => null,
-  deleteEntry: () => null,
-  deleteEntries: () => null,
-};
-
-export const SessionProviderContext = createContext<SessionProviderState>(initialState);
+export const [SessionProviderContext, useSession] = createSafeContext<SessionProviderState>("Session");

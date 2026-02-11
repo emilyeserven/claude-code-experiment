@@ -19,27 +19,11 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Setup environment
+        uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: "pnpm"
-
-      - name: Configure npm registry for private packages
-        run: |
-          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Run lint fix
         if: github.event_name != 'merge_group'
@@ -116,27 +100,11 @@ jobs:
   unit-tests:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Setup environment
+        uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: "pnpm"
-
-      - name: Configure npm registry for private packages
-        run: |
-          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Test client (unit)
         run: pnpm --filter=@cc-experiments/client exec vitest run --project unit-tests
@@ -144,27 +112,11 @@ jobs:
   storybook-tests:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Setup environment
+        uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: "pnpm"
-
-      - name: Configure npm registry for private packages
-        run: |
-          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Get Playwright version
         id: playwright-version
@@ -191,27 +143,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Setup environment
+        uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: "pnpm"
-
-      - name: Configure npm registry for private packages
-        run: |
-          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Build
         run: pnpm build
@@ -221,27 +157,11 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Setup environment
+        uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: "pnpm"
-
-      - name: Configure npm registry for private packages
-        run: |
-          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Get Playwright version
         id: playwright-version
@@ -380,27 +300,11 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Setup environment
+        uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: "pnpm"
-
-      - name: Configure npm registry for private packages
-        run: |
-          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Report unused code with knip
         id: knip

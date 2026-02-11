@@ -12,25 +12,10 @@ jobs:
   e2e:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup environment
+        uses: ./.github/actions/setup
         with:
-          node-version: 22
-          cache: "pnpm"
-
-      - name: Configure npm registry for private packages
-        run: |
-          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium

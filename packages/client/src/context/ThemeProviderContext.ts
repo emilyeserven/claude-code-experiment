@@ -1,16 +1,10 @@
-import { createContext } from "react";
+import { createSafeContext } from "@/lib/createSafeContext";
 
 export type Theme = "dark" | "light" | "system";
 
-interface ThemeProviderState {
+export interface ThemeProviderState {
   theme: Theme;
-
   setTheme: (theme: Theme) => void;
 }
 
-const initialState: ThemeProviderState = {
-  theme: "system",
-  setTheme: () => null,
-};
-
-export const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
+export const [ThemeProviderContext, useTheme] = createSafeContext<ThemeProviderState>("Theme");
