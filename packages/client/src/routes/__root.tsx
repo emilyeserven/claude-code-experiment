@@ -12,6 +12,7 @@ const RootComponent: React.FunctionComponent = () => {
           <Link
             to="/"
             className="[&.active]:font-bold"
+            data-testid="nav-home-link"
           >
             Home
           </Link>
@@ -19,6 +20,7 @@ const RootComponent: React.FunctionComponent = () => {
           <Link
             to="/capture"
             className="[&.active]:font-bold"
+            data-testid="nav-capture-link"
           >
             Capture
           </Link>

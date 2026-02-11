@@ -67,8 +67,8 @@ test.describe("Sessions", () => {
 
     await page.getByTestId("session-settings-trigger").click();
     await page.getByTestId("delete-session-button").click();
-    await expect(page.getByText("Delete Session?")).toBeVisible();
-    await expect(page.getByText(/Are you sure you want to delete/)).toBeVisible();
+    await expect(page.getByTestId("delete-session-title")).toBeVisible();
+    await expect(page.getByTestId("delete-session-description")).toBeVisible();
     await expect(page.getByTestId("cancel-delete-session")).toBeVisible();
     await expect(page.getByTestId("confirm-delete-session")).toBeVisible();
 
@@ -176,10 +176,8 @@ test.describe("Export as Markdown", () => {
     await page.getByTestId("session-settings-trigger").click();
     await page.getByTestId("export-markdown-button").click();
 
-    await expect(page.getByRole("heading", {
-      name: "Export as Markdown",
-    })).toBeVisible();
-    await expect(page.getByText("Copy the markdown below to use your entries elsewhere.")).toBeVisible();
+    await expect(page.getByTestId("export-markdown-title")).toBeVisible();
+    await expect(page.getByTestId("export-markdown-description")).toBeVisible();
 
     const textarea = page.getByTestId("markdown-export-textarea");
     await expect(textarea).toBeVisible();
@@ -227,10 +225,8 @@ test.describe("Session switcher dialog", () => {
     await expect(page.getByTestId("switch-session-trigger")).toContainText("Switch Session");
 
     await page.getByTestId("switch-session-trigger").click();
-    await expect(page.getByRole("heading", {
-      name: "Switch Session",
-    })).toBeVisible();
-    await expect(page.getByText("Select a session or create a new one.")).toBeVisible();
+    await expect(page.getByTestId("switch-session-title")).toBeVisible();
+    await expect(page.getByTestId("switch-session-description")).toBeVisible();
     await expect(page.getByTestId("session-list-item")).toHaveCount(1);
     await expect(page.getByTestId("new-session-button")).toBeVisible();
 

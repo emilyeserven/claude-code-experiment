@@ -11,8 +11,8 @@ test.describe("Settings and dark mode", () => {
     page,
   }) => {
     await page.getByTestId("settings-trigger").click();
-    await expect(page.getByText("Settings").first()).toBeVisible();
-    await expect(page.getByText("Dark Mode")).toBeVisible();
+    await expect(page.getByTestId("settings-heading")).toBeVisible();
+    await expect(page.getByTestId("dark-mode-label")).toBeVisible();
 
     const toggle = page.getByTestId("dark-mode-toggle");
     await expect(toggle).toHaveRole("switch");

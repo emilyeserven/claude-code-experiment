@@ -102,8 +102,8 @@ export function SessionSettingsMenu({
       >
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Delete Session?</AlertDialogTitle>
-            <AlertDialogDescription>
+            <AlertDialogTitle data-testid="delete-session-title">Delete Session?</AlertDialogTitle>
+            <AlertDialogDescription data-testid="delete-session-description">
               Are you sure you want to delete &quot;
               {sessionName}
               &quot;? All entries in this session will be permanently removed. This action cannot be undone.
