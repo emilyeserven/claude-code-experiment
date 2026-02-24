@@ -10,7 +10,6 @@
           "vite.config.ts"
         ]
       },
-      "ignore": "src/routeTree.gen.ts",
       "ignoreDependencies": [
         "tailwindcss"
       ]

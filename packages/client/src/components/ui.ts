@@ -1,5 +1,9 @@
-export { Button } from "./Button";
-export { Checkbox } from "./Checkbox";
-export { Input } from "./Input";
-export { Popover, PopoverContent, PopoverTrigger } from "./Popover";
-export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./Tooltip";
+export { default as Button } from "./Button.vue";
+export { default as Checkbox } from "./Checkbox.vue";
+export { default as Input } from "./Input.vue";
+export { default as Popover } from "./Popover.vue";
+export { default as PopoverTrigger } from "./PopoverTrigger.vue";
+export { default as PopoverContent } from "./PopoverContent.vue";
+export { default as Tooltip } from "./Tooltip.vue";
+export { default as TooltipTrigger } from "./TooltipTrigger.vue";
+export { default as TooltipContent } from "./TooltipContent.vue";

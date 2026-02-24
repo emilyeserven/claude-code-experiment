@@ -4,21 +4,21 @@ This file provides guidance for AI assistants working with the **cc-experiments*
 
 ## Project Overview
 
-cc-experiments is a frontend TypeScript web application, built as a **pnpm monorepo**. It uses React for the frontend, intentionally avoiding fullstack frameworks.
+cc-experiments is a frontend TypeScript web application, built as a **pnpm monorepo**. It uses Vue 3 for the frontend, intentionally avoiding fullstack frameworks.
 
 ## Repository Structure
 
 ```
 cc-experiments/
 ├── packages/
-│   └── client/         # @cc-experiments/client — React frontend app (port 5173 dev / 3000 prod)
+│   └── client/         # @cc-experiments/client — Vue 3 frontend app (port 5173 dev / 3000 prod)
 ├── e2e/                # Playwright end-to-end tests
 ├── .github/workflows/  # CI, deploy, and Claude Code automation workflows
 ├── .husky/             # Git hooks (pre-commit, pre-push run lint-staged)
 ├── playwright.config.ts # Playwright E2E config
 ├── docker-compose.yml  # Docker orchestration for the client service
 ├── pnpm-workspace.yaml # Workspace definition
-├── eslint.config.js    # Root ESLint config (uses @emilyeserven/eslint-config)
+├── eslint.config.js    # Root ESLint config (eslint-plugin-vue + typescript-eslint)
 ├── knip.json           # Unused dependency detection config
 └── tsconfig.json       # Root TypeScript config (strict, ES2022, bundler resolution)
 ```
@@ -28,9 +28,9 @@ cc-experiments/
 | Layer | Technology |
 |-------|-----------|
 | Language | TypeScript 5.9, ES2022 modules |
-| Frontend | React 19, Vite 7, Tailwind CSS 4, shadcn/ui + Radix |
-| Routing (FE) | TanStack Router (file-based) |
-| Data fetching | TanStack Query |
+| Frontend | Vue 3 (Composition API), Vite 7, Tailwind CSS 4, Radix Vue |
+| Routing (FE) | Vue Router 4 (manual routes) |
+| Table | TanStack Vue Table |
 | Testing | Vitest (client), Playwright (E2E), Storybook 10 |
 | Package manager | pnpm 10.13.1 |
 | Containerization | Docker multi-stage builds (Node 22, distroless final images) |
@@ -60,48 +60,47 @@ pnpm storybook            # Launch Storybook for the client package (port 6006)
 
 Additional client commands:
 - `pnpm --filter=@cc-experiments/client run storybook` — Storybook dev server
-- `pnpm --filter=@cc-experiments/client run routeTree` — Regenerate TanStack Router route tree
 
 ## Architecture & Package Details
 
 ### @cc-experiments/client
 
-React 19 SPA with:
-- **File-based routing**: TanStack Router auto-generates `src/routeTree.gen.ts` — never edit this file manually.
+Vue 3 SPA with:
+- **Manual routing**: Vue Router 4 with routes defined in `src/router.ts`. Two routes: `/` (Home) and `/capture`.
 - **Path alias**: `@/` maps to `./src/` (configured in `vite.config.ts`).
 - **Styling**: Tailwind CSS 4 with `cn()` utility (`clsx` + `tailwind-merge`) in `src/lib/utils.ts`.
-- **Dark mode**: Class-based theme switching via `ThemeProvider` context + `useTheme` hook, persisted in localStorage.
-- **Component library**: shadcn/ui components with Radix primitives and `class-variance-authority`. If a needed shadcn component doesn't exist yet, manually install it from the [shadcn/ui website](https://ui.shadcn.com/) following their installation instructions.
-- **Data fetching**: TanStack Query; fetch functions live in `src/utils/fetchFunctions.ts`.
+- **Dark mode**: Class-based theme switching via `provideTheme` composable + `useTheme` hook, persisted in localStorage.
+- **Component library**: Custom Vue components with Radix Vue primitives and `class-variance-authority` for button variants (`buttonVariants.ts`).
+- **State management**: Vue composables with `provide`/`inject` pattern (see `src/composables/`).
 
 ## Code Conventions
 
 ### Naming
 
 - **Packages**: `@cc-experiments/<name>` namespace
-- **React components**: PascalCase files (e.g., `Test.tsx`, `ThemeProvider.tsx`)
-- **Hooks**: camelCase with `use` prefix (e.g., `useTheme.ts`)
-- **Utilities/services**: camelCase files (e.g., `fetchFunctions.ts`)
-- **Types/interfaces**: PascalCase (e.g., `Test`, `DynamicTest`)
+- **Vue components**: PascalCase `.vue` files (e.g., `Timer.vue`, `Button.vue`)
+- **Composables**: camelCase with `use` prefix (e.g., `useTheme.ts`, `useSession.ts`)
+- **Utilities/services**: camelCase files (e.g., `formatTime.ts`, `buttonVariants.ts`)
+- **Types/interfaces**: PascalCase (e.g., `Session`, `TimerEntry`)
 - **Test files**: `*.test.ts` or `*.test.tsx` suffix
 - **E2E test files**: `*.spec.ts` suffix (in `e2e/` directory)
 - **Story files**: `*.stories.tsx` suffix
 
 ### Patterns
 
-- **React components** use functional components with interface-typed props (not inline types). Include `data-testid` attributes for testability.
-- **Storybook requirement**: All new React components must have a corresponding Storybook story file (`*.stories.tsx`). All unit tests for components should be written in the Storybook file using `play()` functions rather than in separate `*.test.tsx` files.
-- **Context pattern**: Provider component + separate context file + custom hook (see `ThemeProvider.tsx`, `ThemeProviderContext.ts`, `useTheme.ts`).
+- **Vue components** use `<script setup lang="ts">` with typed props via `defineProps<Interface>()` and typed emits via `defineEmits<{...}>()`. Include `data-testid` attributes for testability.
+- **Storybook requirement**: All new Vue components should have a corresponding Storybook story file.
+- **Composable pattern**: `provide`/`inject` with `InjectionKey` symbols. Each state area has a `provide*()` function (called in App.vue) and a `use*()` function for consumers (see `useTheme.ts`, `useSession.ts`, `useTimestampSettings.ts`).
 - **Module system**: All packages use `"type": "module"` (ESM).
 - **Import style**: Client uses Vite's resolution (no extensions needed).
 
 ### Linting & Formatting
 
-- ESLint uses a custom shared config: `@emilyeserven/eslint-config`
+- ESLint uses `eslint-plugin-vue` + `typescript-eslint`
 - **Always run `pnpm lint:fix` before attempting manual lint fixes.** The auto-fixer handles class ordering (Tailwind), line wrapping, stylistic formatting, and many other rules automatically. Only fix remaining errors by hand after the auto-fixer has run.
 - Pre-commit hook runs `lint-staged` via Husky, which applies `eslint --fix` to all staged files
 - Pre-push hook also runs `lint-staged`
-- Client additionally runs tests on staged `.ts`/`.tsx`/`.js` files
+- Client additionally runs tests on staged `.ts`/`.vue` files
 
 ### TypeScript
 
@@ -109,7 +108,7 @@ React 19 SPA with:
 - `noImplicitAny: true`
 - `noUncheckedSideEffectImports: true`
 - Target: ES2022 with bundler module resolution
-- Client has its own `tsconfig.build.json` for production builds
+- Vue SFC type declarations in `env.d.ts`
 
 ## Testing
 
@@ -174,14 +173,6 @@ If `pnpm install` fails with 401/403 errors for `@emilyeserven/*` packages:
 - Reference `.npmrc.example` for the expected format
 - In CI, the `GH_PACKAGES_TOKEN` secret handles this automatically
 
-### TanStack Router Route Tree
-
-If routes are missing or stale after adding/renaming route files:
-```bash
-pnpm --filter=@cc-experiments/client run routeTree
-```
-This regenerates `src/routeTree.gen.ts`. Never edit this file manually.
-
 ### Playwright Browser Issues
 
 If E2E or Storybook browser tests fail with missing browser errors:
@@ -202,8 +193,6 @@ Always run `pnpm lint:fix` before trying to fix lint errors manually. The auto-f
 ## Important Notes
 
 - The CI pipeline must succeed before merging any changes. Verify that linting (`pnpm lint`), building (`pnpm build`), and tests (`pnpm test`) all pass.
-- `src/routeTree.gen.ts` is auto-generated by TanStack Router — do not edit manually.
 - Before pushing, check if `origin/master` has new commits. If it does, pull master and rebase the current branch onto it (`git fetch origin master && git rebase origin/master`) before pushing.
 - Do not edit files in `node_modules/`, `dist/`, or any build output directories.
-- When adding a new shadcn component, follow the installation instructions from the [shadcn/ui website](https://ui.shadcn.com/) rather than creating the component manually.
 - GitHub Actions CI will auto-commit lint fixes on branches. If your push is rejected after CI runs, pull before pushing again.

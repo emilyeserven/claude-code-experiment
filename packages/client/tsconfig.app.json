@@ -6,8 +6,8 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve"
   },
-  "include": ["src"],
+  "include": ["src", "src/**/*.vue", "env.d.ts"],
   "exclude": ["./storybook"]
 }

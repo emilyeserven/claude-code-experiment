@@ -1,5 +1,5 @@
 /* global process */
-import type { StorybookConfig } from "@storybook/react-vite";
+import type { StorybookConfig } from "@storybook/vue3-vite";
 
 const config: StorybookConfig = {
   stories: [
@@ -14,7 +14,7 @@ const config: StorybookConfig = {
     "storybook-addon-pseudo-states",
   ],
   framework: {
-    name: "@storybook/react-vite",
+    name: "@storybook/vue3-vite",
     options: {},
   },
   async viteFinal(config) {
