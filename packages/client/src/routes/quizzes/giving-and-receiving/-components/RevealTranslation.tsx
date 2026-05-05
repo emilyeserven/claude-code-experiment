@@ -2,10 +2,10 @@ import type { Sentence } from "../-utils/types";
 
 import { useCallback, useState } from "react";
 
-import { Button } from "@/components/ui";
-
 import { GRAMMAR_POINT_SUMMARIES } from "../-utils/feedback";
 import { GRAMMAR_POINT_LABELS } from "../-utils/types";
+
+import { Button } from "@/components/ui";
 
 interface RevealTranslationProps {
 

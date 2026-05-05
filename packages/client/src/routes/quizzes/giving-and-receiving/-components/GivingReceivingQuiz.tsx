@@ -2,13 +2,13 @@ import type { Sentence } from "../-utils/types";
 
 import { useCallback, useMemo, useState } from "react";
 
-import { Button } from "@/components/ui";
-import { cn } from "@/lib/utils";
-
 import { FillInBlank } from "./FillInBlank";
 import { GrammarPointGrid } from "./GrammarPointGrid";
 import { RevealTranslation } from "./RevealTranslation";
 import { SENTENCES } from "../-utils/sentences";
+
+import { Button } from "@/components/ui";
+import { cn } from "@/lib/utils";
 
 type Mode = "mixed" | "fill-in-blank" | "reveal-translation" | "grammar-point-grid";
 
