@@ -2,13 +2,16 @@ import { render, screen, fireEvent, act } from "@testing-library/react";
 import { beforeEach, afterEach, describe, expect, it, vi } from "vitest";
 
 import { SessionProvider } from "@/context/SessionProvider";
+import { TimestampSettingsProvider } from "@/context/TimestampSettingsProvider";
 import { Index } from "@/routes/index";
 
 function renderIndex() {
   return render(
-    <SessionProvider>
-      <Index />
-    </SessionProvider>,
+    <TimestampSettingsProvider>
+      <SessionProvider>
+        <Index />
+      </SessionProvider>
+    </TimestampSettingsProvider>,
   );
 }
 
