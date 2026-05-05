@@ -1,24 +1,15 @@
 name: Setup Environment
-description: Checkout, install pnpm, Node.js, and install dependencies
+description: Install pnpm, Node.js, and project dependencies. Caller must check out the repo first.
 
 inputs:
   node-version:
     description: Node.js version to install
     required: false
     default: "22"
-  ref:
-    description: Git ref to checkout
-    required: false
-    default: ""
 
 runs:
   using: composite
   steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        ref: ${{ inputs.ref }}
-
     - name: Setup pnpm
       uses: pnpm/action-setup@v4
 
