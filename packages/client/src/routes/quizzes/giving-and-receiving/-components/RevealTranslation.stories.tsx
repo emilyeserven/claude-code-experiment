@@ -1,4 +1,4 @@
-import type { Sentence } from "./types";
+import type { Sentence } from "../-utils/types";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { expect, fn, userEvent, within } from "@storybook/test";
@@ -15,6 +15,7 @@ const sampleSentence: Sentence = {
 };
 
 const meta = {
+  title: "Quizzes/Giving and Receiving/RevealTranslation",
   component: RevealTranslation,
   args: {
     sentence: sampleSentence,

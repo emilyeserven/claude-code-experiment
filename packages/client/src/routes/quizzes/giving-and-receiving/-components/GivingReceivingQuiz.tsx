@@ -1,4 +1,4 @@
-import type { Sentence } from "./types";
+import type { Sentence } from "../-utils/types";
 
 import { useCallback, useMemo, useState } from "react";
 
@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { FillInBlank } from "./FillInBlank";
 import { GrammarPointGrid } from "./GrammarPointGrid";
 import { RevealTranslation } from "./RevealTranslation";
-import { SENTENCES } from "./sentences";
+import { SENTENCES } from "../-utils/sentences";
 
 type Mode = "mixed" | "fill-in-blank" | "reveal-translation" | "grammar-point-grid";
 

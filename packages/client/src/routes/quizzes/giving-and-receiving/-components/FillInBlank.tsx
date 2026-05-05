@@ -1,12 +1,12 @@
-import type { Sentence } from "./types";
+import type { Sentence } from "../-utils/types";
 
 import { useCallback, useMemo, useState } from "react";
 
 import { Button, Input } from "@/components/ui";
 import { romajiToHiragana } from "@/utils/romajiToHiragana";
 
-import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "./feedback";
-import { GRAMMAR_POINT_LABELS } from "./types";
+import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "../-utils/feedback";
+import { GRAMMAR_POINT_LABELS } from "../-utils/types";
 
 interface FillInBlankProps {
 

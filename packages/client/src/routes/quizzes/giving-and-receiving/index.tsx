@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import { GivingReceivingQuiz } from "@/features/quizzes/giving-and-receiving/GivingReceivingQuiz";
+import { GivingReceivingQuiz } from "./-components/GivingReceivingQuiz";
 
-export const Route = createFileRoute("/quizzes/giving-and-receiving")({
+export const Route = createFileRoute("/quizzes/giving-and-receiving/")({
   component: GivingAndReceivingPage,
 });
 

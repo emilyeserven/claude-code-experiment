@@ -5,7 +5,7 @@ description: Add a sentence (or batch of sentences) to the Giving and Receiving 
 
 # Add a Giving and Receiving sentence
 
-Each sentence in `packages/client/src/features/quizzes/giving-and-receiving/sentences.ts` powers all three question types (fill-in-the-blank, reveal-translation, grammar-point grid). Get the data right once and it works everywhere.
+Each sentence in `packages/client/src/routes/quizzes/giving-and-receiving/-utils/sentences.ts` powers all three question types (fill-in-the-blank, reveal-translation, grammar-point grid). Get the data right once and it works everywhere.
 
 ## Required fields
 
@@ -50,7 +50,7 @@ The blank for `てあげた` is just `あげた` (the て stays with `教え`). 
 
 ## Picking `acceptableAnswers`
 
-Use the existing constants at the top of `sentences.ts`:
+Use the existing constants at the top of `-utils/sentences.ts`:
 
 | Constant | Hiragana set | Use for |
 |----------|--------------|---------|

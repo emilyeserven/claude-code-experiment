@@ -1,12 +1,12 @@
-import type { GrammarPoint, Sentence } from "./types";
+import type { GrammarPoint, Sentence } from "../-utils/types";
 
 import { useCallback, useMemo, useState } from "react";
 
 import { Button } from "@/components/ui";
 import { cn } from "@/lib/utils";
 
-import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "./feedback";
-import { GRAMMAR_POINT_LABELS, GRAMMAR_POINTS } from "./types";
+import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "../-utils/feedback";
+import { GRAMMAR_POINT_LABELS, GRAMMAR_POINTS } from "../-utils/types";
 
 interface GrammarPointGridProps {
 

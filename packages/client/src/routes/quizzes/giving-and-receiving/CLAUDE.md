@@ -1,6 +1,6 @@
 # Giving and Receiving Quiz
 
-This feature drills the Japanese giving/receiving verbs:
+This route module drills the Japanese giving/receiving verbs:
 
 | Standalone | Auxiliary (て-form) | Direction |
 |------------|---------------------|-----------|
@@ -8,20 +8,33 @@ This feature drills the Japanese giving/receiving verbs:
 | くれる | てくれる | Out-group → speaker / in-group |
 | もらう | てもらう | Receiver-as-topic |
 
+## Layout
+
+The route lives next to its components and data, and the non-route files are placed in subdirectories whose names start with `-` so TanStack Router's file-based routing ignores them (`routeFileIgnorePrefix: "-"`, the default).
+
+```
+routes/quizzes/giving-and-receiving/
+  index.tsx             # the /quizzes/giving-and-receiving route
+  -components/          # React components + their stories
+  -utils/               # data + types
+  CLAUDE.md, SKILL.md
+```
+
 ## Files
 
-- `types.ts` — `GrammarPoint` union, `Sentence` interface, label/order constants.
-- `sentences.ts` — pool of **100** sentences. Order matters only for `id` collisions; rounds pick randomly.
-- `feedback.ts` — `getWrongAnswerFeedback(selected, correct)` returns a tailored explanation for each (correct, selected) pair plus per-grammar-point summaries.
-- `FillInBlank.tsx` — type-the-missing-verb mode. Romaji is auto-converted to hiragana via `@/utils/romajiToHiragana` while typing.
-- `RevealTranslation.tsx` — show the Japanese, click to reveal the English, then self-rate (Again / Hard / Good / Easy).
-- `GrammarPointGrid.tsx` — show the English, pick the grammar point from a 2×3 grid (placement randomized per round).
-- `GivingReceivingQuiz.tsx` — container. Picks a random sentence + question type each round. "Mixed" mode rotates randomly across the three question types.
+- `index.tsx` — the route. Renders a header, a "Back to Quizzes" link, and `<GivingReceivingQuiz />`.
+- `-utils/types.ts` — `GrammarPoint` union, `Sentence` interface, label/order constants.
+- `-utils/sentences.ts` — pool of **100** sentences. Order matters only for `id` collisions; rounds pick randomly.
+- `-utils/feedback.ts` — `getWrongAnswerFeedback(selected, correct)` returns a tailored explanation for each (correct, selected) pair plus per-grammar-point summaries.
+- `-components/FillInBlank.tsx` — type-the-missing-verb mode. Romaji is auto-converted to hiragana via `@/utils/romajiToHiragana` while typing.
+- `-components/RevealTranslation.tsx` — show the Japanese, click to reveal the English, then self-rate (Again / Hard / Good / Easy).
+- `-components/GrammarPointGrid.tsx` — show the English, pick the grammar point from a 2×3 grid (placement randomized per round).
+- `-components/GivingReceivingQuiz.tsx` — container. Picks a random sentence + question type each round. "Mixed" mode rotates randomly across the three question types.
 
 ## Routing
 
-- `/quizzes` (in `routes/quizzes.tsx`) lists available quizzes.
-- `/quizzes/giving-and-receiving` (in `routes/quizzes.giving-and-receiving.tsx`) renders `GivingReceivingQuiz`.
+- `/quizzes` (in `routes/quizzes/index.tsx`) lists available quizzes.
+- `/quizzes/giving-and-receiving` (this directory's `index.tsx`) renders `GivingReceivingQuiz`.
 
 When you add or rename route files, regenerate the route tree:
 

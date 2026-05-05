@@ -5,6 +5,7 @@ import { expect, within } from "@storybook/test";
 import { GivingReceivingQuiz } from "./GivingReceivingQuiz";
 
 const meta = {
+  title: "Quizzes/Giving and Receiving/GivingReceivingQuiz",
   component: GivingReceivingQuiz,
 } satisfies Meta<typeof GivingReceivingQuiz>;
 
