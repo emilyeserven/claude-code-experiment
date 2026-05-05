@@ -29,7 +29,9 @@ const RootComponent: React.FunctionComponent = () => {
             to="/quizzes"
             className="[&.active]:font-bold"
             data-testid="nav-quizzes-link"
-            activeOptions={{ exact: false }}
+            activeOptions={{
+              exact: false,
+            }}
           >
             Quizzes
           </Link>

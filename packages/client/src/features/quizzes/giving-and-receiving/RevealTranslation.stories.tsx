@@ -1,8 +1,7 @@
+import type { Sentence } from "./types";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { expect, fn, userEvent, within } from "@storybook/test";
-
-import type { Sentence } from "./types";
 
 import { RevealTranslation } from "./RevealTranslation";
 
@@ -29,7 +28,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({
+    canvasElement,
+  }) => {
     const canvas = within(canvasElement);
     await expect(canvas.getByTestId("reveal-translation-japanese"))
       .toHaveTextContent("友達が私にプレゼントをくれた。");
@@ -39,7 +40,9 @@ export const Default: Story = {
 };
 
 export const RevealShowsEnglish: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({
+    canvasElement,
+  }) => {
     const canvas = within(canvasElement);
     await userEvent.click(canvas.getByTestId("reveal-translation-button"));
     await expect(canvas.getByTestId("reveal-translation-english"))
@@ -48,7 +51,9 @@ export const RevealShowsEnglish: Story = {
 };
 
 export const RatingThenNext: Story = {
-  play: async ({ canvasElement, args }) => {
+  play: async ({
+    canvasElement, args,
+  }) => {
     const canvas = within(canvasElement);
     await userEvent.click(canvas.getByTestId("reveal-translation-button"));
     await userEvent.click(canvas.getByTestId("rating-good"));

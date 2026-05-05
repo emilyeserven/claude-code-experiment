@@ -3,11 +3,11 @@ import { StrictMode } from "react";
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { createRoot } from "react-dom/client";
 
-import { routeTree } from "./routeTree.gen.ts";
-
 import { SessionProvider } from "@/context/SessionProvider.tsx";
 import { ThemeProvider } from "@/context/ThemeProvider.tsx";
 import { TimestampSettingsProvider } from "@/context/TimestampSettingsProvider.tsx";
+
+import { routeTree } from "./routeTree.gen.ts";
 
 const router = createRouter({
   routeTree,
@@ -21,8 +21,8 @@ declare module "@tanstack/react-router" {
   }
 }
 
-const rootElement = document.getElementById("root")!;
-if (!rootElement.innerHTML) {
+const rootElement = document.getElementById("root");
+if (rootElement && !rootElement.innerHTML) {
   const root = createRoot(rootElement);
 
   root.render(

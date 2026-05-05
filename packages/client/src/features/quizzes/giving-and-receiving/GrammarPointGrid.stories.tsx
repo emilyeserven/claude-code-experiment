@@ -1,8 +1,7 @@
+import type { Sentence } from "./types";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { expect, fn, userEvent, within } from "@storybook/test";
-
-import type { Sentence } from "./types";
 
 import { GrammarPointGrid } from "./GrammarPointGrid";
 
@@ -30,7 +29,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({
+    canvasElement,
+  }) => {
     const canvas = within(canvasElement);
     await expect(canvas.getByTestId("grammar-point-grid-english"))
       .toHaveTextContent("I had the hairdresser cut my hair.");
@@ -42,7 +43,9 @@ export const Default: Story = {
 };
 
 export const CorrectAnswer: Story = {
-  play: async ({ canvasElement, args }) => {
+  play: async ({
+    canvasElement, args,
+  }) => {
     const canvas = within(canvasElement);
     await userEvent.click(canvas.getByTestId("grammar-point-grid-option-te-morau"));
     await expect(args.onResult).toHaveBeenCalledWith(true);
@@ -52,7 +55,9 @@ export const CorrectAnswer: Story = {
 };
 
 export const WrongAnswerShowsTailoredFeedback: Story = {
-  play: async ({ canvasElement, args }) => {
+  play: async ({
+    canvasElement, args,
+  }) => {
     const canvas = within(canvasElement);
     await userEvent.click(canvas.getByTestId("grammar-point-grid-option-te-kureru"));
     await expect(args.onResult).toHaveBeenCalledWith(false);
@@ -63,8 +68,11 @@ export const WrongAnswerShowsTailoredFeedback: Story = {
 };
 
 export const SecondClickIgnored: Story = {
-  play: async ({ canvasElement, args }) => {
+  play: async ({
+    canvasElement, args,
+  }) => {
     const canvas = within(canvasElement);
+    args.onResult.mockClear();
     await userEvent.click(canvas.getByTestId("grammar-point-grid-option-ageru"));
     await userEvent.click(canvas.getByTestId("grammar-point-grid-option-te-morau"));
     await expect(args.onResult).toHaveBeenCalledTimes(1);

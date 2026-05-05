@@ -1,11 +1,11 @@
+import type { Sentence } from "./types";
+
 import { useCallback, useState } from "react";
 
-import type { Sentence } from "./types";
+import { Button } from "@/components/ui";
 
 import { GRAMMAR_POINT_SUMMARIES } from "./feedback";
 import { GRAMMAR_POINT_LABELS } from "./types";
-
-import { Button } from "@/components/ui";
 
 interface RevealTranslationProps {
 
@@ -16,9 +16,12 @@ interface RevealTranslationProps {
   onResult?: (rating: Rating) => void;
 }
 
-export type Rating = "again" | "hard" | "good" | "easy";
+type Rating = "again" | "hard" | "good" | "easy";
 
-const RATINGS: { rating: Rating; label: string; description: string; testId: string }[] = [
+const RATINGS: { rating: Rating;
+  label: string;
+  description: string;
+  testId: string; }[] = [
   {
     rating: "again",
     label: "Didn't get it",
@@ -45,7 +48,9 @@ const RATINGS: { rating: Rating; label: string; description: string; testId: str
   },
 ];
 
-export function RevealTranslation({ sentence, onNext, onResult }: RevealTranslationProps) {
+export function RevealTranslation({
+  sentence, onNext, onResult,
+}: RevealTranslationProps) {
   const [revealed, setRevealed] = useState(false);
   const [rated, setRated] = useState<Rating | null>(null);
 

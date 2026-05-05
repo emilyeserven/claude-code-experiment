@@ -1,10 +1,10 @@
-export type GrammarPoint =
-  | "ageru"
-  | "kureru"
-  | "morau"
-  | "te-ageru"
-  | "te-kureru"
-  | "te-morau";
+export type GrammarPoint
+  = | "ageru"
+    | "kureru"
+    | "morau"
+    | "te-ageru"
+    | "te-kureru"
+    | "te-morau";
 
 export const GRAMMAR_POINTS: readonly GrammarPoint[] = [
   "ageru",

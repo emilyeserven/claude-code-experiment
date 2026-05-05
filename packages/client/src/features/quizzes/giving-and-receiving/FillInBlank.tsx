@@ -1,12 +1,12 @@
-import { useCallback, useMemo, useState } from "react";
-
 import type { Sentence } from "./types";
 
-import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "./feedback";
-import { GRAMMAR_POINT_LABELS } from "./types";
+import { useCallback, useMemo, useState } from "react";
 
 import { Button, Input } from "@/components/ui";
 import { romajiToHiragana } from "@/utils/romajiToHiragana";
+
+import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "./feedback";
+import { GRAMMAR_POINT_LABELS } from "./types";
 
 interface FillInBlankProps {
 
@@ -29,7 +29,9 @@ function guessGrammarPoint(answer: string): Sentence["grammarPoint"] | null {
   return null;
 }
 
-export function FillInBlank({ sentence, onNext, onResult }: FillInBlankProps) {
+export function FillInBlank({
+  sentence, onNext, onResult,
+}: FillInBlankProps) {
   const [raw, setRaw] = useState("");
   const [status, setStatus] = useState<Status>("input");
 
@@ -78,11 +80,17 @@ export function FillInBlank({ sentence, onNext, onResult }: FillInBlankProps) {
             mx-1 inline-block min-w-24 rounded-md border-b-2 border-dashed px-2
             text-center
             ${status === "correct"
-        ? "border-green-600 text-green-700 dark:text-green-400"
-        : ""}
+      ? `
+        border-green-600 text-green-700
+        dark:text-green-400
+      `
+      : ""}
             ${status === "incorrect"
-        ? "border-red-600 text-red-700 dark:text-red-400"
-        : ""}
+      ? `
+        border-red-600 text-red-700
+        dark:text-red-400
+      `
+      : ""}
           `}
           data-testid="fill-in-blank-display"
         >
@@ -112,22 +120,22 @@ export function FillInBlank({ sentence, onNext, onResult }: FillInBlankProps) {
           />
           {status === "input"
             ? (
-                <Button
-                  onClick={handleSubmit}
-                  disabled={!hiragana}
-                  data-testid="fill-in-blank-submit"
-                >
-                  Check
-                </Button>
-              )
+              <Button
+                onClick={handleSubmit}
+                disabled={!hiragana}
+                data-testid="fill-in-blank-submit"
+              >
+                Check
+              </Button>
+            )
             : (
-                <Button
-                  onClick={handleNext}
-                  data-testid="fill-in-blank-next"
-                >
-                  Next
-                </Button>
-              )}
+              <Button
+                onClick={handleNext}
+                data-testid="fill-in-blank-next"
+              >
+                Next
+              </Button>
+            )}
         </div>
       </div>
 

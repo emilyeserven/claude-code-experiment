@@ -35,8 +35,9 @@ test.describe("Home page", () => {
     await expect(page.getByTestId("timer-stop-button")).toHaveCount(0);
     await expect(page.getByTestId("timer-start-button")).toBeVisible();
     const stoppedTime = await display.textContent();
+    if (stoppedTime === null) throw new Error("display had no textContent");
     await page.waitForTimeout(200);
-    await expect(display).toHaveText(stoppedTime!);
+    await expect(display).toHaveText(stoppedTime);
 
     // Reset
     await expect(page.getByTestId("timer-reset-button")).toBeVisible();

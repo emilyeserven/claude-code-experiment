@@ -1,26 +1,48 @@
+import type { Sentence } from "./types";
+
 import { useCallback, useMemo, useState } from "react";
 
-import type { Sentence } from "./types";
+import { Button } from "@/components/ui";
+import { cn } from "@/lib/utils";
 
 import { FillInBlank } from "./FillInBlank";
 import { GrammarPointGrid } from "./GrammarPointGrid";
 import { RevealTranslation } from "./RevealTranslation";
 import { SENTENCES } from "./sentences";
 
-import { Button } from "@/components/ui";
-import { cn } from "@/lib/utils";
-
 type Mode = "mixed" | "fill-in-blank" | "reveal-translation" | "grammar-point-grid";
 
-const MODES: { mode: Mode; label: string; testId: string }[] = [
-  { mode: "mixed", label: "Mixed", testId: "mode-mixed" },
-  { mode: "fill-in-blank", label: "Fill in the blank", testId: "mode-fill-in-blank" },
-  { mode: "reveal-translation", label: "Reveal translation", testId: "mode-reveal-translation" },
-  { mode: "grammar-point-grid", label: "Pick the grammar point", testId: "mode-grammar-point-grid" },
+const MODES: { mode: Mode;
+  label: string;
+  testId: string; }[] = [
+  {
+    mode: "mixed",
+    label: "Mixed",
+    testId: "mode-mixed",
+  },
+  {
+    mode: "fill-in-blank",
+    label: "Fill in the blank",
+    testId: "mode-fill-in-blank",
+  },
+  {
+    mode: "reveal-translation",
+    label: "Reveal translation",
+    testId: "mode-reveal-translation",
+  },
+  {
+    mode: "grammar-point-grid",
+    label: "Pick the grammar point",
+    testId: "mode-grammar-point-grid",
+  },
 ];
 
 function pickRandom<T>(items: readonly T[]): T {
-  return items[Math.floor(Math.random() * items.length)]!;
+  const item = items[Math.floor(Math.random() * items.length)];
+  if (item === undefined) {
+    throw new Error("pickRandom called on empty array");
+  }
+  return item;
 }
 
 function modeForRound(mode: Mode): Exclude<Mode, "mixed"> {
@@ -54,7 +76,10 @@ function newRound(mode: Mode, exclude?: string): QuizState {
 export function GivingReceivingQuiz() {
   const [mode, setMode] = useState<Mode>("mixed");
   const [round, setRound] = useState<QuizState>(() => newRound("mixed"));
-  const [score, setScore] = useState({ correct: 0, total: 0 });
+  const [score, setScore] = useState({
+    correct: 0,
+    total: 0,
+  });
 
   const handleNext = useCallback(() => {
     setRound(prev => newRound(mode, prev.sentence.id));
@@ -68,7 +93,10 @@ export function GivingReceivingQuiz() {
   }, []);
 
   const handleRevealRated = useCallback(() => {
-    setScore(prev => ({ ...prev, total: prev.total + 1 }));
+    setScore(prev => ({
+      ...prev,
+      total: prev.total + 1,
+    }));
   }, []);
 
   const handleSetMode = useCallback((newMode: Mode) => {
@@ -89,9 +117,7 @@ export function GivingReceivingQuiz() {
       <div className="flex flex-col gap-2">
         <p className="text-sm font-medium">Question type</p>
         <div
-          className={`
-            flex flex-wrap gap-2
-          `}
+          className="flex flex-wrap gap-2"
           data-testid="quiz-mode-selector"
         >
           {MODES.map(m => (

@@ -13,7 +13,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({
+    canvasElement,
+  }) => {
     const canvas = within(canvasElement);
     await expect(canvas.getByTestId("giving-receiving-quiz")).toBeInTheDocument();
     await expect(canvas.getByTestId("quiz-mode-selector")).toBeInTheDocument();

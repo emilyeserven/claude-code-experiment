@@ -1,12 +1,12 @@
-import { useCallback, useMemo, useState } from "react";
-
 import type { GrammarPoint, Sentence } from "./types";
 
-import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "./feedback";
-import { GRAMMAR_POINT_LABELS, GRAMMAR_POINTS } from "./types";
+import { useCallback, useMemo, useState } from "react";
 
 import { Button } from "@/components/ui";
 import { cn } from "@/lib/utils";
+
+import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "./feedback";
+import { GRAMMAR_POINT_LABELS, GRAMMAR_POINTS } from "./types";
 
 interface GrammarPointGridProps {
 
@@ -25,7 +25,11 @@ function shuffleWithSeed(items: readonly GrammarPoint[], seed: number): GrammarP
   for (let i = result.length - 1; i > 0; i--) {
     s = (s * 9301 + 49297) % 233280;
     const j = Math.floor((s / 233280) * (i + 1));
-    [result[i], result[j]] = [result[j]!, result[i]!];
+    const itemI = result[i];
+    const itemJ = result[j];
+    if (itemI === undefined || itemJ === undefined) continue;
+    result[i] = itemJ;
+    result[j] = itemI;
   }
   return result;
 }
@@ -100,9 +104,15 @@ export function GrammarPointGrid({
               className={cn(
                 "h-14 text-lg",
                 isAnswered && isThisCorrect
-                && "border-green-600 bg-green-100 text-green-900 dark:bg-green-950 dark:text-green-100",
+                && `
+                  border-green-600 bg-green-100 text-green-900
+                  dark:bg-green-950 dark:text-green-100
+                `,
                 isAnswered && isThisSelected && !isThisCorrect
-                && "border-red-600 bg-red-100 text-red-900 dark:bg-red-950 dark:text-red-100",
+                && `
+                  border-red-600 bg-red-100 text-red-900
+                  dark:bg-red-950 dark:text-red-100
+                `,
               )}
               onClick={() => { handleSelect(point); }}
               data-testid={`grammar-point-grid-option-${point}`}
@@ -118,38 +128,44 @@ export function GrammarPointGrid({
           className={cn(
             "rounded-md border p-3 text-sm",
             isCorrect
-              ? "border-green-600 bg-green-50 text-green-900 dark:bg-green-950 dark:text-green-100"
-              : "border-red-600 bg-red-50 text-red-900 dark:bg-red-950 dark:text-red-100",
+              ? `
+                border-green-600 bg-green-50 text-green-900
+                dark:bg-green-950 dark:text-green-100
+              `
+              : `
+                border-red-600 bg-red-50 text-red-900
+                dark:bg-red-950 dark:text-red-100
+              `,
           )}
           data-testid="grammar-point-grid-feedback"
         >
           {isCorrect
             ? (
-                <>
-                  <p className="font-medium">Correct!</p>
-                  <p className="mt-1">
-                    {GRAMMAR_POINT_SUMMARIES[sentence.grammarPoint]}
-                  </p>
-                </>
-              )
+              <>
+                <p className="font-medium">Correct!</p>
+                <p className="mt-1">
+                  {GRAMMAR_POINT_SUMMARIES[sentence.grammarPoint]}
+                </p>
+              </>
+            )
             : (
-                <>
-                  <p className="font-medium">
-                    Not quite. The answer is
-                    {" "}
-                    {GRAMMAR_POINT_LABELS[sentence.grammarPoint]}
-                    .
+              <>
+                <p className="font-medium">
+                  Not quite. The answer is
+                  {" "}
+                  {GRAMMAR_POINT_LABELS[sentence.grammarPoint]}
+                  .
+                </p>
+                {feedback && (
+                  <p
+                    className="mt-2"
+                    data-testid="grammar-point-grid-tailored"
+                  >
+                    {feedback}
                   </p>
-                  {feedback && (
-                    <p
-                      className="mt-2"
-                      data-testid="grammar-point-grid-tailored"
-                    >
-                      {feedback}
-                    </p>
-                  )}
-                </>
-              )}
+                )}
+              </>
+            )}
           <p className="mt-2">
             Sentence:
             {" "}

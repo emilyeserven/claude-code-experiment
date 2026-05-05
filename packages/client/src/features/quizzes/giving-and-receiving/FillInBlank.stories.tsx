@@ -1,8 +1,7 @@
+import type { Sentence } from "./types";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { expect, fn, userEvent, within } from "@storybook/test";
-
-import type { Sentence } from "./types";
 
 import { FillInBlank } from "./FillInBlank";
 
@@ -29,7 +28,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({
+    canvasElement,
+  }) => {
     const canvas = within(canvasElement);
     await expect(canvas.getByTestId("fill-in-blank-english"))
       .toHaveTextContent("I gave my friend a present.");
@@ -38,7 +39,9 @@ export const Default: Story = {
 };
 
 export const ConvertsRomajiAsYouType: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({
+    canvasElement,
+  }) => {
     const canvas = within(canvasElement);
     const input = canvas.getByTestId("fill-in-blank-input");
     await userEvent.type(input, "ageta");
@@ -48,7 +51,9 @@ export const ConvertsRomajiAsYouType: Story = {
 };
 
 export const CorrectAnswer: Story = {
-  play: async ({ canvasElement, args }) => {
+  play: async ({
+    canvasElement, args,
+  }) => {
     const canvas = within(canvasElement);
     const input = canvas.getByTestId("fill-in-blank-input");
     await userEvent.type(input, "ageta");
@@ -59,7 +64,9 @@ export const CorrectAnswer: Story = {
 };
 
 export const IncorrectAnswerShowsTailoredFeedback: Story = {
-  play: async ({ canvasElement, args }) => {
+  play: async ({
+    canvasElement, args,
+  }) => {
     const canvas = within(canvasElement);
     const input = canvas.getByTestId("fill-in-blank-input");
     await userEvent.type(input, "kureta");
@@ -72,14 +79,18 @@ export const IncorrectAnswerShowsTailoredFeedback: Story = {
 };
 
 export const SubmitDisabledWhenEmpty: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({
+    canvasElement,
+  }) => {
     const canvas = within(canvasElement);
     await expect(canvas.getByTestId("fill-in-blank-submit")).toBeDisabled();
   },
 };
 
 export const NextResetsState: Story = {
-  play: async ({ canvasElement, args }) => {
+  play: async ({
+    canvasElement, args,
+  }) => {
     const canvas = within(canvasElement);
     const input = canvas.getByTestId("fill-in-blank-input");
     await userEvent.type(input, "ageta");

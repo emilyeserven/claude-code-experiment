@@ -14,16 +14,6 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as QuizzesIndexRouteImport } from './routes/quizzes/index'
 import { Route as QuizzesGivingAndReceivingRouteImport } from './routes/quizzes/giving-and-receiving'
 
-const QuizzesGivingAndReceivingRoute = QuizzesGivingAndReceivingRouteImport.update({
-  id: '/quizzes/giving-and-receiving',
-  path: '/quizzes/giving-and-receiving',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const QuizzesIndexRoute = QuizzesIndexRouteImport.update({
-  id: '/quizzes/',
-  path: '/quizzes/',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const CaptureRoute = CaptureRouteImport.update({
   id: '/capture',
   path: '/capture',
@@ -34,57 +24,59 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const QuizzesIndexRoute = QuizzesIndexRouteImport.update({
+  id: '/quizzes/',
+  path: '/quizzes/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuizzesGivingAndReceivingRoute =
+  QuizzesGivingAndReceivingRouteImport.update({
+    id: '/quizzes/giving-and-receiving',
+    path: '/quizzes/giving-and-receiving',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/capture': typeof CaptureRoute
-  '/quizzes': typeof QuizzesIndexRoute
   '/quizzes/giving-and-receiving': typeof QuizzesGivingAndReceivingRoute
+  '/quizzes': typeof QuizzesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/capture': typeof CaptureRoute
-  '/quizzes': typeof QuizzesIndexRoute
   '/quizzes/giving-and-receiving': typeof QuizzesGivingAndReceivingRoute
+  '/quizzes': typeof QuizzesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/capture': typeof CaptureRoute
-  '/quizzes/': typeof QuizzesIndexRoute
   '/quizzes/giving-and-receiving': typeof QuizzesGivingAndReceivingRoute
+  '/quizzes/': typeof QuizzesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/capture' | '/quizzes' | '/quizzes/giving-and-receiving'
+  fullPaths: '/' | '/capture' | '/quizzes/giving-and-receiving' | '/quizzes'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/capture' | '/quizzes' | '/quizzes/giving-and-receiving'
-  id: '__root__' | '/' | '/capture' | '/quizzes/' | '/quizzes/giving-and-receiving'
+  to: '/' | '/capture' | '/quizzes/giving-and-receiving' | '/quizzes'
+  id:
+    | '__root__'
+    | '/'
+    | '/capture'
+    | '/quizzes/giving-and-receiving'
+    | '/quizzes/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CaptureRoute: typeof CaptureRoute
-  QuizzesIndexRoute: typeof QuizzesIndexRoute
   QuizzesGivingAndReceivingRoute: typeof QuizzesGivingAndReceivingRoute
+  QuizzesIndexRoute: typeof QuizzesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/quizzes/giving-and-receiving': {
-      id: '/quizzes/giving-and-receiving'
-      path: '/quizzes/giving-and-receiving'
-      fullPath: '/quizzes/giving-and-receiving'
-      preLoaderRoute: typeof QuizzesGivingAndReceivingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/quizzes/': {
-      id: '/quizzes/'
-      path: '/quizzes'
-      fullPath: '/quizzes'
-      preLoaderRoute: typeof QuizzesIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/capture': {
       id: '/capture'
       path: '/capture'
@@ -99,14 +91,28 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/quizzes/': {
+      id: '/quizzes/'
+      path: '/quizzes'
+      fullPath: '/quizzes'
+      preLoaderRoute: typeof QuizzesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quizzes/giving-and-receiving': {
+      id: '/quizzes/giving-and-receiving'
+      path: '/quizzes/giving-and-receiving'
+      fullPath: '/quizzes/giving-and-receiving'
+      preLoaderRoute: typeof QuizzesGivingAndReceivingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CaptureRoute: CaptureRoute,
-  QuizzesIndexRoute: QuizzesIndexRoute,
   QuizzesGivingAndReceivingRoute: QuizzesGivingAndReceivingRoute,
+  QuizzesIndexRoute: QuizzesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
