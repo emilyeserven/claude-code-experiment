@@ -28,11 +28,6 @@ jobs:
           node-version: "22"
           cache: "pnpm"
 
-      - name: Configure npm registry for private packages
-        run: |
-          echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_TOKEN }}" >> .npmrc
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 

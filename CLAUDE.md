@@ -167,13 +167,6 @@ If step 1 changes files, stage and include those changes in your commit.
 
 ## Troubleshooting
 
-### Private Package Registry Errors
-
-If `pnpm install` fails with 401/403 errors for `@emilyeserven/*` packages:
-- Ensure `.npmrc` contains a valid GitHub Packages auth token
-- Reference `.npmrc.example` for the expected format
-- In CI, the `GH_PACKAGES_TOKEN` secret handles this automatically
-
 ### TanStack Router Route Tree
 
 If routes are missing or stale after adding/renaming route files:

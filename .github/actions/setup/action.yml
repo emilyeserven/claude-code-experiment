@@ -1,5 +1,5 @@
 name: Setup Environment
-description: Checkout, install pnpm, Node.js, configure registry, and install dependencies
+description: Checkout, install pnpm, Node.js, and install dependencies
 
 inputs:
   node-version:
@@ -10,9 +10,6 @@ inputs:
     description: Git ref to checkout
     required: false
     default: ""
-  gh-packages-token:
-    description: Token for GitHub Packages registry
-    required: true
 
 runs:
   using: composite
@@ -30,12 +27,6 @@ runs:
       with:
         node-version: ${{ inputs.node-version }}
         cache: "pnpm"
-
-    - name: Configure npm registry for private packages
-      shell: bash
-      run: |
-        echo "@emilyeserven:registry=https://npm.pkg.github.com" >> .npmrc
-        echo "//npm.pkg.github.com/:_authToken=${{ inputs.gh-packages-token }}" >> .npmrc
 
     - name: Install dependencies
       shell: bash

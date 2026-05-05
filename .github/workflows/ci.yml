@@ -23,7 +23,6 @@ jobs:
         uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Run lint fix
         if: github.event_name != 'merge_group'
@@ -104,7 +103,6 @@ jobs:
         uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Test client (unit)
         run: pnpm --filter=@cc-experiments/client exec vitest run --project unit-tests
@@ -116,7 +114,6 @@ jobs:
         uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Get Playwright version
         id: playwright-version
@@ -147,7 +144,6 @@ jobs:
         uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Build
         run: pnpm build
@@ -161,7 +157,6 @@ jobs:
         uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Get Playwright version
         id: playwright-version
@@ -304,7 +299,6 @@ jobs:
         uses: ./.github/actions/setup
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Report unused code with knip
         id: knip
