@@ -24,6 +24,17 @@ const RootComponent: React.FunctionComponent = () => {
           >
             Capture
           </Link>
+
+          <Link
+            to="/quizzes"
+            className="[&.active]:font-bold"
+            data-testid="nav-quizzes-link"
+            activeOptions={{
+              exact: false,
+            }}
+          >
+            Quizzes
+          </Link>
         </div>
 
         <SettingsPopover />

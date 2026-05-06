@@ -12,10 +12,11 @@ jobs:
   e2e:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Setup environment
         uses: ./.github/actions/setup
-        with:
-          gh-packages-token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
