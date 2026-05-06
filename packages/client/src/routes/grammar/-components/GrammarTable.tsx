@@ -88,57 +88,8 @@ const columns: ColumnDef<GrammarPoint>[] = [
     ),
   },
   {
-    accessorKey: "romaji",
-    header: "Romaji",
-    cell: ({
-      getValue,
-    }) => (
-      <span className="font-mono text-sm">
-        {getValue<string>()}
-      </span>
-    ),
-  },
-  {
     accessorKey: "english",
     header: "English",
-  },
-  {
-    id: "resources",
-    header: "Resources",
-    enableSorting: false,
-    enableGlobalFilter: false,
-    cell: ({
-      row,
-    }) => {
-      const resources = row.original.resources;
-      if (resources.length === 0) {
-        return (
-          <span className="text-xs text-muted-foreground">
-            —
-          </span>
-        );
-      }
-      return (
-        <ul className="flex flex-wrap gap-2">
-          {resources.map(resource => (
-            <li key={`${resource.name}-${resource.location}`}>
-              <a
-                href={resource.location}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`
-                  text-sm text-primary
-                  hover:underline
-                `}
-                data-testid={`grammar-resource-link-${resource.name}`}
-              >
-                {resource.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      );
-    },
   },
 ];
 
@@ -149,14 +100,12 @@ function globalFilterFn(row: { original: GrammarPoint }, _columnId: string, filt
     level,
     number,
     japanese,
-    romaji,
     english,
   } = row.original;
   return (
     level.toLowerCase().includes(needle)
     || String(number).includes(needle)
     || japanese.toLowerCase().includes(needle)
-    || romaji.toLowerCase().includes(needle)
     || english.toLowerCase().includes(needle)
   );
 }

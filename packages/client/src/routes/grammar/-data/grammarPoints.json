@@ -3,2954 +3,1686 @@
     "level": "N5",
     "number": 1,
     "japanese": "ちゃいけない・じゃいけない",
-    "romaji": "cha ikenai / ja ikenai",
-    "english": "must not do (spoken Japanese)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "must not do (spoken Japanese)"
   },
   {
     "level": "N5",
     "number": 2,
     "japanese": "だ・です",
-    "romaji": "da / desu",
-    "english": "to be (am, is, are, were, used to)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to be (am, is, are, were, used to)"
   },
   {
     "level": "N5",
     "number": 3,
     "japanese": "だけ",
-    "romaji": "dake",
-    "english": "only; just; as much as",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "only; just; as much as"
   },
   {
     "level": "N5",
     "number": 4,
     "japanese": "だろう",
-    "romaji": "darou",
-    "english": "I think; it seems; probably; right?",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "I think; it seems; probably; right?"
   },
   {
     "level": "N5",
     "number": 5,
     "japanese": "で",
-    "romaji": "de",
-    "english": "in; at; on; by; with; via",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "in; at; on; by; with; via"
   },
   {
     "level": "N5",
     "number": 6,
     "japanese": "でも",
-    "romaji": "demo",
-    "english": "but; however",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "but; however"
   },
   {
     "level": "N5",
     "number": 7,
     "japanese": "でしょう",
-    "romaji": "deshou",
-    "english": "I think; it seems; probably; right?",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "I think; it seems; probably; right?"
   },
   {
     "level": "N5",
     "number": 8,
     "japanese": "どんな",
-    "romaji": "donna",
-    "english": "what kind of; what sort of",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "what kind of; what sort of"
   },
   {
     "level": "N5",
     "number": 9,
     "japanese": "どうして",
-    "romaji": "doushite",
-    "english": "why; for what reason; how",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "why; for what reason; how"
   },
   {
     "level": "N5",
     "number": 10,
     "japanese": "どうやって",
-    "romaji": "douyatte",
-    "english": "how; in what way; by what means",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "how; in what way; by what means"
   },
   {
     "level": "N5",
     "number": 11,
     "japanese": "が",
-    "romaji": "ga",
-    "english": "subject marker; however; but",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "subject marker; however; but"
   },
   {
     "level": "N5",
     "number": 12,
     "japanese": "があります",
-    "romaji": "ga arimasu",
-    "english": "there is; is (non-living things)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "there is; is (non-living things)"
   },
   {
     "level": "N5",
     "number": 13,
     "japanese": "がほしい",
-    "romaji": "ga hoshii",
-    "english": "to want something",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to want something"
   },
   {
     "level": "N5",
     "number": 14,
     "japanese": "がいます",
-    "romaji": "ga imasu",
-    "english": "there is; to be; is (living things)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "there is; to be; is (living things)"
   },
   {
     "level": "N5",
     "number": 15,
     "japanese": "ほうがいい",
-    "romaji": "hou ga ii",
-    "english": "had better; it'd be better to; should~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "had better; it'd be better to; should~"
   },
   {
     "level": "N5",
     "number": 16,
     "japanese": "い-adjectives",
-    "romaji": "i-adjectives",
-    "english": "i-adjectives",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "i-adjectives"
   },
   {
     "level": "N5",
     "number": 17,
     "japanese": "一番",
-    "romaji": "ichiban",
-    "english": "the most; the best",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "the most; the best"
   },
   {
     "level": "N5",
     "number": 18,
     "japanese": "一緒に",
-    "romaji": "issho ni",
-    "english": "together",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "together"
   },
   {
     "level": "N5",
     "number": 19,
     "japanese": "いつも",
-    "romaji": "itsumo",
-    "english": "always; usually; habitually",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "always; usually; habitually"
   },
   {
     "level": "N5",
     "number": 20,
     "japanese": "じゃない・ではない",
-    "romaji": "janai / dewa nai",
-    "english": "to not be (am not; is not; are not)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to not be (am not; is not; are not)"
   },
   {
     "level": "N5",
     "number": 21,
     "japanese": "か",
-    "romaji": "ka",
-    "english": "question particle",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "question particle"
   },
   {
     "level": "N5",
     "number": 22,
     "japanese": "か〜か",
-    "romaji": "ka~ka",
-    "english": "or",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "or"
   },
   {
     "level": "N5",
     "number": 23,
     "japanese": "から",
-    "romaji": "kara",
-    "english": "because; since; from",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "because; since; from"
   },
   {
     "level": "N5",
     "number": 24,
     "japanese": "方",
-    "romaji": "kata",
-    "english": "the way of doing something; how to do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "the way of doing something; how to do"
   },
   {
     "level": "N5",
     "number": 25,
     "japanese": "けど",
-    "romaji": "kedo",
-    "english": "but; however; although",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "but; however; although"
   },
   {
     "level": "N5",
     "number": 26,
     "japanese": "けれども",
-    "romaji": "keredo mo",
-    "english": "but; however; although",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "but; however; although"
   },
   {
     "level": "N5",
     "number": 27,
     "japanese": "まだ",
-    "romaji": "mada",
-    "english": "still; not yet",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "still; not yet"
   },
   {
     "level": "N5",
     "number": 28,
     "japanese": "まだ〜ていません",
-    "romaji": "mada ~te imasen",
-    "english": "have not yet",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "have not yet"
   },
   {
     "level": "N5",
     "number": 29,
     "japanese": "まで",
-    "romaji": "made",
-    "english": "until ~; as far as ~; to (an extent); even ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "until ~; as far as ~; to (an extent); even ~"
   },
   {
     "level": "N5",
     "number": 30,
     "japanese": "前に",
-    "romaji": "mae ni",
-    "english": "before ~; in front of ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "before ~; in front of ~"
   },
   {
     "level": "N5",
     "number": 31,
     "japanese": "ませんか",
-    "romaji": "masen ka",
-    "english": "would you; do you want to; shall we~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "would you; do you want to; shall we~"
   },
   {
     "level": "N5",
     "number": 32,
     "japanese": "ましょう",
-    "romaji": "mashou",
-    "english": "let's ~; shall we ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "let's ~; shall we ~"
   },
   {
     "level": "N5",
     "number": 33,
     "japanese": "ましょうか",
-    "romaji": "mashouka",
-    "english": "shall I ~; used to offer help to the listener",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "shall I ~; used to offer help to the listener"
   },
   {
     "level": "N5",
     "number": 34,
     "japanese": "も",
-    "romaji": "mo",
-    "english": "too; also; as well",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "too; also; as well"
   },
   {
     "level": "N5",
     "number": 35,
     "japanese": "もう",
-    "romaji": "mou",
-    "english": "already; anymore; again; other",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "already; anymore; again; other"
   },
   {
     "level": "N5",
     "number": 36,
     "japanese": "な-adjectives",
-    "romaji": "na-adjectives",
-    "english": "na-adjectives",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "na-adjectives"
   },
   {
     "level": "N5",
     "number": 37,
     "japanese": "なあ",
-    "romaji": "naa",
-    "english": "sentence ending particle; confirmation; admiration, etc",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "sentence ending particle; confirmation; admiration, etc"
   },
   {
     "level": "N5",
     "number": 38,
     "japanese": "ないで",
-    "romaji": "naide",
-    "english": "without doing~ ; To do [B] without doing [A]",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "without doing~ ; To do [B] without doing [A]"
   },
   {
     "level": "N5",
     "number": 39,
     "japanese": "ないでください",
-    "romaji": "naide kudasai",
-    "english": "please don't do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "please don't do"
   },
   {
     "level": "N5",
     "number": 40,
     "japanese": "なくてもいい",
-    "romaji": "naku temo ii",
-    "english": "don't have to",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "don't have to"
   },
   {
     "level": "N5",
     "number": 41,
     "japanese": "なくちゃ",
-    "romaji": "nakucha",
-    "english": "must do; need to; gotta do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "must do; need to; gotta do"
   },
   {
     "level": "N5",
     "number": 42,
     "japanese": "なくてはいけない",
-    "romaji": "nakute wa ikenai",
-    "english": "must do; need to do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "must do; need to do"
   },
   {
     "level": "N5",
     "number": 43,
     "japanese": "なくてはならない",
-    "romaji": "nakute wa naranai",
-    "english": "must do; need to do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "must do; need to do"
   },
   {
     "level": "N5",
     "number": 44,
     "japanese": "なる",
-    "romaji": "naru",
-    "english": "to become",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to become"
   },
   {
     "level": "N5",
     "number": 45,
     "japanese": "んです",
-    "romaji": "ndesu",
-    "english": "to explain something; show emphasis",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to explain something; show emphasis"
   },
   {
     "level": "N5",
     "number": 46,
     "japanese": "ね",
-    "romaji": "ne",
-    "english": "isn't it? right? eh?",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "isn't it? right? eh?"
   },
   {
     "level": "N5",
     "number": 47,
     "japanese": "に",
-    "romaji": "ni",
-    "english": "destination particle; in; at; on; to",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "destination particle; in; at; on; to"
   },
   {
     "level": "N5",
     "number": 48,
     "japanese": "にいく",
-    "romaji": "ni iku",
-    "english": "go to do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "go to do"
   },
   {
     "level": "N5",
     "number": 49,
     "japanese": "にする",
-    "romaji": "ni suru",
-    "english": "to decide on",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to decide on"
   },
   {
     "level": "N5",
     "number": 50,
     "japanese": "に/へ",
-    "romaji": "ni/e",
-    "english": "to (indicates direction / destination)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to (indicates direction / destination)"
   },
   {
     "level": "N5",
     "number": 51,
     "japanese": "の",
-    "romaji": "no",
-    "english": "possessive particle",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "possessive particle"
   },
   {
     "level": "N5",
     "number": 52,
     "japanese": "のです",
-    "romaji": "no desu",
-    "english": "to explain something; show emphasis",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to explain something; show emphasis"
   },
   {
     "level": "N5",
     "number": 53,
     "japanese": "のが下手",
-    "romaji": "no ga heta",
-    "english": "to be bad at doing something",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to be bad at doing something"
   },
   {
     "level": "N5",
     "number": 54,
     "japanese": "のが上手",
-    "romaji": "no ga jouzu",
-    "english": "to be good at",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to be good at"
   },
   {
     "level": "N5",
     "number": 55,
     "japanese": "のが好き",
-    "romaji": "no ga suki",
-    "english": "to like doing something",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to like doing something"
   },
   {
     "level": "N5",
     "number": 56,
     "japanese": "の中で[A]が一番",
-    "romaji": "no naka de [A] ga ichiban",
-    "english": "out of this group, [A] is best",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "out of this group, [A] is best"
   },
   {
     "level": "N5",
     "number": 57,
     "japanese": "ので",
-    "romaji": "node",
-    "english": "because of; given that; since",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "because of; given that; since"
   },
   {
     "level": "N5",
     "number": 58,
     "japanese": "を",
-    "romaji": "o / wo",
-    "english": "object marker particle",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "object marker particle"
   },
   {
     "level": "N5",
     "number": 59,
     "japanese": "をください",
-    "romaji": "o kudasai",
-    "english": "please give me~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "please give me~"
   },
   {
     "level": "N5",
     "number": 60,
     "japanese": "しかし",
-    "romaji": "shikashi",
-    "english": "but; however",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "but; however"
   },
   {
     "level": "N5",
     "number": 61,
     "japanese": "すぎる",
-    "romaji": "sugiru",
-    "english": "too much",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "too much"
   },
   {
     "level": "N5",
     "number": 62,
     "japanese": "たことがある",
-    "romaji": "ta koto ga aru",
-    "english": "to have done something before",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to have done something before"
   },
   {
     "level": "N5",
     "number": 63,
     "japanese": "たい",
-    "romaji": "tai",
-    "english": "want to do something",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "want to do something"
   },
   {
     "level": "N5",
     "number": 64,
     "japanese": "たり〜たり",
-    "romaji": "tari~tari",
-    "english": "do such things as A and B",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "do such things as A and B"
   },
   {
     "level": "N5",
     "number": 65,
     "japanese": "てある",
-    "romaji": "te aru",
-    "english": "is/has been done (resulting state)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "is/has been done (resulting state)"
   },
   {
     "level": "N5",
     "number": 66,
     "japanese": "ている",
-    "romaji": "te iru",
-    "english": "ongoing action or current state",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "ongoing action or current state"
   },
   {
     "level": "N5",
     "number": 67,
     "japanese": "てから",
-    "romaji": "te kara",
-    "english": "after doing~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "after doing~"
   },
   {
     "level": "N5",
     "number": 68,
     "japanese": "てください",
-    "romaji": "te kudasai",
-    "english": "please do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "please do"
   },
   {
     "level": "N5",
     "number": 69,
     "japanese": "てはいけない",
-    "romaji": "te wa ikenai",
-    "english": "must not; may not; cannot",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "must not; may not; cannot"
   },
   {
     "level": "N5",
     "number": 70,
     "japanese": "てもいいです",
-    "romaji": "temo ii desu",
-    "english": "is OK to..; is alright to..; may I..?",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "is OK to..; is alright to..; may I..?"
   },
   {
     "level": "N5",
     "number": 71,
     "japanese": "と",
-    "romaji": "to",
-    "english": "and; with; as; connecting particle",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "and; with; as; connecting particle"
   },
   {
     "level": "N5",
     "number": 72,
     "japanese": "とき",
-    "romaji": "toki",
-    "english": "when; at this time",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "when; at this time"
   },
   {
     "level": "N5",
     "number": 73,
     "japanese": "とても",
-    "romaji": "totemo",
-    "english": "very; awfully; exceedingly",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "very; awfully; exceedingly"
   },
   {
     "level": "N5",
     "number": 74,
     "japanese": "つもり",
-    "romaji": "tsumori",
-    "english": "plan to ~; intend to ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "plan to ~; intend to ~"
   },
   {
     "level": "N5",
     "number": 75,
     "japanese": "は",
-    "romaji": "wa - topic marker",
-    "english": "topic marker",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "topic marker"
   },
   {
     "level": "N5",
     "number": 76,
     "japanese": "は〜より・・・です",
-    "romaji": "wa ~yori... desu",
-    "english": "[A] is more ~ than [B]",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "[A] is more ~ than [B]"
   },
   {
     "level": "N5",
     "number": 77,
     "japanese": "はどうですか",
-    "romaji": "wa dou desu ka",
-    "english": "how about; how is",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "how about; how is"
   },
   {
     "level": "N5",
     "number": 78,
     "japanese": "や",
-    "romaji": "ya",
-    "english": "and; or; connecting particle",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "and; or; connecting particle"
   },
   {
     "level": "N5",
     "number": 79,
     "japanese": "よ",
-    "romaji": "yo",
-    "english": "you know; emphasis (ending particle)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "you know; emphasis (ending particle)"
   },
   {
     "level": "N5",
     "number": 80,
     "japanese": "より〜ほうが",
-    "romaji": "yori ~hou ga",
-    "english": "[A] is more than [B]",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "[A] is more than [B]"
   },
   {
     "level": "N4",
     "number": 1,
     "japanese": "間",
-    "romaji": "aida",
-    "english": "while; during; between",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "while; during; between"
   },
   {
     "level": "N4",
     "number": 2,
     "japanese": "間に",
-    "romaji": "aida ni",
-    "english": "while/during~ something happened",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "while/during~ something happened"
   },
   {
     "level": "N4",
     "number": 3,
     "japanese": "あまり～ない",
-    "romaji": "amari~nai",
-    "english": "not very, not much",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "not very, not much"
   },
   {
     "level": "N4",
     "number": 4,
     "japanese": "後で",
-    "romaji": "ato de",
-    "english": "after ~; later",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "after ~; later"
   },
   {
     "level": "N4",
     "number": 5,
     "japanese": "ば",
-    "romaji": "ba",
-    "english": "conditional form; If [A] then [B]",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "conditional form; If [A] then [B]"
   },
   {
     "level": "N4",
     "number": 6,
     "japanese": "場合は",
-    "romaji": "baai wa",
-    "english": "in the event of; in the case that",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "in the event of; in the case that"
   },
   {
     "level": "N4",
     "number": 7,
     "japanese": "ばかり",
-    "romaji": "bakari",
-    "english": "only; nothing but",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "only; nothing but"
   },
   {
     "level": "N4",
     "number": 8,
     "japanese": "だけで",
-    "romaji": "dake de",
-    "english": "just by; just by doing",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "just by; just by doing"
   },
   {
     "level": "N4",
     "number": 9,
     "japanese": "出す",
-    "romaji": "dasu",
-    "english": "to suddenly begin; to suddenly appear",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to suddenly begin; to suddenly appear"
   },
   {
     "level": "N4",
     "number": 10,
     "japanese": "でございます",
-    "romaji": "de gozaimasu",
-    "english": "to be (honorific)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to be (honorific)"
   },
   {
     "level": "N4",
     "number": 11,
     "japanese": "でも",
-    "romaji": "demo",
-    "english": "... or something",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "... or something"
   },
   {
     "level": "N4",
     "number": 12,
     "japanese": "ではないか",
-    "romaji": "dewa nai ka",
-    "english": "right?; isn't it?",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "right?; isn't it?"
   },
   {
     "level": "N4",
     "number": 13,
     "japanese": "が必要",
-    "romaji": "ga hitsuyou",
-    "english": "need; necessary",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "need; necessary"
   },
   {
     "level": "N4",
     "number": 14,
     "japanese": "がする",
-    "romaji": "ga suru",
-    "english": "to smell; hear; taste",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to smell; hear; taste"
   },
   {
     "level": "N4",
     "number": 15,
     "japanese": "がり",
-    "romaji": "gari",
-    "english": "personality; tend to~; sensitivity towards~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "personality; tend to~; sensitivity towards~"
   },
   {
     "level": "N4",
     "number": 16,
     "japanese": "がる・がっている",
-    "romaji": "garu; gatteiru",
-    "english": "to show signs of; to appear; to feel",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to show signs of; to appear; to feel"
   },
   {
     "level": "N4",
     "number": 17,
     "japanese": "ございます",
-    "romaji": "gozaimasu",
-    "english": "to be, to exist (polite form of いる/ある)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to be, to exist (polite form of いる/ある)"
   },
   {
     "level": "N4",
     "number": 18,
     "japanese": "始める",
-    "romaji": "hajimeru",
-    "english": "to start; to begin to ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to start; to begin to ~"
   },
   {
     "level": "N4",
     "number": 19,
     "japanese": "はずだ",
-    "romaji": "hazu da",
-    "english": "it must be; it should be (expectation)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "it must be; it should be (expectation)"
   },
   {
     "level": "N4",
     "number": 20,
     "japanese": "はずがない",
-    "romaji": "hazu ga nai",
-    "english": "cannot be (impossible)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "cannot be (impossible)"
   },
   {
     "level": "N4",
     "number": 21,
     "japanese": "必要がある",
-    "romaji": "hitsuyou ga aru",
-    "english": "need to; it is necessary to",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "need to; it is necessary to"
   },
   {
     "level": "N4",
     "number": 22,
     "japanese": "意向形",
-    "romaji": "ikou kei",
-    "english": "volitional form; let's do ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "volitional form; let's do ~"
   },
   {
     "level": "N4",
     "number": 23,
     "japanese": "いらっしゃる",
-    "romaji": "irassharu",
-    "english": "to be; to come; to go (polite version)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to be; to come; to go (polite version)"
   },
   {
     "level": "N4",
     "number": 24,
     "japanese": "いたします",
-    "romaji": "itashimasu",
-    "english": "to do (polite form of する)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to do (polite form of する)"
   },
   {
     "level": "N4",
     "number": 25,
     "japanese": "じゃないか",
-    "romaji": "janai ka",
-    "english": "right? isn't it? let's~; confirmation",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "right? isn't it? let's~; confirmation"
   },
   {
     "level": "N4",
     "number": 26,
     "japanese": "かどうか",
-    "romaji": "ka dou ka",
-    "english": "whether or not",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "whether or not"
   },
   {
     "level": "N4",
     "number": 27,
     "japanese": "かしら",
-    "romaji": "ka shira",
-    "english": "I wonder",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "I wonder"
   },
   {
     "level": "N4",
     "number": 28,
     "japanese": "かい",
-    "romaji": "kai",
-    "english": "turns a sentence into a yes/no question",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "turns a sentence into a yes/no question"
   },
   {
     "level": "N4",
     "number": 29,
     "japanese": "かもしれない",
-    "romaji": "kamo shirenai",
-    "english": "might; perhaps; indicates possibility",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "might; perhaps; indicates possibility"
   },
   {
     "level": "N4",
     "number": 30,
     "japanese": "かな",
-    "romaji": "kana",
-    "english": "I wonder; should I?",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "I wonder; should I?"
   },
   {
     "level": "N4",
     "number": 31,
     "japanese": "から作る",
-    "romaji": "kara tsukuru",
-    "english": "made from; made with",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "made from; made with"
   },
   {
     "level": "N4",
     "number": 32,
     "japanese": "きっと",
-    "romaji": "kitto",
-    "english": "surely; undoubtedly; certainly; likely",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "surely; undoubtedly; certainly; likely"
   },
   {
     "level": "N4",
     "number": 33,
     "japanese": "頃",
-    "romaji": "koro / goro",
-    "english": "around; about; when",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "around; about; when"
   },
   {
     "level": "N4",
     "number": 34,
     "japanese": "こと",
-    "romaji": "koto",
-    "english": "Verb nominalizer",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "Verb nominalizer"
   },
   {
     "level": "N4",
     "number": 35,
     "japanese": "ことがある",
-    "romaji": "koto ga aru",
-    "english": "there are times when",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "there are times when"
   },
   {
     "level": "N4",
     "number": 36,
     "japanese": "ことができる",
-    "romaji": "koto ga dekiru",
-    "english": "can; able to",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "can; able to"
   },
   {
     "level": "N4",
     "number": 37,
     "japanese": "ことになる",
-    "romaji": "koto ni naru",
-    "english": "It has been decided that..; it turns out ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "It has been decided that..; it turns out ~"
   },
   {
     "level": "N4",
     "number": 38,
     "japanese": "ことにする",
-    "romaji": "koto ni suru",
-    "english": "to decide on",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to decide on"
   },
   {
     "level": "N4",
     "number": 39,
     "japanese": "くする",
-    "romaji": "ku suru",
-    "english": "to make something ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to make something ~"
   },
   {
     "level": "N4",
     "number": 40,
     "japanese": "急に",
-    "romaji": "kyuu ni",
-    "english": "suddenly",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "suddenly"
   },
   {
     "level": "N4",
     "number": 41,
     "japanese": "までに",
-    "romaji": "made ni",
-    "english": "by; by the time; indicates time limit",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "by; by the time; indicates time limit"
   },
   {
     "level": "N4",
     "number": 42,
     "japanese": "まま",
-    "romaji": "mama",
-    "english": "as it is; current state; without changing",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "as it is; current state; without changing"
   },
   {
     "level": "N4",
     "number": 43,
     "japanese": "または",
-    "romaji": "matawa",
-    "english": "both; or; otherwise; choice of [A] or [B]",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "both; or; otherwise; choice of [A] or [B]"
   },
   {
     "level": "N4",
     "number": 44,
     "japanese": "みたいだ",
-    "romaji": "mitai da",
-    "english": "like, similar to, resembling",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "like, similar to, resembling"
   },
   {
     "level": "N4",
     "number": 45,
     "japanese": "みたいな",
-    "romaji": "mitai na",
-    "english": "like, similar to",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "like, similar to"
   },
   {
     "level": "N4",
     "number": 46,
     "japanese": "みたいに",
-    "romaji": "mitai ni",
-    "english": "like, similar to",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "like, similar to"
   },
   {
     "level": "N4",
     "number": 47,
     "japanese": "も",
-    "romaji": "mo",
-    "english": "as many as; as much as; up to; nearly",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "as many as; as much as; up to; nearly"
   },
   {
     "level": "N4",
     "number": 48,
     "japanese": "な",
-    "romaji": "na",
-    "english": "don’t ~ (order somebody to not do ~)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "don’t ~ (order somebody to not do ~)"
   },
   {
     "level": "N4",
     "number": 49,
     "japanese": "など",
-    "romaji": "nado",
-    "english": "such as, things like",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "such as, things like"
   },
   {
     "level": "N4",
     "number": 50,
     "japanese": "ながら",
-    "romaji": "nagara",
-    "english": "while; during; as; simultaneously",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "while; during; as; simultaneously"
   },
   {
     "level": "N4",
     "number": 51,
     "japanese": "なかなか～ない",
-    "romaji": "nakanaka~nai",
-    "english": "not easy to; struggling to; not able to~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "not easy to; struggling to; not able to~"
   },
   {
     "level": "N4",
     "number": 52,
     "japanese": "なければいけない",
-    "romaji": "nakereba ikenai",
-    "english": "must do something; have to do something",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "must do something; have to do something"
   },
   {
     "level": "N4",
     "number": 53,
     "japanese": "なければならない",
-    "romaji": "nakereba naranai",
-    "english": "must do something; have to do something",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "must do something; have to do something"
   },
   {
     "level": "N4",
     "number": 54,
     "japanese": "なら",
-    "romaji": "nara",
-    "english": "if; in the case that ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "if; in the case that ~"
   },
   {
     "level": "N4",
     "number": 55,
     "japanese": "なさい",
-    "romaji": "nasai",
-    "english": "do this (soft/firm command)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "do this (soft/firm command)"
   },
   {
     "level": "N4",
     "number": 56,
     "japanese": "なさる",
-    "romaji": "nasaru",
-    "english": "to do (honorific)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to do (honorific)"
   },
   {
     "level": "N4",
     "number": 57,
     "japanese": "に気がつく",
-    "romaji": "ni ki ga tsuku",
-    "english": "to notice; to realize",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to notice; to realize"
   },
   {
     "level": "N4",
     "number": 58,
     "japanese": "にみえる",
-    "romaji": "ni mieru",
-    "english": "to look; to seem; to appear",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to look; to seem; to appear"
   },
   {
     "level": "N4",
     "number": 59,
     "japanese": "にする",
-    "romaji": "ni suru",
-    "english": "to make something ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to make something ~"
   },
   {
     "level": "N4",
     "number": 60,
     "japanese": "にくい",
-    "romaji": "nikui",
-    "english": "difficult to do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "difficult to do"
   },
   {
     "level": "N4",
     "number": 61,
     "japanese": "の中で",
-    "romaji": "no naka de",
-    "english": "in, among",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "in, among"
   },
   {
     "level": "N4",
     "number": 62,
     "japanese": "のに",
-    "romaji": "noni",
-    "english": "although, in spite of, even though",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "although, in spite of, even though"
   },
   {
     "level": "N4",
     "number": 63,
     "japanese": "のに",
-    "romaji": "noni",
-    "english": "to (do something); in order to",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to (do something); in order to"
   },
   {
     "level": "N4",
     "number": 64,
     "japanese": "のは〜だ",
-    "romaji": "nowa~da",
-    "english": "[A] is [B]; the reason for [A] is [B]",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "[A] is [B]; the reason for [A] is [B]"
   },
   {
     "level": "N4",
     "number": 65,
     "japanese": "お～ください",
-    "romaji": "o~kudasai",
-    "english": "please do (honorific)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "please do (honorific)"
   },
   {
     "level": "N4",
     "number": 66,
     "japanese": "お～になる",
-    "romaji": "o~ni naru",
-    "english": "to do (honorific)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to do (honorific)"
   },
   {
     "level": "N4",
     "number": 67,
     "japanese": "おきに",
-    "romaji": "oki ni",
-    "english": "repeated at intervals, every",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "repeated at intervals, every"
   },
   {
     "level": "N4",
     "number": 68,
     "japanese": "終わる",
-    "romaji": "owaru",
-    "english": "to finish; to end",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to finish; to end"
   },
   {
     "level": "N4",
     "number": 69,
     "japanese": "られる",
-    "romaji": "rareru",
-    "english": "potential form; ability/inability to do ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "potential form; ability/inability to do ~"
   },
   {
     "level": "N4",
     "number": 70,
     "japanese": "らしい",
-    "romaji": "rashii",
-    "english": "it seems like; I heard; apparently~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "it seems like; I heard; apparently~"
   },
   {
     "level": "N4",
     "number": 71,
     "japanese": "さ",
-    "romaji": "sa",
-    "english": "-ness ; nominalizer for adjective",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "-ness ; nominalizer for adjective"
   },
   {
     "level": "N4",
     "number": 72,
     "japanese": "さっき",
-    "romaji": "sakki",
-    "english": "some time ago; just now",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "some time ago; just now"
   },
   {
     "level": "N4",
     "number": 73,
     "japanese": "させられる",
-    "romaji": "saserareru",
-    "english": "causative-passive; to be made to do ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "causative-passive; to be made to do ~"
   },
   {
     "level": "N4",
     "number": 74,
     "japanese": "させる",
-    "romaji": "saseru",
-    "english": "causative form; to make/let somebody do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "causative form; to make/let somebody do"
   },
   {
     "level": "N4",
     "number": 75,
     "japanese": "させてください",
-    "romaji": "sasete kudasai",
-    "english": "please let me do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "please let me do"
   },
   {
     "level": "N4",
     "number": 76,
     "japanese": "さすが",
-    "romaji": "sasuga",
-    "english": "as one would expect; as is to be expected",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "as one would expect; as is to be expected"
   },
   {
     "level": "N4",
     "number": 77,
     "japanese": "し",
-    "romaji": "shi",
-    "english": "and; and what’s more; emphasis",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "and; and what’s more; emphasis"
   },
   {
     "level": "N4",
     "number": 78,
     "japanese": "そんなに",
-    "romaji": "sonna ni",
-    "english": "so much; so; like that",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "so much; so; like that"
   },
   {
     "level": "N4",
     "number": 79,
     "japanese": "それでも",
-    "romaji": "sore demo",
-    "english": "but still; and yet; even so",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "but still; and yet; even so"
   },
   {
     "level": "N4",
     "number": 80,
     "japanese": "そうだ",
-    "romaji": "sou da [1]",
-    "english": "I heard that; it is said that",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "I heard that; it is said that"
   },
   {
     "level": "N4",
     "number": 81,
     "japanese": "そうだ",
-    "romaji": "sou da [2]",
-    "english": "looks like; appears like",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "looks like; appears like"
   },
   {
     "level": "N4",
     "number": 82,
     "japanese": "そうに・そうな",
-    "romaji": "sou ni / sou na",
-    "english": "seems like; looks like",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "seems like; looks like"
   },
   {
     "level": "N4",
     "number": 83,
     "japanese": "たばかり",
-    "romaji": "ta bakari",
-    "english": "just finished; something just occurred",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "just finished; something just occurred"
   },
   {
     "level": "N4",
     "number": 84,
     "japanese": "たところ",
-    "romaji": "ta tokoro",
-    "english": "just finished doing, was just doing",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "just finished doing, was just doing"
   },
   {
     "level": "N4",
     "number": 85,
     "japanese": "他動詞 & 自動詞",
-    "romaji": "tadoushi & jidoushi",
-    "english": "Transitive & Intransitive Verbs",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "Transitive & Intransitive Verbs"
   },
   {
     "level": "N4",
     "number": 86,
     "japanese": "たがる",
-    "romaji": "tagaru",
-    "english": "wants to do~ (third person)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "wants to do~ (third person)"
   },
   {
     "level": "N4",
     "number": 87,
     "japanese": "たら",
-    "romaji": "tara",
-    "english": "if, after, when",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "if, after, when"
   },
   {
     "level": "N4",
     "number": 88,
     "japanese": "たらどう",
-    "romaji": "tara dou",
-    "english": "why don't you",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "why don't you"
   },
   {
     "level": "N4",
     "number": 89,
     "japanese": "たらいいですか",
-    "romaji": "tara ii desu ka",
-    "english": "what should I do?; seeking instruction",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "what should I do?; seeking instruction"
   },
   {
     "level": "N4",
     "number": 90,
     "japanese": "て / で",
-    "romaji": "te / de",
-    "english": "conjunctive; so; because of [A], [B]...",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "conjunctive; so; because of [A], [B]..."
   },
   {
     "level": "N4",
     "number": 91,
     "japanese": "てあげる",
-    "romaji": "te ageru",
-    "english": "to do for; to do a favor",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to do for; to do a favor"
   },
   {
     "level": "N4",
     "number": 92,
     "japanese": "てほしい",
-    "romaji": "te hoshii",
-    "english": "I want you to; need you to~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "I want you to; need you to~"
   },
   {
     "level": "N4",
     "number": 93,
     "japanese": "ていく",
-    "romaji": "te iku",
-    "english": "to start; to continue; to go on",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to start; to continue; to go on"
   },
   {
     "level": "N4",
     "number": 94,
     "japanese": "ていた",
-    "romaji": "te ita",
-    "english": "was doing something (past continuous)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "was doing something (past continuous)"
   },
   {
     "level": "N4",
     "number": 95,
     "japanese": "ていただけませんか",
-    "romaji": "te itadakemasen ka",
-    "english": "could you please",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "could you please"
   },
   {
     "level": "N4",
     "number": 96,
     "japanese": "てくれる",
-    "romaji": "te kureru",
-    "english": "to do a favor; do something for someone",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to do a favor; do something for someone"
   },
   {
     "level": "N4",
     "number": 97,
     "japanese": "てくる",
-    "romaji": "te kuru",
-    "english": "to do… and come back; to continue",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to do… and come back; to continue"
   },
   {
     "level": "N4",
     "number": 98,
     "japanese": "てみる",
-    "romaji": "te miru",
-    "english": "try doing",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "try doing"
   },
   {
     "level": "N4",
     "number": 99,
     "japanese": "てもらう",
-    "romaji": "te morau",
-    "english": "to get somebody to do something",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to get somebody to do something"
   },
   {
     "level": "N4",
     "number": 100,
     "japanese": "ておく",
-    "romaji": "te oku",
-    "english": "to do something in advance",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to do something in advance"
   },
   {
     "level": "N4",
     "number": 101,
     "japanese": "てしまう / ちゃう",
-    "romaji": "te shimau / chau",
-    "english": "to do something by accident, to finish",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to do something by accident, to finish"
   },
   {
     "level": "N4",
     "number": 102,
     "japanese": "てすみません",
-    "romaji": "te sumimasen",
-    "english": "I’m sorry for",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "I’m sorry for"
   },
   {
     "level": "N4",
     "number": 103,
     "japanese": "てやる",
-    "romaji": "te yaru",
-    "english": "to do for; to do a favor (casual)",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to do for; to do a favor (casual)"
   },
   {
     "level": "N4",
     "number": 104,
     "japanese": "てよかった",
-    "romaji": "te yokatta",
-    "english": "I’m glad that..",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "I’m glad that.."
   },
   {
     "level": "N4",
     "number": 105,
     "japanese": "ているところ",
-    "romaji": "teiru tokoro",
-    "english": "in the process of doing",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "in the process of doing"
   },
   {
     "level": "N4",
     "number": 106,
     "japanese": "ても",
-    "romaji": "temo",
-    "english": "even; even if; even though",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "even; even if; even though"
   },
   {
     "level": "N4",
     "number": 107,
     "japanese": "と",
-    "romaji": "to",
-    "english": "whenever [A] happens, [B] also happens",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "whenever [A] happens, [B] also happens"
   },
   {
     "level": "N4",
     "number": 108,
     "japanese": "と言ってもいい",
-    "romaji": "to ittemo ii",
-    "english": "you could say; one might say; I'd say",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "you could say; one might say; I'd say"
   },
   {
     "level": "N4",
     "number": 109,
     "japanese": "という",
-    "romaji": "to iu",
-    "english": "called; named; that",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "called; named; that"
   },
   {
     "level": "N4",
     "number": 110,
     "japanese": "ということ",
-    "romaji": "to iu koto",
-    "english": "convert phrase into noun",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "convert phrase into noun"
   },
   {
     "level": "N4",
     "number": 111,
     "japanese": "と言われている",
-    "romaji": "to iwarete iru",
-    "english": "it is said that...",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "it is said that..."
   },
   {
     "level": "N4",
     "number": 112,
     "japanese": "と聞いた",
-    "romaji": "to kiita",
-    "english": "I heard...",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "I heard..."
   },
   {
     "level": "N4",
     "number": 113,
     "japanese": "と思う",
-    "romaji": "to omou",
-    "english": "to think…; I think…; you think…",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to think…; I think…; you think…"
   },
   {
     "level": "N4",
     "number": 114,
     "japanese": "とか～とか",
-    "romaji": "toka~toka",
-    "english": "among other things; such as; like",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "among other things; such as; like"
   },
   {
     "level": "N4",
     "number": 115,
     "japanese": "ところ",
-    "romaji": "tokoro",
-    "english": "just about to; on the verge of doing ~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "just about to; on the verge of doing ~"
   },
   {
     "level": "N4",
     "number": 116,
     "japanese": "続ける",
-    "romaji": "tsuzukeru",
-    "english": "continue to; keen on",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "continue to; keen on"
   },
   {
     "level": "N4",
     "number": 117,
     "japanese": "って",
-    "romaji": "tte",
-    "english": "named; called",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "named; called"
   },
   {
     "level": "N4",
     "number": 118,
     "japanese": "受身形",
-    "romaji": "ukemi kei",
-    "english": "passive form; passive voice",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "passive form; passive voice"
   },
   {
     "level": "N4",
     "number": 119,
     "japanese": "は〜が… は",
-    "romaji": "wa~ga... wa",
-    "english": "[A] but [B]; however; comparison",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "[A] but [B]; however; comparison"
   },
   {
     "level": "N4",
     "number": 120,
     "japanese": "やすい",
-    "romaji": "yasui",
-    "english": "easy to; likely to; prone to; a tendency to~",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "easy to; likely to; prone to; a tendency to~"
   },
   {
     "level": "N4",
     "number": 121,
     "japanese": "やっと",
-    "romaji": "yatto",
-    "english": "at last; finally; barely; narrowly",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "at last; finally; barely; narrowly"
   },
   {
     "level": "N4",
     "number": 122,
     "japanese": "より",
-    "romaji": "yori",
-    "english": "than; rather than; more than",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "than; rather than; more than"
   },
   {
     "level": "N4",
     "number": 123,
     "japanese": "予定だ",
-    "romaji": "yotei da",
-    "english": "plan to, intend to",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "plan to, intend to"
   },
   {
     "level": "N4",
     "number": 124,
     "japanese": "ようだ",
-    "romaji": "you da",
-    "english": "appears; seems; looks as if",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "appears; seems; looks as if"
   },
   {
     "level": "N4",
     "number": 125,
     "japanese": "ように / ような",
-    "romaji": "you ni / you na",
-    "english": "like; as; similar to",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "like; as; similar to"
   },
   {
     "level": "N4",
     "number": 126,
     "japanese": "ようになる",
-    "romaji": "you ni naru",
-    "english": "to reach the point that; to turn into",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to reach the point that; to turn into"
   },
   {
     "level": "N4",
     "number": 127,
     "japanese": "ようにする",
-    "romaji": "you ni suru",
-    "english": "to try to; to make sure that",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "to try to; to make sure that"
   },
   {
     "level": "N4",
     "number": 128,
     "japanese": "ようと思う",
-    "romaji": "you to omou",
-    "english": "thinking of doing; planning to",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "thinking of doing; planning to"
   },
   {
     "level": "N4",
     "number": 129,
     "japanese": "ぜひ",
-    "romaji": "zehi",
-    "english": "by all means; certainly; definitely",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "by all means; certainly; definitely"
   },
   {
     "level": "N4",
     "number": 130,
     "japanese": "全然～ない",
-    "romaji": "zenzen~nai",
-    "english": "(not) at all",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "(not) at all"
   },
   {
     "level": "N4",
     "number": 131,
     "japanese": "づらい",
-    "romaji": "zurai",
-    "english": "difficult to do",
-    "resources": [
-      {
-        "name": "jlptsensei",
-        "location": "https://jlptsensei.com",
-        "type": "website"
-      }
-    ]
+    "english": "difficult to do"
+  },
+  {
+    "level": "N3",
+    "number": 1,
+    "japanese": "上げる",
+    "english": "to finish doing~"
+  },
+  {
+    "level": "N3",
+    "number": 2,
+    "japanese": "あまり",
+    "english": "so much… that"
+  },
+  {
+    "level": "N3",
+    "number": 3,
+    "japanese": "あまりにも",
+    "english": "too…; so much… that; excessively~"
+  },
+  {
+    "level": "N3",
+    "number": 4,
+    "japanese": "合う",
+    "english": "do something together"
+  },
+  {
+    "level": "N3",
+    "number": 5,
+    "japanese": "ばいい",
+    "english": "should, can, it’d be good if"
+  },
+  {
+    "level": "N3",
+    "number": 6,
+    "japanese": "ばよかった",
+    "english": "should have, would have been better if~"
+  },
+  {
+    "level": "N3",
+    "number": 7,
+    "japanese": "ば～ほど",
+    "english": "the more… the more"
+  },
+  {
+    "level": "N3",
+    "number": 8,
+    "japanese": "ば～のに",
+    "english": "would have; should have; if only~"
+  },
+  {
+    "level": "N3",
+    "number": 9,
+    "japanese": "ばかりで",
+    "english": "only; just (negative description)"
+  },
+  {
+    "level": "N3",
+    "number": 10,
+    "japanese": "ばかりでなく",
+    "english": "not only.. but also; as well as"
+  },
+  {
+    "level": "N3",
+    "number": 11,
+    "japanese": "べきだ",
+    "english": "should do~; must do~"
+  },
+  {
+    "level": "N3",
+    "number": 12,
+    "japanese": "べきではない",
+    "english": "should not do~; must not do~"
+  },
+  {
+    "level": "N3",
+    "number": 13,
+    "japanese": "別に～ない",
+    "english": "not really, not particularly"
+  },
+  {
+    "level": "N3",
+    "number": 14,
+    "japanese": "ぶりに",
+    "english": "for the first time in (period of time)"
+  },
+  {
+    "level": "N3",
+    "number": 15,
+    "japanese": "中",
+    "english": "currently; during; throughout"
+  },
+  {
+    "level": "N3",
+    "number": 16,
+    "japanese": "だけ",
+    "english": "as much as~"
+  },
+  {
+    "level": "N3",
+    "number": 17,
+    "japanese": "だけでなく",
+    "english": "not only… but also"
+  },
+  {
+    "level": "N3",
+    "number": 18,
+    "japanese": "だけど",
+    "english": "however; but"
+  },
+  {
+    "level": "N3",
+    "number": 19,
+    "japanese": "だらけ",
+    "english": "full of; covered with; a lot of~"
+  },
+  {
+    "level": "N3",
+    "number": 20,
+    "japanese": "どんなに～ても",
+    "english": "no matter how (much)"
+  },
+  {
+    "level": "N3",
+    "number": 21,
+    "japanese": "どうしても",
+    "english": "no matter what; at any cost; after all"
+  },
+  {
+    "level": "N3",
+    "number": 22,
+    "japanese": "ふりをする",
+    "english": "to pretend; to act as if~"
+  },
+  {
+    "level": "N3",
+    "number": 23,
+    "japanese": "ふと",
+    "english": "suddenly; accidentally; unexpectedly"
+  },
+  {
+    "level": "N3",
+    "number": 24,
+    "japanese": "がち",
+    "english": "tend to; tendency to; frequently; often~"
+  },
+  {
+    "level": "N3",
+    "number": 25,
+    "japanese": "がたい",
+    "english": "very difficult to; impossible to"
+  },
+  {
+    "level": "N3",
+    "number": 26,
+    "japanese": "気味",
+    "english": "-like; -looking; -looked; tending to"
+  },
+  {
+    "level": "N3",
+    "number": 27,
+    "japanese": "ごとに",
+    "english": "each; every; at intervals of"
+  },
+  {
+    "level": "N3",
+    "number": 28,
+    "japanese": "ほど",
+    "english": "degree; extent; bounds; upper limit"
+  },
+  {
+    "level": "N3",
+    "number": 29,
+    "japanese": "ほど～ない",
+    "english": "is not as… as"
+  },
+  {
+    "level": "N3",
+    "number": 30,
+    "japanese": "一度に",
+    "english": "all at once"
+  },
+  {
+    "level": "N3",
+    "number": 31,
+    "japanese": "いくら～ても",
+    "english": "no matter how~"
+  },
+  {
+    "level": "N3",
+    "number": 32,
+    "japanese": "一方だ",
+    "english": "more and more; continue to"
+  },
+  {
+    "level": "N3",
+    "number": 33,
+    "japanese": "一体",
+    "english": "emphasis; what on earth?"
+  },
+  {
+    "level": "N3",
+    "number": 34,
+    "japanese": "じゃない",
+    "english": "maybe; most likely; confirmation"
+  },
+  {
+    "level": "N3",
+    "number": 35,
+    "japanese": "か何か",
+    "english": "or something"
+  },
+  {
+    "level": "N3",
+    "number": 36,
+    "japanese": "かける",
+    "english": "half-; not yet finished; in the middle of~"
+  },
+  {
+    "level": "N3",
+    "number": 37,
+    "japanese": "から〜にかけて",
+    "english": "through; from [A] to [B]"
+  },
+  {
+    "level": "N3",
+    "number": 38,
+    "japanese": "代わりに",
+    "english": "instead of; in exchange for~"
+  },
+  {
+    "level": "N3",
+    "number": 39,
+    "japanese": "結果",
+    "english": "as a result of; after"
+  },
+  {
+    "level": "N3",
+    "number": 40,
+    "japanese": "結局",
+    "english": "after all; eventually; in the end"
+  },
+  {
+    "level": "N3",
+    "number": 41,
+    "japanese": "決して～ない",
+    "english": "never; by no means"
+  },
+  {
+    "level": "N3",
+    "number": 42,
+    "japanese": "切れない",
+    "english": "unable to do; too much to finish"
+  },
+  {
+    "level": "N3",
+    "number": 43,
+    "japanese": "きり",
+    "english": "only; just; since; after"
+  },
+  {
+    "level": "N3",
+    "number": 44,
+    "japanese": "切る",
+    "english": "to do something completely to the end"
+  },
+  {
+    "level": "N3",
+    "number": 45,
+    "japanese": "っけ",
+    "english": "casual suffix to confirm something"
+  },
+  {
+    "level": "N3",
+    "number": 46,
+    "japanese": "込む",
+    "english": "Move inside; do a long time"
+  },
+  {
+    "level": "N3",
+    "number": 47,
+    "japanese": "こそ",
+    "english": "for sure; precisely; definitely"
+  },
+  {
+    "level": "N3",
+    "number": 48,
+    "japanese": "こと",
+    "english": "(must) do"
+  },
+  {
+    "level": "N3",
+    "number": 49,
+    "japanese": "ことから",
+    "english": "from the fact that~"
+  },
+  {
+    "level": "N3",
+    "number": 50,
+    "japanese": "ことになっている",
+    "english": "to be expected to; it has been decided~"
+  },
+  {
+    "level": "N3",
+    "number": 51,
+    "japanese": "ことはない",
+    "english": "there is no need to; no possibility that~"
+  },
+  {
+    "level": "N3",
+    "number": 52,
+    "japanese": "ことは～が",
+    "english": "although; but"
+  },
+  {
+    "level": "N3",
+    "number": 53,
+    "japanese": "くらい・ぐらい",
+    "english": "approximately; about; to the extent"
+  },
+  {
+    "level": "N3",
+    "number": 54,
+    "japanese": "くせに",
+    "english": "although~; despite the fact that~"
+  },
+  {
+    "level": "N3",
+    "number": 55,
+    "japanese": "まるで",
+    "english": "as if; as though; just like"
+  },
+  {
+    "level": "N3",
+    "number": 56,
+    "japanese": "まさか",
+    "english": "there's no way; that's impossible"
+  },
+  {
+    "level": "N3",
+    "number": 57,
+    "japanese": "めったに～ない",
+    "english": "hardly; rarely; seldom"
+  },
+  {
+    "level": "N3",
+    "number": 58,
+    "japanese": "も～ば～も",
+    "english": "and; also; as well; either/or; neither"
+  },
+  {
+    "level": "N3",
+    "number": 59,
+    "japanese": "もしかしたら",
+    "english": "perhaps; maybe; perchance; by chance"
+  },
+  {
+    "level": "N3",
+    "number": 60,
+    "japanese": "もしも〜たら",
+    "english": "if; in the case; supposing~"
+  },
+  {
+    "level": "N3",
+    "number": 61,
+    "japanese": "向け",
+    "english": "intended for; aimed at~"
+  },
+  {
+    "level": "N3",
+    "number": 62,
+    "japanese": "向き",
+    "english": "suitable for~"
+  },
+  {
+    "level": "N3",
+    "number": 63,
+    "japanese": "むしろ",
+    "english": "rather; instead; better"
+  },
+  {
+    "level": "N3",
+    "number": 64,
+    "japanese": "ながらも",
+    "english": "but; although; despite"
+  },
+  {
+    "level": "N3",
+    "number": 65,
+    "japanese": "ないことはない",
+    "english": "can do~; is not impossible to~"
+  },
+  {
+    "level": "N3",
+    "number": 66,
+    "japanese": "ないと",
+    "english": "must do; unless/if you don't~"
+  },
+  {
+    "level": "N3",
+    "number": 67,
+    "japanese": "なかなか",
+    "english": "quite~; pretty~; rather~; just not ~"
+  },
+  {
+    "level": "N3",
+    "number": 68,
+    "japanese": "なんか / なんて",
+    "english": "examples; modesty; make light of~"
+  },
+  {
+    "level": "N3",
+    "number": 69,
+    "japanese": "直す",
+    "english": "to do something again; to do over"
+  },
+  {
+    "level": "N3",
+    "number": 70,
+    "japanese": "なるべく",
+    "english": "as much as possible"
   }
 ]

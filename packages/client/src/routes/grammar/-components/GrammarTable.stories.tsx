@@ -10,31 +10,19 @@ const sampleGrammarPoints: GrammarPoint[] = [
     level: "N5",
     number: 1,
     japanese: "ちゃいけない・じゃいけない",
-    romaji: "cha ikenai / ja ikenai",
     english: "must not do (spoken Japanese)",
-    resources: [
-      {
-        name: "jlptsensei",
-        location: "https://jlptsensei.com",
-        type: "website",
-      },
-    ],
   },
   {
     level: "N5",
     number: 2,
     japanese: "だ・です",
-    romaji: "da / desu",
     english: "to be (am, is, are, were, used to)",
-    resources: [],
   },
   {
     level: "N5",
     number: 3,
     japanese: "だけ",
-    romaji: "dake",
     english: "only; just; as much as",
-    resources: [],
   },
 ];
 
@@ -77,18 +65,18 @@ export const SearchFiltersByEnglish: Story = {
   },
 };
 
-export const SearchFiltersByRomaji: Story = {
+export const SearchFiltersByJapanese: Story = {
   play: async ({
     canvasElement,
   }) => {
     const canvas = within(canvasElement);
     const search = canvas.getByTestId("grammar-search-input");
 
-    await userEvent.type(search, "desu");
+    await userEvent.type(search, "だ・です");
 
     const rows = canvas.getAllByTestId("grammar-row");
     await expect(rows).toHaveLength(1);
-    await expect(rows[0]).toHaveTextContent("da / desu");
+    await expect(rows[0]).toHaveTextContent("to be");
   },
 };
 
@@ -104,17 +92,5 @@ export const SearchEmptyShowsAll: Story = {
 
     await userEvent.clear(search);
     await expect(canvas.getAllByTestId("grammar-row")).toHaveLength(3);
-  },
-};
-
-export const ResourceLinksRender: Story = {
-  play: async ({
-    canvasElement,
-  }) => {
-    const canvas = within(canvasElement);
-
-    const link = canvas.getByTestId("grammar-resource-link-jlptsensei");
-    await expect(link).toHaveAttribute("href", "https://jlptsensei.com");
-    await expect(link).toHaveAttribute("target", "_blank");
   },
 };
