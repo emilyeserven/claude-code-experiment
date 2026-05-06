@@ -33,14 +33,25 @@ interface QuizState {
   shuffleSeed: number;
 }
 
-function newRound(mode: Mode, exclude?: string): QuizState {
-  const pool = exclude
-    ? SENTENCES.filter(s => s.id !== exclude)
-    : SENTENCES;
+interface QuizSession {
+  round: QuizState;
+  seen: ReadonlySet<string>;
+}
+
+function nextSession(mode: Mode, seen: ReadonlySet<string>): QuizSession {
+  const remaining = SENTENCES.filter(s => !seen.has(s.id));
+  const exhausted = remaining.length === 0;
+  const pool = exhausted ? SENTENCES : remaining;
+  const sentence = pickRandom(pool);
+  const nextSeen = exhausted ? new Set<string>() : new Set(seen);
+  nextSeen.add(sentence.id);
   return {
-    sentence: pickRandom(pool),
-    mode: modeForRound(mode),
-    shuffleSeed: Math.floor(Math.random() * 1_000_000),
+    round: {
+      sentence,
+      mode: modeForRound(mode),
+      shuffleSeed: Math.floor(Math.random() * 1_000_000),
+    },
+    seen: nextSeen,
   };
 }
 
@@ -52,7 +63,8 @@ export function GivingReceivingQuiz({
   onStart,
 }: GivingReceivingQuizProps = {}) {
   const [mode, setMode] = useState<Mode>("mixed");
-  const [round, setRound] = useState<QuizState>(() => newRound("mixed"));
+  const [session, setSession] = useState<QuizSession>(() =>
+    nextSession("mixed", new Set()));
   const [score, setScore] = useState({
     correct: 0,
     total: 0,
@@ -66,7 +78,7 @@ export function GivingReceivingQuiz({
   }, [onStart]);
 
   const handleNext = useCallback(() => {
-    setRound(prev => newRound(mode, prev.sentence.id));
+    setSession(prev => nextSession(mode, prev.seen));
   }, [mode]);
 
   const handleResult = useCallback((wasCorrect: boolean) => {
@@ -87,7 +99,7 @@ export function GivingReceivingQuiz({
 
   const handleSetMode = useCallback((newMode: Mode) => {
     setMode(newMode);
-    setRound(newRound(newMode));
+    setSession(prev => nextSession(newMode, prev.seen));
   }, []);
 
   const accuracy = useMemo(() => {
@@ -128,30 +140,30 @@ export function GivingReceivingQuiz({
       </div>
 
       <div
-        key={round.sentence.id + round.mode}
+        key={session.round.sentence.id + session.round.mode}
         className="rounded-lg border p-4"
-        data-testid={`quiz-round-${round.mode}`}
+        data-testid={`quiz-round-${session.round.mode}`}
       >
-        {round.mode === "fill-in-blank" && (
+        {session.round.mode === "fill-in-blank" && (
           <FillInBlank
-            sentence={round.sentence}
+            sentence={session.round.sentence}
             onNext={handleNext}
             onResult={handleResult}
           />
         )}
-        {round.mode === "reveal-translation" && (
+        {session.round.mode === "reveal-translation" && (
           <RevealTranslation
-            sentence={round.sentence}
+            sentence={session.round.sentence}
             onNext={handleNext}
             onResult={handleRevealRated}
           />
         )}
-        {round.mode === "grammar-point-grid" && (
+        {session.round.mode === "grammar-point-grid" && (
           <GrammarPointGrid
-            sentence={round.sentence}
+            sentence={session.round.sentence}
             onNext={handleNext}
             onResult={handleResult}
-            shuffleSeed={round.shuffleSeed}
+            shuffleSeed={session.round.shuffleSeed}
           />
         )}
       </div>
