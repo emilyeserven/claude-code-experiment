@@ -46,7 +46,7 @@ pnpm --filter=@cc-experiments/client run routeTree
 
 1. **Fill-in-the-blank**: the English translation is shown for context. The blank covers only the auxiliary giving/receiving verb (the て stays attached to the main verb in て-form sentences). User input is romaji that gets converted to hiragana live.
 2. **Reveal-translation**: the Japanese is shown and the user clicks to reveal the English. The user self-rates how well they understood — there is no automated grading. Used as flash-card style review.
-3. **Pick the grammar point**: only the English translation is shown. The user picks one of the six grammar points from a 2×3 grid; placement is shuffled per round via a deterministic seed.
+3. **Pick the grammar point**: the Japanese sentence is shown with the grammar point replaced by a blank, with the English translation underneath as context. The user picks one of the six grammar points from a 2×3 grid; placement is shuffled per round via a deterministic seed.
 
 **Never quiz the user on the English translation of a sentence.** The English is always provided when shown — it is context, not a prompt.
 
