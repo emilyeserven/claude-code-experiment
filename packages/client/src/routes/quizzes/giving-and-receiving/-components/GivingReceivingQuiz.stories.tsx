@@ -19,7 +19,7 @@ export const Default: Story = {
   }) => {
     const canvas = within(canvasElement);
     await expect(canvas.getByTestId("giving-receiving-quiz")).toBeInTheDocument();
-    await expect(canvas.getByTestId("quiz-mode-selector")).toBeInTheDocument();
+    await expect(canvas.getByTestId("quiz-settings-trigger")).toBeInTheDocument();
     await expect(canvas.getByTestId("quiz-score")).toHaveTextContent("Score: 0 / 0");
   },
 };

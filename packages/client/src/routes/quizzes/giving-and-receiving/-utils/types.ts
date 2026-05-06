@@ -40,3 +40,30 @@ export interface Sentence {
 
   note?: string;
 }
+
+export type Mode = "mixed" | "fill-in-blank" | "reveal-translation" | "grammar-point-grid";
+
+export const MODES: { mode: Mode;
+  label: string;
+  testId: string; }[] = [
+  {
+    mode: "mixed",
+    label: "Mixed",
+    testId: "mode-mixed",
+  },
+  {
+    mode: "fill-in-blank",
+    label: "Fill in the blank",
+    testId: "mode-fill-in-blank",
+  },
+  {
+    mode: "reveal-translation",
+    label: "Reveal translation",
+    testId: "mode-reveal-translation",
+  },
+  {
+    mode: "grammar-point-grid",
+    label: "Pick the grammar point",
+    testId: "mode-grammar-point-grid",
+  },
+];

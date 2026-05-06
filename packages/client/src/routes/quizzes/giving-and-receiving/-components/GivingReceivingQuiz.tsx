@@ -1,41 +1,12 @@
-import type { Sentence } from "../-utils/types";
+import type { Mode, Sentence } from "../-utils/types";
 
 import { useCallback, useMemo, useState } from "react";
 
 import { FillInBlank } from "./FillInBlank";
 import { GrammarPointGrid } from "./GrammarPointGrid";
+import { QuizSettingsMenu } from "./QuizSettingsMenu";
 import { RevealTranslation } from "./RevealTranslation";
 import { SENTENCES } from "../-utils/sentences";
-
-import { Button } from "@/components/ui";
-import { cn } from "@/lib/utils";
-
-type Mode = "mixed" | "fill-in-blank" | "reveal-translation" | "grammar-point-grid";
-
-const MODES: { mode: Mode;
-  label: string;
-  testId: string; }[] = [
-  {
-    mode: "mixed",
-    label: "Mixed",
-    testId: "mode-mixed",
-  },
-  {
-    mode: "fill-in-blank",
-    label: "Fill in the blank",
-    testId: "mode-fill-in-blank",
-  },
-  {
-    mode: "reveal-translation",
-    label: "Reveal translation",
-    testId: "mode-reveal-translation",
-  },
-  {
-    mode: "grammar-point-grid",
-    label: "Pick the grammar point",
-    testId: "mode-grammar-point-grid",
-  },
-];
 
 function pickRandom<T>(items: readonly T[]): T {
   const item = items[Math.floor(Math.random() * items.length)];
@@ -114,46 +85,31 @@ export function GivingReceivingQuiz() {
       className="flex flex-col gap-6"
       data-testid="giving-receiving-quiz"
     >
-      <div className="flex flex-col gap-2">
-        <p className="text-sm font-medium">Question type</p>
+      <div className="flex items-center justify-between gap-2">
         <div
-          className="flex flex-wrap gap-2"
-          data-testid="quiz-mode-selector"
+          className="text-sm text-muted-foreground"
+          data-testid="quiz-score"
         >
-          {MODES.map(m => (
-            <Button
-              key={m.mode}
-              variant={mode === m.mode ? "default" : "outline"}
-              size="sm"
-              className={cn(mode === m.mode && "ring-2 ring-ring")}
-              onClick={() => { handleSetMode(m.mode); }}
-              data-testid={m.testId}
-            >
-              {m.label}
-            </Button>
-          ))}
+          Score:
+          {" "}
+          {score.correct}
+          {" "}
+          /
+          {" "}
+          {score.total}
+          {accuracy !== null && (
+            <>
+              {" "}
+              (
+              {accuracy}
+              %)
+            </>
+          )}
         </div>
-      </div>
-
-      <div
-        className="text-sm text-muted-foreground"
-        data-testid="quiz-score"
-      >
-        Score:
-        {" "}
-        {score.correct}
-        {" "}
-        /
-        {" "}
-        {score.total}
-        {accuracy !== null && (
-          <>
-            {" "}
-            (
-            {accuracy}
-            %)
-          </>
-        )}
+        <QuizSettingsMenu
+          mode={mode}
+          onModeChange={handleSetMode}
+        />
       </div>
 
       <div
