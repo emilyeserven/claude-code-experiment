@@ -1,6 +1,6 @@
 import type { Mode, Sentence } from "../-utils/types";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 
 import { FillInBlank } from "./FillInBlank";
 import { GrammarPointGrid } from "./GrammarPointGrid";
@@ -44,31 +44,46 @@ function newRound(mode: Mode, exclude?: string): QuizState {
   };
 }
 
-export function GivingReceivingQuiz() {
+interface GivingReceivingQuizProps {
+  onStart?: () => void;
+}
+
+export function GivingReceivingQuiz({
+  onStart,
+}: GivingReceivingQuizProps = {}) {
   const [mode, setMode] = useState<Mode>("mixed");
   const [round, setRound] = useState<QuizState>(() => newRound("mixed"));
   const [score, setScore] = useState({
     correct: 0,
     total: 0,
   });
+  const startedRef = useRef(false);
+
+  const markStarted = useCallback(() => {
+    if (startedRef.current) return;
+    startedRef.current = true;
+    onStart?.();
+  }, [onStart]);
 
   const handleNext = useCallback(() => {
     setRound(prev => newRound(mode, prev.sentence.id));
   }, [mode]);
 
   const handleResult = useCallback((wasCorrect: boolean) => {
+    markStarted();
     setScore(prev => ({
       correct: prev.correct + (wasCorrect ? 1 : 0),
       total: prev.total + 1,
     }));
-  }, []);
+  }, [markStarted]);
 
   const handleRevealRated = useCallback(() => {
+    markStarted();
     setScore(prev => ({
       ...prev,
       total: prev.total + 1,
     }));
-  }, []);
+  }, [markStarted]);
 
   const handleSetMode = useCallback((newMode: Mode) => {
     setMode(newMode);

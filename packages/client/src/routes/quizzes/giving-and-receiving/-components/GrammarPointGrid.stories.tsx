@@ -79,3 +79,33 @@ export const SecondClickIgnored: Story = {
     await expect(args.onResult).toHaveBeenCalledTimes(1);
   },
 };
+
+export const ExploreExplanationsAfterAnswering: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("grammar-point-grid-option-ageru"));
+    await expect(canvas.queryByTestId("grammar-point-grid-explanation"))
+      .not.toBeInTheDocument();
+
+    await userEvent.click(canvas.getByTestId("grammar-point-grid-option-kureru"));
+    const explanation = canvas.getByTestId("grammar-point-grid-explanation");
+    await expect(explanation).toBeInTheDocument();
+    await expect(canvas.getByTestId("grammar-point-grid-explanation-label"))
+      .toHaveTextContent("くれる");
+    await expect(canvas.getByTestId("grammar-point-grid-explanation-tailored"))
+      .toBeInTheDocument();
+
+    await userEvent.click(canvas.getByTestId("grammar-point-grid-option-te-morau"));
+    await expect(canvas.getByTestId("grammar-point-grid-explanation-label"))
+      .toHaveTextContent("てもらう");
+    await expect(canvas.queryByTestId("grammar-point-grid-explanation-tailored"))
+      .not.toBeInTheDocument();
+
+    await userEvent.click(canvas.getByTestId("grammar-point-grid-option-te-morau"));
+    await expect(canvas.queryByTestId("grammar-point-grid-explanation"))
+      .not.toBeInTheDocument();
+  },
+};
