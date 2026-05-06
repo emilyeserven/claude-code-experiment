@@ -122,6 +122,17 @@ const KANA_MAP: Record<string, string> = {
 
 const VOWELS = new Set(["a", "i", "u", "e", "o"]);
 
+// Like romajiToHiragana, but preserves a trailing single "n" so a user mid-typing
+// "no" doesn't see ん committed before the "o" arrives. Trailing "nn" still
+// converts to ん since it's unambiguous.
+export function romajiToHiraganaInProgress(input: string): string {
+  const lower = input.toLowerCase();
+  if (lower.endsWith("n") && !lower.endsWith("nn")) {
+    return romajiToHiragana(input.slice(0, -1)) + input.slice(-1);
+  }
+  return romajiToHiragana(input);
+}
+
 export function romajiToHiragana(input: string): string {
   const normalized = input.toLowerCase().replace(/-/g, "");
   let result = "";
