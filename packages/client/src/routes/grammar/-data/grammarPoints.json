@@ -2356,5 +2356,455 @@
     "number": 182,
     "japanese": "ずつ",
     "english": "apiece; each; at a time"
+  },
+  {
+    "level": "N2",
+    "number": 1,
+    "japanese": "あげく",
+    "english": "to end up; in the end; finally; after all"
+  },
+  {
+    "level": "N2",
+    "number": 2,
+    "japanese": "あるいは",
+    "english": "or; either; maybe; perhaps; possibly"
+  },
+  {
+    "level": "N2",
+    "number": 3,
+    "japanese": "ばかり",
+    "english": "about, approximately"
+  },
+  {
+    "level": "N2",
+    "number": 4,
+    "japanese": "ばかりだ",
+    "english": "continue to (go in negative direction)"
+  },
+  {
+    "level": "N2",
+    "number": 5,
+    "japanese": "ばかりか",
+    "english": "not only.. but also; as well as"
+  },
+  {
+    "level": "N2",
+    "number": 6,
+    "japanese": "ばかりに",
+    "english": "simply because; on account of"
+  },
+  {
+    "level": "N2",
+    "number": 7,
+    "japanese": "ちなみに",
+    "english": "by the way; incidentally"
+  },
+  {
+    "level": "N2",
+    "number": 8,
+    "japanese": "ちっとも～ない",
+    "english": "(not) at all; (not) in the least"
+  },
+  {
+    "level": "N2",
+    "number": 9,
+    "japanese": "だけあって",
+    "english": "being the case; precisely because"
+  },
+  {
+    "level": "N2",
+    "number": 10,
+    "japanese": "だけましだ",
+    "english": "it’s better than; should feel grateful for"
+  },
+  {
+    "level": "N2",
+    "number": 11,
+    "japanese": "だけに",
+    "english": "being the case; precisely because"
+  },
+  {
+    "level": "N2",
+    "number": 12,
+    "japanese": "だけのことはある",
+    "english": "as expected of; not for nothing"
+  },
+  {
+    "level": "N2",
+    "number": 13,
+    "japanese": "だけは",
+    "english": "to do all that one can"
+  },
+  {
+    "level": "N2",
+    "number": 14,
+    "japanese": "だって",
+    "english": "because; but; after all; even; too"
+  },
+  {
+    "level": "N2",
+    "number": 15,
+    "japanese": "でしかない",
+    "english": "merely; nothing but; no more than"
+  },
+  {
+    "level": "N2",
+    "number": 16,
+    "japanese": "どころではない",
+    "english": "not the time for; far from"
+  },
+  {
+    "level": "N2",
+    "number": 17,
+    "japanese": "どころか",
+    "english": "far from; anything but; let alone"
+  },
+  {
+    "level": "N2",
+    "number": 18,
+    "japanese": "どうやら",
+    "english": "apparently; seems like; somehow"
+  },
+  {
+    "level": "N2",
+    "number": 19,
+    "japanese": "どうせ",
+    "english": "anyhow; in any case; at any rate"
+  },
+  {
+    "level": "N2",
+    "number": 20,
+    "japanese": "得ない",
+    "english": "unable to; cannot; it is not possible to~"
+  },
+  {
+    "level": "N2",
+    "number": 21,
+    "japanese": "得る",
+    "english": "can; to be able to; is possible to~"
+  },
+  {
+    "level": "N2",
+    "number": 22,
+    "japanese": "再び",
+    "english": "again; once more"
+  },
+  {
+    "level": "N2",
+    "number": 23,
+    "japanese": "ふうに",
+    "english": "this way; that way; in such a way; how"
+  },
+  {
+    "level": "N2",
+    "number": 24,
+    "japanese": "がきっかけで",
+    "english": "as a result of; taking advantage of"
+  },
+  {
+    "level": "N2",
+    "number": 25,
+    "japanese": "げ",
+    "english": "looks like; seems like; appears to"
+  },
+  {
+    "level": "N2",
+    "number": 26,
+    "japanese": "逆に",
+    "english": "conversely; on the contrary"
+  },
+  {
+    "level": "N2",
+    "number": 27,
+    "japanese": "反面",
+    "english": "while, although; on the other hand"
+  },
+  {
+    "level": "N2",
+    "number": 28,
+    "japanese": "果たして",
+    "english": "as was expected; sure enough; really"
+  },
+  {
+    "level": "N2",
+    "number": 29,
+    "japanese": "一応",
+    "english": "more or less; pretty much; roughly"
+  },
+  {
+    "level": "N2",
+    "number": 30,
+    "japanese": "以外",
+    "english": "with the exception of; excepting"
+  },
+  {
+    "level": "N2",
+    "number": 31,
+    "japanese": "以上に",
+    "english": "more than; not less than; beyond"
+  },
+  {
+    "level": "N2",
+    "number": 32,
+    "japanese": "以上は",
+    "english": "because; since; seeing that"
+  },
+  {
+    "level": "N2",
+    "number": 33,
+    "japanese": "いきなり",
+    "english": "abruptly; suddenly; all of a sudden"
+  },
+  {
+    "level": "N2",
+    "number": 34,
+    "japanese": "一気に",
+    "english": "in one go; without stopping; all at once"
+  },
+  {
+    "level": "N2",
+    "number": 35,
+    "japanese": "一方で",
+    "english": "on one hand, on the other hand"
+  },
+  {
+    "level": "N2",
+    "number": 36,
+    "japanese": "いわゆる",
+    "english": "what is called; as it is called; so-called"
+  },
+  {
+    "level": "N2",
+    "number": 37,
+    "japanese": "いよいよ",
+    "english": "at last; finally; beyond doubt"
+  },
+  {
+    "level": "N2",
+    "number": 38,
+    "japanese": "上",
+    "english": "for the sake of; from the standpoint of"
+  },
+  {
+    "level": "N2",
+    "number": 39,
+    "japanese": "かのように",
+    "english": "as if; just like"
+  },
+  {
+    "level": "N2",
+    "number": 40,
+    "japanese": "かと思ったら",
+    "english": "just when; no sooner than"
+  },
+  {
+    "level": "N2",
+    "number": 41,
+    "japanese": "か～ないかのうちに",
+    "english": "just as; right after; as soon as"
+  },
+  {
+    "level": "N2",
+    "number": 42,
+    "japanese": "かえって",
+    "english": "on the contrary; rather; all the more"
+  },
+  {
+    "level": "N2",
+    "number": 43,
+    "japanese": "限り",
+    "english": "as long as; while… is the case; as far as"
+  },
+  {
+    "level": "N2",
+    "number": 44,
+    "japanese": "甲斐がある",
+    "english": "it’s worth one’s efforts to do something"
+  },
+  {
+    "level": "N2",
+    "number": 45,
+    "japanese": "かねない",
+    "english": "(someone) might do something"
+  },
+  {
+    "level": "N2",
+    "number": 46,
+    "japanese": "かねる",
+    "english": "unable to do something; can’t do~"
+  },
+  {
+    "level": "N2",
+    "number": 47,
+    "japanese": "から言うと",
+    "english": "in terms of; from the point of view of"
+  },
+  {
+    "level": "N2",
+    "number": 48,
+    "japanese": "からこそ",
+    "english": "precisely because"
+  },
+  {
+    "level": "N2",
+    "number": 49,
+    "japanese": "から見ると",
+    "english": "from the point of view of; judging from"
+  },
+  {
+    "level": "N2",
+    "number": 50,
+    "japanese": "からには",
+    "english": "now that; since; so long as; because"
+  },
+  {
+    "level": "N2",
+    "number": 51,
+    "japanese": "からして",
+    "english": "judging from; based on; since; from"
+  },
+  {
+    "level": "N2",
+    "number": 52,
+    "japanese": "からすると",
+    "english": "judging from; considering"
+  },
+  {
+    "level": "N2",
+    "number": 53,
+    "japanese": "からと言って",
+    "english": "just because; even if; even though~"
+  },
+  {
+    "level": "N2",
+    "number": 54,
+    "japanese": "っこない",
+    "english": "no chance of; definitely not possible"
+  },
+  {
+    "level": "N2",
+    "number": 55,
+    "japanese": "ことだ",
+    "english": "should do~ (suggestions or advice)"
+  },
+  {
+    "level": "N2",
+    "number": 56,
+    "japanese": "ことだから",
+    "english": "because; since~"
+  },
+  {
+    "level": "N2",
+    "number": 57,
+    "japanese": "ことか",
+    "english": "how…!; what…!"
+  },
+  {
+    "level": "N2",
+    "number": 58,
+    "japanese": "ことなく",
+    "english": "without doing something even once"
+  },
+  {
+    "level": "N2",
+    "number": 59,
+    "japanese": "ことに",
+    "english": "emphasize speaker's feelings"
+  },
+  {
+    "level": "N2",
+    "number": 60,
+    "japanese": "ことにはならない",
+    "english": "just because… doesn’t mean~"
+  },
+  {
+    "level": "N2",
+    "number": 61,
+    "japanese": "くせして",
+    "english": "although~; despite the fact that~"
+  },
+  {
+    "level": "N2",
+    "number": 62,
+    "japanese": "まだしも",
+    "english": "rather; better"
+  },
+  {
+    "level": "N2",
+    "number": 63,
+    "japanese": "まい",
+    "english": "will not; intend not to"
+  },
+  {
+    "level": "N2",
+    "number": 64,
+    "japanese": "ままに",
+    "english": "as, to do as~"
+  },
+  {
+    "level": "N2",
+    "number": 65,
+    "japanese": "全く～ない",
+    "english": "not at all~"
+  },
+  {
+    "level": "N2",
+    "number": 66,
+    "japanese": "もかまわず",
+    "english": "without caring; without worrying"
+  },
+  {
+    "level": "N2",
+    "number": 67,
+    "japanese": "も当然だ",
+    "english": "it’s only natural; no wonder"
+  },
+  {
+    "level": "N2",
+    "number": 68,
+    "japanese": "もの / もん",
+    "english": "because; reason/ excuse/dissatisfaction"
+  },
+  {
+    "level": "N2",
+    "number": 69,
+    "japanese": "ものだ",
+    "english": "describe feeling; express memories"
+  },
+  {
+    "level": "N2",
+    "number": 70,
+    "japanese": "ものだから",
+    "english": "so; therefore; the reason for something"
+  },
+  {
+    "level": "N2",
+    "number": 71,
+    "japanese": "ものではない",
+    "english": "shouldn’t do something; it’s impossible"
+  },
+  {
+    "level": "N2",
+    "number": 72,
+    "japanese": "ものがある",
+    "english": "there is such a thing; to be the case"
+  },
+  {
+    "level": "N2",
+    "number": 73,
+    "japanese": "ものか / もんか",
+    "english": "as if; there's no way~"
+  },
+  {
+    "level": "N2",
+    "number": 74,
+    "japanese": "ものなら",
+    "english": "if [A] is possible, then [B]"
+  },
+  {
+    "level": "N2",
+    "number": 75,
+    "japanese": "ものの",
+    "english": "but; although; even though~"
   }
 ]
