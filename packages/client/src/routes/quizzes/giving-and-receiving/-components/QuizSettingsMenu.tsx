@@ -2,10 +2,10 @@ import type { Mode } from "../-utils/types";
 
 import { Settings } from "lucide-react";
 
+import { MODES } from "../-utils/types";
+
 import { Button, Popover, PopoverContent, PopoverTrigger } from "@/components/ui";
 import { cn } from "@/lib/utils";
-
-import { MODES } from "../-utils/types";
 
 interface QuizSettingsMenuProps {
   mode: Mode;
