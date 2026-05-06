@@ -1684,5 +1684,371 @@
     "number": 70,
     "japanese": "なるべく",
     "english": "as much as possible"
+  },
+  {
+    "level": "N3",
+    "number": 71,
+    "japanese": "なぜなら",
+    "english": "because; the reason is"
+  },
+  {
+    "level": "N3",
+    "number": 72,
+    "japanese": "んだって",
+    "english": "I hear that; heard that~"
+  },
+  {
+    "level": "N3",
+    "number": 73,
+    "japanese": "に違いない",
+    "english": "I’m sure/ certain; no doubt that"
+  },
+  {
+    "level": "N3",
+    "number": 74,
+    "japanese": "に反して",
+    "english": "against; contrary to; in contrast to"
+  },
+  {
+    "level": "N3",
+    "number": 75,
+    "japanese": "にかけて",
+    "english": "over (a period); concerning; regarding~"
+  },
+  {
+    "level": "N3",
+    "number": 76,
+    "japanese": "に関する",
+    "english": "about; regarding; related to"
+  },
+  {
+    "level": "N3",
+    "number": 77,
+    "japanese": "にかわって",
+    "english": "instead of~; replacing~; on behalf of~"
+  },
+  {
+    "level": "N3",
+    "number": 78,
+    "japanese": "に比べて",
+    "english": "compared to~; in comparison to~"
+  },
+  {
+    "level": "N3",
+    "number": 79,
+    "japanese": "に慣れる",
+    "english": "to be used to something"
+  },
+  {
+    "level": "N3",
+    "number": 80,
+    "japanese": "において",
+    "english": "in; at (place); regarding~; as for~"
+  },
+  {
+    "level": "N3",
+    "number": 81,
+    "japanese": "にしたがって",
+    "english": "as; therefore; in accordance with"
+  },
+  {
+    "level": "N3",
+    "number": 82,
+    "japanese": "にしても",
+    "english": "even if; even though; regardless of"
+  },
+  {
+    "level": "N3",
+    "number": 83,
+    "japanese": "にしては",
+    "english": "for; considering it’s"
+  },
+  {
+    "level": "N3",
+    "number": 84,
+    "japanese": "に対して",
+    "english": "towards; against; regarding~"
+  },
+  {
+    "level": "N3",
+    "number": 85,
+    "japanese": "にとって",
+    "english": "to; for; concerning; regarding~"
+  },
+  {
+    "level": "N3",
+    "number": 86,
+    "japanese": "について",
+    "english": "concerning; regarding; about; on"
+  },
+  {
+    "level": "N3",
+    "number": 87,
+    "japanese": "につれて",
+    "english": "as; in proportion to; with; as… then…"
+  },
+  {
+    "level": "N3",
+    "number": 88,
+    "japanese": "には",
+    "english": "for the purpose of; in order to~"
+  },
+  {
+    "level": "N3",
+    "number": 89,
+    "japanese": "によると /によれば",
+    "english": "according to~"
+  },
+  {
+    "level": "N3",
+    "number": 90,
+    "japanese": "によって / による",
+    "english": "by means of; due to; because of~"
+  },
+  {
+    "level": "N3",
+    "number": 91,
+    "japanese": "のでしょうか",
+    "english": "ask a question in a polite way"
+  },
+  {
+    "level": "N3",
+    "number": 92,
+    "japanese": "を中心に",
+    "english": "focused on; centered on"
+  },
+  {
+    "level": "N3",
+    "number": 93,
+    "japanese": "をはじめ",
+    "english": "for example; starting with"
+  },
+  {
+    "level": "N3",
+    "number": 94,
+    "japanese": "を込めて",
+    "english": "filled with; full of"
+  },
+  {
+    "level": "N3",
+    "number": 95,
+    "japanese": "を通じて /を通して",
+    "english": "through; via; throughout; by"
+  },
+  {
+    "level": "N3",
+    "number": 96,
+    "japanese": "おかげで",
+    "english": "thanks to ...; owing to ...; because of ..."
+  },
+  {
+    "level": "N3",
+    "number": 97,
+    "japanese": "っぱなし",
+    "english": "leaving (something) on / still in use"
+  },
+  {
+    "level": "N3",
+    "number": 98,
+    "japanese": "っぽい",
+    "english": "seems; somewhat; -ish; easily does~;"
+  },
+  {
+    "level": "N3",
+    "number": 99,
+    "japanese": "さえ",
+    "english": "even; so much as; not even"
+  },
+  {
+    "level": "N3",
+    "number": 100,
+    "japanese": "さえ～ば",
+    "english": "if only; as long as"
+  },
+  {
+    "level": "N3",
+    "number": 101,
+    "japanese": "際に",
+    "english": "when; at the time of; in the case of"
+  },
+  {
+    "level": "N3",
+    "number": 102,
+    "japanese": "最中に",
+    "english": "while; during; in the middle of"
+  },
+  {
+    "level": "N3",
+    "number": 103,
+    "japanese": "さらに",
+    "english": "furthermore; again; more and more"
+  },
+  {
+    "level": "N3",
+    "number": 104,
+    "japanese": "さて",
+    "english": "conjunction: well; now; then"
+  },
+  {
+    "level": "N3",
+    "number": 105,
+    "japanese": "せいで",
+    "english": "because of; due to; as a result of~"
+  },
+  {
+    "level": "N3",
+    "number": 106,
+    "japanese": "せいぜい",
+    "english": "at the most; at best; to the utmost"
+  },
+  {
+    "level": "N3",
+    "number": 107,
+    "japanese": "しばらく",
+    "english": "for a moment; for a while"
+  },
+  {
+    "level": "N3",
+    "number": 108,
+    "japanese": "しかない",
+    "english": "have no choice but~"
+  },
+  {
+    "level": "N3",
+    "number": 109,
+    "japanese": "そのために",
+    "english": "hence; for that reason; because of~"
+  },
+  {
+    "level": "N3",
+    "number": 110,
+    "japanese": "それとも",
+    "english": "or; or else"
+  },
+  {
+    "level": "N3",
+    "number": 111,
+    "japanese": "そうもない",
+    "english": "very unlikely to~; showing no signs of~"
+  },
+  {
+    "level": "N3",
+    "number": 112,
+    "japanese": "すでに",
+    "english": "something has already been done"
+  },
+  {
+    "level": "N3",
+    "number": 113,
+    "japanese": "すなわち",
+    "english": "in other words; namely"
+  },
+  {
+    "level": "N3",
+    "number": 114,
+    "japanese": "数量 + は",
+    "english": "at least"
+  },
+  {
+    "level": "N3",
+    "number": 115,
+    "japanese": "たものだ",
+    "english": "used to do; would often do"
+  },
+  {
+    "level": "N3",
+    "number": 116,
+    "japanese": "たとたん",
+    "english": "as soon as; just as"
+  },
+  {
+    "level": "N3",
+    "number": 117,
+    "japanese": "たびに",
+    "english": "whenever; every time"
+  },
+  {
+    "level": "N3",
+    "number": 118,
+    "japanese": "ために",
+    "english": "for; in order to; for the benefit of"
+  },
+  {
+    "level": "N3",
+    "number": 119,
+    "japanese": "確かに",
+    "english": "surely, certainly"
+  },
+  {
+    "level": "N3",
+    "number": 120,
+    "japanese": "たて",
+    "english": "just done; freshly done; newly done"
+  },
+  {
+    "level": "N3",
+    "number": 121,
+    "japanese": "たとえ～ても",
+    "english": "even if… is the case"
+  },
+  {
+    "level": "N3",
+    "number": 122,
+    "japanese": "例えば",
+    "english": "for example"
+  },
+  {
+    "level": "N3",
+    "number": 123,
+    "japanese": "たって",
+    "english": "even if; even though; no matter how"
+  },
+  {
+    "level": "N3",
+    "number": 124,
+    "japanese": "てばかりいる",
+    "english": "only; nothing but~"
+  },
+  {
+    "level": "N3",
+    "number": 125,
+    "japanese": "てごらん",
+    "english": "(please) try to; (please) look"
+  },
+  {
+    "level": "N3",
+    "number": 126,
+    "japanese": "てはじめて",
+    "english": "not until; only after [x] did I"
+  },
+  {
+    "level": "N3",
+    "number": 127,
+    "japanese": "てからでないと",
+    "english": "must first do; cannot do without~"
+  },
+  {
+    "level": "N3",
+    "number": 128,
+    "japanese": "てしょうがない",
+    "english": "can't help but~; very; extremely"
+  },
+  {
+    "level": "N3",
+    "number": 129,
+    "japanese": "て済む",
+    "english": "sufficient by; resolve by~"
+  },
+  {
+    "level": "N3",
+    "number": 130,
+    "japanese": "てはいけないから",
+    "english": "in order to not~"
+  },
+  {
+    "level": "N3",
+    "number": 131,
+    "japanese": "ている場合じゃない",
+    "english": "this is no time to be doing~"
   }
 ]
