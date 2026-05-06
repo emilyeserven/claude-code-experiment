@@ -3,9 +3,9 @@ import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Info } from "lucide-react";
 
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui";
-
 import { GivingReceivingQuiz } from "./-components/GivingReceivingQuiz";
+
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui";
 
 export const Route = createFileRoute("/quizzes/giving-and-receiving/")({
   component: GivingAndReceivingPage,
