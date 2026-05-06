@@ -35,6 +35,14 @@ const RootComponent: React.FunctionComponent = () => {
           >
             Quizzes
           </Link>
+
+          <Link
+            to="/grammar"
+            className="[&.active]:font-bold"
+            data-testid="nav-grammar-link"
+          >
+            Grammar
+          </Link>
         </div>
 
         <SettingsPopover />
