@@ -2,11 +2,11 @@ import type { GrammarPoint, Sentence } from "../-utils/types";
 
 import { useCallback, useMemo, useState } from "react";
 
-import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "../-utils/feedback";
-import { GRAMMAR_POINT_LABELS, GRAMMAR_POINTS } from "../-utils/types";
-
 import { Button } from "@/components/ui";
 import { cn } from "@/lib/utils";
+
+import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "../-utils/feedback";
+import { GRAMMAR_POINT_LABELS, GRAMMAR_POINTS } from "../-utils/types";
 
 interface GrammarPointGridProps {
 
@@ -84,10 +84,16 @@ export function GrammarPointGrid({
         className="text-sm font-medium text-muted-foreground"
         data-testid="grammar-point-grid-prompt"
       >
-        Which grammar point fits this English sentence?
+        Which grammar point fills the blank?
       </p>
       <p
         className="text-xl leading-relaxed"
+        data-testid="grammar-point-grid-japanese"
+      >
+        {sentence.japaneseBlank}
+      </p>
+      <p
+        className="text-base leading-relaxed text-muted-foreground"
         data-testid="grammar-point-grid-english"
       >
         {sentence.english}

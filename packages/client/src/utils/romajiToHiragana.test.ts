@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { romajiToHiragana } from "./romajiToHiragana";
+import { romajiToHiragana, romajiToHiraganaInProgress } from "./romajiToHiragana";
 
 describe("romajiToHiragana", () => {
   it("converts basic vowels", () => {
@@ -66,5 +66,29 @@ describe("romajiToHiragana", () => {
 
   it("preserves unknown characters", () => {
     expect(romajiToHiragana("a?")).toBe("あ?");
+  });
+});
+
+describe("romajiToHiraganaInProgress", () => {
+  it("preserves trailing single n so 'no' can still become の", () => {
+    expect(romajiToHiraganaInProgress("n")).toBe("n");
+    expect(romajiToHiraganaInProgress("ho")).toBe("ほ");
+    expect(romajiToHiraganaInProgress("hon")).toBe("ほn");
+  });
+
+  it("converts trailing nn to ん", () => {
+    expect(romajiToHiraganaInProgress("konn")).toBe("こん");
+  });
+
+  it("passes pure hiragana through unchanged", () => {
+    expect(romajiToHiraganaInProgress("あげた")).toBe("あげた");
+  });
+
+  it("converts mixed input on each keystroke", () => {
+    expect(romajiToHiraganaInProgress("a")).toBe("あ");
+    expect(romajiToHiraganaInProgress("あg")).toBe("あg");
+    expect(romajiToHiraganaInProgress("あge")).toBe("あげ");
+    expect(romajiToHiraganaInProgress("あげt")).toBe("あげt");
+    expect(romajiToHiraganaInProgress("あげta")).toBe("あげた");
   });
 });

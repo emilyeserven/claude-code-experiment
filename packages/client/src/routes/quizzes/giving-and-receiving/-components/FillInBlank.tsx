@@ -2,11 +2,11 @@ import type { Sentence } from "../-utils/types";
 
 import { useCallback, useMemo, useState } from "react";
 
+import { Button, Input } from "@/components/ui";
+import { romajiToHiragana, romajiToHiraganaInProgress } from "@/utils/romajiToHiragana";
+
 import { getWrongAnswerFeedback, GRAMMAR_POINT_SUMMARIES } from "../-utils/feedback";
 import { GRAMMAR_POINT_LABELS } from "../-utils/types";
-
-import { Button, Input } from "@/components/ui";
-import { romajiToHiragana } from "@/utils/romajiToHiragana";
 
 interface FillInBlankProps {
 
@@ -32,26 +32,26 @@ function guessGrammarPoint(answer: string): Sentence["grammarPoint"] | null {
 export function FillInBlank({
   sentence, onNext, onResult,
 }: FillInBlankProps) {
-  const [raw, setRaw] = useState("");
+  const [value, setValue] = useState("");
   const [status, setStatus] = useState<Status>("input");
 
-  const hiragana = useMemo(() => romajiToHiragana(raw), [raw]);
+  const finalHiragana = useMemo(() => romajiToHiragana(value), [value]);
 
   const handleSubmit = useCallback(() => {
     if (status !== "input") return;
-    if (!hiragana) return;
-    const isCorrect = sentence.acceptableAnswers.includes(hiragana);
+    if (!finalHiragana) return;
+    const isCorrect = sentence.acceptableAnswers.includes(finalHiragana);
     setStatus(isCorrect ? "correct" : "incorrect");
     onResult?.(isCorrect);
-  }, [hiragana, sentence.acceptableAnswers, status, onResult]);
+  }, [finalHiragana, sentence.acceptableAnswers, status, onResult]);
 
   const handleNext = useCallback(() => {
-    setRaw("");
+    setValue("");
     setStatus("input");
     onNext();
   }, [onNext]);
 
-  const guessed = guessGrammarPoint(hiragana);
+  const guessed = guessGrammarPoint(finalHiragana);
   const failureNote
     = status === "incorrect" && guessed && guessed !== sentence.grammarPoint
       ? getWrongAnswerFeedback(guessed, sentence.grammarPoint)
@@ -94,7 +94,7 @@ export function FillInBlank({
           `}
           data-testid="fill-in-blank-display"
         >
-          {hiragana || " "}
+          {value || " "}
         </span>
         {blankParts[1]}
       </p>
@@ -108,9 +108,9 @@ export function FillInBlank({
         <div className="flex gap-2">
           <Input
             id="fib-input"
-            value={raw}
+            value={value}
             disabled={status !== "input"}
-            onChange={(e) => { setRaw(e.target.value); }}
+            onChange={(e) => { setValue(romajiToHiraganaInProgress(e.target.value)); }}
             onKeyDown={(e) => { if (e.key === "Enter") handleSubmit(); }}
             placeholder="e.g. ageta, kuremashita, moratta..."
             data-testid="fill-in-blank-input"
@@ -122,7 +122,7 @@ export function FillInBlank({
             ? (
               <Button
                 onClick={handleSubmit}
-                disabled={!hiragana}
+                disabled={!finalHiragana}
                 data-testid="fill-in-blank-submit"
               >
                 Check
