@@ -1,11 +1,40 @@
-import type { GrammarPoint } from "./-data/types";
+import type {
+  BookmarkDisplay,
+  GrammarBookmark,
+  GrammarPoint,
+  GrammarRow,
+  Resource,
+} from "./-data/types";
 
 import { createFileRoute } from "@tanstack/react-router";
 
 import { GrammarTable } from "./-components/GrammarTable";
+import bookmarksData from "./-data/grammarBookmarks.json";
 import grammarPointsData from "./-data/grammarPoints.json";
+import resourcesData from "./-data/resources.json";
 
 const grammarPoints = grammarPointsData as GrammarPoint[];
+const resources = resourcesData as Resource[];
+const bookmarks = bookmarksData as GrammarBookmark[];
+
+const resourceNameById = new Map(resources.map(r => [r.id, r.name]));
+
+const bookmarksByJlpt = new Map<string, BookmarkDisplay[]>();
+for (const b of bookmarks) {
+  const resourceName = resourceNameById.get(b.resource);
+  if (!resourceName) continue;
+  const list = bookmarksByJlpt.get(b.jlpt) ?? [];
+  list.push({
+    resourceName,
+    location: b.location,
+  });
+  bookmarksByJlpt.set(b.jlpt, list);
+}
+
+const rows: GrammarRow[] = grammarPoints.map(g => ({
+  ...g,
+  bookmarks: bookmarksByJlpt.get(g.id) ?? [],
+}));
 
 export const Route = createFileRoute("/grammar/")({
   component: GrammarPage,
@@ -31,7 +60,7 @@ function GrammarPage() {
       </p>
 
       <div className="mt-6">
-        <GrammarTable grammarPoints={grammarPoints} />
+        <GrammarTable rows={rows} />
       </div>
     </div>
   );

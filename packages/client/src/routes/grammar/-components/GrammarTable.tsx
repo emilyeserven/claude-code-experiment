@@ -1,4 +1,4 @@
-import type { GrammarPoint } from "../-data/types";
+import type { BookmarkDisplay, GrammarRow } from "../-data/types";
 import type { ColumnDef, SortingState } from "@tanstack/react-table";
 
 import { useMemo, useState } from "react";
@@ -16,7 +16,7 @@ import { Input } from "@/components/ui";
 import { cn } from "@/lib/utils";
 
 interface GrammarTableProps {
-  grammarPoints: GrammarPoint[];
+  rows: GrammarRow[];
 }
 
 function SortableHeader({
@@ -40,7 +40,21 @@ function SortableHeader({
   );
 }
 
-const columns: ColumnDef<GrammarPoint>[] = [
+function groupBookmarksByResource(bookmarks: BookmarkDisplay[]): { resourceName: string;
+  locations: string[]; }[] {
+  const groups = new Map<string, string[]>();
+  for (const b of bookmarks) {
+    const list = groups.get(b.resourceName) ?? [];
+    list.push(b.location);
+    groups.set(b.resourceName, list);
+  }
+  return [...groups.entries()].map(([resourceName, locations]) => ({
+    resourceName,
+    locations,
+  }));
+}
+
+const columns: ColumnDef<GrammarRow>[] = [
   {
     accessorKey: "level",
     header: ({
@@ -91,9 +105,32 @@ const columns: ColumnDef<GrammarPoint>[] = [
     accessorKey: "english",
     header: "English",
   },
+  {
+    accessorKey: "bookmarks",
+    header: "Bookmarks",
+    enableSorting: false,
+    cell: ({
+      row,
+    }) => {
+      const groups = groupBookmarksByResource(row.original.bookmarks);
+      return (
+        <span data-testid="grammar-bookmarks">
+          {groups.map((g, i) => (
+            <span key={g.resourceName}>
+              {i > 0 ? "; " : ""}
+              {g.resourceName}
+              :
+              {" "}
+              {g.locations.join(", ")}
+            </span>
+          ))}
+        </span>
+      );
+    },
+  },
 ];
 
-function globalFilterFn(row: { original: GrammarPoint }, _columnId: string, filterValue: string) {
+function globalFilterFn(row: { original: GrammarRow }, _columnId: string, filterValue: string) {
   if (!filterValue) return true;
   const needle = filterValue.toLowerCase();
   const {
@@ -101,22 +138,26 @@ function globalFilterFn(row: { original: GrammarPoint }, _columnId: string, filt
     number,
     japanese,
     english,
+    bookmarks,
   } = row.original;
-  return (
-    level.toLowerCase().includes(needle)
-    || String(number).includes(needle)
-    || japanese.toLowerCase().includes(needle)
-    || english.toLowerCase().includes(needle)
-  );
+  if (level.toLowerCase().includes(needle)) return true;
+  if (String(number).includes(needle)) return true;
+  if (japanese.toLowerCase().includes(needle)) return true;
+  if (english.toLowerCase().includes(needle)) return true;
+  for (const b of bookmarks) {
+    if (b.resourceName.toLowerCase().includes(needle)) return true;
+    if (b.location.toLowerCase().includes(needle)) return true;
+  }
+  return false;
 }
 
 export function GrammarTable({
-  grammarPoints,
+  rows,
 }: GrammarTableProps) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [globalFilter, setGlobalFilter] = useState("");
 
-  const data = useMemo(() => grammarPoints, [grammarPoints]);
+  const data = useMemo(() => rows, [rows]);
 
   const table = useReactTable({
     data,
@@ -133,7 +174,7 @@ export function GrammarTable({
     getFilteredRowModel: getFilteredRowModel(),
   });
 
-  const rows = table.getRowModel().rows;
+  const tableRows = table.getRowModel().rows;
 
   return (
     <div
@@ -153,11 +194,11 @@ export function GrammarTable({
           className="text-sm text-muted-foreground"
           data-testid="grammar-results-count"
         >
-          {rows.length}
+          {tableRows.length}
           {" "}
           of
           {" "}
-          {grammarPoints.length}
+          {rows.length}
         </span>
       </div>
 
@@ -196,8 +237,8 @@ export function GrammarTable({
             ))}
           </thead>
           <tbody>
-            {rows.length > 0
-              ? rows.map(row => (
+            {tableRows.length > 0
+              ? tableRows.map(row => (
                 <tr
                   key={row.id}
                   className={`
