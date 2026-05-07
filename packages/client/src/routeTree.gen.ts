@@ -14,6 +14,8 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as QuizzesIndexRouteImport } from './routes/quizzes/index'
 import { Route as GrammarIndexRouteImport } from './routes/grammar/index'
 import { Route as QuizzesGivingAndReceivingIndexRouteImport } from './routes/quizzes/giving-and-receiving/index'
+import { Route as GrammarResourcesIndexRouteImport } from './routes/grammar/resources/index'
+import { Route as GrammarResourcesResourceIdRouteImport } from './routes/grammar/resources/$resourceId'
 
 const CaptureRoute = CaptureRouteImport.update({
   id: '/capture',
@@ -41,12 +43,25 @@ const QuizzesGivingAndReceivingIndexRoute =
     path: '/quizzes/giving-and-receiving/',
     getParentRoute: () => rootRouteImport,
   } as any)
+const GrammarResourcesIndexRoute = GrammarResourcesIndexRouteImport.update({
+  id: '/grammar/resources/',
+  path: '/grammar/resources/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GrammarResourcesResourceIdRoute =
+  GrammarResourcesResourceIdRouteImport.update({
+    id: '/grammar/resources/$resourceId',
+    path: '/grammar/resources/$resourceId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/capture': typeof CaptureRoute
   '/grammar': typeof GrammarIndexRoute
   '/quizzes': typeof QuizzesIndexRoute
+  '/grammar/resources/$resourceId': typeof GrammarResourcesResourceIdRoute
+  '/grammar/resources': typeof GrammarResourcesIndexRoute
   '/quizzes/giving-and-receiving': typeof QuizzesGivingAndReceivingIndexRoute
 }
 export interface FileRoutesByTo {
@@ -54,6 +69,8 @@ export interface FileRoutesByTo {
   '/capture': typeof CaptureRoute
   '/grammar': typeof GrammarIndexRoute
   '/quizzes': typeof QuizzesIndexRoute
+  '/grammar/resources/$resourceId': typeof GrammarResourcesResourceIdRoute
+  '/grammar/resources': typeof GrammarResourcesIndexRoute
   '/quizzes/giving-and-receiving': typeof QuizzesGivingAndReceivingIndexRoute
 }
 export interface FileRoutesById {
@@ -62,6 +79,8 @@ export interface FileRoutesById {
   '/capture': typeof CaptureRoute
   '/grammar/': typeof GrammarIndexRoute
   '/quizzes/': typeof QuizzesIndexRoute
+  '/grammar/resources/$resourceId': typeof GrammarResourcesResourceIdRoute
+  '/grammar/resources/': typeof GrammarResourcesIndexRoute
   '/quizzes/giving-and-receiving/': typeof QuizzesGivingAndReceivingIndexRoute
 }
 export interface FileRouteTypes {
@@ -71,6 +90,8 @@ export interface FileRouteTypes {
     | '/capture'
     | '/grammar'
     | '/quizzes'
+    | '/grammar/resources/$resourceId'
+    | '/grammar/resources'
     | '/quizzes/giving-and-receiving'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -78,6 +99,8 @@ export interface FileRouteTypes {
     | '/capture'
     | '/grammar'
     | '/quizzes'
+    | '/grammar/resources/$resourceId'
+    | '/grammar/resources'
     | '/quizzes/giving-and-receiving'
   id:
     | '__root__'
@@ -85,6 +108,8 @@ export interface FileRouteTypes {
     | '/capture'
     | '/grammar/'
     | '/quizzes/'
+    | '/grammar/resources/$resourceId'
+    | '/grammar/resources/'
     | '/quizzes/giving-and-receiving/'
   fileRoutesById: FileRoutesById
 }
@@ -93,6 +118,8 @@ export interface RootRouteChildren {
   CaptureRoute: typeof CaptureRoute
   GrammarIndexRoute: typeof GrammarIndexRoute
   QuizzesIndexRoute: typeof QuizzesIndexRoute
+  GrammarResourcesResourceIdRoute: typeof GrammarResourcesResourceIdRoute
+  GrammarResourcesIndexRoute: typeof GrammarResourcesIndexRoute
   QuizzesGivingAndReceivingIndexRoute: typeof QuizzesGivingAndReceivingIndexRoute
 }
 
@@ -133,6 +160,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof QuizzesGivingAndReceivingIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/grammar/resources/': {
+      id: '/grammar/resources/'
+      path: '/grammar/resources'
+      fullPath: '/grammar/resources'
+      preLoaderRoute: typeof GrammarResourcesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/grammar/resources/$resourceId': {
+      id: '/grammar/resources/$resourceId'
+      path: '/grammar/resources/$resourceId'
+      fullPath: '/grammar/resources/$resourceId'
+      preLoaderRoute: typeof GrammarResourcesResourceIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -141,6 +182,8 @@ const rootRouteChildren: RootRouteChildren = {
   CaptureRoute: CaptureRoute,
   GrammarIndexRoute: GrammarIndexRoute,
   QuizzesIndexRoute: QuizzesIndexRoute,
+  GrammarResourcesResourceIdRoute: GrammarResourcesResourceIdRoute,
+  GrammarResourcesIndexRoute: GrammarResourcesIndexRoute,
   QuizzesGivingAndReceivingIndexRoute: QuizzesGivingAndReceivingIndexRoute,
 }
 export const routeTree = rootRouteImport

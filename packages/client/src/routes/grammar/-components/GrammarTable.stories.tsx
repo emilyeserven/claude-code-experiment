@@ -11,6 +11,7 @@ const sampleRows: GrammarRow[] = [
     level: "N5",
     number: 1,
     japanese: "ちゃいけない・じゃいけない",
+    romaji: "cha ikenai / ja ikenai",
     english: "must not do (spoken Japanese)",
     bookmarks: [],
   },
@@ -19,6 +20,7 @@ const sampleRows: GrammarRow[] = [
     level: "N5",
     number: 2,
     japanese: "だ・です",
+    romaji: "da / desu",
     english: "to be (am, is, are, were, used to)",
     bookmarks: [
       {
@@ -32,6 +34,7 @@ const sampleRows: GrammarRow[] = [
     level: "N5",
     number: 23,
     japanese: "から",
+    romaji: "kara",
     english: "because; since; from",
     bookmarks: [
       {
@@ -43,6 +46,15 @@ const sampleRows: GrammarRow[] = [
         location: "9",
       },
     ],
+  },
+  {
+    id: "N4-1",
+    level: "N4",
+    number: 1,
+    japanese: "ば",
+    romaji: "ba",
+    english: "if; conditional",
+    bookmarks: [],
   },
 ];
 
@@ -64,8 +76,8 @@ export const Default: Story = {
     const canvas = within(canvasElement);
 
     await expect(canvas.getByTestId("grammar-table")).toBeInTheDocument();
-    await expect(canvas.getAllByTestId("grammar-row")).toHaveLength(3);
-    await expect(canvas.getByTestId("grammar-results-count")).toHaveTextContent("3 of 3");
+    await expect(canvas.getAllByTestId("grammar-row")).toHaveLength(4);
+    await expect(canvas.getByTestId("grammar-results-count")).toHaveTextContent("4 of 4");
   },
 };
 
@@ -81,7 +93,7 @@ export const SearchFiltersByEnglish: Story = {
     const rows = canvas.getAllByTestId("grammar-row");
     await expect(rows).toHaveLength(1);
     await expect(rows[0]).toHaveTextContent("から");
-    await expect(canvas.getByTestId("grammar-results-count")).toHaveTextContent("1 of 3");
+    await expect(canvas.getByTestId("grammar-results-count")).toHaveTextContent("1 of 4");
   },
 };
 
@@ -100,6 +112,38 @@ export const SearchFiltersByJapanese: Story = {
   },
 };
 
+export const SearchFiltersByRomajiDirect: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+    const search = canvas.getByTestId("grammar-search-input");
+
+    await userEvent.type(search, "kara");
+
+    const rows = canvas.getAllByTestId("grammar-row");
+    await expect(rows).toHaveLength(1);
+    await expect(rows[0]).toHaveTextContent("から");
+  },
+};
+
+export const SearchFiltersByRomajiHiraganaConversion: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+    const search = canvas.getByTestId("grammar-search-input");
+
+    // Typing romaji should match grammar points whose Japanese converts to.
+    // "desu" → "です" matches "だ・です"
+    await userEvent.type(search, "desu");
+
+    const rows = canvas.getAllByTestId("grammar-row");
+    await expect(rows.length).toBeGreaterThanOrEqual(1);
+    await expect(rows[0]).toHaveTextContent("だ・です");
+  },
+};
+
 export const SearchEmptyShowsAll: Story = {
   play: async ({
     canvasElement,
@@ -111,7 +155,7 @@ export const SearchEmptyShowsAll: Story = {
     await expect(canvas.getByTestId("grammar-empty")).toBeInTheDocument();
 
     await userEvent.clear(search);
-    await expect(canvas.getAllByTestId("grammar-row")).toHaveLength(3);
+    await expect(canvas.getAllByTestId("grammar-row")).toHaveLength(4);
   },
 };
 
@@ -122,7 +166,7 @@ export const BookmarksRender: Story = {
     const canvas = within(canvasElement);
 
     const bookmarkCells = canvas.getAllByTestId("grammar-bookmarks");
-    await expect(bookmarkCells).toHaveLength(3);
+    await expect(bookmarkCells).toHaveLength(4);
 
     await expect(bookmarkCells[0]).toHaveTextContent("");
     await expect(bookmarkCells[1]).toHaveTextContent("Genki I & II: 1");
@@ -141,6 +185,82 @@ export const SearchFiltersByBookmark: Story = {
 
     const rows = canvas.getAllByTestId("grammar-row");
     await expect(rows).toHaveLength(2);
-    await expect(canvas.getByTestId("grammar-results-count")).toHaveTextContent("2 of 3");
+    await expect(canvas.getByTestId("grammar-results-count")).toHaveTextContent("2 of 4");
+  },
+};
+
+export const FilterByLevelMultiSelect: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("grammar-filter-trigger"));
+
+    // Filter content lives in a portal, so search the document root.
+    const filterRoot = within(document.body);
+    await userEvent.click(await filterRoot.findByTestId("grammar-filter-level-N5"));
+
+    let rows = canvas.getAllByTestId("grammar-row");
+    await expect(rows).toHaveLength(3);
+
+    await userEvent.click(filterRoot.getByTestId("grammar-filter-level-N4"));
+
+    rows = canvas.getAllByTestId("grammar-row");
+    await expect(rows).toHaveLength(4);
+
+    await expect(canvas.getByTestId("grammar-filter-badge")).toHaveTextContent("1");
+  },
+};
+
+export const FilterByBookmarksWith: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("grammar-filter-trigger"));
+
+    const filterRoot = within(document.body);
+    await userEvent.click(await filterRoot.findByTestId("grammar-filter-bookmarks-with"));
+
+    const rows = canvas.getAllByTestId("grammar-row");
+    await expect(rows).toHaveLength(2);
+    await expect(canvas.getByTestId("grammar-results-count")).toHaveTextContent("2 of 4");
+  },
+};
+
+export const FilterByBookmarksWithout: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("grammar-filter-trigger"));
+
+    const filterRoot = within(document.body);
+    await userEvent.click(await filterRoot.findByTestId("grammar-filter-bookmarks-without"));
+
+    const rows = canvas.getAllByTestId("grammar-row");
+    await expect(rows).toHaveLength(2);
+  },
+};
+
+export const ClearFilters: Story = {
+  play: async ({
+    canvasElement,
+  }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId("grammar-filter-trigger"));
+
+    const filterRoot = within(document.body);
+    await userEvent.click(await filterRoot.findByTestId("grammar-filter-level-N5"));
+    await userEvent.click(filterRoot.getByTestId("grammar-filter-bookmarks-with"));
+
+    await userEvent.click(filterRoot.getByTestId("grammar-filter-clear"));
+
+    const rows = canvas.getAllByTestId("grammar-row");
+    await expect(rows).toHaveLength(4);
   },
 };

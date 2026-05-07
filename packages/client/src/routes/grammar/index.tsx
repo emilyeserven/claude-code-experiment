@@ -6,7 +6,7 @@ import type {
   Resource,
 } from "./-data/types";
 
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { GrammarTable } from "./-components/GrammarTable";
 import bookmarksData from "./-data/grammarBookmarks.json";
@@ -58,6 +58,19 @@ function GrammarPage() {
       >
         Browse JLPT grammar points and the resources where they&apos;re explained.
       </p>
+
+      <div className="mt-3">
+        <Link
+          to="/grammar/resources"
+          className={`
+            text-sm text-primary
+            hover:underline
+          `}
+          data-testid="grammar-resources-link"
+        >
+          Browse resources →
+        </Link>
+      </div>
 
       <div className="mt-6">
         <GrammarTable rows={rows} />

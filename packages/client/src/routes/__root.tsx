@@ -40,8 +40,22 @@ const RootComponent: React.FunctionComponent = () => {
             to="/grammar"
             className="[&.active]:font-bold"
             data-testid="nav-grammar-link"
+            activeOptions={{
+              exact: true,
+            }}
           >
             Grammar
+          </Link>
+
+          <Link
+            to="/grammar/resources"
+            className="[&.active]:font-bold"
+            data-testid="nav-resources-link"
+            activeOptions={{
+              exact: false,
+            }}
+          >
+            Resources
           </Link>
         </div>
 
