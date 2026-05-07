@@ -6646,5 +6646,37 @@
     "japanese": "ようが〜ようが /ようと〜ようと",
     "english": "no matter; whether; even if [A] or [B]",
     "romaji": "you ga~you ga / you to~you to"
+  },
+  {
+    "id": "N0-1",
+    "level": "N0",
+    "number": 1,
+    "japanese": "あいさつ表現",
+    "romaji": "aisatsu hyougen",
+    "english": "Greeting expressions (reference page)"
+  },
+  {
+    "id": "N0-2",
+    "level": "N0",
+    "number": 2,
+    "japanese": "助詞",
+    "romaji": "joshi",
+    "english": "Particles (reference page)"
+  },
+  {
+    "id": "N0-3",
+    "level": "N0",
+    "number": 3,
+    "japanese": "副詞",
+    "romaji": "fukushi",
+    "english": "Adverbs (reference page)"
+  },
+  {
+    "id": "N0-4",
+    "level": "N0",
+    "number": 4,
+    "japanese": "こそあど",
+    "romaji": "ko-so-a-do",
+    "english": "Demonstratives こ・そ・あ・ど (reference page)"
   }
 ]
