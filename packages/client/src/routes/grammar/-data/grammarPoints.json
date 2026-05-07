@@ -1,4985 +1,5816 @@
 [
   {
+    "id": "N5-1",
     "level": "N5",
     "number": 1,
     "japanese": "ちゃいけない・じゃいけない",
     "english": "must not do (spoken Japanese)"
   },
   {
+    "id": "N5-2",
     "level": "N5",
     "number": 2,
     "japanese": "だ・です",
     "english": "to be (am, is, are, were, used to)"
   },
   {
+    "id": "N5-3",
     "level": "N5",
     "number": 3,
     "japanese": "だけ",
     "english": "only; just; as much as"
   },
   {
+    "id": "N5-4",
     "level": "N5",
     "number": 4,
     "japanese": "だろう",
     "english": "I think; it seems; probably; right?"
   },
   {
+    "id": "N5-5",
     "level": "N5",
     "number": 5,
     "japanese": "で",
     "english": "in; at; on; by; with; via"
   },
   {
+    "id": "N5-6",
     "level": "N5",
     "number": 6,
     "japanese": "でも",
     "english": "but; however"
   },
   {
+    "id": "N5-7",
     "level": "N5",
     "number": 7,
     "japanese": "でしょう",
     "english": "I think; it seems; probably; right?"
   },
   {
+    "id": "N5-8",
     "level": "N5",
     "number": 8,
     "japanese": "どんな",
     "english": "what kind of; what sort of"
   },
   {
+    "id": "N5-9",
     "level": "N5",
     "number": 9,
     "japanese": "どうして",
     "english": "why; for what reason; how"
   },
   {
+    "id": "N5-10",
     "level": "N5",
     "number": 10,
     "japanese": "どうやって",
     "english": "how; in what way; by what means"
   },
   {
+    "id": "N5-11",
     "level": "N5",
     "number": 11,
     "japanese": "が",
     "english": "subject marker; however; but"
   },
   {
+    "id": "N5-12",
     "level": "N5",
     "number": 12,
     "japanese": "があります",
     "english": "there is; is (non-living things)"
   },
   {
+    "id": "N5-13",
     "level": "N5",
     "number": 13,
     "japanese": "がほしい",
     "english": "to want something"
   },
   {
+    "id": "N5-14",
     "level": "N5",
     "number": 14,
     "japanese": "がいます",
     "english": "there is; to be; is (living things)"
   },
   {
+    "id": "N5-15",
     "level": "N5",
     "number": 15,
     "japanese": "ほうがいい",
     "english": "had better; it'd be better to; should~"
   },
   {
+    "id": "N5-16",
     "level": "N5",
     "number": 16,
     "japanese": "い-adjectives",
     "english": "i-adjectives"
   },
   {
+    "id": "N5-17",
     "level": "N5",
     "number": 17,
     "japanese": "一番",
     "english": "the most; the best"
   },
   {
+    "id": "N5-18",
     "level": "N5",
     "number": 18,
     "japanese": "一緒に",
     "english": "together"
   },
   {
+    "id": "N5-19",
     "level": "N5",
     "number": 19,
     "japanese": "いつも",
     "english": "always; usually; habitually"
   },
   {
+    "id": "N5-20",
     "level": "N5",
     "number": 20,
     "japanese": "じゃない・ではない",
     "english": "to not be (am not; is not; are not)"
   },
   {
+    "id": "N5-21",
     "level": "N5",
     "number": 21,
     "japanese": "か",
     "english": "question particle"
   },
   {
+    "id": "N5-22",
     "level": "N5",
     "number": 22,
     "japanese": "か〜か",
     "english": "or"
   },
   {
+    "id": "N5-23",
     "level": "N5",
     "number": 23,
     "japanese": "から",
     "english": "because; since; from"
   },
   {
+    "id": "N5-24",
     "level": "N5",
     "number": 24,
     "japanese": "方",
     "english": "the way of doing something; how to do"
   },
   {
+    "id": "N5-25",
     "level": "N5",
     "number": 25,
     "japanese": "けど",
     "english": "but; however; although"
   },
   {
+    "id": "N5-26",
     "level": "N5",
     "number": 26,
     "japanese": "けれども",
     "english": "but; however; although"
   },
   {
+    "id": "N5-27",
     "level": "N5",
     "number": 27,
     "japanese": "まだ",
     "english": "still; not yet"
   },
   {
+    "id": "N5-28",
     "level": "N5",
     "number": 28,
     "japanese": "まだ〜ていません",
     "english": "have not yet"
   },
   {
+    "id": "N5-29",
     "level": "N5",
     "number": 29,
     "japanese": "まで",
     "english": "until ~; as far as ~; to (an extent); even ~"
   },
   {
+    "id": "N5-30",
     "level": "N5",
     "number": 30,
     "japanese": "前に",
     "english": "before ~; in front of ~"
   },
   {
+    "id": "N5-31",
     "level": "N5",
     "number": 31,
     "japanese": "ませんか",
     "english": "would you; do you want to; shall we~"
   },
   {
+    "id": "N5-32",
     "level": "N5",
     "number": 32,
     "japanese": "ましょう",
     "english": "let's ~; shall we ~"
   },
   {
+    "id": "N5-33",
     "level": "N5",
     "number": 33,
     "japanese": "ましょうか",
     "english": "shall I ~; used to offer help to the listener"
   },
   {
+    "id": "N5-34",
     "level": "N5",
     "number": 34,
     "japanese": "も",
     "english": "too; also; as well"
   },
   {
+    "id": "N5-35",
     "level": "N5",
     "number": 35,
     "japanese": "もう",
     "english": "already; anymore; again; other"
   },
   {
+    "id": "N5-36",
     "level": "N5",
     "number": 36,
     "japanese": "な-adjectives",
     "english": "na-adjectives"
   },
   {
+    "id": "N5-37",
     "level": "N5",
     "number": 37,
     "japanese": "なあ",
     "english": "sentence ending particle; confirmation; admiration, etc"
   },
   {
+    "id": "N5-38",
     "level": "N5",
     "number": 38,
     "japanese": "ないで",
     "english": "without doing~ ; To do [B] without doing [A]"
   },
   {
+    "id": "N5-39",
     "level": "N5",
     "number": 39,
     "japanese": "ないでください",
     "english": "please don't do"
   },
   {
+    "id": "N5-40",
     "level": "N5",
     "number": 40,
     "japanese": "なくてもいい",
     "english": "don't have to"
   },
   {
+    "id": "N5-41",
     "level": "N5",
     "number": 41,
     "japanese": "なくちゃ",
     "english": "must do; need to; gotta do"
   },
   {
+    "id": "N5-42",
     "level": "N5",
     "number": 42,
     "japanese": "なくてはいけない",
     "english": "must do; need to do"
   },
   {
+    "id": "N5-43",
     "level": "N5",
     "number": 43,
     "japanese": "なくてはならない",
     "english": "must do; need to do"
   },
   {
+    "id": "N5-44",
     "level": "N5",
     "number": 44,
     "japanese": "なる",
     "english": "to become"
   },
   {
+    "id": "N5-45",
     "level": "N5",
     "number": 45,
     "japanese": "んです",
     "english": "to explain something; show emphasis"
   },
   {
+    "id": "N5-46",
     "level": "N5",
     "number": 46,
     "japanese": "ね",
     "english": "isn't it? right? eh?"
   },
   {
+    "id": "N5-47",
     "level": "N5",
     "number": 47,
     "japanese": "に",
     "english": "destination particle; in; at; on; to"
   },
   {
+    "id": "N5-48",
     "level": "N5",
     "number": 48,
     "japanese": "にいく",
     "english": "go to do"
   },
   {
+    "id": "N5-49",
     "level": "N5",
     "number": 49,
     "japanese": "にする",
     "english": "to decide on"
   },
   {
+    "id": "N5-50",
     "level": "N5",
     "number": 50,
     "japanese": "に/へ",
     "english": "to (indicates direction / destination)"
   },
   {
+    "id": "N5-51",
     "level": "N5",
     "number": 51,
     "japanese": "の",
     "english": "possessive particle"
   },
   {
+    "id": "N5-52",
     "level": "N5",
     "number": 52,
     "japanese": "のです",
     "english": "to explain something; show emphasis"
   },
   {
+    "id": "N5-53",
     "level": "N5",
     "number": 53,
     "japanese": "のが下手",
     "english": "to be bad at doing something"
   },
   {
+    "id": "N5-54",
     "level": "N5",
     "number": 54,
     "japanese": "のが上手",
     "english": "to be good at"
   },
   {
+    "id": "N5-55",
     "level": "N5",
     "number": 55,
     "japanese": "のが好き",
     "english": "to like doing something"
   },
   {
+    "id": "N5-56",
     "level": "N5",
     "number": 56,
     "japanese": "の中で[A]が一番",
     "english": "out of this group, [A] is best"
   },
   {
+    "id": "N5-57",
     "level": "N5",
     "number": 57,
     "japanese": "ので",
     "english": "because of; given that; since"
   },
   {
+    "id": "N5-58",
     "level": "N5",
     "number": 58,
     "japanese": "を",
     "english": "object marker particle"
   },
   {
+    "id": "N5-59",
     "level": "N5",
     "number": 59,
     "japanese": "をください",
     "english": "please give me~"
   },
   {
+    "id": "N5-60",
     "level": "N5",
     "number": 60,
     "japanese": "しかし",
     "english": "but; however"
   },
   {
+    "id": "N5-61",
     "level": "N5",
     "number": 61,
     "japanese": "すぎる",
     "english": "too much"
   },
   {
+    "id": "N5-62",
     "level": "N5",
     "number": 62,
     "japanese": "たことがある",
     "english": "to have done something before"
   },
   {
+    "id": "N5-63",
     "level": "N5",
     "number": 63,
     "japanese": "たい",
     "english": "want to do something"
   },
   {
+    "id": "N5-64",
     "level": "N5",
     "number": 64,
     "japanese": "たり〜たり",
     "english": "do such things as A and B"
   },
   {
+    "id": "N5-65",
     "level": "N5",
     "number": 65,
     "japanese": "てある",
     "english": "is/has been done (resulting state)"
   },
   {
+    "id": "N5-66",
     "level": "N5",
     "number": 66,
     "japanese": "ている",
     "english": "ongoing action or current state"
   },
   {
+    "id": "N5-67",
     "level": "N5",
     "number": 67,
     "japanese": "てから",
     "english": "after doing~"
   },
   {
+    "id": "N5-68",
     "level": "N5",
     "number": 68,
     "japanese": "てください",
     "english": "please do"
   },
   {
+    "id": "N5-69",
     "level": "N5",
     "number": 69,
     "japanese": "てはいけない",
     "english": "must not; may not; cannot"
   },
   {
+    "id": "N5-70",
     "level": "N5",
     "number": 70,
     "japanese": "てもいいです",
     "english": "is OK to..; is alright to..; may I..?"
   },
   {
+    "id": "N5-71",
     "level": "N5",
     "number": 71,
     "japanese": "と",
     "english": "and; with; as; connecting particle"
   },
   {
+    "id": "N5-72",
     "level": "N5",
     "number": 72,
     "japanese": "とき",
     "english": "when; at this time"
   },
   {
+    "id": "N5-73",
     "level": "N5",
     "number": 73,
     "japanese": "とても",
     "english": "very; awfully; exceedingly"
   },
   {
+    "id": "N5-74",
     "level": "N5",
     "number": 74,
     "japanese": "つもり",
     "english": "plan to ~; intend to ~"
   },
   {
+    "id": "N5-75",
     "level": "N5",
     "number": 75,
     "japanese": "は",
     "english": "topic marker"
   },
   {
+    "id": "N5-76",
     "level": "N5",
     "number": 76,
     "japanese": "は〜より・・・です",
     "english": "[A] is more ~ than [B]"
   },
   {
+    "id": "N5-77",
     "level": "N5",
     "number": 77,
     "japanese": "はどうですか",
     "english": "how about; how is"
   },
   {
+    "id": "N5-78",
     "level": "N5",
     "number": 78,
     "japanese": "や",
     "english": "and; or; connecting particle"
   },
   {
+    "id": "N5-79",
     "level": "N5",
     "number": 79,
     "japanese": "よ",
     "english": "you know; emphasis (ending particle)"
   },
   {
+    "id": "N5-80",
     "level": "N5",
     "number": 80,
     "japanese": "より〜ほうが",
     "english": "[A] is more than [B]"
   },
   {
+    "id": "N4-1",
     "level": "N4",
     "number": 1,
     "japanese": "間",
     "english": "while; during; between"
   },
   {
+    "id": "N4-2",
     "level": "N4",
     "number": 2,
     "japanese": "間に",
     "english": "while/during~ something happened"
   },
   {
+    "id": "N4-3",
     "level": "N4",
     "number": 3,
     "japanese": "あまり～ない",
     "english": "not very, not much"
   },
   {
+    "id": "N4-4",
     "level": "N4",
     "number": 4,
     "japanese": "後で",
     "english": "after ~; later"
   },
   {
+    "id": "N4-5",
     "level": "N4",
     "number": 5,
     "japanese": "ば",
     "english": "conditional form; If [A] then [B]"
   },
   {
+    "id": "N4-6",
     "level": "N4",
     "number": 6,
     "japanese": "場合は",
     "english": "in the event of; in the case that"
   },
   {
+    "id": "N4-7",
     "level": "N4",
     "number": 7,
     "japanese": "ばかり",
     "english": "only; nothing but"
   },
   {
+    "id": "N4-8",
     "level": "N4",
     "number": 8,
     "japanese": "だけで",
     "english": "just by; just by doing"
   },
   {
+    "id": "N4-9",
     "level": "N4",
     "number": 9,
     "japanese": "出す",
     "english": "to suddenly begin; to suddenly appear"
   },
   {
+    "id": "N4-10",
     "level": "N4",
     "number": 10,
     "japanese": "でございます",
     "english": "to be (honorific)"
   },
   {
+    "id": "N4-11",
     "level": "N4",
     "number": 11,
     "japanese": "でも",
     "english": "... or something"
   },
   {
+    "id": "N4-12",
     "level": "N4",
     "number": 12,
     "japanese": "ではないか",
     "english": "right?; isn't it?"
   },
   {
+    "id": "N4-13",
     "level": "N4",
     "number": 13,
     "japanese": "が必要",
     "english": "need; necessary"
   },
   {
+    "id": "N4-14",
     "level": "N4",
     "number": 14,
     "japanese": "がする",
     "english": "to smell; hear; taste"
   },
   {
+    "id": "N4-15",
     "level": "N4",
     "number": 15,
     "japanese": "がり",
     "english": "personality; tend to~; sensitivity towards~"
   },
   {
+    "id": "N4-16",
     "level": "N4",
     "number": 16,
     "japanese": "がる・がっている",
     "english": "to show signs of; to appear; to feel"
   },
   {
+    "id": "N4-17",
     "level": "N4",
     "number": 17,
     "japanese": "ございます",
     "english": "to be, to exist (polite form of いる/ある)"
   },
   {
+    "id": "N4-18",
     "level": "N4",
     "number": 18,
     "japanese": "始める",
     "english": "to start; to begin to ~"
   },
   {
+    "id": "N4-19",
     "level": "N4",
     "number": 19,
     "japanese": "はずだ",
     "english": "it must be; it should be (expectation)"
   },
   {
+    "id": "N4-20",
     "level": "N4",
     "number": 20,
     "japanese": "はずがない",
     "english": "cannot be (impossible)"
   },
   {
+    "id": "N4-21",
     "level": "N4",
     "number": 21,
     "japanese": "必要がある",
     "english": "need to; it is necessary to"
   },
   {
+    "id": "N4-22",
     "level": "N4",
     "number": 22,
     "japanese": "意向形",
     "english": "volitional form; let's do ~"
   },
   {
+    "id": "N4-23",
     "level": "N4",
     "number": 23,
     "japanese": "いらっしゃる",
     "english": "to be; to come; to go (polite version)"
   },
   {
+    "id": "N4-24",
     "level": "N4",
     "number": 24,
     "japanese": "いたします",
     "english": "to do (polite form of する)"
   },
   {
+    "id": "N4-25",
     "level": "N4",
     "number": 25,
     "japanese": "じゃないか",
     "english": "right? isn't it? let's~; confirmation"
   },
   {
+    "id": "N4-26",
     "level": "N4",
     "number": 26,
     "japanese": "かどうか",
     "english": "whether or not"
   },
   {
+    "id": "N4-27",
     "level": "N4",
     "number": 27,
     "japanese": "かしら",
     "english": "I wonder"
   },
   {
+    "id": "N4-28",
     "level": "N4",
     "number": 28,
     "japanese": "かい",
     "english": "turns a sentence into a yes/no question"
   },
   {
+    "id": "N4-29",
     "level": "N4",
     "number": 29,
     "japanese": "かもしれない",
     "english": "might; perhaps; indicates possibility"
   },
   {
+    "id": "N4-30",
     "level": "N4",
     "number": 30,
     "japanese": "かな",
     "english": "I wonder; should I?"
   },
   {
+    "id": "N4-31",
     "level": "N4",
     "number": 31,
     "japanese": "から作る",
     "english": "made from; made with"
   },
   {
+    "id": "N4-32",
     "level": "N4",
     "number": 32,
     "japanese": "きっと",
     "english": "surely; undoubtedly; certainly; likely"
   },
   {
+    "id": "N4-33",
     "level": "N4",
     "number": 33,
     "japanese": "頃",
     "english": "around; about; when"
   },
   {
+    "id": "N4-34",
     "level": "N4",
     "number": 34,
     "japanese": "こと",
     "english": "Verb nominalizer"
   },
   {
+    "id": "N4-35",
     "level": "N4",
     "number": 35,
     "japanese": "ことがある",
     "english": "there are times when"
   },
   {
+    "id": "N4-36",
     "level": "N4",
     "number": 36,
     "japanese": "ことができる",
     "english": "can; able to"
   },
   {
+    "id": "N4-37",
     "level": "N4",
     "number": 37,
     "japanese": "ことになる",
     "english": "It has been decided that..; it turns out ~"
   },
   {
+    "id": "N4-38",
     "level": "N4",
     "number": 38,
     "japanese": "ことにする",
     "english": "to decide on"
   },
   {
+    "id": "N4-39",
     "level": "N4",
     "number": 39,
     "japanese": "くする",
     "english": "to make something ~"
   },
   {
+    "id": "N4-40",
     "level": "N4",
     "number": 40,
     "japanese": "急に",
     "english": "suddenly"
   },
   {
+    "id": "N4-41",
     "level": "N4",
     "number": 41,
     "japanese": "までに",
     "english": "by; by the time; indicates time limit"
   },
   {
+    "id": "N4-42",
     "level": "N4",
     "number": 42,
     "japanese": "まま",
     "english": "as it is; current state; without changing"
   },
   {
+    "id": "N4-43",
     "level": "N4",
     "number": 43,
     "japanese": "または",
     "english": "both; or; otherwise; choice of [A] or [B]"
   },
   {
+    "id": "N4-44",
     "level": "N4",
     "number": 44,
     "japanese": "みたいだ",
     "english": "like, similar to, resembling"
   },
   {
+    "id": "N4-45",
     "level": "N4",
     "number": 45,
     "japanese": "みたいな",
     "english": "like, similar to"
   },
   {
+    "id": "N4-46",
     "level": "N4",
     "number": 46,
     "japanese": "みたいに",
     "english": "like, similar to"
   },
   {
+    "id": "N4-47",
     "level": "N4",
     "number": 47,
     "japanese": "も",
     "english": "as many as; as much as; up to; nearly"
   },
   {
+    "id": "N4-48",
     "level": "N4",
     "number": 48,
     "japanese": "な",
     "english": "don’t ~ (order somebody to not do ~)"
   },
   {
+    "id": "N4-49",
     "level": "N4",
     "number": 49,
     "japanese": "など",
     "english": "such as, things like"
   },
   {
+    "id": "N4-50",
     "level": "N4",
     "number": 50,
     "japanese": "ながら",
     "english": "while; during; as; simultaneously"
   },
   {
+    "id": "N4-51",
     "level": "N4",
     "number": 51,
     "japanese": "なかなか～ない",
     "english": "not easy to; struggling to; not able to~"
   },
   {
+    "id": "N4-52",
     "level": "N4",
     "number": 52,
     "japanese": "なければいけない",
     "english": "must do something; have to do something"
   },
   {
+    "id": "N4-53",
     "level": "N4",
     "number": 53,
     "japanese": "なければならない",
     "english": "must do something; have to do something"
   },
   {
+    "id": "N4-54",
     "level": "N4",
     "number": 54,
     "japanese": "なら",
     "english": "if; in the case that ~"
   },
   {
+    "id": "N4-55",
     "level": "N4",
     "number": 55,
     "japanese": "なさい",
     "english": "do this (soft/firm command)"
   },
   {
+    "id": "N4-56",
     "level": "N4",
     "number": 56,
     "japanese": "なさる",
     "english": "to do (honorific)"
   },
   {
+    "id": "N4-57",
     "level": "N4",
     "number": 57,
     "japanese": "に気がつく",
     "english": "to notice; to realize"
   },
   {
+    "id": "N4-58",
     "level": "N4",
     "number": 58,
     "japanese": "にみえる",
     "english": "to look; to seem; to appear"
   },
   {
+    "id": "N4-59",
     "level": "N4",
     "number": 59,
     "japanese": "にする",
     "english": "to make something ~"
   },
   {
+    "id": "N4-60",
     "level": "N4",
     "number": 60,
     "japanese": "にくい",
     "english": "difficult to do"
   },
   {
+    "id": "N4-61",
     "level": "N4",
     "number": 61,
     "japanese": "の中で",
     "english": "in, among"
   },
   {
+    "id": "N4-62",
     "level": "N4",
     "number": 62,
     "japanese": "のに",
     "english": "although, in spite of, even though"
   },
   {
+    "id": "N4-63",
     "level": "N4",
     "number": 63,
     "japanese": "のに",
     "english": "to (do something); in order to"
   },
   {
+    "id": "N4-64",
     "level": "N4",
     "number": 64,
     "japanese": "のは〜だ",
     "english": "[A] is [B]; the reason for [A] is [B]"
   },
   {
+    "id": "N4-65",
     "level": "N4",
     "number": 65,
     "japanese": "お～ください",
     "english": "please do (honorific)"
   },
   {
+    "id": "N4-66",
     "level": "N4",
     "number": 66,
     "japanese": "お～になる",
     "english": "to do (honorific)"
   },
   {
+    "id": "N4-67",
     "level": "N4",
     "number": 67,
     "japanese": "おきに",
     "english": "repeated at intervals, every"
   },
   {
+    "id": "N4-68",
     "level": "N4",
     "number": 68,
     "japanese": "終わる",
     "english": "to finish; to end"
   },
   {
+    "id": "N4-69",
     "level": "N4",
     "number": 69,
     "japanese": "られる",
     "english": "potential form; ability/inability to do ~"
   },
   {
+    "id": "N4-70",
     "level": "N4",
     "number": 70,
     "japanese": "らしい",
     "english": "it seems like; I heard; apparently~"
   },
   {
+    "id": "N4-71",
     "level": "N4",
     "number": 71,
     "japanese": "さ",
     "english": "-ness ; nominalizer for adjective"
   },
   {
+    "id": "N4-72",
     "level": "N4",
     "number": 72,
     "japanese": "さっき",
     "english": "some time ago; just now"
   },
   {
+    "id": "N4-73",
     "level": "N4",
     "number": 73,
     "japanese": "させられる",
     "english": "causative-passive; to be made to do ~"
   },
   {
+    "id": "N4-74",
     "level": "N4",
     "number": 74,
     "japanese": "させる",
     "english": "causative form; to make/let somebody do"
   },
   {
+    "id": "N4-75",
     "level": "N4",
     "number": 75,
     "japanese": "させてください",
     "english": "please let me do"
   },
   {
+    "id": "N4-76",
     "level": "N4",
     "number": 76,
     "japanese": "さすが",
     "english": "as one would expect; as is to be expected"
   },
   {
+    "id": "N4-77",
     "level": "N4",
     "number": 77,
     "japanese": "し",
     "english": "and; and what’s more; emphasis"
   },
   {
+    "id": "N4-78",
     "level": "N4",
     "number": 78,
     "japanese": "そんなに",
     "english": "so much; so; like that"
   },
   {
+    "id": "N4-79",
     "level": "N4",
     "number": 79,
     "japanese": "それでも",
     "english": "but still; and yet; even so"
   },
   {
+    "id": "N4-80",
     "level": "N4",
     "number": 80,
     "japanese": "そうだ",
     "english": "I heard that; it is said that"
   },
   {
+    "id": "N4-81",
     "level": "N4",
     "number": 81,
     "japanese": "そうだ",
     "english": "looks like; appears like"
   },
   {
+    "id": "N4-82",
     "level": "N4",
     "number": 82,
     "japanese": "そうに・そうな",
     "english": "seems like; looks like"
   },
   {
+    "id": "N4-83",
     "level": "N4",
     "number": 83,
     "japanese": "たばかり",
     "english": "just finished; something just occurred"
   },
   {
+    "id": "N4-84",
     "level": "N4",
     "number": 84,
     "japanese": "たところ",
     "english": "just finished doing, was just doing"
   },
   {
+    "id": "N4-85",
     "level": "N4",
     "number": 85,
     "japanese": "他動詞 & 自動詞",
     "english": "Transitive & Intransitive Verbs"
   },
   {
+    "id": "N4-86",
     "level": "N4",
     "number": 86,
     "japanese": "たがる",
     "english": "wants to do~ (third person)"
   },
   {
+    "id": "N4-87",
     "level": "N4",
     "number": 87,
     "japanese": "たら",
     "english": "if, after, when"
   },
   {
+    "id": "N4-88",
     "level": "N4",
     "number": 88,
     "japanese": "たらどう",
     "english": "why don't you"
   },
   {
+    "id": "N4-89",
     "level": "N4",
     "number": 89,
     "japanese": "たらいいですか",
     "english": "what should I do?; seeking instruction"
   },
   {
+    "id": "N4-90",
     "level": "N4",
     "number": 90,
     "japanese": "て / で",
     "english": "conjunctive; so; because of [A], [B]..."
   },
   {
+    "id": "N4-91",
     "level": "N4",
     "number": 91,
     "japanese": "てあげる",
     "english": "to do for; to do a favor"
   },
   {
+    "id": "N4-92",
     "level": "N4",
     "number": 92,
     "japanese": "てほしい",
     "english": "I want you to; need you to~"
   },
   {
+    "id": "N4-93",
     "level": "N4",
     "number": 93,
     "japanese": "ていく",
     "english": "to start; to continue; to go on"
   },
   {
+    "id": "N4-94",
     "level": "N4",
     "number": 94,
     "japanese": "ていた",
     "english": "was doing something (past continuous)"
   },
   {
+    "id": "N4-95",
     "level": "N4",
     "number": 95,
     "japanese": "ていただけませんか",
     "english": "could you please"
   },
   {
+    "id": "N4-96",
     "level": "N4",
     "number": 96,
     "japanese": "てくれる",
     "english": "to do a favor; do something for someone"
   },
   {
+    "id": "N4-97",
     "level": "N4",
     "number": 97,
     "japanese": "てくる",
     "english": "to do… and come back; to continue"
   },
   {
+    "id": "N4-98",
     "level": "N4",
     "number": 98,
     "japanese": "てみる",
     "english": "try doing"
   },
   {
+    "id": "N4-99",
     "level": "N4",
     "number": 99,
     "japanese": "てもらう",
     "english": "to get somebody to do something"
   },
   {
+    "id": "N4-100",
     "level": "N4",
     "number": 100,
     "japanese": "ておく",
     "english": "to do something in advance"
   },
   {
+    "id": "N4-101",
     "level": "N4",
     "number": 101,
     "japanese": "てしまう / ちゃう",
     "english": "to do something by accident, to finish"
   },
   {
+    "id": "N4-102",
     "level": "N4",
     "number": 102,
     "japanese": "てすみません",
     "english": "I’m sorry for"
   },
   {
+    "id": "N4-103",
     "level": "N4",
     "number": 103,
     "japanese": "てやる",
     "english": "to do for; to do a favor (casual)"
   },
   {
+    "id": "N4-104",
     "level": "N4",
     "number": 104,
     "japanese": "てよかった",
     "english": "I’m glad that.."
   },
   {
+    "id": "N4-105",
     "level": "N4",
     "number": 105,
     "japanese": "ているところ",
     "english": "in the process of doing"
   },
   {
+    "id": "N4-106",
     "level": "N4",
     "number": 106,
     "japanese": "ても",
     "english": "even; even if; even though"
   },
   {
+    "id": "N4-107",
     "level": "N4",
     "number": 107,
     "japanese": "と",
     "english": "whenever [A] happens, [B] also happens"
   },
   {
+    "id": "N4-108",
     "level": "N4",
     "number": 108,
     "japanese": "と言ってもいい",
     "english": "you could say; one might say; I'd say"
   },
   {
+    "id": "N4-109",
     "level": "N4",
     "number": 109,
     "japanese": "という",
     "english": "called; named; that"
   },
   {
+    "id": "N4-110",
     "level": "N4",
     "number": 110,
     "japanese": "ということ",
     "english": "convert phrase into noun"
   },
   {
+    "id": "N4-111",
     "level": "N4",
     "number": 111,
     "japanese": "と言われている",
     "english": "it is said that..."
   },
   {
+    "id": "N4-112",
     "level": "N4",
     "number": 112,
     "japanese": "と聞いた",
     "english": "I heard..."
   },
   {
+    "id": "N4-113",
     "level": "N4",
     "number": 113,
     "japanese": "と思う",
     "english": "to think…; I think…; you think…"
   },
   {
+    "id": "N4-114",
     "level": "N4",
     "number": 114,
     "japanese": "とか～とか",
     "english": "among other things; such as; like"
   },
   {
+    "id": "N4-115",
     "level": "N4",
     "number": 115,
     "japanese": "ところ",
     "english": "just about to; on the verge of doing ~"
   },
   {
+    "id": "N4-116",
     "level": "N4",
     "number": 116,
     "japanese": "続ける",
     "english": "continue to; keen on"
   },
   {
+    "id": "N4-117",
     "level": "N4",
     "number": 117,
     "japanese": "って",
     "english": "named; called"
   },
   {
+    "id": "N4-118",
     "level": "N4",
     "number": 118,
     "japanese": "受身形",
     "english": "passive form; passive voice"
   },
   {
+    "id": "N4-119",
     "level": "N4",
     "number": 119,
     "japanese": "は〜が… は",
     "english": "[A] but [B]; however; comparison"
   },
   {
+    "id": "N4-120",
     "level": "N4",
     "number": 120,
     "japanese": "やすい",
     "english": "easy to; likely to; prone to; a tendency to~"
   },
   {
+    "id": "N4-121",
     "level": "N4",
     "number": 121,
     "japanese": "やっと",
     "english": "at last; finally; barely; narrowly"
   },
   {
+    "id": "N4-122",
     "level": "N4",
     "number": 122,
     "japanese": "より",
     "english": "than; rather than; more than"
   },
   {
+    "id": "N4-123",
     "level": "N4",
     "number": 123,
     "japanese": "予定だ",
     "english": "plan to, intend to"
   },
   {
+    "id": "N4-124",
     "level": "N4",
     "number": 124,
     "japanese": "ようだ",
     "english": "appears; seems; looks as if"
   },
   {
+    "id": "N4-125",
     "level": "N4",
     "number": 125,
     "japanese": "ように / ような",
     "english": "like; as; similar to"
   },
   {
+    "id": "N4-126",
     "level": "N4",
     "number": 126,
     "japanese": "ようになる",
     "english": "to reach the point that; to turn into"
   },
   {
+    "id": "N4-127",
     "level": "N4",
     "number": 127,
     "japanese": "ようにする",
     "english": "to try to; to make sure that"
   },
   {
+    "id": "N4-128",
     "level": "N4",
     "number": 128,
     "japanese": "ようと思う",
     "english": "thinking of doing; planning to"
   },
   {
+    "id": "N4-129",
     "level": "N4",
     "number": 129,
     "japanese": "ぜひ",
     "english": "by all means; certainly; definitely"
   },
   {
+    "id": "N4-130",
     "level": "N4",
     "number": 130,
     "japanese": "全然～ない",
     "english": "(not) at all"
   },
   {
+    "id": "N4-131",
     "level": "N4",
     "number": 131,
     "japanese": "づらい",
     "english": "difficult to do"
   },
   {
+    "id": "N3-1",
     "level": "N3",
     "number": 1,
     "japanese": "上げる",
     "english": "to finish doing~"
   },
   {
+    "id": "N3-2",
     "level": "N3",
     "number": 2,
     "japanese": "あまり",
     "english": "so much… that"
   },
   {
+    "id": "N3-3",
     "level": "N3",
     "number": 3,
     "japanese": "あまりにも",
     "english": "too…; so much… that; excessively~"
   },
   {
+    "id": "N3-4",
     "level": "N3",
     "number": 4,
     "japanese": "合う",
     "english": "do something together"
   },
   {
+    "id": "N3-5",
     "level": "N3",
     "number": 5,
     "japanese": "ばいい",
     "english": "should, can, it’d be good if"
   },
   {
+    "id": "N3-6",
     "level": "N3",
     "number": 6,
     "japanese": "ばよかった",
     "english": "should have, would have been better if~"
   },
   {
+    "id": "N3-7",
     "level": "N3",
     "number": 7,
     "japanese": "ば～ほど",
     "english": "the more… the more"
   },
   {
+    "id": "N3-8",
     "level": "N3",
     "number": 8,
     "japanese": "ば～のに",
     "english": "would have; should have; if only~"
   },
   {
+    "id": "N3-9",
     "level": "N3",
     "number": 9,
     "japanese": "ばかりで",
     "english": "only; just (negative description)"
   },
   {
+    "id": "N3-10",
     "level": "N3",
     "number": 10,
     "japanese": "ばかりでなく",
     "english": "not only.. but also; as well as"
   },
   {
+    "id": "N3-11",
     "level": "N3",
     "number": 11,
     "japanese": "べきだ",
     "english": "should do~; must do~"
   },
   {
+    "id": "N3-12",
     "level": "N3",
     "number": 12,
     "japanese": "べきではない",
     "english": "should not do~; must not do~"
   },
   {
+    "id": "N3-13",
     "level": "N3",
     "number": 13,
     "japanese": "別に～ない",
     "english": "not really, not particularly"
   },
   {
+    "id": "N3-14",
     "level": "N3",
     "number": 14,
     "japanese": "ぶりに",
     "english": "for the first time in (period of time)"
   },
   {
+    "id": "N3-15",
     "level": "N3",
     "number": 15,
     "japanese": "中",
     "english": "currently; during; throughout"
   },
   {
+    "id": "N3-16",
     "level": "N3",
     "number": 16,
     "japanese": "だけ",
     "english": "as much as~"
   },
   {
+    "id": "N3-17",
     "level": "N3",
     "number": 17,
     "japanese": "だけでなく",
     "english": "not only… but also"
   },
   {
+    "id": "N3-18",
     "level": "N3",
     "number": 18,
     "japanese": "だけど",
     "english": "however; but"
   },
   {
+    "id": "N3-19",
     "level": "N3",
     "number": 19,
     "japanese": "だらけ",
     "english": "full of; covered with; a lot of~"
   },
   {
+    "id": "N3-20",
     "level": "N3",
     "number": 20,
     "japanese": "どんなに～ても",
     "english": "no matter how (much)"
   },
   {
+    "id": "N3-21",
     "level": "N3",
     "number": 21,
     "japanese": "どうしても",
     "english": "no matter what; at any cost; after all"
   },
   {
+    "id": "N3-22",
     "level": "N3",
     "number": 22,
     "japanese": "ふりをする",
     "english": "to pretend; to act as if~"
   },
   {
+    "id": "N3-23",
     "level": "N3",
     "number": 23,
     "japanese": "ふと",
     "english": "suddenly; accidentally; unexpectedly"
   },
   {
+    "id": "N3-24",
     "level": "N3",
     "number": 24,
     "japanese": "がち",
     "english": "tend to; tendency to; frequently; often~"
   },
   {
+    "id": "N3-25",
     "level": "N3",
     "number": 25,
     "japanese": "がたい",
     "english": "very difficult to; impossible to"
   },
   {
+    "id": "N3-26",
     "level": "N3",
     "number": 26,
     "japanese": "気味",
     "english": "-like; -looking; -looked; tending to"
   },
   {
+    "id": "N3-27",
     "level": "N3",
     "number": 27,
     "japanese": "ごとに",
     "english": "each; every; at intervals of"
   },
   {
+    "id": "N3-28",
     "level": "N3",
     "number": 28,
     "japanese": "ほど",
     "english": "degree; extent; bounds; upper limit"
   },
   {
+    "id": "N3-29",
     "level": "N3",
     "number": 29,
     "japanese": "ほど～ない",
     "english": "is not as… as"
   },
   {
+    "id": "N3-30",
     "level": "N3",
     "number": 30,
     "japanese": "一度に",
     "english": "all at once"
   },
   {
+    "id": "N3-31",
     "level": "N3",
     "number": 31,
     "japanese": "いくら～ても",
     "english": "no matter how~"
   },
   {
+    "id": "N3-32",
     "level": "N3",
     "number": 32,
     "japanese": "一方だ",
     "english": "more and more; continue to"
   },
   {
+    "id": "N3-33",
     "level": "N3",
     "number": 33,
     "japanese": "一体",
     "english": "emphasis; what on earth?"
   },
   {
+    "id": "N3-34",
     "level": "N3",
     "number": 34,
     "japanese": "じゃない",
     "english": "maybe; most likely; confirmation"
   },
   {
+    "id": "N3-35",
     "level": "N3",
     "number": 35,
     "japanese": "か何か",
     "english": "or something"
   },
   {
+    "id": "N3-36",
     "level": "N3",
     "number": 36,
     "japanese": "かける",
     "english": "half-; not yet finished; in the middle of~"
   },
   {
+    "id": "N3-37",
     "level": "N3",
     "number": 37,
     "japanese": "から〜にかけて",
     "english": "through; from [A] to [B]"
   },
   {
+    "id": "N3-38",
     "level": "N3",
     "number": 38,
     "japanese": "代わりに",
     "english": "instead of; in exchange for~"
   },
   {
+    "id": "N3-39",
     "level": "N3",
     "number": 39,
     "japanese": "結果",
     "english": "as a result of; after"
   },
   {
+    "id": "N3-40",
     "level": "N3",
     "number": 40,
     "japanese": "結局",
     "english": "after all; eventually; in the end"
   },
   {
+    "id": "N3-41",
     "level": "N3",
     "number": 41,
     "japanese": "決して～ない",
     "english": "never; by no means"
   },
   {
+    "id": "N3-42",
     "level": "N3",
     "number": 42,
     "japanese": "切れない",
     "english": "unable to do; too much to finish"
   },
   {
+    "id": "N3-43",
     "level": "N3",
     "number": 43,
     "japanese": "きり",
     "english": "only; just; since; after"
   },
   {
+    "id": "N3-44",
     "level": "N3",
     "number": 44,
     "japanese": "切る",
     "english": "to do something completely to the end"
   },
   {
+    "id": "N3-45",
     "level": "N3",
     "number": 45,
     "japanese": "っけ",
     "english": "casual suffix to confirm something"
   },
   {
+    "id": "N3-46",
     "level": "N3",
     "number": 46,
     "japanese": "込む",
     "english": "Move inside; do a long time"
   },
   {
+    "id": "N3-47",
     "level": "N3",
     "number": 47,
     "japanese": "こそ",
     "english": "for sure; precisely; definitely"
   },
   {
+    "id": "N3-48",
     "level": "N3",
     "number": 48,
     "japanese": "こと",
     "english": "(must) do"
   },
   {
+    "id": "N3-49",
     "level": "N3",
     "number": 49,
     "japanese": "ことから",
     "english": "from the fact that~"
   },
   {
+    "id": "N3-50",
     "level": "N3",
     "number": 50,
     "japanese": "ことになっている",
     "english": "to be expected to; it has been decided~"
   },
   {
+    "id": "N3-51",
     "level": "N3",
     "number": 51,
     "japanese": "ことはない",
     "english": "there is no need to; no possibility that~"
   },
   {
+    "id": "N3-52",
     "level": "N3",
     "number": 52,
     "japanese": "ことは～が",
     "english": "although; but"
   },
   {
+    "id": "N3-53",
     "level": "N3",
     "number": 53,
     "japanese": "くらい・ぐらい",
     "english": "approximately; about; to the extent"
   },
   {
+    "id": "N3-54",
     "level": "N3",
     "number": 54,
     "japanese": "くせに",
     "english": "although~; despite the fact that~"
   },
   {
+    "id": "N3-55",
     "level": "N3",
     "number": 55,
     "japanese": "まるで",
     "english": "as if; as though; just like"
   },
   {
+    "id": "N3-56",
     "level": "N3",
     "number": 56,
     "japanese": "まさか",
     "english": "there's no way; that's impossible"
   },
   {
+    "id": "N3-57",
     "level": "N3",
     "number": 57,
     "japanese": "めったに～ない",
     "english": "hardly; rarely; seldom"
   },
   {
+    "id": "N3-58",
     "level": "N3",
     "number": 58,
     "japanese": "も～ば～も",
     "english": "and; also; as well; either/or; neither"
   },
   {
+    "id": "N3-59",
     "level": "N3",
     "number": 59,
     "japanese": "もしかしたら",
     "english": "perhaps; maybe; perchance; by chance"
   },
   {
+    "id": "N3-60",
     "level": "N3",
     "number": 60,
     "japanese": "もしも〜たら",
     "english": "if; in the case; supposing~"
   },
   {
+    "id": "N3-61",
     "level": "N3",
     "number": 61,
     "japanese": "向け",
     "english": "intended for; aimed at~"
   },
   {
+    "id": "N3-62",
     "level": "N3",
     "number": 62,
     "japanese": "向き",
     "english": "suitable for~"
   },
   {
+    "id": "N3-63",
     "level": "N3",
     "number": 63,
     "japanese": "むしろ",
     "english": "rather; instead; better"
   },
   {
+    "id": "N3-64",
     "level": "N3",
     "number": 64,
     "japanese": "ながらも",
     "english": "but; although; despite"
   },
   {
+    "id": "N3-65",
     "level": "N3",
     "number": 65,
     "japanese": "ないことはない",
     "english": "can do~; is not impossible to~"
   },
   {
+    "id": "N3-66",
     "level": "N3",
     "number": 66,
     "japanese": "ないと",
     "english": "must do; unless/if you don't~"
   },
   {
+    "id": "N3-67",
     "level": "N3",
     "number": 67,
     "japanese": "なかなか",
     "english": "quite~; pretty~; rather~; just not ~"
   },
   {
+    "id": "N3-68",
     "level": "N3",
     "number": 68,
     "japanese": "なんか / なんて",
     "english": "examples; modesty; make light of~"
   },
   {
+    "id": "N3-69",
     "level": "N3",
     "number": 69,
     "japanese": "直す",
     "english": "to do something again; to do over"
   },
   {
+    "id": "N3-70",
     "level": "N3",
     "number": 70,
     "japanese": "なるべく",
     "english": "as much as possible"
   },
   {
+    "id": "N3-71",
     "level": "N3",
     "number": 71,
     "japanese": "なぜなら",
     "english": "because; the reason is"
   },
   {
+    "id": "N3-72",
     "level": "N3",
     "number": 72,
     "japanese": "んだって",
     "english": "I hear that; heard that~"
   },
   {
+    "id": "N3-73",
     "level": "N3",
     "number": 73,
     "japanese": "に違いない",
     "english": "I’m sure/ certain; no doubt that"
   },
   {
+    "id": "N3-74",
     "level": "N3",
     "number": 74,
     "japanese": "に反して",
     "english": "against; contrary to; in contrast to"
   },
   {
+    "id": "N3-75",
     "level": "N3",
     "number": 75,
     "japanese": "にかけて",
     "english": "over (a period); concerning; regarding~"
   },
   {
+    "id": "N3-76",
     "level": "N3",
     "number": 76,
     "japanese": "に関する",
     "english": "about; regarding; related to"
   },
   {
+    "id": "N3-77",
     "level": "N3",
     "number": 77,
     "japanese": "にかわって",
     "english": "instead of~; replacing~; on behalf of~"
   },
   {
+    "id": "N3-78",
     "level": "N3",
     "number": 78,
     "japanese": "に比べて",
     "english": "compared to~; in comparison to~"
   },
   {
+    "id": "N3-79",
     "level": "N3",
     "number": 79,
     "japanese": "に慣れる",
     "english": "to be used to something"
   },
   {
+    "id": "N3-80",
     "level": "N3",
     "number": 80,
     "japanese": "において",
     "english": "in; at (place); regarding~; as for~"
   },
   {
+    "id": "N3-81",
     "level": "N3",
     "number": 81,
     "japanese": "にしたがって",
     "english": "as; therefore; in accordance with"
   },
   {
+    "id": "N3-82",
     "level": "N3",
     "number": 82,
     "japanese": "にしても",
     "english": "even if; even though; regardless of"
   },
   {
+    "id": "N3-83",
     "level": "N3",
     "number": 83,
     "japanese": "にしては",
     "english": "for; considering it’s"
   },
   {
+    "id": "N3-84",
     "level": "N3",
     "number": 84,
     "japanese": "に対して",
     "english": "towards; against; regarding~"
   },
   {
+    "id": "N3-85",
     "level": "N3",
     "number": 85,
     "japanese": "にとって",
     "english": "to; for; concerning; regarding~"
   },
   {
+    "id": "N3-86",
     "level": "N3",
     "number": 86,
     "japanese": "について",
     "english": "concerning; regarding; about; on"
   },
   {
+    "id": "N3-87",
     "level": "N3",
     "number": 87,
     "japanese": "につれて",
     "english": "as; in proportion to; with; as… then…"
   },
   {
+    "id": "N3-88",
     "level": "N3",
     "number": 88,
     "japanese": "には",
     "english": "for the purpose of; in order to~"
   },
   {
+    "id": "N3-89",
     "level": "N3",
     "number": 89,
     "japanese": "によると /によれば",
     "english": "according to~"
   },
   {
+    "id": "N3-90",
     "level": "N3",
     "number": 90,
     "japanese": "によって / による",
     "english": "by means of; due to; because of~"
   },
   {
+    "id": "N3-91",
     "level": "N3",
     "number": 91,
     "japanese": "のでしょうか",
     "english": "ask a question in a polite way"
   },
   {
+    "id": "N3-92",
     "level": "N3",
     "number": 92,
     "japanese": "を中心に",
     "english": "focused on; centered on"
   },
   {
+    "id": "N3-93",
     "level": "N3",
     "number": 93,
     "japanese": "をはじめ",
     "english": "for example; starting with"
   },
   {
+    "id": "N3-94",
     "level": "N3",
     "number": 94,
     "japanese": "を込めて",
     "english": "filled with; full of"
   },
   {
+    "id": "N3-95",
     "level": "N3",
     "number": 95,
     "japanese": "を通じて /を通して",
     "english": "through; via; throughout; by"
   },
   {
+    "id": "N3-96",
     "level": "N3",
     "number": 96,
     "japanese": "おかげで",
     "english": "thanks to ...; owing to ...; because of ..."
   },
   {
+    "id": "N3-97",
     "level": "N3",
     "number": 97,
     "japanese": "っぱなし",
     "english": "leaving (something) on / still in use"
   },
   {
+    "id": "N3-98",
     "level": "N3",
     "number": 98,
     "japanese": "っぽい",
     "english": "seems; somewhat; -ish; easily does~;"
   },
   {
+    "id": "N3-99",
     "level": "N3",
     "number": 99,
     "japanese": "さえ",
     "english": "even; so much as; not even"
   },
   {
+    "id": "N3-100",
     "level": "N3",
     "number": 100,
     "japanese": "さえ～ば",
     "english": "if only; as long as"
   },
   {
+    "id": "N3-101",
     "level": "N3",
     "number": 101,
     "japanese": "際に",
     "english": "when; at the time of; in the case of"
   },
   {
+    "id": "N3-102",
     "level": "N3",
     "number": 102,
     "japanese": "最中に",
     "english": "while; during; in the middle of"
   },
   {
+    "id": "N3-103",
     "level": "N3",
     "number": 103,
     "japanese": "さらに",
     "english": "furthermore; again; more and more"
   },
   {
+    "id": "N3-104",
     "level": "N3",
     "number": 104,
     "japanese": "さて",
     "english": "conjunction: well; now; then"
   },
   {
+    "id": "N3-105",
     "level": "N3",
     "number": 105,
     "japanese": "せいで",
     "english": "because of; due to; as a result of~"
   },
   {
+    "id": "N3-106",
     "level": "N3",
     "number": 106,
     "japanese": "せいぜい",
     "english": "at the most; at best; to the utmost"
   },
   {
+    "id": "N3-107",
     "level": "N3",
     "number": 107,
     "japanese": "しばらく",
     "english": "for a moment; for a while"
   },
   {
+    "id": "N3-108",
     "level": "N3",
     "number": 108,
     "japanese": "しかない",
     "english": "have no choice but~"
   },
   {
+    "id": "N3-109",
     "level": "N3",
     "number": 109,
     "japanese": "そのために",
     "english": "hence; for that reason; because of~"
   },
   {
+    "id": "N3-110",
     "level": "N3",
     "number": 110,
     "japanese": "それとも",
     "english": "or; or else"
   },
   {
+    "id": "N3-111",
     "level": "N3",
     "number": 111,
     "japanese": "そうもない",
     "english": "very unlikely to~; showing no signs of~"
   },
   {
+    "id": "N3-112",
     "level": "N3",
     "number": 112,
     "japanese": "すでに",
     "english": "something has already been done"
   },
   {
+    "id": "N3-113",
     "level": "N3",
     "number": 113,
     "japanese": "すなわち",
     "english": "in other words; namely"
   },
   {
+    "id": "N3-114",
     "level": "N3",
     "number": 114,
     "japanese": "数量 + は",
     "english": "at least"
   },
   {
+    "id": "N3-115",
     "level": "N3",
     "number": 115,
     "japanese": "たものだ",
     "english": "used to do; would often do"
   },
   {
+    "id": "N3-116",
     "level": "N3",
     "number": 116,
     "japanese": "たとたん",
     "english": "as soon as; just as"
   },
   {
+    "id": "N3-117",
     "level": "N3",
     "number": 117,
     "japanese": "たびに",
     "english": "whenever; every time"
   },
   {
+    "id": "N3-118",
     "level": "N3",
     "number": 118,
     "japanese": "ために",
     "english": "for; in order to; for the benefit of"
   },
   {
+    "id": "N3-119",
     "level": "N3",
     "number": 119,
     "japanese": "確かに",
     "english": "surely, certainly"
   },
   {
+    "id": "N3-120",
     "level": "N3",
     "number": 120,
     "japanese": "たて",
     "english": "just done; freshly done; newly done"
   },
   {
+    "id": "N3-121",
     "level": "N3",
     "number": 121,
     "japanese": "たとえ～ても",
     "english": "even if… is the case"
   },
   {
+    "id": "N3-122",
     "level": "N3",
     "number": 122,
     "japanese": "例えば",
     "english": "for example"
   },
   {
+    "id": "N3-123",
     "level": "N3",
     "number": 123,
     "japanese": "たって",
     "english": "even if; even though; no matter how"
   },
   {
+    "id": "N3-124",
     "level": "N3",
     "number": 124,
     "japanese": "てばかりいる",
     "english": "only; nothing but~"
   },
   {
+    "id": "N3-125",
     "level": "N3",
     "number": 125,
     "japanese": "てごらん",
     "english": "(please) try to; (please) look"
   },
   {
+    "id": "N3-126",
     "level": "N3",
     "number": 126,
     "japanese": "てはじめて",
     "english": "not until; only after [x] did I"
   },
   {
+    "id": "N3-127",
     "level": "N3",
     "number": 127,
     "japanese": "てからでないと",
     "english": "must first do; cannot do without~"
   },
   {
+    "id": "N3-128",
     "level": "N3",
     "number": 128,
     "japanese": "てしょうがない",
     "english": "can't help but~; very; extremely"
   },
   {
+    "id": "N3-129",
     "level": "N3",
     "number": 129,
     "japanese": "て済む",
     "english": "sufficient by; resolve by~"
   },
   {
+    "id": "N3-130",
     "level": "N3",
     "number": 130,
     "japanese": "てはいけないから",
     "english": "in order to not~"
   },
   {
+    "id": "N3-131",
     "level": "N3",
     "number": 131,
     "japanese": "ている場合じゃない",
     "english": "this is no time to be doing~"
   },
   {
+    "id": "N3-132",
     "level": "N3",
     "number": 132,
     "japanese": "的",
     "english": "change noun into na-adjective"
   },
   {
+    "id": "N3-133",
     "level": "N3",
     "number": 133,
     "japanese": "ても始まらない",
     "english": "even if you... it’s no use;"
   },
   {
+    "id": "N3-134",
     "level": "N3",
     "number": 134,
     "japanese": "てもかまわない",
     "english": "it doesn't matter if ~"
   },
   {
+    "id": "N3-135",
     "level": "N3",
     "number": 135,
     "japanese": "てもしょうがない",
     "english": "there's no point to~; it's no use to~"
   },
   {
+    "id": "N3-136",
     "level": "N3",
     "number": 136,
     "japanese": "と言えば",
     "english": "speaking of; when you talk of~"
   },
   {
+    "id": "N3-137",
     "level": "N3",
     "number": 137,
     "japanese": "といい / たらいい",
     "english": "it would be nice if; should; I hope~"
   },
   {
+    "id": "N3-138",
     "level": "N3",
     "number": 138,
     "japanese": "といっても",
     "english": "although I say; although one might say~"
   },
   {
+    "id": "N3-139",
     "level": "N3",
     "number": 139,
     "japanese": "ということだ",
     "english": "I heard; it means~; in other words~"
   },
   {
+    "id": "N3-140",
     "level": "N3",
     "number": 140,
     "japanese": "というのは",
     "english": "this means~; because~; that is to say"
   },
   {
+    "id": "N3-141",
     "level": "N3",
     "number": 141,
     "japanese": "と言うと",
     "english": "speaking of; when you say~"
   },
   {
+    "id": "N3-142",
     "level": "N3",
     "number": 142,
     "japanese": "というより",
     "english": "rather than~"
   },
   {
+    "id": "N3-143",
     "level": "N3",
     "number": 143,
     "japanese": "とみえる / とみえて",
     "english": "it seems that~"
   },
   {
+    "id": "N3-144",
     "level": "N3",
     "number": 144,
     "japanese": "とすれば",
     "english": "in the case of~; assuming~; if A then B"
   },
   {
+    "id": "N3-145",
     "level": "N3",
     "number": 145,
     "japanese": "と共に",
     "english": "together with; at the same time as"
   },
   {
+    "id": "N3-146",
     "level": "N3",
     "number": 146,
     "japanese": "途中で",
     "english": "on the way; in the middle of~"
   },
   {
+    "id": "N3-147",
     "level": "N3",
     "number": 147,
     "japanese": "ところで",
     "english": "by the way~"
   },
   {
+    "id": "N3-148",
     "level": "N3",
     "number": 148,
     "japanese": "ところが",
     "english": "even so; however; even though~"
   },
   {
+    "id": "N3-149",
     "level": "N3",
     "number": 149,
     "japanese": "とおりに",
     "english": "in the same way as; in the way; as~"
   },
   {
+    "id": "N3-150",
     "level": "N3",
     "number": 150,
     "japanese": "通す",
     "english": "to do until the end; to continually do"
   },
   {
+    "id": "N3-151",
     "level": "N3",
     "number": 151,
     "japanese": "として",
     "english": "as~; in the role of~"
   },
   {
+    "id": "N3-152",
     "level": "N3",
     "number": 152,
     "japanese": "とても～ない",
     "english": "cannot possibly be; hardly~"
   },
   {
+    "id": "N3-153",
     "level": "N3",
     "number": 153,
     "japanese": "とは限らない",
     "english": "not necessarily so; is not always true"
   },
   {
+    "id": "N3-154",
     "level": "N3",
     "number": 154,
     "japanese": "つい",
     "english": "accidentally; unintentionally"
   },
   {
+    "id": "N3-155",
     "level": "N3",
     "number": 155,
     "japanese": "ついに",
     "english": "finally ~; at last ~; in the end"
   },
   {
+    "id": "N3-156",
     "level": "N3",
     "number": 156,
     "japanese": "ついでに",
     "english": "while, incidentally, at the same time"
   },
   {
+    "id": "N3-157",
     "level": "N3",
     "number": 157,
     "japanese": "つまり",
     "english": "in other words; in summary; in short"
   },
   {
+    "id": "N3-158",
     "level": "N3",
     "number": 158,
     "japanese": "つもりだった",
     "english": "I thought I~; I believe I did~"
   },
   {
+    "id": "N3-159",
     "level": "N3",
     "number": 159,
     "japanese": "つもりで",
     "english": "with the intention of doing~"
   },
   {
+    "id": "N3-160",
     "level": "N3",
     "number": 160,
     "japanese": "うちに",
     "english": "while; before~"
   },
   {
+    "id": "N3-161",
     "level": "N3",
     "number": 161,
     "japanese": "上で",
     "english": "upon; after; when; for; in order to"
   },
   {
+    "id": "N3-162",
     "level": "N3",
     "number": 162,
     "japanese": "上に",
     "english": "as well; not only… but also"
   },
   {
+    "id": "N3-163",
     "level": "N3",
     "number": 163,
     "japanese": "は別として",
     "english": "aside from; whether or not~"
   },
   {
+    "id": "N3-164",
     "level": "N3",
     "number": 164,
     "japanese": "はもちろん",
     "english": "not to mention; not only; but also~"
   },
   {
+    "id": "N3-165",
     "level": "N3",
     "number": 165,
     "japanese": "は～で有名",
     "english": "famous for~"
   },
   {
+    "id": "N3-166",
     "level": "N3",
     "number": 166,
     "japanese": "わけだ",
     "english": "for that reason; no wonder"
   },
   {
+    "id": "N3-167",
     "level": "N3",
     "number": 167,
     "japanese": "わけではない",
     "english": "it doesn’t mean that~"
   },
   {
+    "id": "N3-168",
     "level": "N3",
     "number": 168,
     "japanese": "わけがない",
     "english": "there is no way that~"
   },
   {
+    "id": "N3-169",
     "level": "N3",
     "number": 169,
     "japanese": "わけにはいかない",
     "english": "must not; cannot afford to; must~"
   },
   {
+    "id": "N3-170",
     "level": "N3",
     "number": 170,
     "japanese": "割に",
     "english": "considering; relatively; unexpectedly"
   },
   {
+    "id": "N3-171",
     "level": "N3",
     "number": 171,
     "japanese": "わざと",
     "english": "on purpose; intentionally~"
   },
   {
+    "id": "N3-172",
     "level": "N3",
     "number": 172,
     "japanese": "わざわざ",
     "english": "to go to the trouble of"
   },
   {
+    "id": "N3-173",
     "level": "N3",
     "number": 173,
     "japanese": "よりも",
     "english": "rather than~; more than~"
   },
   {
+    "id": "N3-174",
     "level": "N3",
     "number": 174,
     "japanese": "ようがない",
     "english": "there is no way to; it’s impossible to~"
   },
   {
+    "id": "N3-175",
     "level": "N3",
     "number": 175,
     "japanese": "ような気がする",
     "english": "have a feeling that; feels like; seems like"
   },
   {
+    "id": "N3-176",
     "level": "N3",
     "number": 176,
     "japanese": "ように",
     "english": "in order to, so that~"
   },
   {
+    "id": "N3-177",
     "level": "N3",
     "number": 177,
     "japanese": "ように見える",
     "english": "to look; to seem; to appear~"
   },
   {
+    "id": "N3-178",
     "level": "N3",
     "number": 178,
     "japanese": "ようとしない",
     "english": "not try to; not make an effort to~"
   },
   {
+    "id": "N3-179",
     "level": "N3",
     "number": 179,
     "japanese": "ようとする",
     "english": "try to; attempt to; be about to~"
   },
   {
+    "id": "N3-180",
     "level": "N3",
     "number": 180,
     "japanese": "ずに",
     "english": "without doing~"
   },
   {
+    "id": "N3-181",
     "level": "N3",
     "number": 181,
     "japanese": "ずにはいられない",
     "english": "can’t help but feel; can’t help but do"
   },
   {
+    "id": "N3-182",
     "level": "N3",
     "number": 182,
     "japanese": "ずつ",
     "english": "apiece; each; at a time"
   },
   {
+    "id": "N2-1",
     "level": "N2",
     "number": 1,
     "japanese": "あげく",
     "english": "to end up; in the end; finally; after all"
   },
   {
+    "id": "N2-2",
     "level": "N2",
     "number": 2,
     "japanese": "あるいは",
     "english": "or; either; maybe; perhaps; possibly"
   },
   {
+    "id": "N2-3",
     "level": "N2",
     "number": 3,
     "japanese": "ばかり",
     "english": "about, approximately"
   },
   {
+    "id": "N2-4",
     "level": "N2",
     "number": 4,
     "japanese": "ばかりだ",
     "english": "continue to (go in negative direction)"
   },
   {
+    "id": "N2-5",
     "level": "N2",
     "number": 5,
     "japanese": "ばかりか",
     "english": "not only.. but also; as well as"
   },
   {
+    "id": "N2-6",
     "level": "N2",
     "number": 6,
     "japanese": "ばかりに",
     "english": "simply because; on account of"
   },
   {
+    "id": "N2-7",
     "level": "N2",
     "number": 7,
     "japanese": "ちなみに",
     "english": "by the way; incidentally"
   },
   {
+    "id": "N2-8",
     "level": "N2",
     "number": 8,
     "japanese": "ちっとも～ない",
     "english": "(not) at all; (not) in the least"
   },
   {
+    "id": "N2-9",
     "level": "N2",
     "number": 9,
     "japanese": "だけあって",
     "english": "being the case; precisely because"
   },
   {
+    "id": "N2-10",
     "level": "N2",
     "number": 10,
     "japanese": "だけましだ",
     "english": "it’s better than; should feel grateful for"
   },
   {
+    "id": "N2-11",
     "level": "N2",
     "number": 11,
     "japanese": "だけに",
     "english": "being the case; precisely because"
   },
   {
+    "id": "N2-12",
     "level": "N2",
     "number": 12,
     "japanese": "だけのことはある",
     "english": "as expected of; not for nothing"
   },
   {
+    "id": "N2-13",
     "level": "N2",
     "number": 13,
     "japanese": "だけは",
     "english": "to do all that one can"
   },
   {
+    "id": "N2-14",
     "level": "N2",
     "number": 14,
     "japanese": "だって",
     "english": "because; but; after all; even; too"
   },
   {
+    "id": "N2-15",
     "level": "N2",
     "number": 15,
     "japanese": "でしかない",
     "english": "merely; nothing but; no more than"
   },
   {
+    "id": "N2-16",
     "level": "N2",
     "number": 16,
     "japanese": "どころではない",
     "english": "not the time for; far from"
   },
   {
+    "id": "N2-17",
     "level": "N2",
     "number": 17,
     "japanese": "どころか",
     "english": "far from; anything but; let alone"
   },
   {
+    "id": "N2-18",
     "level": "N2",
     "number": 18,
     "japanese": "どうやら",
     "english": "apparently; seems like; somehow"
   },
   {
+    "id": "N2-19",
     "level": "N2",
     "number": 19,
     "japanese": "どうせ",
     "english": "anyhow; in any case; at any rate"
   },
   {
+    "id": "N2-20",
     "level": "N2",
     "number": 20,
     "japanese": "得ない",
     "english": "unable to; cannot; it is not possible to~"
   },
   {
+    "id": "N2-21",
     "level": "N2",
     "number": 21,
     "japanese": "得る",
     "english": "can; to be able to; is possible to~"
   },
   {
+    "id": "N2-22",
     "level": "N2",
     "number": 22,
     "japanese": "再び",
     "english": "again; once more"
   },
   {
+    "id": "N2-23",
     "level": "N2",
     "number": 23,
     "japanese": "ふうに",
     "english": "this way; that way; in such a way; how"
   },
   {
+    "id": "N2-24",
     "level": "N2",
     "number": 24,
     "japanese": "がきっかけで",
     "english": "as a result of; taking advantage of"
   },
   {
+    "id": "N2-25",
     "level": "N2",
     "number": 25,
     "japanese": "げ",
     "english": "looks like; seems like; appears to"
   },
   {
+    "id": "N2-26",
     "level": "N2",
     "number": 26,
     "japanese": "逆に",
     "english": "conversely; on the contrary"
   },
   {
+    "id": "N2-27",
     "level": "N2",
     "number": 27,
     "japanese": "反面",
     "english": "while, although; on the other hand"
   },
   {
+    "id": "N2-28",
     "level": "N2",
     "number": 28,
     "japanese": "果たして",
     "english": "as was expected; sure enough; really"
   },
   {
+    "id": "N2-29",
     "level": "N2",
     "number": 29,
     "japanese": "一応",
     "english": "more or less; pretty much; roughly"
   },
   {
+    "id": "N2-30",
     "level": "N2",
     "number": 30,
     "japanese": "以外",
     "english": "with the exception of; excepting"
   },
   {
+    "id": "N2-31",
     "level": "N2",
     "number": 31,
     "japanese": "以上に",
     "english": "more than; not less than; beyond"
   },
   {
+    "id": "N2-32",
     "level": "N2",
     "number": 32,
     "japanese": "以上は",
     "english": "because; since; seeing that"
   },
   {
+    "id": "N2-33",
     "level": "N2",
     "number": 33,
     "japanese": "いきなり",
     "english": "abruptly; suddenly; all of a sudden"
   },
   {
+    "id": "N2-34",
     "level": "N2",
     "number": 34,
     "japanese": "一気に",
     "english": "in one go; without stopping; all at once"
   },
   {
+    "id": "N2-35",
     "level": "N2",
     "number": 35,
     "japanese": "一方で",
     "english": "on one hand, on the other hand"
   },
   {
+    "id": "N2-36",
     "level": "N2",
     "number": 36,
     "japanese": "いわゆる",
     "english": "what is called; as it is called; so-called"
   },
   {
+    "id": "N2-37",
     "level": "N2",
     "number": 37,
     "japanese": "いよいよ",
     "english": "at last; finally; beyond doubt"
   },
   {
+    "id": "N2-38",
     "level": "N2",
     "number": 38,
     "japanese": "上",
     "english": "for the sake of; from the standpoint of"
   },
   {
+    "id": "N2-39",
     "level": "N2",
     "number": 39,
     "japanese": "かのように",
     "english": "as if; just like"
   },
   {
+    "id": "N2-40",
     "level": "N2",
     "number": 40,
     "japanese": "かと思ったら",
     "english": "just when; no sooner than"
   },
   {
+    "id": "N2-41",
     "level": "N2",
     "number": 41,
     "japanese": "か～ないかのうちに",
     "english": "just as; right after; as soon as"
   },
   {
+    "id": "N2-42",
     "level": "N2",
     "number": 42,
     "japanese": "かえって",
     "english": "on the contrary; rather; all the more"
   },
   {
+    "id": "N2-43",
     "level": "N2",
     "number": 43,
     "japanese": "限り",
     "english": "as long as; while… is the case; as far as"
   },
   {
+    "id": "N2-44",
     "level": "N2",
     "number": 44,
     "japanese": "甲斐がある",
     "english": "it’s worth one’s efforts to do something"
   },
   {
+    "id": "N2-45",
     "level": "N2",
     "number": 45,
     "japanese": "かねない",
     "english": "(someone) might do something"
   },
   {
+    "id": "N2-46",
     "level": "N2",
     "number": 46,
     "japanese": "かねる",
     "english": "unable to do something; can’t do~"
   },
   {
+    "id": "N2-47",
     "level": "N2",
     "number": 47,
     "japanese": "から言うと",
     "english": "in terms of; from the point of view of"
   },
   {
+    "id": "N2-48",
     "level": "N2",
     "number": 48,
     "japanese": "からこそ",
     "english": "precisely because"
   },
   {
+    "id": "N2-49",
     "level": "N2",
     "number": 49,
     "japanese": "から見ると",
     "english": "from the point of view of; judging from"
   },
   {
+    "id": "N2-50",
     "level": "N2",
     "number": 50,
     "japanese": "からには",
     "english": "now that; since; so long as; because"
   },
   {
+    "id": "N2-51",
     "level": "N2",
     "number": 51,
     "japanese": "からして",
     "english": "judging from; based on; since; from"
   },
   {
+    "id": "N2-52",
     "level": "N2",
     "number": 52,
     "japanese": "からすると",
     "english": "judging from; considering"
   },
   {
+    "id": "N2-53",
     "level": "N2",
     "number": 53,
     "japanese": "からと言って",
     "english": "just because; even if; even though~"
   },
   {
+    "id": "N2-54",
     "level": "N2",
     "number": 54,
     "japanese": "っこない",
     "english": "no chance of; definitely not possible"
   },
   {
+    "id": "N2-55",
     "level": "N2",
     "number": 55,
     "japanese": "ことだ",
     "english": "should do~ (suggestions or advice)"
   },
   {
+    "id": "N2-56",
     "level": "N2",
     "number": 56,
     "japanese": "ことだから",
     "english": "because; since~"
   },
   {
+    "id": "N2-57",
     "level": "N2",
     "number": 57,
     "japanese": "ことか",
     "english": "how…!; what…!"
   },
   {
+    "id": "N2-58",
     "level": "N2",
     "number": 58,
     "japanese": "ことなく",
     "english": "without doing something even once"
   },
   {
+    "id": "N2-59",
     "level": "N2",
     "number": 59,
     "japanese": "ことに",
     "english": "emphasize speaker's feelings"
   },
   {
+    "id": "N2-60",
     "level": "N2",
     "number": 60,
     "japanese": "ことにはならない",
     "english": "just because… doesn’t mean~"
   },
   {
+    "id": "N2-61",
     "level": "N2",
     "number": 61,
     "japanese": "くせして",
     "english": "although~; despite the fact that~"
   },
   {
+    "id": "N2-62",
     "level": "N2",
     "number": 62,
     "japanese": "まだしも",
     "english": "rather; better"
   },
   {
+    "id": "N2-63",
     "level": "N2",
     "number": 63,
     "japanese": "まい",
     "english": "will not; intend not to"
   },
   {
+    "id": "N2-64",
     "level": "N2",
     "number": 64,
     "japanese": "ままに",
     "english": "as, to do as~"
   },
   {
+    "id": "N2-65",
     "level": "N2",
     "number": 65,
     "japanese": "全く～ない",
     "english": "not at all~"
   },
   {
+    "id": "N2-66",
     "level": "N2",
     "number": 66,
     "japanese": "もかまわず",
     "english": "without caring; without worrying"
   },
   {
+    "id": "N2-67",
     "level": "N2",
     "number": 67,
     "japanese": "も当然だ",
     "english": "it’s only natural; no wonder"
   },
   {
+    "id": "N2-68",
     "level": "N2",
     "number": 68,
     "japanese": "もの / もん",
     "english": "because; reason/ excuse/dissatisfaction"
   },
   {
+    "id": "N2-69",
     "level": "N2",
     "number": 69,
     "japanese": "ものだ",
     "english": "describe feeling; express memories"
   },
   {
+    "id": "N2-70",
     "level": "N2",
     "number": 70,
     "japanese": "ものだから",
     "english": "so; therefore; the reason for something"
   },
   {
+    "id": "N2-71",
     "level": "N2",
     "number": 71,
     "japanese": "ものではない",
     "english": "shouldn’t do something; it’s impossible"
   },
   {
+    "id": "N2-72",
     "level": "N2",
     "number": 72,
     "japanese": "ものがある",
     "english": "there is such a thing; to be the case"
   },
   {
+    "id": "N2-73",
     "level": "N2",
     "number": 73,
     "japanese": "ものか / もんか",
     "english": "as if; there's no way~"
   },
   {
+    "id": "N2-74",
     "level": "N2",
     "number": 74,
     "japanese": "ものなら",
     "english": "if [A] is possible, then [B]"
   },
   {
+    "id": "N2-75",
     "level": "N2",
     "number": 75,
     "japanese": "ものの",
     "english": "but; although; even though~"
   },
   {
+    "id": "N2-76",
     "level": "N2",
     "number": 76,
     "japanese": "もっとも",
     "english": "but then; although; though~"
   },
   {
+    "id": "N2-77",
     "level": "N2",
     "number": 77,
     "japanese": "もう少しで",
     "english": "almost; nearly, close to~"
   },
   {
+    "id": "N2-78",
     "level": "N2",
     "number": 78,
     "japanese": "ないではいられない",
     "english": "can’t help but feel; can’t help but do"
   },
   {
+    "id": "N2-79",
     "level": "N2",
     "number": 79,
     "japanese": "ないことには～ない",
     "english": "unless you~"
   },
   {
+    "id": "N2-80",
     "level": "N2",
     "number": 80,
     "japanese": "中を /中では",
     "english": "in; on; in the midst of; when; while~"
   },
   {
+    "id": "N2-81",
     "level": "N2",
     "number": 81,
     "japanese": "なくはない",
     "english": "it’s not that; I may (double negative)"
   },
   {
+    "id": "N2-82",
     "level": "N2",
     "number": 82,
     "japanese": "なくて済む",
     "english": "get by without doing~"
   },
   {
+    "id": "N2-83",
     "level": "N2",
     "number": 83,
     "japanese": "何も～ない",
     "english": "nothing; (not) ~ at all"
   },
   {
+    "id": "N2-84",
     "level": "N2",
     "number": 84,
     "japanese": "なお",
     "english": "still; yet; furthermore; in addition~"
   },
   {
+    "id": "N2-85",
     "level": "N2",
     "number": 85,
     "japanese": "ねばならない",
     "english": "have to do; must; should~"
   },
   {
+    "id": "N2-86",
     "level": "N2",
     "number": 86,
     "japanese": "にあたって",
     "english": "at the time; on the occasion of~"
   },
   {
+    "id": "N2-87",
     "level": "N2",
     "number": 87,
     "japanese": "にほかならない",
     "english": "nothing but; none other than~"
   },
   {
+    "id": "N2-88",
     "level": "N2",
     "number": 88,
     "japanese": "に限らず",
     "english": "not just; not only.. but also~"
   },
   {
+    "id": "N2-89",
     "level": "N2",
     "number": 89,
     "japanese": "に限る",
     "english": "is best; nothing is better than~"
   },
   {
+    "id": "N2-90",
     "level": "N2",
     "number": 90,
     "japanese": "に限って",
     "english": "only; in particular~"
   },
   {
+    "id": "N2-91",
     "level": "N2",
     "number": 91,
     "japanese": "に関わらず",
     "english": "in spite of; regardless of~"
   },
   {
+    "id": "N2-92",
     "level": "N2",
     "number": 92,
     "japanese": "に関わる",
     "english": "to relate to; to have to do with"
   },
   {
+    "id": "N2-93",
     "level": "N2",
     "number": 93,
     "japanese": "に決まっている",
     "english": "certainly; I’m sure/certain that"
   },
   {
+    "id": "N2-94",
     "level": "N2",
     "number": 94,
     "japanese": "に越したことはない",
     "english": "it’s best that, nothing better than"
   },
   {
+    "id": "N2-95",
     "level": "N2",
     "number": 95,
     "japanese": "に応えて",
     "english": "in response to"
   },
   {
+    "id": "N2-96",
     "level": "N2",
     "number": 96,
     "japanese": "に加えて",
     "english": "in addition"
   },
   {
+    "id": "N2-97",
     "level": "N2",
     "number": 97,
     "japanese": "に基づいて",
     "english": "based on; on the basis of"
   },
   {
+    "id": "N2-98",
     "level": "N2",
     "number": 98,
     "japanese": "に向かって",
     "english": "to face; to go towards; to head to"
   },
   {
+    "id": "N2-99",
     "level": "N2",
     "number": 99,
     "japanese": "に応じて",
     "english": "depending on; in accordance with"
   },
   {
+    "id": "N2-100",
     "level": "N2",
     "number": 100,
     "japanese": "に際して",
     "english": "on the occasion of; at the time of"
   },
   {
+    "id": "N2-101",
     "level": "N2",
     "number": 101,
     "japanese": "に先立ち",
     "english": "before; prior to"
   },
   {
+    "id": "N2-102",
     "level": "N2",
     "number": 102,
     "japanese": "にせよ/ にしろ",
     "english": "even if; regardless; whether... or"
   },
   {
+    "id": "N2-103",
     "level": "N2",
     "number": 103,
     "japanese": "にしろ～にしろ",
     "english": "whether… or~"
   },
   {
+    "id": "N2-104",
     "level": "N2",
     "number": 104,
     "japanese": "にしたら",
     "english": "from one’s perspective"
   },
   {
+    "id": "N2-105",
     "level": "N2",
     "number": 105,
     "japanese": "にしても",
     "english": "regardless of whether"
   },
   {
+    "id": "N2-106",
     "level": "N2",
     "number": 106,
     "japanese": "に沿って",
     "english": "along with; in accordance with"
   },
   {
+    "id": "N2-107",
     "level": "N2",
     "number": 107,
     "japanese": "に相違ない",
     "english": "without a doubt; certain; sure"
   },
   {
+    "id": "N2-108",
     "level": "N2",
     "number": 108,
     "japanese": "に過ぎない",
     "english": "no more than; just; merely; only~"
   },
   {
+    "id": "N2-109",
     "level": "N2",
     "number": 109,
     "japanese": "に伴って",
     "english": "as; due to; with; along with; following"
   },
   {
+    "id": "N2-110",
     "level": "N2",
     "number": 110,
     "japanese": "につけ",
     "english": "every time; whenever; as; whether"
   },
   {
+    "id": "N2-111",
     "level": "N2",
     "number": 111,
     "japanese": "につき",
     "english": "due to; because of; per; each"
   },
   {
+    "id": "N2-112",
     "level": "N2",
     "number": 112,
     "japanese": "にわたって",
     "english": "throughout; over a period of"
   },
   {
+    "id": "N2-113",
     "level": "N2",
     "number": 113,
     "japanese": "にも関わらず",
     "english": "despite; in spite of; nevertheless"
   },
   {
+    "id": "N2-114",
     "level": "N2",
     "number": 114,
     "japanese": "にて",
     "english": "in, at, with, by (formal particle)"
   },
   {
+    "id": "N2-115",
     "level": "N2",
     "number": 115,
     "japanese": "のももっともだ",
     "english": "no wonder; …is only natural"
   },
   {
+    "id": "N2-116",
     "level": "N2",
     "number": 116,
     "japanese": "の下で",
     "english": "under; with~"
   },
   {
+    "id": "N2-117",
     "level": "N2",
     "number": 117,
     "japanese": "の上では",
     "english": "according to; from the viewpoint of~"
   },
   {
+    "id": "N2-118",
     "level": "N2",
     "number": 118,
     "japanese": "のみならず",
     "english": "not only; besides; as well as~"
   },
   {
+    "id": "N2-119",
     "level": "N2",
     "number": 119,
     "japanese": "ぬ",
     "english": "negative verb conjugation (traditional)"
   },
   {
+    "id": "N2-120",
     "level": "N2",
     "number": 120,
     "japanese": "抜きにして",
     "english": "without; leaving out; cutting out~"
   },
   {
+    "id": "N2-121",
     "level": "N2",
     "number": 121,
     "japanese": "抜く",
     "english": "from beginning to end; completely"
   },
   {
+    "id": "N2-122",
     "level": "N2",
     "number": 122,
     "japanese": "を契機に",
     "english": "as a good opportunity/chance to"
   },
   {
+    "id": "N2-123",
     "level": "N2",
     "number": 123,
     "japanese": "をめぐって",
     "english": "concerning; in regard to~"
   },
   {
+    "id": "N2-124",
     "level": "N2",
     "number": 124,
     "japanese": "をもとに",
     "english": "based on; derived from; building on"
   },
   {
+    "id": "N2-125",
     "level": "N2",
     "number": 125,
     "japanese": "を除いて",
     "english": "except; with the exception of"
   },
   {
+    "id": "N2-126",
     "level": "N2",
     "number": 126,
     "japanese": "を問わず",
     "english": "regardless of; irrespective of; no matter"
   },
   {
+    "id": "N2-127",
     "level": "N2",
     "number": 127,
     "japanese": "お～願う",
     "english": "please do; could you please~"
   },
   {
+    "id": "N2-128",
     "level": "N2",
     "number": 128,
     "japanese": "おまけに",
     "english": "to make matters worse; what's more"
   },
   {
+    "id": "N2-129",
     "level": "N2",
     "number": 129,
     "japanese": "恐らく",
     "english": "perhaps; likely; probably; I dare say~"
   },
   {
+    "id": "N2-130",
     "level": "N2",
     "number": 130,
     "japanese": "恐れがある",
     "english": "it is feared that; to be in danger of"
   },
   {
+    "id": "N2-131",
     "level": "N2",
     "number": 131,
     "japanese": "及び",
     "english": "and; as well as~"
   },
   {
+    "id": "N2-132",
     "level": "N2",
     "number": 132,
     "japanese": "ろくに～ない",
     "english": "not well; not enough; improperly"
   },
   {
+    "id": "N2-133",
     "level": "N2",
     "number": 133,
     "japanese": "幸いなことに",
     "english": "fortunately; luckily; thankfully~"
   },
   {
+    "id": "N2-134",
     "level": "N2",
     "number": 134,
     "japanese": "せいか",
     "english": "perhaps because~"
   },
   {
+    "id": "N2-135",
     "level": "N2",
     "number": 135,
     "japanese": "せっかく",
     "english": "especially; (thank you for) troubling to"
   },
   {
+    "id": "N2-136",
     "level": "N2",
     "number": 136,
     "japanese": "せめて",
     "english": "at least; at most~"
   },
   {
+    "id": "N2-137",
     "level": "N2",
     "number": 137,
     "japanese": "次第",
     "english": "as soon as, dependent upon"
   },
   {
+    "id": "N2-138",
     "level": "N2",
     "number": 138,
     "japanese": "次第で",
     "english": "depending on; so~"
   },
   {
+    "id": "N2-139",
     "level": "N2",
     "number": 139,
     "japanese": "次第に",
     "english": "gradually; in sequence; in order"
   },
   {
+    "id": "N2-140",
     "level": "N2",
     "number": 140,
     "japanese": "しかも",
     "english": "moreover; furthermore; what’s more~"
   },
   {
+    "id": "N2-141",
     "level": "N2",
     "number": 141,
     "japanese": "その上",
     "english": "besides; in addition; furthermore~"
   },
   {
+    "id": "N2-142",
     "level": "N2",
     "number": 142,
     "japanese": "それなのに",
     "english": "and yet; despite this; but even so~"
   },
   {
+    "id": "N2-143",
     "level": "N2",
     "number": 143,
     "japanese": "それなら",
     "english": "if that’s the case; if so~"
   },
   {
+    "id": "N2-144",
     "level": "N2",
     "number": 144,
     "japanese": "それにしても",
     "english": "nevertheless; at any rate; even so"
   },
   {
+    "id": "N2-145",
     "level": "N2",
     "number": 145,
     "japanese": "そう言えば",
     "english": "come to think of it~"
   },
   {
+    "id": "N2-146",
     "level": "N2",
     "number": 146,
     "japanese": "そうすると",
     "english": "having done that; if that is done"
   },
   {
+    "id": "N2-147",
     "level": "N2",
     "number": 147,
     "japanese": "末に",
     "english": "finally; after; following; at the end"
   },
   {
+    "id": "N2-148",
     "level": "N2",
     "number": 148,
     "japanese": "少しも～ない",
     "english": "not one bit; not even a little~"
   },
   {
+    "id": "N2-149",
     "level": "N2",
     "number": 149,
     "japanese": "少なくとも",
     "english": "at least~"
   },
   {
+    "id": "N2-150",
     "level": "N2",
     "number": 150,
     "japanese": "直ちに",
     "english": "at once; immediately; directly"
   },
   {
+    "id": "N2-151",
     "level": "N2",
     "number": 151,
     "japanese": "たまえ",
     "english": "do~; order somebody to do something"
   },
   {
+    "id": "N2-152",
     "level": "N2",
     "number": 152,
     "japanese": "てばかりはいられない",
     "english": "can’t keep doing~"
   },
   {
+    "id": "N2-153",
     "level": "N2",
     "number": 153,
     "japanese": "てでも",
     "english": "even if I have to; by all means~"
   },
   {
+    "id": "N2-154",
     "level": "N2",
     "number": 154,
     "japanese": "て以来",
     "english": "since; henceforth~"
   },
   {
+    "id": "N2-155",
     "level": "N2",
     "number": 155,
     "japanese": "ていては",
     "english": "if one keeps doing~"
   },
   {
+    "id": "N2-156",
     "level": "N2",
     "number": 156,
     "japanese": "てこそ",
     "english": "now that; since (something happened)"
   },
   {
+    "id": "N2-157",
     "level": "N2",
     "number": 157,
     "japanese": "てまで",
     "english": "even; will go far so as to~"
   },
   {
+    "id": "N2-158",
     "level": "N2",
     "number": 158,
     "japanese": "てならない",
     "english": "can't help but; dying to; extremely~"
   },
   {
+    "id": "N2-159",
     "level": "N2",
     "number": 159,
     "japanese": "てたまらない",
     "english": "can't help but; dying to; extremely~"
   },
   {
+    "id": "N2-160",
     "level": "N2",
     "number": 160,
     "japanese": "て当然だ",
     "english": "natural; as a matter of course"
   },
   {
+    "id": "N2-161",
     "level": "N2",
     "number": 161,
     "japanese": "ては / では",
     "english": "whenever; if; when~; repetitive action"
   },
   {
+    "id": "N2-162",
     "level": "N2",
     "number": 162,
     "japanese": "てはいられない",
     "english": "can’t afford to; unable to~"
   },
   {
+    "id": "N2-163",
     "level": "N2",
     "number": 163,
     "japanese": "てはならない",
     "english": "must not; cannot; should not~"
   },
   {
+    "id": "N2-164",
     "level": "N2",
     "number": 164,
     "japanese": "ては～ては",
     "english": "repetitive situations/actions"
   },
   {
+    "id": "N2-165",
     "level": "N2",
     "number": 165,
     "japanese": "と同時に",
     "english": "at the same time as; while"
   },
   {
+    "id": "N2-166",
     "level": "N2",
     "number": 166,
     "japanese": "といった",
     "english": "like; such as~"
   },
   {
+    "id": "N2-167",
     "level": "N2",
     "number": 167,
     "japanese": "というふうに",
     "english": "in such a way that~"
   },
   {
+    "id": "N2-168",
     "level": "N2",
     "number": 168,
     "japanese": "ということは",
     "english": "that is to say; in other words~"
   },
   {
+    "id": "N2-169",
     "level": "N2",
     "number": 169,
     "japanese": "というものだ",
     "english": "something like; something called~"
   },
   {
+    "id": "N2-170",
     "level": "N2",
     "number": 170,
     "japanese": "というものではない",
     "english": "there is no guarantee that~"
   },
   {
+    "id": "N2-171",
     "level": "N2",
     "number": 171,
     "japanese": "と考えられる",
     "english": "one can think that; it is conceivable that"
   },
   {
+    "id": "N2-172",
     "level": "N2",
     "number": 172,
     "japanese": "とか（で）",
     "english": "I heard that~"
   },
   {
+    "id": "N2-173",
     "level": "N2",
     "number": 173,
     "japanese": "とっくに",
     "english": "long ago; already; a long time ago"
   },
   {
+    "id": "N2-174",
     "level": "N2",
     "number": 174,
     "japanese": "ところだった",
     "english": "was just about to do something"
   },
   {
+    "id": "N2-175",
     "level": "N2",
     "number": 175,
     "japanese": "ところに",
     "english": "at the time; just as I was~"
   },
   {
+    "id": "N2-176",
     "level": "N2",
     "number": 176,
     "japanese": "ところを見ると",
     "english": "judging from; seeing that~"
   },
   {
+    "id": "N2-177",
     "level": "N2",
     "number": 177,
     "japanese": "とも",
     "english": "even if; no matter; though~"
   },
   {
+    "id": "N2-178",
     "level": "N2",
     "number": 178,
     "japanese": "としても",
     "english": "assuming; even if~"
   },
   {
+    "id": "N2-179",
     "level": "N2",
     "number": 179,
     "japanese": "つつ",
     "english": "while; even though; despite~"
   },
   {
+    "id": "N2-180",
     "level": "N2",
     "number": 180,
     "japanese": "つつある",
     "english": "to be doing; in the process of doing~"
   },
   {
+    "id": "N2-181",
     "level": "N2",
     "number": 181,
     "japanese": "上は",
     "english": "now that; since; as long as~"
   },
   {
+    "id": "N2-182",
     "level": "N2",
     "number": 182,
     "japanese": "はもとより",
     "english": "also; let alone; from the beginning"
   },
   {
+    "id": "N2-183",
     "level": "N2",
     "number": 183,
     "japanese": "はともかく",
     "english": "anyhow; anyway; regardless"
   },
   {
+    "id": "N2-184",
     "level": "N2",
     "number": 184,
     "japanese": "わずかに",
     "english": "slightly; only; barely; narrowly~"
   },
   {
+    "id": "N2-185",
     "level": "N2",
     "number": 185,
     "japanese": "やがて",
     "english": "before long; soon; almost; eventually~"
   },
   {
+    "id": "N2-186",
     "level": "N2",
     "number": 186,
     "japanese": "やら～やら",
     "english": "such things as A and B; and so on~"
   },
   {
+    "id": "N2-187",
     "level": "N2",
     "number": 187,
     "japanese": "よほど / よっぽど",
     "english": "very; greatly; much; to a large extent"
   },
   {
+    "id": "N2-188",
     "level": "N2",
     "number": 188,
     "japanese": "より [2]",
     "english": "from~ (a time, place, or person)"
   },
   {
+    "id": "N2-189",
     "level": "N2",
     "number": 189,
     "japanese": "よりほかない",
     "english": "to have no choice but~"
   },
   {
+    "id": "N2-190",
     "level": "N2",
     "number": 190,
     "japanese": "ようでは",
     "english": "if~ (bad result)"
   },
   {
+    "id": "N2-191",
     "level": "N2",
     "number": 191,
     "japanese": "ようではないか",
     "english": "let’s do (something); why don’t we~"
   },
   {
+    "id": "N2-192",
     "level": "N2",
     "number": 192,
     "japanese": "ようか～まいか",
     "english": "whether or not; considering options"
   },
   {
+    "id": "N2-193",
     "level": "N2",
     "number": 193,
     "japanese": "要するに",
     "english": "in short; in a word; to sum up"
   },
   {
+    "id": "N2-194",
     "level": "N2",
     "number": 194,
     "japanese": "ざるを得ない",
     "english": "cannot help (doing); have no choice but"
   },
   {
+    "id": "N2-195",
     "level": "N2",
     "number": 195,
     "japanese": "ずに済む",
     "english": "get by without doing~"
   },
   {
+    "id": "N1-1",
     "level": "N1",
     "number": 1,
     "japanese": "敢えて",
     "english": "dare to; deliberately; purposely ~"
   },
   {
+    "id": "N1-2",
     "level": "N1",
     "number": 2,
     "japanese": "あくまでも",
     "english": "to the end; persistently; is still very ~"
   },
   {
+    "id": "N1-3",
     "level": "N1",
     "number": 3,
     "japanese": "案の定",
     "english": "just as one thought; sure enough"
   },
   {
+    "id": "N1-4",
     "level": "N1",
     "number": 4,
     "japanese": "あらかじめ",
     "english": "beforehand; in advance; previously"
   },
   {
+    "id": "N1-5",
     "level": "N1",
     "number": 5,
     "japanese": "あっての",
     "english": "which can exist solely due to"
   },
   {
+    "id": "N1-6",
     "level": "N1",
     "number": 6,
     "japanese": "ばこそ",
     "english": "only because ~"
   },
   {
+    "id": "N1-7",
     "level": "N1",
     "number": 7,
     "japanese": "ばそれまでだ /たらそれまでだ",
     "english": "if… then it’s over"
   },
   {
+    "id": "N1-8",
     "level": "N1",
     "number": 8,
     "japanese": "べからず / べからざる",
     "english": "must not; should not; do not ~"
   },
   {
+    "id": "N1-9",
     "level": "N1",
     "number": 9,
     "japanese": "べく",
     "english": "in order to; for the purpose of ~"
   },
   {
+    "id": "N1-10",
     "level": "N1",
     "number": 10,
     "japanese": "べくもない",
     "english": "cannot possibly be ~"
   },
   {
+    "id": "N1-11",
     "level": "N1",
     "number": 11,
     "japanese": "べくして",
     "english": "as it is bound to (happen)"
   },
   {
+    "id": "N1-12",
     "level": "N1",
     "number": 12,
     "japanese": "びる / びて / びた",
     "english": "to seem to be; to appear; to behave as ~"
   },
   {
+    "id": "N1-13",
     "level": "N1",
     "number": 13,
     "japanese": "ぶり / っぷり",
     "english": "style; manner; way"
   },
   {
+    "id": "N1-14",
     "level": "N1",
     "number": 14,
     "japanese": "ぶる / ぶって / ぶった",
     "english": "behaving like; to pretend / act like ~"
   },
   {
+    "id": "N1-15",
     "level": "N1",
     "number": 15,
     "japanese": "だに / だにしない",
     "english": "even; not even ~"
   },
   {
+    "id": "N1-16",
     "level": "N1",
     "number": 16,
     "japanese": "だの〜だの",
     "english": "and; and the like; and so forth ~"
   },
   {
+    "id": "N1-17",
     "level": "N1",
     "number": 17,
     "japanese": "だろうに",
     "english": "(1) surely..., but ~ (2) should have ~"
   },
   {
+    "id": "N1-18",
     "level": "N1",
     "number": 18,
     "japanese": "であれ / であろうと",
     "english": "whoever; whatever; however; even ~"
   },
   {
+    "id": "N1-19",
     "level": "N1",
     "number": 19,
     "japanese": "であれ〜であれ",
     "english": "whether [A] or [B]"
   },
   {
+    "id": "N1-20",
     "level": "N1",
     "number": 20,
     "japanese": "でもあり〜でもある",
     "english": "to also be; both… and ~"
   },
   {
+    "id": "N1-21",
     "level": "N1",
     "number": 21,
     "japanese": "でも何でもない /くも何ともない",
     "english": "not in the least; nothing like that"
   },
   {
+    "id": "N1-22",
     "level": "N1",
     "number": 22,
     "japanese": "でなくてなんだろう",
     "english": "must be; is definitely ~"
   },
   {
+    "id": "N1-23",
     "level": "N1",
     "number": 23,
     "japanese": "ではあるまいか",
     "english": "isn't it; I wonder if it’s not ~"
   },
   {
+    "id": "N1-24",
     "level": "N1",
     "number": 24,
     "japanese": "ではあるまいし",
     "english": "it’s not like; it isn’t as if ~"
   },
   {
+    "id": "N1-25",
     "level": "N1",
     "number": 25,
     "japanese": "では済まない",
     "english": "it doesn’t end with just ~"
   },
   {
+    "id": "N1-26",
     "level": "N1",
     "number": 26,
     "japanese": "どうにも〜ない",
     "english": "not … by any means"
   },
   {
+    "id": "N1-27",
     "level": "N1",
     "number": 27,
     "japanese": "が早いか",
     "english": "no sooner than; as soon as ~"
   },
   {
+    "id": "N1-28",
     "level": "N1",
     "number": 28,
     "japanese": "が/も〜なら、〜も〜だ",
     "english": "negative connection/comparison"
   },
   {
+    "id": "N1-29",
     "level": "N1",
     "number": 29,
     "japanese": "がましい",
     "english": "look like; sound like; somewhat like ~"
   },
   {
+    "id": "N1-30",
     "level": "N1",
     "number": 30,
     "japanese": "がてら",
     "english": "while; at the same time; coincidentally"
   },
   {
+    "id": "N1-31",
     "level": "N1",
     "number": 31,
     "japanese": "ごとき/ごとく/ごとし",
     "english": "like; as if; the same as ~"
   },
   {
+    "id": "N1-32",
     "level": "N1",
     "number": 32,
     "japanese": "ぐるみ",
     "english": "together (with); -wide"
   },
   {
+    "id": "N1-33",
     "level": "N1",
     "number": 33,
     "japanese": "羽目になる",
     "english": "to get stuck with (unpleasant)"
   },
   {
+    "id": "N1-34",
     "level": "N1",
     "number": 34,
     "japanese": "ほどのことではない",
     "english": "it's not worth; no need to ~"
   },
   {
+    "id": "N1-35",
     "level": "N1",
     "number": 35,
     "japanese": "ほうがましだ",
     "english": "better than; would rather ~"
   },
   {
+    "id": "N1-36",
     "level": "N1",
     "number": 36,
     "japanese": "放題",
     "english": "doing as one pleases; uncontrolled"
   },
   {
+    "id": "N1-37",
     "level": "N1",
     "number": 37,
     "japanese": "いかんだ / いかんでは/ いかんによっては",
     "english": "in accordance with; depending on ~"
   },
   {
+    "id": "N1-38",
     "level": "N1",
     "number": 38,
     "japanese": "いかんにかかわらず /いかんによらず /いかんをとわず",
     "english": "regardless of; whether or not ~"
   },
   {
+    "id": "N1-39",
     "level": "N1",
     "number": 39,
     "japanese": "いかなる",
     "english": "any kind of; every; whatever"
   },
   {
+    "id": "N1-40",
     "level": "N1",
     "number": 40,
     "japanese": "いかに",
     "english": "how; in what way; to what extent"
   },
   {
+    "id": "N1-41",
     "level": "N1",
     "number": 41,
     "japanese": "いかにも",
     "english": "indeed; really; just (like); very ~"
   },
   {
+    "id": "N1-42",
     "level": "N1",
     "number": 42,
     "japanese": "いずれにしても / いずれにしろ / いずれにせよ",
     "english": "anyhow; anyway; in any case ~"
   },
   {
+    "id": "N1-43",
     "level": "N1",
     "number": 43,
     "japanese": "じみた",
     "english": "to become; to appear like; to look like ~"
   },
   {
+    "id": "N1-44",
     "level": "N1",
     "number": 44,
     "japanese": "か否か",
     "english": "whether or not ~"
   },
   {
+    "id": "N1-45",
     "level": "N1",
     "number": 45,
     "japanese": "かと思いきや",
     "english": "contrary to expectations"
   },
   {
+    "id": "N1-46",
     "level": "N1",
     "number": 46,
     "japanese": "限りだ",
     "english": "to feel strongly"
   },
   {
+    "id": "N1-47",
     "level": "N1",
     "number": 47,
     "japanese": "甲斐もなく",
     "english": "despite; even though ~"
   },
   {
+    "id": "N1-48",
     "level": "N1",
     "number": 48,
     "japanese": "可能性がある",
     "english": "may/might; there’s a possibility that ~"
   },
   {
+    "id": "N1-49",
     "level": "N1",
     "number": 49,
     "japanese": "からある / からする/ からの",
     "english": "at least; as much as; as many as ~"
   },
   {
+    "id": "N1-50",
     "level": "N1",
     "number": 50,
     "japanese": "かれ〜かれ",
     "english": "sooner or later; more or less"
   },
   {
+    "id": "N1-51",
     "level": "N1",
     "number": 51,
     "japanese": "かたがた",
     "english": "while; at the same time; incidentally ~"
   },
   {
+    "id": "N1-52",
     "level": "N1",
     "number": 52,
     "japanese": "かたわら",
     "english": "while; at the same time; in addition"
   },
   {
+    "id": "N1-53",
     "level": "N1",
     "number": 53,
     "japanese": "かつて",
     "english": "once; before; formerly; former; ex-"
   },
   {
+    "id": "N1-54",
     "level": "N1",
     "number": 54,
     "japanese": "嫌いがある",
     "english": "bad habit; to have a tendency to ~"
   },
   {
+    "id": "N1-55",
     "level": "N1",
     "number": 55,
     "japanese": "切りがない",
     "english": "endless; boundless; there’s no end to ~"
   },
   {
+    "id": "N1-56",
     "level": "N1",
     "number": 56,
     "japanese": "きっての",
     "english": "the most / greatest … of all"
   },
   {
+    "id": "N1-57",
     "level": "N1",
     "number": 57,
     "japanese": "極まる / 極まりない",
     "english": "extremely; very ~"
   },
   {
+    "id": "N1-58",
     "level": "N1",
     "number": 58,
     "japanese": "こそあれ",
     "english": "although; even though ~"
   },
   {
+    "id": "N1-59",
     "level": "N1",
     "number": 59,
     "japanese": "こそすれ",
     "english": "and; although; but ~"
   },
   {
+    "id": "N1-60",
     "level": "N1",
     "number": 60,
     "japanese": "こそ「〜が・けれど」",
     "english": "but; although (emphasis)"
   },
   {
+    "id": "N1-61",
     "level": "N1",
     "number": 61,
     "japanese": "ことごとく",
     "english": "altogether; entirely; completely ~"
   },
   {
+    "id": "N1-62",
     "level": "N1",
     "number": 62,
     "japanese": "ことこの上ない / この上ない / この上なく",
     "english": "the most of all; the best; nothing is more ... than ~"
   },
   {
+    "id": "N1-63",
     "level": "N1",
     "number": 63,
     "japanese": "こともあって",
     "english": "partly because; also because of ~"
   },
   {
+    "id": "N1-64",
     "level": "N1",
     "number": 64,
     "japanese": "ことなしに",
     "english": "without doing something"
   },
   {
+    "id": "N1-65",
     "level": "N1",
     "number": 65,
     "japanese": "ことのないように",
     "english": "so as not to; to not ~"
   },
   {
+    "id": "N1-66",
     "level": "N1",
     "number": 66,
     "japanese": "こととて",
     "english": "because; since ~"
   },
   {
+    "id": "N1-67",
     "level": "N1",
     "number": 67,
     "japanese": "くらいなら",
     "english": "rather than (do ...)"
   },
   {
+    "id": "N1-68",
     "level": "N1",
     "number": 68,
     "japanese": "くらいのものだ",
     "english": "only (emphasis)"
   },
   {
+    "id": "N1-69",
     "level": "N1",
     "number": 69,
     "japanese": "までだ / までのことだ",
     "english": "only; just; nothing else"
   },
   {
+    "id": "N1-70",
     "level": "N1",
     "number": 70,
     "japanese": "までもない / までもなく",
     "english": "there's no need to; not necessary to ~"
   },
   {
+    "id": "N1-71",
     "level": "N1",
     "number": 71,
     "japanese": "まじき",
     "english": "should not; must not ~"
   },
   {
+    "id": "N1-72",
     "level": "N1",
     "number": 72,
     "japanese": "まくる",
     "english": "to do over and over again"
   },
   {
+    "id": "N1-73",
     "level": "N1",
     "number": 73,
     "japanese": "まみれ",
     "english": "covered with; stained; smeared with ~"
   },
   {
+    "id": "N1-74",
     "level": "N1",
     "number": 74,
     "japanese": "まるっきり",
     "english": "completely; totally; (not) at all ~"
   },
   {
+    "id": "N1-75",
     "level": "N1",
     "number": 75,
     "japanese": "めく",
     "english": "seems; show signs of ~"
   },
   {
+    "id": "N1-76",
     "level": "N1",
     "number": 76,
     "japanese": "も同然だ",
     "english": "just like; same as~"
   },
   {
+    "id": "N1-77",
     "level": "N1",
     "number": 77,
     "japanese": "もさることながら",
     "english": "not only... but also ~"
   },
   {
+    "id": "N1-78",
     "level": "N1",
     "number": 78,
     "japanese": "もしないで",
     "english": "without even doing ~"
   },
   {
+    "id": "N1-79",
     "level": "N1",
     "number": 79,
     "japanese": "もはや",
     "english": "already; now; no longer; not anymore"
   },
   {
+    "id": "N1-80",
     "level": "N1",
     "number": 80,
     "japanese": "もので",
     "english": "because; for that reason"
   },
   {
+    "id": "N1-81",
     "level": "N1",
     "number": 81,
     "japanese": "ものを",
     "english": "if only (regret)"
   },
   {
+    "id": "N1-82",
     "level": "N1",
     "number": 82,
     "japanese": "ものと思われる /ものと見られる",
     "english": "to think; to suppose; it is believed/expected that ~"
   },
   {
+    "id": "N1-83",
     "level": "N1",
     "number": 83,
     "japanese": "ものとする",
     "english": "shall; to assume; understood as ~"
   },
   {
+    "id": "N1-84",
     "level": "N1",
     "number": 84,
     "japanese": "ものとして",
     "english": "to assume; to suppose ~"
   },
   {
+    "id": "N1-85",
     "level": "N1",
     "number": 85,
     "japanese": "もしくは",
     "english": "or; otherwise"
   },
   {
+    "id": "N1-86",
     "level": "N1",
     "number": 86,
     "japanese": "んばかりに",
     "english": "as if; as though ~"
   },
   {
+    "id": "N1-87",
     "level": "N1",
     "number": 87,
     "japanese": "んがために",
     "english": "in order to ~"
   },
   {
+    "id": "N1-88",
     "level": "N1",
     "number": 88,
     "japanese": "ながらに / ながらの",
     "english": "while; without change"
   },
   {
+    "id": "N1-89",
     "level": "N1",
     "number": 89,
     "japanese": "ないまでも",
     "english": "not to say; does not reach the level of~"
   },
   {
+    "id": "N1-90",
     "level": "N1",
     "number": 90,
     "japanese": "ないものでもない",
     "english": "is not entirely impossible"
   },
   {
+    "id": "N1-91",
     "level": "N1",
     "number": 91,
     "japanese": "ないものか /ないものだろうか",
     "english": "isn't there; can’t we…?; can’t I…?"
   },
   {
+    "id": "N1-92",
     "level": "N1",
     "number": 92,
     "japanese": "ないとも限らない",
     "english": "not necessarily; maybe; might ~"
   },
   {
+    "id": "N1-93",
     "level": "N1",
     "number": 93,
     "japanese": "なくしては",
     "english": "cannot do without ~"
   },
   {
+    "id": "N1-94",
     "level": "N1",
     "number": 94,
     "japanese": "並み",
     "english": "average; equal to; on par with ~"
   },
   {
+    "id": "N1-95",
     "level": "N1",
     "number": 95,
     "japanese": "なんという / なんと/ なんて",
     "english": "how (beautiful, etc.); what a ~"
   },
   {
+    "id": "N1-96",
     "level": "N1",
     "number": 96,
     "japanese": "何しろ",
     "english": "anyway; because; as you know ~"
   },
   {
+    "id": "N1-97",
     "level": "N1",
     "number": 97,
     "japanese": "ならでは",
     "english": "distinctive of; uniquely applying to ~"
   },
   {
+    "id": "N1-98",
     "level": "N1",
     "number": 98,
     "japanese": "ならいざしらず /はいざしらず",
     "english": "I don't know about ... but ~"
   },
   {
+    "id": "N1-99",
     "level": "N1",
     "number": 99,
     "japanese": "なり",
     "english": "as soon as; right after ~"
   },
   {
+    "id": "N1-100",
     "level": "N1",
     "number": 100,
     "japanese": "なりに / なりの",
     "english": "suitable; in one's own way/style"
   },
   {
+    "id": "N1-101",
     "level": "N1",
     "number": 101,
     "japanese": "なりとも",
     "english": "at least; even just a little"
   },
   {
+    "id": "N1-102",
     "level": "N1",
     "number": 102,
     "japanese": "なり〜なり",
     "english": "[A] or [B] or something; for instance ~"
   },
   {
+    "id": "N1-103",
     "level": "N1",
     "number": 103,
     "japanese": "なしに / なしで",
     "english": "without; without doing ~"
   },
   {
+    "id": "N1-104",
     "level": "N1",
     "number": 104,
     "japanese": "に",
     "english": "and; in addition to"
   },
   {
+    "id": "N1-105",
     "level": "N1",
     "number": 105,
     "japanese": "に値する",
     "english": "to be worth; to be worthy of ~"
   },
   {
+    "id": "N1-106",
     "level": "N1",
     "number": 106,
     "japanese": "にあって",
     "english": "at; on; during; in the condition of ~"
   },
   {
+    "id": "N1-107",
     "level": "N1",
     "number": 107,
     "japanese": "に引き換え",
     "english": "compared to; in contrast to; unlike ~"
   },
   {
+    "id": "N1-108",
     "level": "N1",
     "number": 108,
     "japanese": "に至る / に至った",
     "english": "leads to; come to a conclusion"
   },
   {
+    "id": "N1-109",
     "level": "N1",
     "number": 109,
     "japanese": "に至るまで",
     "english": "as far as; everything from ... to ~"
   },
   {
+    "id": "N1-110",
     "level": "N1",
     "number": 110,
     "japanese": "に至っても",
     "english": "even if; although something ~"
   },
   {
+    "id": "N1-111",
     "level": "N1",
     "number": 111,
     "japanese": "に至っては",
     "english": "when it comes to; as for ~"
   },
   {
+    "id": "N1-112",
     "level": "N1",
     "number": 112,
     "japanese": "に言わせれば",
     "english": "if you ask; if one may say ~"
   },
   {
+    "id": "N1-113",
     "level": "N1",
     "number": 113,
     "japanese": "に限ったことではない",
     "english": "not limited to only ~"
   },
   {
+    "id": "N1-114",
     "level": "N1",
     "number": 114,
     "japanese": "にかかっては /にかかったら / にかかると / かかれば",
     "english": "when handled by (N), becomes a different result"
   },
   {
+    "id": "N1-115",
     "level": "N1",
     "number": 115,
     "japanese": "にかかっている",
     "english": "depending on ~"
   },
   {
+    "id": "N1-116",
     "level": "N1",
     "number": 116,
     "japanese": "にかこつけて",
     "english": "to use as a pretext; to use as an excuse"
   },
   {
+    "id": "N1-117",
     "level": "N1",
     "number": 117,
     "japanese": "にかまけて",
     "english": "to be too busy; to focus only on ~"
   },
   {
+    "id": "N1-118",
     "level": "N1",
     "number": 118,
     "japanese": "に難くない",
     "english": "easy to do; it’s not hard to ~"
   },
   {
+    "id": "N1-119",
     "level": "N1",
     "number": 119,
     "japanese": "にまつわる",
     "english": "to be related to; to concern with ~"
   },
   {
+    "id": "N1-120",
     "level": "N1",
     "number": 120,
     "japanese": "に則って",
     "english": "based on; according to ~"
   },
   {
+    "id": "N1-121",
     "level": "N1",
     "number": 121,
     "japanese": "に先駆けて",
     "english": "prior to; being ahead of ~"
   },
   {
+    "id": "N1-122",
     "level": "N1",
     "number": 122,
     "japanese": "に忍びない",
     "english": "cannot bring oneself (to do)"
   },
   {
+    "id": "N1-123",
     "level": "N1",
     "number": 123,
     "japanese": "にしたところで /としたところで",
     "english": "even if; even supposing that ~"
   },
   {
+    "id": "N1-124",
     "level": "N1",
     "number": 124,
     "japanese": "にして",
     "english": "at/on/under conditions (time, position)"
   },
   {
+    "id": "N1-125",
     "level": "N1",
     "number": 125,
     "japanese": "に即して",
     "english": "according to; to be based on ~"
   },
   {
+    "id": "N1-126",
     "level": "N1",
     "number": 126,
     "japanese": "に耐える / に耐えない",
     "english": "worth doing; cannot bear doing ~"
   },
   {
+    "id": "N1-127",
     "level": "N1",
     "number": 127,
     "japanese": "に足らない/に足りない",
     "english": "cannot; not worthy; not worth doing ~"
   },
   {
+    "id": "N1-128",
     "level": "N1",
     "number": 128,
     "japanese": "に足る / に足りる",
     "english": "can do; worthy; worth doing"
   },
   {
+    "id": "N1-129",
     "level": "N1",
     "number": 129,
     "japanese": "に照らして",
     "english": "according to; in view of; in light of ~"
   },
   {
+    "id": "N1-130",
     "level": "N1",
     "number": 130,
     "japanese": "にとどまらず",
     "english": "not limited to; not only… but also ~"
   },
   {
+    "id": "N1-131",
     "level": "N1",
     "number": 131,
     "japanese": "には無理がある",
     "english": "difficult to do; is unreasonable"
   },
   {
+    "id": "N1-132",
     "level": "N1",
     "number": 132,
     "japanese": "によらず",
     "english": "regardless of ~"
   },
   {
+    "id": "N1-133",
     "level": "N1",
     "number": 133,
     "japanese": "に〜を重ねて",
     "english": "success after continuous (effort)"
   },
   {
+    "id": "N1-134",
     "level": "N1",
     "number": 134,
     "japanese": "にもほどがある",
     "english": "to go too far"
   },
   {
+    "id": "N1-135",
     "level": "N1",
     "number": 135,
     "japanese": "にも増して",
     "english": "more than…; above ~"
   },
   {
+    "id": "N1-136",
     "level": "N1",
     "number": 136,
     "japanese": "には当たらない",
     "english": "it’s not worth; there’s no need to ~"
   },
   {
+    "id": "N1-137",
     "level": "N1",
     "number": 137,
     "japanese": "には及ばない",
     "english": "there is no need to; no match for ~"
   },
   {
+    "id": "N1-138",
     "level": "N1",
     "number": 138,
     "japanese": "の至り",
     "english": "utmost; extremely ~"
   },
   {
+    "id": "N1-139",
     "level": "N1",
     "number": 139,
     "japanese": "の極み",
     "english": "utmost; extremely ~"
   },
   {
+    "id": "N1-140",
     "level": "N1",
     "number": 140,
     "japanese": "のなんのって",
     "english": "extremely ~ (cannot express in words)"
   },
   {
+    "id": "N1-141",
     "level": "N1",
     "number": 141,
     "japanese": "のやら / ものやら /ことやら",
     "english": "I wonder..; unsure; I don’t know ~"
   },
   {
+    "id": "N1-142",
     "level": "N1",
     "number": 142,
     "japanese": "のやら〜のやら",
     "english": "or ~ (I don't know)"
   },
   {
+    "id": "N1-143",
     "level": "N1",
     "number": 143,
     "japanese": "を踏まえて",
     "english": "to be based on; to take into account ~"
   },
   {
+    "id": "N1-144",
     "level": "N1",
     "number": 144,
     "japanese": "を経て",
     "english": "through; by way of; after; via ~"
   },
   {
+    "id": "N1-145",
     "level": "N1",
     "number": 145,
     "japanese": "を控えて",
     "english": "to be soon; the time has come to ~"
   },
   {
+    "id": "N1-146",
     "level": "N1",
     "number": 146,
     "japanese": "をいいことに",
     "english": "to take advantage of ~"
   },
   {
+    "id": "N1-147",
     "level": "N1",
     "number": 147,
     "japanese": "を顧みず / も顧みず",
     "english": "despite; regardless of ~"
   },
   {
+    "id": "N1-148",
     "level": "N1",
     "number": 148,
     "japanese": "を限りに",
     "english": "starting from; the last time"
   },
   {
+    "id": "N1-149",
     "level": "N1",
     "number": 149,
     "japanese": "を兼ねて",
     "english": "also for the purpose of ~"
   },
   {
+    "id": "N1-150",
     "level": "N1",
     "number": 150,
     "japanese": "を皮切りに",
     "english": "one after another; starting with ~"
   },
   {
+    "id": "N1-151",
     "level": "N1",
     "number": 151,
     "japanese": "を機に",
     "english": "as an opportunity/chance to ~"
   },
   {
+    "id": "N1-152",
     "level": "N1",
     "number": 152,
     "japanese": "を禁じ得ない",
     "english": "can’t help but; can’t refrain from ~"
   },
   {
+    "id": "N1-153",
     "level": "N1",
     "number": 153,
     "japanese": "をものともせずに",
     "english": "in defiance; not losing to/worrying about ~"
   },
   {
+    "id": "N1-154",
     "level": "N1",
     "number": 154,
     "japanese": "をもって /をもちまして",
     "english": "by means of; with; on / at / as of (time)"
   },
   {
+    "id": "N1-155",
     "level": "N1",
     "number": 155,
     "japanese": "をおいて〜ない",
     "english": "can only be; no alternative, only ~"
   },
   {
+    "id": "N1-156",
     "level": "N1",
     "number": 156,
     "japanese": "を押して /を押し切って",
     "english": "to overcome (opposition)"
   },
   {
+    "id": "N1-157",
     "level": "N1",
     "number": 157,
     "japanese": "を境に",
     "english": "since ~ (indicates large change)"
   },
   {
+    "id": "N1-158",
     "level": "N1",
     "number": 158,
     "japanese": "を余儀なくされる",
     "english": "forced to do something (no choice)"
   },
   {
+    "id": "N1-159",
     "level": "N1",
     "number": 159,
     "japanese": "をよそに",
     "english": "despite; without regards to ~"
   },
   {
+    "id": "N1-160",
     "level": "N1",
     "number": 160,
     "japanese": "を前提として",
     "english": "with the intention to; on the condition"
   },
   {
+    "id": "N1-161",
     "level": "N1",
     "number": 161,
     "japanese": "思いをする",
     "english": "to think; to feel ~"
   },
   {
+    "id": "N1-162",
     "level": "N1",
     "number": 162,
     "japanese": "折に",
     "english": "when; at the time; on the occasion ~"
   },
   {
+    "id": "N1-163",
     "level": "N1",
     "number": 163,
     "japanese": "およそ",
     "english": "about; roughly; generally; completely ~"
   },
   {
+    "id": "N1-164",
     "level": "N1",
     "number": 164,
     "japanese": "さ",
     "english": "ending particle; indicates assertion"
   },
   {
+    "id": "N1-165",
     "level": "N1",
     "number": 165,
     "japanese": "さも",
     "english": "really (seem, appear, etc.); truly; as if ~"
   },
   {
+    "id": "N1-166",
     "level": "N1",
     "number": 166,
     "japanese": "さもないと",
     "english": "otherwise; or else; if not ~"
   },
   {
+    "id": "N1-167",
     "level": "N1",
     "number": 167,
     "japanese": "さぞ",
     "english": "surely; certainly; no doubt; indeed ~"
   },
   {
+    "id": "N1-168",
     "level": "N1",
     "number": 168,
     "japanese": "始末だ",
     "english": "in the end; as a result (negative)"
   },
   {
+    "id": "N1-169",
     "level": "N1",
     "number": 169,
     "japanese": "そばから",
     "english": "as soon as; right after ~"
   },
   {
+    "id": "N1-170",
     "level": "N1",
     "number": 170,
     "japanese": "そびれる",
     "english": "to miss a chance; to fail to do ~"
   },
   {
+    "id": "N1-171",
     "level": "N1",
     "number": 171,
     "japanese": "損なう / 損ねる /損じる",
     "english": "to fail to; miss a chance"
   },
   {
+    "id": "N1-172",
     "level": "N1",
     "number": 172,
     "japanese": "術がない",
     "english": "there is no way / means; cannot do ~"
   },
   {
+    "id": "N1-173",
     "level": "N1",
     "number": 173,
     "japanese": "すら / ですら",
     "english": "even ~ (with emphasis)"
   },
   {
+    "id": "N1-174",
     "level": "N1",
     "number": 174,
     "japanese": "た弾みに /た拍子に",
     "english": "the moment [A], unintentionally caused something to happen"
   },
   {
+    "id": "N1-175",
     "level": "N1",
     "number": 175,
     "japanese": "たことにする /たことになる",
     "english": "pretend to; contrary to the truth ~"
   },
   {
+    "id": "N1-176",
     "level": "N1",
     "number": 176,
     "japanese": "たところで",
     "english": "even if; no matter (who, what, when...)"
   },
   {
+    "id": "N1-177",
     "level": "N1",
     "number": 177,
     "japanese": "たつもりはない",
     "english": "have no intention to / didn't mean to ~"
   },
   {
+    "id": "N1-178",
     "level": "N1",
     "number": 178,
     "japanese": "ただ〜のみだ",
     "english": "can do nothing but; only ~"
   },
   {
+    "id": "N1-179",
     "level": "N1",
     "number": 179,
     "japanese": "ためしがない",
     "english": "is never the case; have never heard of ~"
   },
   {
+    "id": "N1-180",
     "level": "N1",
     "number": 180,
     "japanese": "たら最後 / たが最後",
     "english": "if you do... negative result"
   },
   {
+    "id": "N1-181",
     "level": "N1",
     "number": 181,
     "japanese": "たら〜たで",
     "english": "if / in the case... of course / should ~"
   },
   {
+    "id": "N1-182",
     "level": "N1",
     "number": 182,
     "japanese": "たら〜ところだ",
     "english": "if... (counterfactual), then would be ~"
   },
   {
+    "id": "N1-183",
     "level": "N1",
     "number": 183,
     "japanese": "たりとも",
     "english": "not even; not any ~"
   },
   {
+    "id": "N1-184",
     "level": "N1",
     "number": 184,
     "japanese": "たるもの / たる",
     "english": "(that) which is; in capacity of ... should"
   },
   {
+    "id": "N1-185",
     "level": "N1",
     "number": 185,
     "japanese": "て敵わない",
     "english": "can't bear to; unable to; troublesome to"
   },
   {
+    "id": "N1-186",
     "level": "N1",
     "number": 186,
     "japanese": "てからというもの",
     "english": "ever since ~"
   },
   {
+    "id": "N1-187",
     "level": "N1",
     "number": 187,
     "japanese": "てみせる",
     "english": "I’ll do my best; I'll show you ~"
   },
   {
+    "id": "N1-188",
     "level": "N1",
     "number": 188,
     "japanese": "てしかるべきだ",
     "english": "should; appropriate; natural to do ~"
   },
   {
+    "id": "N1-189",
     "level": "N1",
     "number": 189,
     "japanese": "て済むことではない",
     "english": "~ is not enough to solve the problem"
   },
   {
+    "id": "N1-190",
     "level": "N1",
     "number": 190,
     "japanese": "てやまない",
     "english": "always; never stop; can’t help but ~"
   },
   {
+    "id": "N1-191",
     "level": "N1",
     "number": 191,
     "japanese": "手前",
     "english": "considering; before; one’s standpoint"
   },
   {
+    "id": "N1-192",
     "level": "N1",
     "number": 192,
     "japanese": "てもどうにもならない",
     "english": "it's no use; can't do anything"
   },
   {
+    "id": "N1-193",
     "level": "N1",
     "number": 193,
     "japanese": "ても差し支えない",
     "english": "can ~; it’s okay if ~ (compromise)"
   },
   {
+    "id": "N1-194",
     "level": "N1",
     "number": 194,
     "japanese": "ても知らない",
     "english": "if continue... you'll end up / I don't care"
   },
   {
+    "id": "N1-195",
     "level": "N1",
     "number": 195,
     "japanese": "と相まって",
     "english": "together with..., more ~"
   },
   {
+    "id": "N1-196",
     "level": "N1",
     "number": 196,
     "japanese": "とあれば",
     "english": "if it is the case that; if ~"
   },
   {
+    "id": "N1-197",
     "level": "N1",
     "number": 197,
     "japanese": "とあって",
     "english": "due to the fact that; because of ~"
   },
   {
+    "id": "N1-198",
     "level": "N1",
     "number": 198,
     "japanese": "とばかりに",
     "english": "as if to say; as though~"
   },
   {
+    "id": "N1-199",
     "level": "N1",
     "number": 199,
     "japanese": "といえども",
     "english": "even if; even though; despite ~"
   },
   {
+    "id": "N1-200",
     "level": "N1",
     "number": 200,
     "japanese": "と言えなくもない",
     "english": "it can also be said that ~"
   },
   {
+    "id": "N1-201",
     "level": "N1",
     "number": 201,
     "japanese": "といい〜といい",
     "english": "both ... and; whether it be ... or ~"
   },
   {
+    "id": "N1-202",
     "level": "N1",
     "number": 202,
     "japanese": "といったらない",
     "english": "extremely; nothing more ... than this"
   },
   {
+    "id": "N1-203",
     "level": "N1",
     "number": 203,
     "japanese": "という",
     "english": "all; every single ~ (no exceptions)"
   },
   {
+    "id": "N1-204",
     "level": "N1",
     "number": 204,
     "japanese": "というか〜というか",
     "english": "or rather; I mean ~"
   },
   {
+    "id": "N1-205",
     "level": "N1",
     "number": 205,
     "japanese": "というもの",
     "english": "during; for; since; over a period of time"
   },
   {
+    "id": "N1-206",
     "level": "N1",
     "number": 206,
     "japanese": "というところだ /といったところだ",
     "english": "at the most; no more than; roughly ~"
   },
   {
+    "id": "N1-207",
     "level": "N1",
     "number": 207,
     "japanese": "というわけだ",
     "english": "that's why; no wonder ~"
   },
   {
+    "id": "N1-208",
     "level": "N1",
     "number": 208,
     "japanese": "というわけではない",
     "english": "it’s not that; it doesn’t mean that ~"
   },
   {
+    "id": "N1-209",
     "level": "N1",
     "number": 209,
     "japanese": "といわず〜といわず",
     "english": "both; not only A or B, but (overall) ~"
   },
   {
+    "id": "N1-210",
     "level": "N1",
     "number": 210,
     "japanese": "ときている",
     "english": "because of ~"
   },
   {
+    "id": "N1-211",
     "level": "N1",
     "number": 211,
     "japanese": "とみると",
     "english": "as soon as one realizes ..., then ~"
   },
   {
+    "id": "N1-212",
     "level": "N1",
     "number": 212,
     "japanese": "と見るや",
     "english": "at the sight of; after confirming ~"
   },
   {
+    "id": "N1-213",
     "level": "N1",
     "number": 213,
     "japanese": "となると / となれば",
     "english": "when it comes to; in such a case"
   },
   {
+    "id": "N1-214",
     "level": "N1",
     "number": 214,
     "japanese": "とされる",
     "english": "is considered to; it is said that ~"
   },
   {
+    "id": "N1-215",
     "level": "N1",
     "number": 215,
     "japanese": "ときたら",
     "english": "when it comes to; concerning ~"
   },
   {
+    "id": "N1-216",
     "level": "N1",
     "number": 216,
     "japanese": "ところを",
     "english": "although (it is a certain time/condition)"
   },
   {
+    "id": "N1-217",
     "level": "N1",
     "number": 217,
     "japanese": "ともあろうものが",
     "english": "of all people... (surprise)"
   },
   {
+    "id": "N1-218",
     "level": "N1",
     "number": 218,
     "japanese": "ともなく / ともなしに",
     "english": "somehow; without knowing/thinking"
   },
   {
+    "id": "N1-219",
     "level": "N1",
     "number": 219,
     "japanese": "ともすれば",
     "english": "apt to (do); tend to; liable to; prone to ~"
   },
   {
+    "id": "N1-220",
     "level": "N1",
     "number": 220,
     "japanese": "とも〜とも",
     "english": "unable to draw a conclusion/ judge"
   },
   {
+    "id": "N1-221",
     "level": "N1",
     "number": 221,
     "japanese": "とりわけ",
     "english": "especially; above all ~"
   },
   {
+    "id": "N1-222",
     "level": "N1",
     "number": 222,
     "japanese": "としたことが",
     "english": "of all people, who would have thought?"
   },
   {
+    "id": "N1-223",
     "level": "N1",
     "number": 223,
     "japanese": "とっさに",
     "english": "at once; right away; promptly"
   },
   {
+    "id": "N1-224",
     "level": "N1",
     "number": 224,
     "japanese": "とて",
     "english": "even; even if/though ~"
   },
   {
+    "id": "N1-225",
     "level": "N1",
     "number": 225,
     "japanese": "とは",
     "english": "I was surprised that; the fact that ~"
   },
   {
+    "id": "N1-226",
     "level": "N1",
     "number": 226,
     "japanese": "とはいえ",
     "english": "though; although; nonetheless"
   },
   {
+    "id": "N1-227",
     "level": "N1",
     "number": 227,
     "japanese": "とは比べものにならない",
     "english": "can't compare with ~"
   },
   {
+    "id": "N1-228",
     "level": "N1",
     "number": 228,
     "japanese": "とは打って変わって/ とは打って変わり",
     "english": "unlike; very different from ~"
   },
   {
+    "id": "N1-229",
     "level": "N1",
     "number": 229,
     "japanese": "つ〜つ",
     "english": "and ~ (indicates 2 contrasting actions)"
   },
   {
+    "id": "N1-230",
     "level": "N1",
     "number": 230,
     "japanese": "尽くす",
     "english": "to use up (completely)"
   },
   {
+    "id": "N1-231",
     "level": "N1",
     "number": 231,
     "japanese": "ってば / ったら",
     "english": "speaking of; I told you already"
   },
   {
+    "id": "N1-232",
     "level": "N1",
     "number": 232,
     "japanese": "うちに入らない",
     "english": "not really; can't be regarded as ~"
   },
   {
+    "id": "N1-233",
     "level": "N1",
     "number": 233,
     "japanese": "わ",
     "english": "feminine sentence ending particle"
   },
   {
+    "id": "N1-234",
     "level": "N1",
     "number": 234,
     "japanese": "はどうであれ",
     "english": "however; whatever ~"
   },
   {
+    "id": "N1-235",
     "level": "N1",
     "number": 235,
     "japanese": "はおろか",
     "english": "let alone; needless to say ~"
   },
   {
+    "id": "N1-236",
     "level": "N1",
     "number": 236,
     "japanese": "はさておき",
     "english": "setting aside ~"
   },
   {
+    "id": "N1-237",
     "level": "N1",
     "number": 237,
     "japanese": "はそっちのけで /をそっちのけで",
     "english": "ignoring (one thing) for (another)"
   },
   {
+    "id": "N1-238",
     "level": "N1",
     "number": 238,
     "japanese": "わ〜わで",
     "english": "and (list neg. things happening at same time)"
   },
   {
+    "id": "N1-239",
     "level": "N1",
     "number": 239,
     "japanese": "や否や",
     "english": "as soon as; the moment ~"
   },
   {
+    "id": "N1-240",
     "level": "N1",
     "number": 240,
     "japanese": "やしない",
     "english": "should do, but don't; there's no way ~"
   },
   {
+    "id": "N1-241",
     "level": "N1",
     "number": 241,
     "japanese": "やれ〜やれ",
     "english": "give 2 representative examples (negative)"
   },
   {
+    "id": "N1-242",
     "level": "N1",
     "number": 242,
     "japanese": "ようが / ようと",
     "english": "even if; no matter how/what ~"
   },
   {
+    "id": "N1-243",
     "level": "N1",
     "number": 243,
     "japanese": "ようが〜ようが /ようと〜ようと",
