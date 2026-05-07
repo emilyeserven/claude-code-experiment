@@ -12,11 +12,11 @@ import {
 } from "@tanstack/react-table";
 import { ArrowDown, ArrowUp, ArrowUpDown, Filter } from "lucide-react";
 
+import { JLPT_LEVELS } from "../-data/types";
+
 import { Button, Checkbox, Input, Popover, PopoverContent, PopoverTrigger } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { romajiToHiragana } from "@/utils/romajiToHiragana";
-
-import { JLPT_LEVELS } from "../-data/types";
 
 interface GrammarTableProps {
   rows: GrammarRow[];
