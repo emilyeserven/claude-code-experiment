@@ -1,4 +1,4 @@
-export type JlptLevel = "N5" | "N4" | "N3" | "N2" | "N1";
+export type JlptLevel = "N5" | "N4" | "N3" | "N2" | "N1" | "N0";
 
 export interface GrammarPoint {
   id: string;
@@ -9,7 +9,7 @@ export interface GrammarPoint {
   english: string;
 }
 
-export const JLPT_LEVELS: JlptLevel[] = ["N5", "N4", "N3", "N2", "N1"];
+export const JLPT_LEVELS: JlptLevel[] = ["N5", "N4", "N3", "N2", "N1", "N0"];
 
 export type ResourceType = "textbook" | "website" | "drillbook";
 
