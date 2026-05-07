@@ -152,12 +152,12 @@ function rowMatches(row: GrammarRow, filters: FilterState): boolean {
 
   const needle = search.toLowerCase();
   const hiraganaNeedle = romajiToHiragana(search);
+  const japaneseHaystack = `${row.japanese} ${row.romaji}`.toLowerCase();
 
   if (row.level.toLowerCase().includes(needle)) return true;
   if (String(row.number).includes(needle)) return true;
-  if (row.japanese.toLowerCase().includes(needle)) return true;
-  if (hiraganaNeedle && row.japanese.includes(hiraganaNeedle)) return true;
-  if (row.romaji.toLowerCase().includes(needle)) return true;
+  if (japaneseHaystack.includes(needle)) return true;
+  if (hiraganaNeedle && japaneseHaystack.includes(hiraganaNeedle)) return true;
   if (row.english.toLowerCase().includes(needle)) return true;
   for (const b of row.bookmarks) {
     if (b.resourceName.toLowerCase().includes(needle)) return true;
@@ -219,7 +219,7 @@ export function GrammarTable({
           <Input
             value={search}
             onChange={e => setSearch(e.target.value)}
-            placeholder="Search (English, Japanese, romaji)..."
+            placeholder="Search (English or Japanese)..."
             className="max-w-sm"
             data-testid="grammar-search-input"
             aria-label="Search grammar points"

@@ -97,7 +97,7 @@ export const SearchFiltersByEnglish: Story = {
   },
 };
 
-export const SearchFiltersByJapanese: Story = {
+export const SearchFiltersByJapaneseHiragana: Story = {
   play: async ({
     canvasElement,
   }) => {
@@ -112,35 +112,28 @@ export const SearchFiltersByJapanese: Story = {
   },
 };
 
-export const SearchFiltersByRomajiDirect: Story = {
+export const SearchFiltersByJapaneseRomaji: Story = {
   play: async ({
     canvasElement,
   }) => {
     const canvas = within(canvasElement);
     const search = canvas.getByTestId("grammar-search-input");
 
+    // Typing romaji is part of the unified Japanese search.
     await userEvent.type(search, "kara");
 
     const rows = canvas.getAllByTestId("grammar-row");
     await expect(rows).toHaveLength(1);
     await expect(rows[0]).toHaveTextContent("から");
-  },
-};
 
-export const SearchFiltersByRomajiHiraganaConversion: Story = {
-  play: async ({
-    canvasElement,
-  }) => {
-    const canvas = within(canvasElement);
-    const search = canvas.getByTestId("grammar-search-input");
-
-    // Typing romaji should match grammar points whose Japanese converts to.
-    // "desu" → "です" matches "だ・です"
+    await userEvent.clear(search);
+    // Romaji is also converted to hiragana to match the Japanese field.
+    // "desu" → "です" matches "だ・です".
     await userEvent.type(search, "desu");
 
-    const rows = canvas.getAllByTestId("grammar-row");
-    await expect(rows.length).toBeGreaterThanOrEqual(1);
-    await expect(rows[0]).toHaveTextContent("だ・です");
+    const rows2 = canvas.getAllByTestId("grammar-row");
+    await expect(rows2.length).toBeGreaterThanOrEqual(1);
+    await expect(rows2[0]).toHaveTextContent("だ・です");
   },
 };
 
