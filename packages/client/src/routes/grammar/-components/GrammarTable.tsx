@@ -1,4 +1,4 @@
-import type { BookmarkDisplay, GrammarRow } from "../-data/types";
+import type { BookmarkDisplay, GrammarRow, JlptLevel } from "../-data/types";
 import type { ColumnDef, SortingState } from "@tanstack/react-table";
 
 import { useMemo, useState } from "react";
@@ -10,14 +10,19 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, Filter } from "lucide-react";
 
-import { Input } from "@/components/ui";
+import { JLPT_LEVELS } from "../-data/types";
+
+import { Button, Checkbox, Input, Popover, PopoverContent, PopoverTrigger } from "@/components/ui";
 import { cn } from "@/lib/utils";
+import { romajiToHiragana } from "@/utils/romajiToHiragana";
 
 interface GrammarTableProps {
   rows: GrammarRow[];
 }
+
+type BookmarkFilter = "all" | "with" | "without";
 
 function SortableHeader({
   label, sorted, onClick,
@@ -130,21 +135,31 @@ const columns: ColumnDef<GrammarRow>[] = [
   },
 ];
 
-function globalFilterFn(row: { original: GrammarRow }, _columnId: string, filterValue: string) {
-  if (!filterValue) return true;
-  const needle = filterValue.toLowerCase();
-  const {
-    level,
-    number,
-    japanese,
-    english,
-    bookmarks,
-  } = row.original;
-  if (level.toLowerCase().includes(needle)) return true;
-  if (String(number).includes(needle)) return true;
-  if (japanese.toLowerCase().includes(needle)) return true;
-  if (english.toLowerCase().includes(needle)) return true;
-  for (const b of bookmarks) {
+interface FilterState {
+  search: string;
+  levels: Set<JlptLevel>;
+  bookmarkFilter: BookmarkFilter;
+}
+
+function rowMatches(row: GrammarRow, filters: FilterState): boolean {
+  if (filters.levels.size > 0 && !filters.levels.has(row.level)) return false;
+
+  if (filters.bookmarkFilter === "with" && row.bookmarks.length === 0) return false;
+  if (filters.bookmarkFilter === "without" && row.bookmarks.length > 0) return false;
+
+  const search = filters.search.trim();
+  if (!search) return true;
+
+  const needle = search.toLowerCase();
+  const hiraganaNeedle = romajiToHiragana(search);
+  const japaneseHaystack = `${row.japanese} ${row.romaji}`.toLowerCase();
+
+  if (row.level.toLowerCase().includes(needle)) return true;
+  if (String(row.number).includes(needle)) return true;
+  if (japaneseHaystack.includes(needle)) return true;
+  if (hiraganaNeedle && japaneseHaystack.includes(hiraganaNeedle)) return true;
+  if (row.english.toLowerCase().includes(needle)) return true;
+  for (const b of row.bookmarks) {
     if (b.resourceName.toLowerCase().includes(needle)) return true;
     if (b.location.toLowerCase().includes(needle)) return true;
   }
@@ -155,20 +170,26 @@ export function GrammarTable({
   rows,
 }: GrammarTableProps) {
   const [sorting, setSorting] = useState<SortingState>([]);
-  const [globalFilter, setGlobalFilter] = useState("");
+  const [search, setSearch] = useState("");
+  const [levels, setLevels] = useState<Set<JlptLevel>>(new Set());
+  const [bookmarkFilter, setBookmarkFilter] = useState<BookmarkFilter>("all");
 
-  const data = useMemo(() => rows, [rows]);
+  const filteredRows = useMemo(() => {
+    const filters: FilterState = {
+      search,
+      levels,
+      bookmarkFilter,
+    };
+    return rows.filter(r => rowMatches(r, filters));
+  }, [rows, search, levels, bookmarkFilter]);
 
   const table = useReactTable({
-    data,
+    data: filteredRows,
     columns,
     state: {
       sorting,
-      globalFilter,
     },
     onSortingChange: setSorting,
-    onGlobalFilterChange: setGlobalFilter,
-    globalFilterFn,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
@@ -176,20 +197,126 @@ export function GrammarTable({
 
   const tableRows = table.getRowModel().rows;
 
+  const toggleLevel = (level: JlptLevel) => {
+    setLevels((prev) => {
+      const next = new Set(prev);
+      if (next.has(level)) next.delete(level);
+      else next.add(level);
+      return next;
+    });
+  };
+
+  const activeFilterCount
+    = (levels.size > 0 ? 1 : 0) + (bookmarkFilter !== "all" ? 1 : 0);
+
   return (
     <div
       className="w-full"
       data-testid="grammar-table-root"
     >
-      <div className="mb-3 flex items-center justify-between gap-2">
-        <Input
-          value={globalFilter}
-          onChange={e => setGlobalFilter(e.target.value)}
-          placeholder="Search grammar points..."
-          className="max-w-sm"
-          data-testid="grammar-search-input"
-          aria-label="Search grammar points"
-        />
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <Input
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            placeholder="Search (English or Japanese)..."
+            className="max-w-sm"
+            data-testid="grammar-search-input"
+            aria-label="Search grammar points"
+          />
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                data-testid="grammar-filter-trigger"
+              >
+                <Filter className="size-4" />
+                Filters
+                {activeFilterCount > 0 && (
+                  <span
+                    className={`
+                      ml-1 inline-flex size-5 items-center justify-center
+                      rounded-full bg-primary text-xs text-primary-foreground
+                    `}
+                    data-testid="grammar-filter-badge"
+                  >
+                    {activeFilterCount}
+                  </span>
+                )}
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent
+              align="start"
+              className="w-64"
+              data-testid="grammar-filter-content"
+            >
+              <div className="space-y-4">
+                <div>
+                  <p className="mb-2 text-sm font-medium">Level</p>
+                  <div className="flex flex-col gap-2">
+                    {JLPT_LEVELS.map(level => (
+                      <label
+                        key={level}
+                        className="flex items-center gap-2 text-sm"
+                      >
+                        <Checkbox
+                          checked={levels.has(level)}
+                          onCheckedChange={() => toggleLevel(level)}
+                          data-testid={`grammar-filter-level-${level}`}
+                        />
+                        {level}
+                      </label>
+                    ))}
+                  </div>
+                </div>
+                <div className="border-t pt-3">
+                  <p className="mb-2 text-sm font-medium">Bookmarks</p>
+                  <div className="flex flex-col gap-2">
+                    {(["all", "with", "without"] as const).map((opt) => {
+                      const labels: Record<BookmarkFilter, string> = {
+                        all: "All",
+                        with: "With bookmarks",
+                        without: "Without bookmarks",
+                      };
+                      return (
+                        <label
+                          key={opt}
+                          className="flex items-center gap-2 text-sm"
+                        >
+                          <input
+                            type="radio"
+                            name="grammar-bookmark-filter"
+                            checked={bookmarkFilter === opt}
+                            onChange={() => setBookmarkFilter(opt)}
+                            data-testid={`grammar-filter-bookmarks-${opt}`}
+                          />
+                          {labels[opt]}
+                        </label>
+                      );
+                    })}
+                  </div>
+                </div>
+                {activeFilterCount > 0 && (
+                  <div className="border-t pt-3">
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="w-full"
+                      onClick={() => {
+                        setLevels(new Set());
+                        setBookmarkFilter("all");
+                      }}
+                      data-testid="grammar-filter-clear"
+                    >
+                      Clear filters
+                    </Button>
+                  </div>
+                )}
+              </div>
+            </PopoverContent>
+          </Popover>
+        </div>
         <span
           className="text-sm text-muted-foreground"
           data-testid="grammar-results-count"

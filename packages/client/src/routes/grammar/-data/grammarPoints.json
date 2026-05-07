@@ -4,5816 +4,6647 @@
     "level": "N5",
     "number": 1,
     "japanese": "ちゃいけない・じゃいけない",
-    "english": "must not do (spoken Japanese)"
+    "english": "must not do (spoken Japanese)",
+    "romaji": "cha ikenai / ja ikenai"
   },
   {
     "id": "N5-2",
     "level": "N5",
     "number": 2,
     "japanese": "だ・です",
-    "english": "to be (am, is, are, were, used to)"
+    "english": "to be (am, is, are, were, used to)",
+    "romaji": "da / desu"
   },
   {
     "id": "N5-3",
     "level": "N5",
     "number": 3,
     "japanese": "だけ",
-    "english": "only; just; as much as"
+    "english": "only; just; as much as",
+    "romaji": "dake"
   },
   {
     "id": "N5-4",
     "level": "N5",
     "number": 4,
     "japanese": "だろう",
-    "english": "I think; it seems; probably; right?"
+    "english": "I think; it seems; probably; right?",
+    "romaji": "darou"
   },
   {
     "id": "N5-5",
     "level": "N5",
     "number": 5,
     "japanese": "で",
-    "english": "in; at; on; by; with; via"
+    "english": "in; at; on; by; with; via",
+    "romaji": "de"
   },
   {
     "id": "N5-6",
     "level": "N5",
     "number": 6,
     "japanese": "でも",
-    "english": "but; however"
+    "english": "but; however",
+    "romaji": "demo"
   },
   {
     "id": "N5-7",
     "level": "N5",
     "number": 7,
     "japanese": "でしょう",
-    "english": "I think; it seems; probably; right?"
+    "english": "I think; it seems; probably; right?",
+    "romaji": "deshou"
   },
   {
     "id": "N5-8",
     "level": "N5",
     "number": 8,
     "japanese": "どんな",
-    "english": "what kind of; what sort of"
+    "english": "what kind of; what sort of",
+    "romaji": "donna"
   },
   {
     "id": "N5-9",
     "level": "N5",
     "number": 9,
     "japanese": "どうして",
-    "english": "why; for what reason; how"
+    "english": "why; for what reason; how",
+    "romaji": "doushite"
   },
   {
     "id": "N5-10",
     "level": "N5",
     "number": 10,
     "japanese": "どうやって",
-    "english": "how; in what way; by what means"
+    "english": "how; in what way; by what means",
+    "romaji": "douyatte"
   },
   {
     "id": "N5-11",
     "level": "N5",
     "number": 11,
     "japanese": "が",
-    "english": "subject marker; however; but"
+    "english": "subject marker; however; but",
+    "romaji": "ga"
   },
   {
     "id": "N5-12",
     "level": "N5",
     "number": 12,
     "japanese": "があります",
-    "english": "there is; is (non-living things)"
+    "english": "there is; is (non-living things)",
+    "romaji": "ga arimasu"
   },
   {
     "id": "N5-13",
     "level": "N5",
     "number": 13,
     "japanese": "がほしい",
-    "english": "to want something"
+    "english": "to want something",
+    "romaji": "ga hoshii"
   },
   {
     "id": "N5-14",
     "level": "N5",
     "number": 14,
     "japanese": "がいます",
-    "english": "there is; to be; is (living things)"
+    "english": "there is; to be; is (living things)",
+    "romaji": "ga imasu"
   },
   {
     "id": "N5-15",
     "level": "N5",
     "number": 15,
     "japanese": "ほうがいい",
-    "english": "had better; it'd be better to; should~"
+    "english": "had better; it'd be better to; should~",
+    "romaji": "hou ga ii"
   },
   {
     "id": "N5-16",
     "level": "N5",
     "number": 16,
     "japanese": "い-adjectives",
-    "english": "i-adjectives"
+    "english": "i-adjectives",
+    "romaji": "i-adjectives"
   },
   {
     "id": "N5-17",
     "level": "N5",
     "number": 17,
     "japanese": "一番",
-    "english": "the most; the best"
+    "english": "the most; the best",
+    "romaji": "ichiban"
   },
   {
     "id": "N5-18",
     "level": "N5",
     "number": 18,
     "japanese": "一緒に",
-    "english": "together"
+    "english": "together",
+    "romaji": "issho ni"
   },
   {
     "id": "N5-19",
     "level": "N5",
     "number": 19,
     "japanese": "いつも",
-    "english": "always; usually; habitually"
+    "english": "always; usually; habitually",
+    "romaji": "itsumo"
   },
   {
     "id": "N5-20",
     "level": "N5",
     "number": 20,
     "japanese": "じゃない・ではない",
-    "english": "to not be (am not; is not; are not)"
+    "english": "to not be (am not; is not; are not)",
+    "romaji": "janai / dewa nai"
   },
   {
     "id": "N5-21",
     "level": "N5",
     "number": 21,
     "japanese": "か",
-    "english": "question particle"
+    "english": "question particle",
+    "romaji": "ka"
   },
   {
     "id": "N5-22",
     "level": "N5",
     "number": 22,
     "japanese": "か〜か",
-    "english": "or"
+    "english": "or",
+    "romaji": "ka~ka"
   },
   {
     "id": "N5-23",
     "level": "N5",
     "number": 23,
     "japanese": "から",
-    "english": "because; since; from"
+    "english": "because; since; from",
+    "romaji": "kara"
   },
   {
     "id": "N5-24",
     "level": "N5",
     "number": 24,
     "japanese": "方",
-    "english": "the way of doing something; how to do"
+    "english": "the way of doing something; how to do",
+    "romaji": "kata"
   },
   {
     "id": "N5-25",
     "level": "N5",
     "number": 25,
     "japanese": "けど",
-    "english": "but; however; although"
+    "english": "but; however; although",
+    "romaji": "kedo"
   },
   {
     "id": "N5-26",
     "level": "N5",
     "number": 26,
     "japanese": "けれども",
-    "english": "but; however; although"
+    "english": "but; however; although",
+    "romaji": "keredo mo"
   },
   {
     "id": "N5-27",
     "level": "N5",
     "number": 27,
     "japanese": "まだ",
-    "english": "still; not yet"
+    "english": "still; not yet",
+    "romaji": "mada"
   },
   {
     "id": "N5-28",
     "level": "N5",
     "number": 28,
     "japanese": "まだ〜ていません",
-    "english": "have not yet"
+    "english": "have not yet",
+    "romaji": "mada ~te imasen"
   },
   {
     "id": "N5-29",
     "level": "N5",
     "number": 29,
     "japanese": "まで",
-    "english": "until ~; as far as ~; to (an extent); even ~"
+    "english": "until ~; as far as ~; to (an extent); even ~",
+    "romaji": "made"
   },
   {
     "id": "N5-30",
     "level": "N5",
     "number": 30,
     "japanese": "前に",
-    "english": "before ~; in front of ~"
+    "english": "before ~; in front of ~",
+    "romaji": "mae ni"
   },
   {
     "id": "N5-31",
     "level": "N5",
     "number": 31,
     "japanese": "ませんか",
-    "english": "would you; do you want to; shall we~"
+    "english": "would you; do you want to; shall we~",
+    "romaji": "masen ka"
   },
   {
     "id": "N5-32",
     "level": "N5",
     "number": 32,
     "japanese": "ましょう",
-    "english": "let's ~; shall we ~"
+    "english": "let's ~; shall we ~",
+    "romaji": "mashou"
   },
   {
     "id": "N5-33",
     "level": "N5",
     "number": 33,
     "japanese": "ましょうか",
-    "english": "shall I ~; used to offer help to the listener"
+    "english": "shall I ~; used to offer help to the listener",
+    "romaji": "mashouka"
   },
   {
     "id": "N5-34",
     "level": "N5",
     "number": 34,
     "japanese": "も",
-    "english": "too; also; as well"
+    "english": "too; also; as well",
+    "romaji": "mo"
   },
   {
     "id": "N5-35",
     "level": "N5",
     "number": 35,
     "japanese": "もう",
-    "english": "already; anymore; again; other"
+    "english": "already; anymore; again; other",
+    "romaji": "mou"
   },
   {
     "id": "N5-36",
     "level": "N5",
     "number": 36,
     "japanese": "な-adjectives",
-    "english": "na-adjectives"
+    "english": "na-adjectives",
+    "romaji": "na-adjectives"
   },
   {
     "id": "N5-37",
     "level": "N5",
     "number": 37,
     "japanese": "なあ",
-    "english": "sentence ending particle; confirmation; admiration, etc"
+    "english": "sentence ending particle; confirmation; admiration, etc",
+    "romaji": "naa"
   },
   {
     "id": "N5-38",
     "level": "N5",
     "number": 38,
     "japanese": "ないで",
-    "english": "without doing~ ; To do [B] without doing [A]"
+    "english": "without doing~ ; To do [B] without doing [A]",
+    "romaji": "naide"
   },
   {
     "id": "N5-39",
     "level": "N5",
     "number": 39,
     "japanese": "ないでください",
-    "english": "please don't do"
+    "english": "please don't do",
+    "romaji": "naide kudasai"
   },
   {
     "id": "N5-40",
     "level": "N5",
     "number": 40,
     "japanese": "なくてもいい",
-    "english": "don't have to"
+    "english": "don't have to",
+    "romaji": "naku temo ii"
   },
   {
     "id": "N5-41",
     "level": "N5",
     "number": 41,
     "japanese": "なくちゃ",
-    "english": "must do; need to; gotta do"
+    "english": "must do; need to; gotta do",
+    "romaji": "nakucha"
   },
   {
     "id": "N5-42",
     "level": "N5",
     "number": 42,
     "japanese": "なくてはいけない",
-    "english": "must do; need to do"
+    "english": "must do; need to do",
+    "romaji": "nakute wa ikenai"
   },
   {
     "id": "N5-43",
     "level": "N5",
     "number": 43,
     "japanese": "なくてはならない",
-    "english": "must do; need to do"
+    "english": "must do; need to do",
+    "romaji": "nakute wa naranai"
   },
   {
     "id": "N5-44",
     "level": "N5",
     "number": 44,
     "japanese": "なる",
-    "english": "to become"
+    "english": "to become",
+    "romaji": "naru"
   },
   {
     "id": "N5-45",
     "level": "N5",
     "number": 45,
     "japanese": "んです",
-    "english": "to explain something; show emphasis"
+    "english": "to explain something; show emphasis",
+    "romaji": "ndesu"
   },
   {
     "id": "N5-46",
     "level": "N5",
     "number": 46,
     "japanese": "ね",
-    "english": "isn't it? right? eh?"
+    "english": "isn't it? right? eh?",
+    "romaji": "ne"
   },
   {
     "id": "N5-47",
     "level": "N5",
     "number": 47,
     "japanese": "に",
-    "english": "destination particle; in; at; on; to"
+    "english": "destination particle; in; at; on; to",
+    "romaji": "ni"
   },
   {
     "id": "N5-48",
     "level": "N5",
     "number": 48,
     "japanese": "にいく",
-    "english": "go to do"
+    "english": "go to do",
+    "romaji": "ni iku"
   },
   {
     "id": "N5-49",
     "level": "N5",
     "number": 49,
     "japanese": "にする",
-    "english": "to decide on"
+    "english": "to decide on",
+    "romaji": "ni suru"
   },
   {
     "id": "N5-50",
     "level": "N5",
     "number": 50,
     "japanese": "に/へ",
-    "english": "to (indicates direction / destination)"
+    "english": "to (indicates direction / destination)",
+    "romaji": "ni/e"
   },
   {
     "id": "N5-51",
     "level": "N5",
     "number": 51,
     "japanese": "の",
-    "english": "possessive particle"
+    "english": "possessive particle",
+    "romaji": "no"
   },
   {
     "id": "N5-52",
     "level": "N5",
     "number": 52,
     "japanese": "のです",
-    "english": "to explain something; show emphasis"
+    "english": "to explain something; show emphasis",
+    "romaji": "no desu"
   },
   {
     "id": "N5-53",
     "level": "N5",
     "number": 53,
     "japanese": "のが下手",
-    "english": "to be bad at doing something"
+    "english": "to be bad at doing something",
+    "romaji": "no ga heta"
   },
   {
     "id": "N5-54",
     "level": "N5",
     "number": 54,
     "japanese": "のが上手",
-    "english": "to be good at"
+    "english": "to be good at",
+    "romaji": "no ga jouzu"
   },
   {
     "id": "N5-55",
     "level": "N5",
     "number": 55,
     "japanese": "のが好き",
-    "english": "to like doing something"
+    "english": "to like doing something",
+    "romaji": "no ga suki"
   },
   {
     "id": "N5-56",
     "level": "N5",
     "number": 56,
     "japanese": "の中で[A]が一番",
-    "english": "out of this group, [A] is best"
+    "english": "out of this group, [A] is best",
+    "romaji": "no naka de [A] ga ichiban"
   },
   {
     "id": "N5-57",
     "level": "N5",
     "number": 57,
     "japanese": "ので",
-    "english": "because of; given that; since"
+    "english": "because of; given that; since",
+    "romaji": "node"
   },
   {
     "id": "N5-58",
     "level": "N5",
     "number": 58,
     "japanese": "を",
-    "english": "object marker particle"
+    "english": "object marker particle",
+    "romaji": "o / wo"
   },
   {
     "id": "N5-59",
     "level": "N5",
     "number": 59,
     "japanese": "をください",
-    "english": "please give me~"
+    "english": "please give me~",
+    "romaji": "o kudasai"
   },
   {
     "id": "N5-60",
     "level": "N5",
     "number": 60,
     "japanese": "しかし",
-    "english": "but; however"
+    "english": "but; however",
+    "romaji": "shikashi"
   },
   {
     "id": "N5-61",
     "level": "N5",
     "number": 61,
     "japanese": "すぎる",
-    "english": "too much"
+    "english": "too much",
+    "romaji": "sugiru"
   },
   {
     "id": "N5-62",
     "level": "N5",
     "number": 62,
     "japanese": "たことがある",
-    "english": "to have done something before"
+    "english": "to have done something before",
+    "romaji": "ta koto ga aru"
   },
   {
     "id": "N5-63",
     "level": "N5",
     "number": 63,
     "japanese": "たい",
-    "english": "want to do something"
+    "english": "want to do something",
+    "romaji": "tai"
   },
   {
     "id": "N5-64",
     "level": "N5",
     "number": 64,
     "japanese": "たり〜たり",
-    "english": "do such things as A and B"
+    "english": "do such things as A and B",
+    "romaji": "tari~tari"
   },
   {
     "id": "N5-65",
     "level": "N5",
     "number": 65,
     "japanese": "てある",
-    "english": "is/has been done (resulting state)"
+    "english": "is/has been done (resulting state)",
+    "romaji": "te aru"
   },
   {
     "id": "N5-66",
     "level": "N5",
     "number": 66,
     "japanese": "ている",
-    "english": "ongoing action or current state"
+    "english": "ongoing action or current state",
+    "romaji": "te iru"
   },
   {
     "id": "N5-67",
     "level": "N5",
     "number": 67,
     "japanese": "てから",
-    "english": "after doing~"
+    "english": "after doing~",
+    "romaji": "te kara"
   },
   {
     "id": "N5-68",
     "level": "N5",
     "number": 68,
     "japanese": "てください",
-    "english": "please do"
+    "english": "please do",
+    "romaji": "te kudasai"
   },
   {
     "id": "N5-69",
     "level": "N5",
     "number": 69,
     "japanese": "てはいけない",
-    "english": "must not; may not; cannot"
+    "english": "must not; may not; cannot",
+    "romaji": "te wa ikenai"
   },
   {
     "id": "N5-70",
     "level": "N5",
     "number": 70,
     "japanese": "てもいいです",
-    "english": "is OK to..; is alright to..; may I..?"
+    "english": "is OK to..; is alright to..; may I..?",
+    "romaji": "temo ii desu"
   },
   {
     "id": "N5-71",
     "level": "N5",
     "number": 71,
     "japanese": "と",
-    "english": "and; with; as; connecting particle"
+    "english": "and; with; as; connecting particle",
+    "romaji": "to"
   },
   {
     "id": "N5-72",
     "level": "N5",
     "number": 72,
     "japanese": "とき",
-    "english": "when; at this time"
+    "english": "when; at this time",
+    "romaji": "toki"
   },
   {
     "id": "N5-73",
     "level": "N5",
     "number": 73,
     "japanese": "とても",
-    "english": "very; awfully; exceedingly"
+    "english": "very; awfully; exceedingly",
+    "romaji": "totemo"
   },
   {
     "id": "N5-74",
     "level": "N5",
     "number": 74,
     "japanese": "つもり",
-    "english": "plan to ~; intend to ~"
+    "english": "plan to ~; intend to ~",
+    "romaji": "tsumori"
   },
   {
     "id": "N5-75",
     "level": "N5",
     "number": 75,
     "japanese": "は",
-    "english": "topic marker"
+    "english": "topic marker",
+    "romaji": "wa - topic marker"
   },
   {
     "id": "N5-76",
     "level": "N5",
     "number": 76,
     "japanese": "は〜より・・・です",
-    "english": "[A] is more ~ than [B]"
+    "english": "[A] is more ~ than [B]",
+    "romaji": "wa ~yori... desu"
   },
   {
     "id": "N5-77",
     "level": "N5",
     "number": 77,
     "japanese": "はどうですか",
-    "english": "how about; how is"
+    "english": "how about; how is",
+    "romaji": "wa dou desu ka"
   },
   {
     "id": "N5-78",
     "level": "N5",
     "number": 78,
     "japanese": "や",
-    "english": "and; or; connecting particle"
+    "english": "and; or; connecting particle",
+    "romaji": "ya"
   },
   {
     "id": "N5-79",
     "level": "N5",
     "number": 79,
     "japanese": "よ",
-    "english": "you know; emphasis (ending particle)"
+    "english": "you know; emphasis (ending particle)",
+    "romaji": "yo"
   },
   {
     "id": "N5-80",
     "level": "N5",
     "number": 80,
     "japanese": "より〜ほうが",
-    "english": "[A] is more than [B]"
+    "english": "[A] is more than [B]",
+    "romaji": "yori ~hou ga"
   },
   {
     "id": "N4-1",
     "level": "N4",
     "number": 1,
     "japanese": "間",
-    "english": "while; during; between"
+    "english": "while; during; between",
+    "romaji": "aida"
   },
   {
     "id": "N4-2",
     "level": "N4",
     "number": 2,
     "japanese": "間に",
-    "english": "while/during~ something happened"
+    "english": "while/during~ something happened",
+    "romaji": "aida ni"
   },
   {
     "id": "N4-3",
     "level": "N4",
     "number": 3,
     "japanese": "あまり～ない",
-    "english": "not very, not much"
+    "english": "not very, not much",
+    "romaji": "amari~nai"
   },
   {
     "id": "N4-4",
     "level": "N4",
     "number": 4,
     "japanese": "後で",
-    "english": "after ~; later"
+    "english": "after ~; later",
+    "romaji": "ato de"
   },
   {
     "id": "N4-5",
     "level": "N4",
     "number": 5,
     "japanese": "ば",
-    "english": "conditional form; If [A] then [B]"
+    "english": "conditional form; If [A] then [B]",
+    "romaji": "ba"
   },
   {
     "id": "N4-6",
     "level": "N4",
     "number": 6,
     "japanese": "場合は",
-    "english": "in the event of; in the case that"
+    "english": "in the event of; in the case that",
+    "romaji": "baai wa"
   },
   {
     "id": "N4-7",
     "level": "N4",
     "number": 7,
     "japanese": "ばかり",
-    "english": "only; nothing but"
+    "english": "only; nothing but",
+    "romaji": "bakari"
   },
   {
     "id": "N4-8",
     "level": "N4",
     "number": 8,
     "japanese": "だけで",
-    "english": "just by; just by doing"
+    "english": "just by; just by doing",
+    "romaji": "dake de"
   },
   {
     "id": "N4-9",
     "level": "N4",
     "number": 9,
     "japanese": "出す",
-    "english": "to suddenly begin; to suddenly appear"
+    "english": "to suddenly begin; to suddenly appear",
+    "romaji": "dasu"
   },
   {
     "id": "N4-10",
     "level": "N4",
     "number": 10,
     "japanese": "でございます",
-    "english": "to be (honorific)"
+    "english": "to be (honorific)",
+    "romaji": "de gozaimasu"
   },
   {
     "id": "N4-11",
     "level": "N4",
     "number": 11,
     "japanese": "でも",
-    "english": "... or something"
+    "english": "... or something",
+    "romaji": "demo"
   },
   {
     "id": "N4-12",
     "level": "N4",
     "number": 12,
     "japanese": "ではないか",
-    "english": "right?; isn't it?"
+    "english": "right?; isn't it?",
+    "romaji": "dewa nai ka"
   },
   {
     "id": "N4-13",
     "level": "N4",
     "number": 13,
     "japanese": "が必要",
-    "english": "need; necessary"
+    "english": "need; necessary",
+    "romaji": "ga hitsuyou"
   },
   {
     "id": "N4-14",
     "level": "N4",
     "number": 14,
     "japanese": "がする",
-    "english": "to smell; hear; taste"
+    "english": "to smell; hear; taste",
+    "romaji": "ga suru"
   },
   {
     "id": "N4-15",
     "level": "N4",
     "number": 15,
     "japanese": "がり",
-    "english": "personality; tend to~; sensitivity towards~"
+    "english": "personality; tend to~; sensitivity towards~",
+    "romaji": "gari"
   },
   {
     "id": "N4-16",
     "level": "N4",
     "number": 16,
     "japanese": "がる・がっている",
-    "english": "to show signs of; to appear; to feel"
+    "english": "to show signs of; to appear; to feel",
+    "romaji": "garu; gatteiru"
   },
   {
     "id": "N4-17",
     "level": "N4",
     "number": 17,
     "japanese": "ございます",
-    "english": "to be, to exist (polite form of いる/ある)"
+    "english": "to be, to exist (polite form of いる/ある)",
+    "romaji": "gozaimasu"
   },
   {
     "id": "N4-18",
     "level": "N4",
     "number": 18,
     "japanese": "始める",
-    "english": "to start; to begin to ~"
+    "english": "to start; to begin to ~",
+    "romaji": "hajimeru"
   },
   {
     "id": "N4-19",
     "level": "N4",
     "number": 19,
     "japanese": "はずだ",
-    "english": "it must be; it should be (expectation)"
+    "english": "it must be; it should be (expectation)",
+    "romaji": "hazu da"
   },
   {
     "id": "N4-20",
     "level": "N4",
     "number": 20,
     "japanese": "はずがない",
-    "english": "cannot be (impossible)"
+    "english": "cannot be (impossible)",
+    "romaji": "hazu ga nai"
   },
   {
     "id": "N4-21",
     "level": "N4",
     "number": 21,
     "japanese": "必要がある",
-    "english": "need to; it is necessary to"
+    "english": "need to; it is necessary to",
+    "romaji": "hitsuyou ga aru"
   },
   {
     "id": "N4-22",
     "level": "N4",
     "number": 22,
     "japanese": "意向形",
-    "english": "volitional form; let's do ~"
+    "english": "volitional form; let's do ~",
+    "romaji": "ikou kei"
   },
   {
     "id": "N4-23",
     "level": "N4",
     "number": 23,
     "japanese": "いらっしゃる",
-    "english": "to be; to come; to go (polite version)"
+    "english": "to be; to come; to go (polite version)",
+    "romaji": "irassharu"
   },
   {
     "id": "N4-24",
     "level": "N4",
     "number": 24,
     "japanese": "いたします",
-    "english": "to do (polite form of する)"
+    "english": "to do (polite form of する)",
+    "romaji": "itashimasu"
   },
   {
     "id": "N4-25",
     "level": "N4",
     "number": 25,
     "japanese": "じゃないか",
-    "english": "right? isn't it? let's~; confirmation"
+    "english": "right? isn't it? let's~; confirmation",
+    "romaji": "janai ka"
   },
   {
     "id": "N4-26",
     "level": "N4",
     "number": 26,
     "japanese": "かどうか",
-    "english": "whether or not"
+    "english": "whether or not",
+    "romaji": "ka dou ka"
   },
   {
     "id": "N4-27",
     "level": "N4",
     "number": 27,
     "japanese": "かしら",
-    "english": "I wonder"
+    "english": "I wonder",
+    "romaji": "ka shira"
   },
   {
     "id": "N4-28",
     "level": "N4",
     "number": 28,
     "japanese": "かい",
-    "english": "turns a sentence into a yes/no question"
+    "english": "turns a sentence into a yes/no question",
+    "romaji": "kai"
   },
   {
     "id": "N4-29",
     "level": "N4",
     "number": 29,
     "japanese": "かもしれない",
-    "english": "might; perhaps; indicates possibility"
+    "english": "might; perhaps; indicates possibility",
+    "romaji": "kamo shirenai"
   },
   {
     "id": "N4-30",
     "level": "N4",
     "number": 30,
     "japanese": "かな",
-    "english": "I wonder; should I?"
+    "english": "I wonder; should I?",
+    "romaji": "kana"
   },
   {
     "id": "N4-31",
     "level": "N4",
     "number": 31,
     "japanese": "から作る",
-    "english": "made from; made with"
+    "english": "made from; made with",
+    "romaji": "kara tsukuru"
   },
   {
     "id": "N4-32",
     "level": "N4",
     "number": 32,
     "japanese": "きっと",
-    "english": "surely; undoubtedly; certainly; likely"
+    "english": "surely; undoubtedly; certainly; likely",
+    "romaji": "kitto"
   },
   {
     "id": "N4-33",
     "level": "N4",
     "number": 33,
     "japanese": "頃",
-    "english": "around; about; when"
+    "english": "around; about; when",
+    "romaji": "koro / goro"
   },
   {
     "id": "N4-34",
     "level": "N4",
     "number": 34,
     "japanese": "こと",
-    "english": "Verb nominalizer"
+    "english": "Verb nominalizer",
+    "romaji": "koto"
   },
   {
     "id": "N4-35",
     "level": "N4",
     "number": 35,
     "japanese": "ことがある",
-    "english": "there are times when"
+    "english": "there are times when",
+    "romaji": "koto ga aru"
   },
   {
     "id": "N4-36",
     "level": "N4",
     "number": 36,
     "japanese": "ことができる",
-    "english": "can; able to"
+    "english": "can; able to",
+    "romaji": "koto ga dekiru"
   },
   {
     "id": "N4-37",
     "level": "N4",
     "number": 37,
     "japanese": "ことになる",
-    "english": "It has been decided that..; it turns out ~"
+    "english": "It has been decided that..; it turns out ~",
+    "romaji": "koto ni naru"
   },
   {
     "id": "N4-38",
     "level": "N4",
     "number": 38,
     "japanese": "ことにする",
-    "english": "to decide on"
+    "english": "to decide on",
+    "romaji": "koto ni suru"
   },
   {
     "id": "N4-39",
     "level": "N4",
     "number": 39,
     "japanese": "くする",
-    "english": "to make something ~"
+    "english": "to make something ~",
+    "romaji": "ku suru"
   },
   {
     "id": "N4-40",
     "level": "N4",
     "number": 40,
     "japanese": "急に",
-    "english": "suddenly"
+    "english": "suddenly",
+    "romaji": "kyuu ni"
   },
   {
     "id": "N4-41",
     "level": "N4",
     "number": 41,
     "japanese": "までに",
-    "english": "by; by the time; indicates time limit"
+    "english": "by; by the time; indicates time limit",
+    "romaji": "made ni"
   },
   {
     "id": "N4-42",
     "level": "N4",
     "number": 42,
     "japanese": "まま",
-    "english": "as it is; current state; without changing"
+    "english": "as it is; current state; without changing",
+    "romaji": "mama"
   },
   {
     "id": "N4-43",
     "level": "N4",
     "number": 43,
     "japanese": "または",
-    "english": "both; or; otherwise; choice of [A] or [B]"
+    "english": "both; or; otherwise; choice of [A] or [B]",
+    "romaji": "matawa"
   },
   {
     "id": "N4-44",
     "level": "N4",
     "number": 44,
     "japanese": "みたいだ",
-    "english": "like, similar to, resembling"
+    "english": "like, similar to, resembling",
+    "romaji": "mitai da"
   },
   {
     "id": "N4-45",
     "level": "N4",
     "number": 45,
     "japanese": "みたいな",
-    "english": "like, similar to"
+    "english": "like, similar to",
+    "romaji": "mitai na"
   },
   {
     "id": "N4-46",
     "level": "N4",
     "number": 46,
     "japanese": "みたいに",
-    "english": "like, similar to"
+    "english": "like, similar to",
+    "romaji": "mitai ni"
   },
   {
     "id": "N4-47",
     "level": "N4",
     "number": 47,
     "japanese": "も",
-    "english": "as many as; as much as; up to; nearly"
+    "english": "as many as; as much as; up to; nearly",
+    "romaji": "mo"
   },
   {
     "id": "N4-48",
     "level": "N4",
     "number": 48,
     "japanese": "な",
-    "english": "don’t ~ (order somebody to not do ~)"
+    "english": "don’t ~ (order somebody to not do ~)",
+    "romaji": "na"
   },
   {
     "id": "N4-49",
     "level": "N4",
     "number": 49,
     "japanese": "など",
-    "english": "such as, things like"
+    "english": "such as, things like",
+    "romaji": "nado"
   },
   {
     "id": "N4-50",
     "level": "N4",
     "number": 50,
     "japanese": "ながら",
-    "english": "while; during; as; simultaneously"
+    "english": "while; during; as; simultaneously",
+    "romaji": "nagara"
   },
   {
     "id": "N4-51",
     "level": "N4",
     "number": 51,
     "japanese": "なかなか～ない",
-    "english": "not easy to; struggling to; not able to~"
+    "english": "not easy to; struggling to; not able to~",
+    "romaji": "nakanaka~nai"
   },
   {
     "id": "N4-52",
     "level": "N4",
     "number": 52,
     "japanese": "なければいけない",
-    "english": "must do something; have to do something"
+    "english": "must do something; have to do something",
+    "romaji": "nakereba ikenai"
   },
   {
     "id": "N4-53",
     "level": "N4",
     "number": 53,
     "japanese": "なければならない",
-    "english": "must do something; have to do something"
+    "english": "must do something; have to do something",
+    "romaji": "nakereba naranai"
   },
   {
     "id": "N4-54",
     "level": "N4",
     "number": 54,
     "japanese": "なら",
-    "english": "if; in the case that ~"
+    "english": "if; in the case that ~",
+    "romaji": "nara"
   },
   {
     "id": "N4-55",
     "level": "N4",
     "number": 55,
     "japanese": "なさい",
-    "english": "do this (soft/firm command)"
+    "english": "do this (soft/firm command)",
+    "romaji": "nasai"
   },
   {
     "id": "N4-56",
     "level": "N4",
     "number": 56,
     "japanese": "なさる",
-    "english": "to do (honorific)"
+    "english": "to do (honorific)",
+    "romaji": "nasaru"
   },
   {
     "id": "N4-57",
     "level": "N4",
     "number": 57,
     "japanese": "に気がつく",
-    "english": "to notice; to realize"
+    "english": "to notice; to realize",
+    "romaji": "ni ki ga tsuku"
   },
   {
     "id": "N4-58",
     "level": "N4",
     "number": 58,
     "japanese": "にみえる",
-    "english": "to look; to seem; to appear"
+    "english": "to look; to seem; to appear",
+    "romaji": "ni mieru"
   },
   {
     "id": "N4-59",
     "level": "N4",
     "number": 59,
     "japanese": "にする",
-    "english": "to make something ~"
+    "english": "to make something ~",
+    "romaji": "ni suru"
   },
   {
     "id": "N4-60",
     "level": "N4",
     "number": 60,
     "japanese": "にくい",
-    "english": "difficult to do"
+    "english": "difficult to do",
+    "romaji": "nikui"
   },
   {
     "id": "N4-61",
     "level": "N4",
     "number": 61,
     "japanese": "の中で",
-    "english": "in, among"
+    "english": "in, among",
+    "romaji": "no naka de"
   },
   {
     "id": "N4-62",
     "level": "N4",
     "number": 62,
     "japanese": "のに",
-    "english": "although, in spite of, even though"
+    "english": "although, in spite of, even though",
+    "romaji": "noni"
   },
   {
     "id": "N4-63",
     "level": "N4",
     "number": 63,
     "japanese": "のに",
-    "english": "to (do something); in order to"
+    "english": "to (do something); in order to",
+    "romaji": "noni"
   },
   {
     "id": "N4-64",
     "level": "N4",
     "number": 64,
     "japanese": "のは〜だ",
-    "english": "[A] is [B]; the reason for [A] is [B]"
+    "english": "[A] is [B]; the reason for [A] is [B]",
+    "romaji": "nowa~da"
   },
   {
     "id": "N4-65",
     "level": "N4",
     "number": 65,
     "japanese": "お～ください",
-    "english": "please do (honorific)"
+    "english": "please do (honorific)",
+    "romaji": "o~kudasai"
   },
   {
     "id": "N4-66",
     "level": "N4",
     "number": 66,
     "japanese": "お～になる",
-    "english": "to do (honorific)"
+    "english": "to do (honorific)",
+    "romaji": "o~ni naru"
   },
   {
     "id": "N4-67",
     "level": "N4",
     "number": 67,
     "japanese": "おきに",
-    "english": "repeated at intervals, every"
+    "english": "repeated at intervals, every",
+    "romaji": "oki ni"
   },
   {
     "id": "N4-68",
     "level": "N4",
     "number": 68,
     "japanese": "終わる",
-    "english": "to finish; to end"
+    "english": "to finish; to end",
+    "romaji": "owaru"
   },
   {
     "id": "N4-69",
     "level": "N4",
     "number": 69,
     "japanese": "られる",
-    "english": "potential form; ability/inability to do ~"
+    "english": "potential form; ability/inability to do ~",
+    "romaji": "rareru"
   },
   {
     "id": "N4-70",
     "level": "N4",
     "number": 70,
     "japanese": "らしい",
-    "english": "it seems like; I heard; apparently~"
+    "english": "it seems like; I heard; apparently~",
+    "romaji": "rashii"
   },
   {
     "id": "N4-71",
     "level": "N4",
     "number": 71,
     "japanese": "さ",
-    "english": "-ness ; nominalizer for adjective"
+    "english": "-ness ; nominalizer for adjective",
+    "romaji": "sa"
   },
   {
     "id": "N4-72",
     "level": "N4",
     "number": 72,
     "japanese": "さっき",
-    "english": "some time ago; just now"
+    "english": "some time ago; just now",
+    "romaji": "sakki"
   },
   {
     "id": "N4-73",
     "level": "N4",
     "number": 73,
     "japanese": "させられる",
-    "english": "causative-passive; to be made to do ~"
+    "english": "causative-passive; to be made to do ~",
+    "romaji": "saserareru"
   },
   {
     "id": "N4-74",
     "level": "N4",
     "number": 74,
     "japanese": "させる",
-    "english": "causative form; to make/let somebody do"
+    "english": "causative form; to make/let somebody do",
+    "romaji": "saseru"
   },
   {
     "id": "N4-75",
     "level": "N4",
     "number": 75,
     "japanese": "させてください",
-    "english": "please let me do"
+    "english": "please let me do",
+    "romaji": "sasete kudasai"
   },
   {
     "id": "N4-76",
     "level": "N4",
     "number": 76,
     "japanese": "さすが",
-    "english": "as one would expect; as is to be expected"
+    "english": "as one would expect; as is to be expected",
+    "romaji": "sasuga"
   },
   {
     "id": "N4-77",
     "level": "N4",
     "number": 77,
     "japanese": "し",
-    "english": "and; and what’s more; emphasis"
+    "english": "and; and what’s more; emphasis",
+    "romaji": "shi"
   },
   {
     "id": "N4-78",
     "level": "N4",
     "number": 78,
     "japanese": "そんなに",
-    "english": "so much; so; like that"
+    "english": "so much; so; like that",
+    "romaji": "sonna ni"
   },
   {
     "id": "N4-79",
     "level": "N4",
     "number": 79,
     "japanese": "それでも",
-    "english": "but still; and yet; even so"
+    "english": "but still; and yet; even so",
+    "romaji": "sore demo"
   },
   {
     "id": "N4-80",
     "level": "N4",
     "number": 80,
     "japanese": "そうだ",
-    "english": "I heard that; it is said that"
+    "english": "I heard that; it is said that",
+    "romaji": "sou da [1]"
   },
   {
     "id": "N4-81",
     "level": "N4",
     "number": 81,
     "japanese": "そうだ",
-    "english": "looks like; appears like"
+    "english": "looks like; appears like",
+    "romaji": "sou da [2]"
   },
   {
     "id": "N4-82",
     "level": "N4",
     "number": 82,
     "japanese": "そうに・そうな",
-    "english": "seems like; looks like"
+    "english": "seems like; looks like",
+    "romaji": "sou ni / sou na"
   },
   {
     "id": "N4-83",
     "level": "N4",
     "number": 83,
     "japanese": "たばかり",
-    "english": "just finished; something just occurred"
+    "english": "just finished; something just occurred",
+    "romaji": "ta bakari"
   },
   {
     "id": "N4-84",
     "level": "N4",
     "number": 84,
     "japanese": "たところ",
-    "english": "just finished doing, was just doing"
+    "english": "just finished doing, was just doing",
+    "romaji": "ta tokoro"
   },
   {
     "id": "N4-85",
     "level": "N4",
     "number": 85,
     "japanese": "他動詞 & 自動詞",
-    "english": "Transitive & Intransitive Verbs"
+    "english": "Transitive & Intransitive Verbs",
+    "romaji": "tadoushi & jidoushi"
   },
   {
     "id": "N4-86",
     "level": "N4",
     "number": 86,
     "japanese": "たがる",
-    "english": "wants to do~ (third person)"
+    "english": "wants to do~ (third person)",
+    "romaji": "tagaru"
   },
   {
     "id": "N4-87",
     "level": "N4",
     "number": 87,
     "japanese": "たら",
-    "english": "if, after, when"
+    "english": "if, after, when",
+    "romaji": "tara"
   },
   {
     "id": "N4-88",
     "level": "N4",
     "number": 88,
     "japanese": "たらどう",
-    "english": "why don't you"
+    "english": "why don't you",
+    "romaji": "tara dou"
   },
   {
     "id": "N4-89",
     "level": "N4",
     "number": 89,
     "japanese": "たらいいですか",
-    "english": "what should I do?; seeking instruction"
+    "english": "what should I do?; seeking instruction",
+    "romaji": "tara ii desu ka"
   },
   {
     "id": "N4-90",
     "level": "N4",
     "number": 90,
     "japanese": "て / で",
-    "english": "conjunctive; so; because of [A], [B]..."
+    "english": "conjunctive; so; because of [A], [B]...",
+    "romaji": "te / de"
   },
   {
     "id": "N4-91",
     "level": "N4",
     "number": 91,
     "japanese": "てあげる",
-    "english": "to do for; to do a favor"
+    "english": "to do for; to do a favor",
+    "romaji": "te ageru"
   },
   {
     "id": "N4-92",
     "level": "N4",
     "number": 92,
     "japanese": "てほしい",
-    "english": "I want you to; need you to~"
+    "english": "I want you to; need you to~",
+    "romaji": "te hoshii"
   },
   {
     "id": "N4-93",
     "level": "N4",
     "number": 93,
     "japanese": "ていく",
-    "english": "to start; to continue; to go on"
+    "english": "to start; to continue; to go on",
+    "romaji": "te iku"
   },
   {
     "id": "N4-94",
     "level": "N4",
     "number": 94,
     "japanese": "ていた",
-    "english": "was doing something (past continuous)"
+    "english": "was doing something (past continuous)",
+    "romaji": "te ita"
   },
   {
     "id": "N4-95",
     "level": "N4",
     "number": 95,
     "japanese": "ていただけませんか",
-    "english": "could you please"
+    "english": "could you please",
+    "romaji": "te itadakemasen ka"
   },
   {
     "id": "N4-96",
     "level": "N4",
     "number": 96,
     "japanese": "てくれる",
-    "english": "to do a favor; do something for someone"
+    "english": "to do a favor; do something for someone",
+    "romaji": "te kureru"
   },
   {
     "id": "N4-97",
     "level": "N4",
     "number": 97,
     "japanese": "てくる",
-    "english": "to do… and come back; to continue"
+    "english": "to do… and come back; to continue",
+    "romaji": "te kuru"
   },
   {
     "id": "N4-98",
     "level": "N4",
     "number": 98,
     "japanese": "てみる",
-    "english": "try doing"
+    "english": "try doing",
+    "romaji": "te miru"
   },
   {
     "id": "N4-99",
     "level": "N4",
     "number": 99,
     "japanese": "てもらう",
-    "english": "to get somebody to do something"
+    "english": "to get somebody to do something",
+    "romaji": "te morau"
   },
   {
     "id": "N4-100",
     "level": "N4",
     "number": 100,
     "japanese": "ておく",
-    "english": "to do something in advance"
+    "english": "to do something in advance",
+    "romaji": "te oku"
   },
   {
     "id": "N4-101",
     "level": "N4",
     "number": 101,
     "japanese": "てしまう / ちゃう",
-    "english": "to do something by accident, to finish"
+    "english": "to do something by accident, to finish",
+    "romaji": "te shimau / chau"
   },
   {
     "id": "N4-102",
     "level": "N4",
     "number": 102,
     "japanese": "てすみません",
-    "english": "I’m sorry for"
+    "english": "I’m sorry for",
+    "romaji": "te sumimasen"
   },
   {
     "id": "N4-103",
     "level": "N4",
     "number": 103,
     "japanese": "てやる",
-    "english": "to do for; to do a favor (casual)"
+    "english": "to do for; to do a favor (casual)",
+    "romaji": "te yaru"
   },
   {
     "id": "N4-104",
     "level": "N4",
     "number": 104,
     "japanese": "てよかった",
-    "english": "I’m glad that.."
+    "english": "I’m glad that..",
+    "romaji": "te yokatta"
   },
   {
     "id": "N4-105",
     "level": "N4",
     "number": 105,
     "japanese": "ているところ",
-    "english": "in the process of doing"
+    "english": "in the process of doing",
+    "romaji": "teiru tokoro"
   },
   {
     "id": "N4-106",
     "level": "N4",
     "number": 106,
     "japanese": "ても",
-    "english": "even; even if; even though"
+    "english": "even; even if; even though",
+    "romaji": "temo"
   },
   {
     "id": "N4-107",
     "level": "N4",
     "number": 107,
     "japanese": "と",
-    "english": "whenever [A] happens, [B] also happens"
+    "english": "whenever [A] happens, [B] also happens",
+    "romaji": "to"
   },
   {
     "id": "N4-108",
     "level": "N4",
     "number": 108,
     "japanese": "と言ってもいい",
-    "english": "you could say; one might say; I'd say"
+    "english": "you could say; one might say; I'd say",
+    "romaji": "to ittemo ii"
   },
   {
     "id": "N4-109",
     "level": "N4",
     "number": 109,
     "japanese": "という",
-    "english": "called; named; that"
+    "english": "called; named; that",
+    "romaji": "to iu"
   },
   {
     "id": "N4-110",
     "level": "N4",
     "number": 110,
     "japanese": "ということ",
-    "english": "convert phrase into noun"
+    "english": "convert phrase into noun",
+    "romaji": "to iu koto"
   },
   {
     "id": "N4-111",
     "level": "N4",
     "number": 111,
     "japanese": "と言われている",
-    "english": "it is said that..."
+    "english": "it is said that...",
+    "romaji": "to iwarete iru"
   },
   {
     "id": "N4-112",
     "level": "N4",
     "number": 112,
     "japanese": "と聞いた",
-    "english": "I heard..."
+    "english": "I heard...",
+    "romaji": "to kiita"
   },
   {
     "id": "N4-113",
     "level": "N4",
     "number": 113,
     "japanese": "と思う",
-    "english": "to think…; I think…; you think…"
+    "english": "to think…; I think…; you think…",
+    "romaji": "to omou"
   },
   {
     "id": "N4-114",
     "level": "N4",
     "number": 114,
     "japanese": "とか～とか",
-    "english": "among other things; such as; like"
+    "english": "among other things; such as; like",
+    "romaji": "toka~toka"
   },
   {
     "id": "N4-115",
     "level": "N4",
     "number": 115,
     "japanese": "ところ",
-    "english": "just about to; on the verge of doing ~"
+    "english": "just about to; on the verge of doing ~",
+    "romaji": "tokoro"
   },
   {
     "id": "N4-116",
     "level": "N4",
     "number": 116,
     "japanese": "続ける",
-    "english": "continue to; keen on"
+    "english": "continue to; keen on",
+    "romaji": "tsuzukeru"
   },
   {
     "id": "N4-117",
     "level": "N4",
     "number": 117,
     "japanese": "って",
-    "english": "named; called"
+    "english": "named; called",
+    "romaji": "tte"
   },
   {
     "id": "N4-118",
     "level": "N4",
     "number": 118,
     "japanese": "受身形",
-    "english": "passive form; passive voice"
+    "english": "passive form; passive voice",
+    "romaji": "ukemi kei"
   },
   {
     "id": "N4-119",
     "level": "N4",
     "number": 119,
     "japanese": "は〜が… は",
-    "english": "[A] but [B]; however; comparison"
+    "english": "[A] but [B]; however; comparison",
+    "romaji": "wa~ga... wa"
   },
   {
     "id": "N4-120",
     "level": "N4",
     "number": 120,
     "japanese": "やすい",
-    "english": "easy to; likely to; prone to; a tendency to~"
+    "english": "easy to; likely to; prone to; a tendency to~",
+    "romaji": "yasui"
   },
   {
     "id": "N4-121",
     "level": "N4",
     "number": 121,
     "japanese": "やっと",
-    "english": "at last; finally; barely; narrowly"
+    "english": "at last; finally; barely; narrowly",
+    "romaji": "yatto"
   },
   {
     "id": "N4-122",
     "level": "N4",
     "number": 122,
     "japanese": "より",
-    "english": "than; rather than; more than"
+    "english": "than; rather than; more than",
+    "romaji": "yori"
   },
   {
     "id": "N4-123",
     "level": "N4",
     "number": 123,
     "japanese": "予定だ",
-    "english": "plan to, intend to"
+    "english": "plan to, intend to",
+    "romaji": "yotei da"
   },
   {
     "id": "N4-124",
     "level": "N4",
     "number": 124,
     "japanese": "ようだ",
-    "english": "appears; seems; looks as if"
+    "english": "appears; seems; looks as if",
+    "romaji": "you da"
   },
   {
     "id": "N4-125",
     "level": "N4",
     "number": 125,
     "japanese": "ように / ような",
-    "english": "like; as; similar to"
+    "english": "like; as; similar to",
+    "romaji": "you ni / you na"
   },
   {
     "id": "N4-126",
     "level": "N4",
     "number": 126,
     "japanese": "ようになる",
-    "english": "to reach the point that; to turn into"
+    "english": "to reach the point that; to turn into",
+    "romaji": "you ni naru"
   },
   {
     "id": "N4-127",
     "level": "N4",
     "number": 127,
     "japanese": "ようにする",
-    "english": "to try to; to make sure that"
+    "english": "to try to; to make sure that",
+    "romaji": "you ni suru"
   },
   {
     "id": "N4-128",
     "level": "N4",
     "number": 128,
     "japanese": "ようと思う",
-    "english": "thinking of doing; planning to"
+    "english": "thinking of doing; planning to",
+    "romaji": "you to omou"
   },
   {
     "id": "N4-129",
     "level": "N4",
     "number": 129,
     "japanese": "ぜひ",
-    "english": "by all means; certainly; definitely"
+    "english": "by all means; certainly; definitely",
+    "romaji": "zehi"
   },
   {
     "id": "N4-130",
     "level": "N4",
     "number": 130,
     "japanese": "全然～ない",
-    "english": "(not) at all"
+    "english": "(not) at all",
+    "romaji": "zenzen~nai"
   },
   {
     "id": "N4-131",
     "level": "N4",
     "number": 131,
     "japanese": "づらい",
-    "english": "difficult to do"
+    "english": "difficult to do",
+    "romaji": "zurai"
   },
   {
     "id": "N3-1",
     "level": "N3",
     "number": 1,
     "japanese": "上げる",
-    "english": "to finish doing~"
+    "english": "to finish doing~",
+    "romaji": "ageru"
   },
   {
     "id": "N3-2",
     "level": "N3",
     "number": 2,
     "japanese": "あまり",
-    "english": "so much… that"
+    "english": "so much… that",
+    "romaji": "amari"
   },
   {
     "id": "N3-3",
     "level": "N3",
     "number": 3,
     "japanese": "あまりにも",
-    "english": "too…; so much… that; excessively~"
+    "english": "too…; so much… that; excessively~",
+    "romaji": "amari ni mo"
   },
   {
     "id": "N3-4",
     "level": "N3",
     "number": 4,
     "japanese": "合う",
-    "english": "do something together"
+    "english": "do something together",
+    "romaji": "au"
   },
   {
     "id": "N3-5",
     "level": "N3",
     "number": 5,
     "japanese": "ばいい",
-    "english": "should, can, it’d be good if"
+    "english": "should, can, it’d be good if",
+    "romaji": "ba ii"
   },
   {
     "id": "N3-6",
     "level": "N3",
     "number": 6,
     "japanese": "ばよかった",
-    "english": "should have, would have been better if~"
+    "english": "should have, would have been better if~",
+    "romaji": "ba yokatta"
   },
   {
     "id": "N3-7",
     "level": "N3",
     "number": 7,
     "japanese": "ば～ほど",
-    "english": "the more… the more"
+    "english": "the more… the more",
+    "romaji": "ba~hodo"
   },
   {
     "id": "N3-8",
     "level": "N3",
     "number": 8,
     "japanese": "ば～のに",
-    "english": "would have; should have; if only~"
+    "english": "would have; should have; if only~",
+    "romaji": "ba~noni"
   },
   {
     "id": "N3-9",
     "level": "N3",
     "number": 9,
     "japanese": "ばかりで",
-    "english": "only; just (negative description)"
+    "english": "only; just (negative description)",
+    "romaji": "bakari de"
   },
   {
     "id": "N3-10",
     "level": "N3",
     "number": 10,
     "japanese": "ばかりでなく",
-    "english": "not only.. but also; as well as"
+    "english": "not only.. but also; as well as",
+    "romaji": "bakari denaku"
   },
   {
     "id": "N3-11",
     "level": "N3",
     "number": 11,
     "japanese": "べきだ",
-    "english": "should do~; must do~"
+    "english": "should do~; must do~",
+    "romaji": "beki da"
   },
   {
     "id": "N3-12",
     "level": "N3",
     "number": 12,
     "japanese": "べきではない",
-    "english": "should not do~; must not do~"
+    "english": "should not do~; must not do~",
+    "romaji": "beki dewa nai"
   },
   {
     "id": "N3-13",
     "level": "N3",
     "number": 13,
     "japanese": "別に～ない",
-    "english": "not really, not particularly"
+    "english": "not really, not particularly",
+    "romaji": "betsu ni~nai"
   },
   {
     "id": "N3-14",
     "level": "N3",
     "number": 14,
     "japanese": "ぶりに",
-    "english": "for the first time in (period of time)"
+    "english": "for the first time in (period of time)",
+    "romaji": "buri ni"
   },
   {
     "id": "N3-15",
     "level": "N3",
     "number": 15,
     "japanese": "中",
-    "english": "currently; during; throughout"
+    "english": "currently; during; throughout",
+    "romaji": "chuu / juu"
   },
   {
     "id": "N3-16",
     "level": "N3",
     "number": 16,
     "japanese": "だけ",
-    "english": "as much as~"
+    "english": "as much as~",
+    "romaji": "dake"
   },
   {
     "id": "N3-17",
     "level": "N3",
     "number": 17,
     "japanese": "だけでなく",
-    "english": "not only… but also"
+    "english": "not only… but also",
+    "romaji": "dake de naku"
   },
   {
     "id": "N3-18",
     "level": "N3",
     "number": 18,
     "japanese": "だけど",
-    "english": "however; but"
+    "english": "however; but",
+    "romaji": "dakedo"
   },
   {
     "id": "N3-19",
     "level": "N3",
     "number": 19,
     "japanese": "だらけ",
-    "english": "full of; covered with; a lot of~"
+    "english": "full of; covered with; a lot of~",
+    "romaji": "darake"
   },
   {
     "id": "N3-20",
     "level": "N3",
     "number": 20,
     "japanese": "どんなに～ても",
-    "english": "no matter how (much)"
+    "english": "no matter how (much)",
+    "romaji": "donna ni~temo"
   },
   {
     "id": "N3-21",
     "level": "N3",
     "number": 21,
     "japanese": "どうしても",
-    "english": "no matter what; at any cost; after all"
+    "english": "no matter what; at any cost; after all",
+    "romaji": "doushitemo"
   },
   {
     "id": "N3-22",
     "level": "N3",
     "number": 22,
     "japanese": "ふりをする",
-    "english": "to pretend; to act as if~"
+    "english": "to pretend; to act as if~",
+    "romaji": "furi o suru"
   },
   {
     "id": "N3-23",
     "level": "N3",
     "number": 23,
     "japanese": "ふと",
-    "english": "suddenly; accidentally; unexpectedly"
+    "english": "suddenly; accidentally; unexpectedly",
+    "romaji": "futo"
   },
   {
     "id": "N3-24",
     "level": "N3",
     "number": 24,
     "japanese": "がち",
-    "english": "tend to; tendency to; frequently; often~"
+    "english": "tend to; tendency to; frequently; often~",
+    "romaji": "gachi"
   },
   {
     "id": "N3-25",
     "level": "N3",
     "number": 25,
     "japanese": "がたい",
-    "english": "very difficult to; impossible to"
+    "english": "very difficult to; impossible to",
+    "romaji": "gatai"
   },
   {
     "id": "N3-26",
     "level": "N3",
     "number": 26,
     "japanese": "気味",
-    "english": "-like; -looking; -looked; tending to"
+    "english": "-like; -looking; -looked; tending to",
+    "romaji": "gimi"
   },
   {
     "id": "N3-27",
     "level": "N3",
     "number": 27,
     "japanese": "ごとに",
-    "english": "each; every; at intervals of"
+    "english": "each; every; at intervals of",
+    "romaji": "goto ni"
   },
   {
     "id": "N3-28",
     "level": "N3",
     "number": 28,
     "japanese": "ほど",
-    "english": "degree; extent; bounds; upper limit"
+    "english": "degree; extent; bounds; upper limit",
+    "romaji": "hodo"
   },
   {
     "id": "N3-29",
     "level": "N3",
     "number": 29,
     "japanese": "ほど～ない",
-    "english": "is not as… as"
+    "english": "is not as… as",
+    "romaji": "hodo~nai"
   },
   {
     "id": "N3-30",
     "level": "N3",
     "number": 30,
     "japanese": "一度に",
-    "english": "all at once"
+    "english": "all at once",
+    "romaji": "ichido ni"
   },
   {
     "id": "N3-31",
     "level": "N3",
     "number": 31,
     "japanese": "いくら～ても",
-    "english": "no matter how~"
+    "english": "no matter how~",
+    "romaji": "ikura~temo"
   },
   {
     "id": "N3-32",
     "level": "N3",
     "number": 32,
     "japanese": "一方だ",
-    "english": "more and more; continue to"
+    "english": "more and more; continue to",
+    "romaji": "ippou da"
   },
   {
     "id": "N3-33",
     "level": "N3",
     "number": 33,
     "japanese": "一体",
-    "english": "emphasis; what on earth?"
+    "english": "emphasis; what on earth?",
+    "romaji": "ittai"
   },
   {
     "id": "N3-34",
     "level": "N3",
     "number": 34,
     "japanese": "じゃない",
-    "english": "maybe; most likely; confirmation"
+    "english": "maybe; most likely; confirmation",
+    "romaji": "janai"
   },
   {
     "id": "N3-35",
     "level": "N3",
     "number": 35,
     "japanese": "か何か",
-    "english": "or something"
+    "english": "or something",
+    "romaji": "ka nani ka"
   },
   {
     "id": "N3-36",
     "level": "N3",
     "number": 36,
     "japanese": "かける",
-    "english": "half-; not yet finished; in the middle of~"
+    "english": "half-; not yet finished; in the middle of~",
+    "romaji": "kakeru"
   },
   {
     "id": "N3-37",
     "level": "N3",
     "number": 37,
     "japanese": "から〜にかけて",
-    "english": "through; from [A] to [B]"
+    "english": "through; from [A] to [B]",
+    "romaji": "kara~ni kakete"
   },
   {
     "id": "N3-38",
     "level": "N3",
     "number": 38,
     "japanese": "代わりに",
-    "english": "instead of; in exchange for~"
+    "english": "instead of; in exchange for~",
+    "romaji": "kawari ni"
   },
   {
     "id": "N3-39",
     "level": "N3",
     "number": 39,
     "japanese": "結果",
-    "english": "as a result of; after"
+    "english": "as a result of; after",
+    "romaji": "kekka"
   },
   {
     "id": "N3-40",
     "level": "N3",
     "number": 40,
     "japanese": "結局",
-    "english": "after all; eventually; in the end"
+    "english": "after all; eventually; in the end",
+    "romaji": "kekkyoku"
   },
   {
     "id": "N3-41",
     "level": "N3",
     "number": 41,
     "japanese": "決して～ない",
-    "english": "never; by no means"
+    "english": "never; by no means",
+    "romaji": "kesshite~nai"
   },
   {
     "id": "N3-42",
     "level": "N3",
     "number": 42,
     "japanese": "切れない",
-    "english": "unable to do; too much to finish"
+    "english": "unable to do; too much to finish",
+    "romaji": "kirenai"
   },
   {
     "id": "N3-43",
     "level": "N3",
     "number": 43,
     "japanese": "きり",
-    "english": "only; just; since; after"
+    "english": "only; just; since; after",
+    "romaji": "kiri"
   },
   {
     "id": "N3-44",
     "level": "N3",
     "number": 44,
     "japanese": "切る",
-    "english": "to do something completely to the end"
+    "english": "to do something completely to the end",
+    "romaji": "kiru"
   },
   {
     "id": "N3-45",
     "level": "N3",
     "number": 45,
     "japanese": "っけ",
-    "english": "casual suffix to confirm something"
+    "english": "casual suffix to confirm something",
+    "romaji": "kke"
   },
   {
     "id": "N3-46",
     "level": "N3",
     "number": 46,
     "japanese": "込む",
-    "english": "Move inside; do a long time"
+    "english": "Move inside; do a long time",
+    "romaji": "komu"
   },
   {
     "id": "N3-47",
     "level": "N3",
     "number": 47,
     "japanese": "こそ",
-    "english": "for sure; precisely; definitely"
+    "english": "for sure; precisely; definitely",
+    "romaji": "koso"
   },
   {
     "id": "N3-48",
     "level": "N3",
     "number": 48,
     "japanese": "こと",
-    "english": "(must) do"
+    "english": "(must) do",
+    "romaji": "koto"
   },
   {
     "id": "N3-49",
     "level": "N3",
     "number": 49,
     "japanese": "ことから",
-    "english": "from the fact that~"
+    "english": "from the fact that~",
+    "romaji": "koto kara"
   },
   {
     "id": "N3-50",
     "level": "N3",
     "number": 50,
     "japanese": "ことになっている",
-    "english": "to be expected to; it has been decided~"
+    "english": "to be expected to; it has been decided~",
+    "romaji": "koto ni natteiru"
   },
   {
     "id": "N3-51",
     "level": "N3",
     "number": 51,
     "japanese": "ことはない",
-    "english": "there is no need to; no possibility that~"
+    "english": "there is no need to; no possibility that~",
+    "romaji": "koto wa nai"
   },
   {
     "id": "N3-52",
     "level": "N3",
     "number": 52,
     "japanese": "ことは～が",
-    "english": "although; but"
+    "english": "although; but",
+    "romaji": "koto wa~ga"
   },
   {
     "id": "N3-53",
     "level": "N3",
     "number": 53,
     "japanese": "くらい・ぐらい",
-    "english": "approximately; about; to the extent"
+    "english": "approximately; about; to the extent",
+    "romaji": "kurai / gurai"
   },
   {
     "id": "N3-54",
     "level": "N3",
     "number": 54,
     "japanese": "くせに",
-    "english": "although~; despite the fact that~"
+    "english": "although~; despite the fact that~",
+    "romaji": "kuse ni"
   },
   {
     "id": "N3-55",
     "level": "N3",
     "number": 55,
     "japanese": "まるで",
-    "english": "as if; as though; just like"
+    "english": "as if; as though; just like",
+    "romaji": "maru de"
   },
   {
     "id": "N3-56",
     "level": "N3",
     "number": 56,
     "japanese": "まさか",
-    "english": "there's no way; that's impossible"
+    "english": "there's no way; that's impossible",
+    "romaji": "masaka"
   },
   {
     "id": "N3-57",
     "level": "N3",
     "number": 57,
     "japanese": "めったに～ない",
-    "english": "hardly; rarely; seldom"
+    "english": "hardly; rarely; seldom",
+    "romaji": "metta ni~nai"
   },
   {
     "id": "N3-58",
     "level": "N3",
     "number": 58,
     "japanese": "も～ば～も",
-    "english": "and; also; as well; either/or; neither"
+    "english": "and; also; as well; either/or; neither",
+    "romaji": "mo~ba~mo"
   },
   {
     "id": "N3-59",
     "level": "N3",
     "number": 59,
     "japanese": "もしかしたら",
-    "english": "perhaps; maybe; perchance; by chance"
+    "english": "perhaps; maybe; perchance; by chance",
+    "romaji": "moshika shitara"
   },
   {
     "id": "N3-60",
     "level": "N3",
     "number": 60,
     "japanese": "もしも〜たら",
-    "english": "if; in the case; supposing~"
+    "english": "if; in the case; supposing~",
+    "romaji": "moshimo~tara"
   },
   {
     "id": "N3-61",
     "level": "N3",
     "number": 61,
     "japanese": "向け",
-    "english": "intended for; aimed at~"
+    "english": "intended for; aimed at~",
+    "romaji": "muke"
   },
   {
     "id": "N3-62",
     "level": "N3",
     "number": 62,
     "japanese": "向き",
-    "english": "suitable for~"
+    "english": "suitable for~",
+    "romaji": "muki"
   },
   {
     "id": "N3-63",
     "level": "N3",
     "number": 63,
     "japanese": "むしろ",
-    "english": "rather; instead; better"
+    "english": "rather; instead; better",
+    "romaji": "mushiro"
   },
   {
     "id": "N3-64",
     "level": "N3",
     "number": 64,
     "japanese": "ながらも",
-    "english": "but; although; despite"
+    "english": "but; although; despite",
+    "romaji": "nagara mo"
   },
   {
     "id": "N3-65",
     "level": "N3",
     "number": 65,
     "japanese": "ないことはない",
-    "english": "can do~; is not impossible to~"
+    "english": "can do~; is not impossible to~",
+    "romaji": "nai koto wa nai"
   },
   {
     "id": "N3-66",
     "level": "N3",
     "number": 66,
     "japanese": "ないと",
-    "english": "must do; unless/if you don't~"
+    "english": "must do; unless/if you don't~",
+    "romaji": "naito"
   },
   {
     "id": "N3-67",
     "level": "N3",
     "number": 67,
     "japanese": "なかなか",
-    "english": "quite~; pretty~; rather~; just not ~"
+    "english": "quite~; pretty~; rather~; just not ~",
+    "romaji": "nakanaka"
   },
   {
     "id": "N3-68",
     "level": "N3",
     "number": 68,
     "japanese": "なんか / なんて",
-    "english": "examples; modesty; make light of~"
+    "english": "examples; modesty; make light of~",
+    "romaji": "nanka / nante"
   },
   {
     "id": "N3-69",
     "level": "N3",
     "number": 69,
     "japanese": "直す",
-    "english": "to do something again; to do over"
+    "english": "to do something again; to do over",
+    "romaji": "naosu"
   },
   {
     "id": "N3-70",
     "level": "N3",
     "number": 70,
     "japanese": "なるべく",
-    "english": "as much as possible"
+    "english": "as much as possible",
+    "romaji": "naru beku"
   },
   {
     "id": "N3-71",
     "level": "N3",
     "number": 71,
     "japanese": "なぜなら",
-    "english": "because; the reason is"
+    "english": "because; the reason is",
+    "romaji": "nazenara"
   },
   {
     "id": "N3-72",
     "level": "N3",
     "number": 72,
     "japanese": "んだって",
-    "english": "I hear that; heard that~"
+    "english": "I hear that; heard that~",
+    "romaji": "ndatte"
   },
   {
     "id": "N3-73",
     "level": "N3",
     "number": 73,
     "japanese": "に違いない",
-    "english": "I’m sure/ certain; no doubt that"
+    "english": "I’m sure/ certain; no doubt that",
+    "romaji": "ni chigai nai"
   },
   {
     "id": "N3-74",
     "level": "N3",
     "number": 74,
     "japanese": "に反して",
-    "english": "against; contrary to; in contrast to"
+    "english": "against; contrary to; in contrast to",
+    "romaji": "ni hanshite"
   },
   {
     "id": "N3-75",
     "level": "N3",
     "number": 75,
     "japanese": "にかけて",
-    "english": "over (a period); concerning; regarding~"
+    "english": "over (a period); concerning; regarding~",
+    "romaji": "ni kakete"
   },
   {
     "id": "N3-76",
     "level": "N3",
     "number": 76,
     "japanese": "に関する",
-    "english": "about; regarding; related to"
+    "english": "about; regarding; related to",
+    "romaji": "ni kan suru"
   },
   {
     "id": "N3-77",
     "level": "N3",
     "number": 77,
     "japanese": "にかわって",
-    "english": "instead of~; replacing~; on behalf of~"
+    "english": "instead of~; replacing~; on behalf of~",
+    "romaji": "ni kawatte"
   },
   {
     "id": "N3-78",
     "level": "N3",
     "number": 78,
     "japanese": "に比べて",
-    "english": "compared to~; in comparison to~"
+    "english": "compared to~; in comparison to~",
+    "romaji": "ni kurabete"
   },
   {
     "id": "N3-79",
     "level": "N3",
     "number": 79,
     "japanese": "に慣れる",
-    "english": "to be used to something"
+    "english": "to be used to something",
+    "romaji": "ni nareru"
   },
   {
     "id": "N3-80",
     "level": "N3",
     "number": 80,
     "japanese": "において",
-    "english": "in; at (place); regarding~; as for~"
+    "english": "in; at (place); regarding~; as for~",
+    "romaji": "ni oite"
   },
   {
     "id": "N3-81",
     "level": "N3",
     "number": 81,
     "japanese": "にしたがって",
-    "english": "as; therefore; in accordance with"
+    "english": "as; therefore; in accordance with",
+    "romaji": "ni shitagatte"
   },
   {
     "id": "N3-82",
     "level": "N3",
     "number": 82,
     "japanese": "にしても",
-    "english": "even if; even though; regardless of"
+    "english": "even if; even though; regardless of",
+    "romaji": "ni shite mo"
   },
   {
     "id": "N3-83",
     "level": "N3",
     "number": 83,
     "japanese": "にしては",
-    "english": "for; considering it’s"
+    "english": "for; considering it’s",
+    "romaji": "ni shite wa"
   },
   {
     "id": "N3-84",
     "level": "N3",
     "number": 84,
     "japanese": "に対して",
-    "english": "towards; against; regarding~"
+    "english": "towards; against; regarding~",
+    "romaji": "ni taishite"
   },
   {
     "id": "N3-85",
     "level": "N3",
     "number": 85,
     "japanese": "にとって",
-    "english": "to; for; concerning; regarding~"
+    "english": "to; for; concerning; regarding~",
+    "romaji": "ni totte"
   },
   {
     "id": "N3-86",
     "level": "N3",
     "number": 86,
     "japanese": "について",
-    "english": "concerning; regarding; about; on"
+    "english": "concerning; regarding; about; on",
+    "romaji": "ni tsuite"
   },
   {
     "id": "N3-87",
     "level": "N3",
     "number": 87,
     "japanese": "につれて",
-    "english": "as; in proportion to; with; as… then…"
+    "english": "as; in proportion to; with; as… then…",
+    "romaji": "ni tsurete"
   },
   {
     "id": "N3-88",
     "level": "N3",
     "number": 88,
     "japanese": "には",
-    "english": "for the purpose of; in order to~"
+    "english": "for the purpose of; in order to~",
+    "romaji": "ni wa"
   },
   {
     "id": "N3-89",
     "level": "N3",
     "number": 89,
     "japanese": "によると /によれば",
-    "english": "according to~"
+    "english": "according to~",
+    "romaji": "ni yoru to/ni yoreba"
   },
   {
     "id": "N3-90",
     "level": "N3",
     "number": 90,
     "japanese": "によって / による",
-    "english": "by means of; due to; because of~"
+    "english": "by means of; due to; because of~",
+    "romaji": "ni yotte / ni yoru"
   },
   {
     "id": "N3-91",
     "level": "N3",
     "number": 91,
     "japanese": "のでしょうか",
-    "english": "ask a question in a polite way"
+    "english": "ask a question in a polite way",
+    "romaji": "no deshou ka"
   },
   {
     "id": "N3-92",
     "level": "N3",
     "number": 92,
     "japanese": "を中心に",
-    "english": "focused on; centered on"
+    "english": "focused on; centered on",
+    "romaji": "o chuushin ni"
   },
   {
     "id": "N3-93",
     "level": "N3",
     "number": 93,
     "japanese": "をはじめ",
-    "english": "for example; starting with"
+    "english": "for example; starting with",
+    "romaji": "o hajime"
   },
   {
     "id": "N3-94",
     "level": "N3",
     "number": 94,
     "japanese": "を込めて",
-    "english": "filled with; full of"
+    "english": "filled with; full of",
+    "romaji": "o komete"
   },
   {
     "id": "N3-95",
     "level": "N3",
     "number": 95,
     "japanese": "を通じて /を通して",
-    "english": "through; via; throughout; by"
+    "english": "through; via; throughout; by",
+    "romaji": "o tsuujite /o tooshite"
   },
   {
     "id": "N3-96",
     "level": "N3",
     "number": 96,
     "japanese": "おかげで",
-    "english": "thanks to ...; owing to ...; because of ..."
+    "english": "thanks to ...; owing to ...; because of ...",
+    "romaji": "okage de"
   },
   {
     "id": "N3-97",
     "level": "N3",
     "number": 97,
     "japanese": "っぱなし",
-    "english": "leaving (something) on / still in use"
+    "english": "leaving (something) on / still in use",
+    "romaji": "ppanashi"
   },
   {
     "id": "N3-98",
     "level": "N3",
     "number": 98,
     "japanese": "っぽい",
-    "english": "seems; somewhat; -ish; easily does~;"
+    "english": "seems; somewhat; -ish; easily does~;",
+    "romaji": "ppoi"
   },
   {
     "id": "N3-99",
     "level": "N3",
     "number": 99,
     "japanese": "さえ",
-    "english": "even; so much as; not even"
+    "english": "even; so much as; not even",
+    "romaji": "sae"
   },
   {
     "id": "N3-100",
     "level": "N3",
     "number": 100,
     "japanese": "さえ～ば",
-    "english": "if only; as long as"
+    "english": "if only; as long as",
+    "romaji": "sae~ba"
   },
   {
     "id": "N3-101",
     "level": "N3",
     "number": 101,
     "japanese": "際に",
-    "english": "when; at the time of; in the case of"
+    "english": "when; at the time of; in the case of",
+    "romaji": "sai ni"
   },
   {
     "id": "N3-102",
     "level": "N3",
     "number": 102,
     "japanese": "最中に",
-    "english": "while; during; in the middle of"
+    "english": "while; during; in the middle of",
+    "romaji": "saichuu ni"
   },
   {
     "id": "N3-103",
     "level": "N3",
     "number": 103,
     "japanese": "さらに",
-    "english": "furthermore; again; more and more"
+    "english": "furthermore; again; more and more",
+    "romaji": "sara ni"
   },
   {
     "id": "N3-104",
     "level": "N3",
     "number": 104,
     "japanese": "さて",
-    "english": "conjunction: well; now; then"
+    "english": "conjunction: well; now; then",
+    "romaji": "sate"
   },
   {
     "id": "N3-105",
     "level": "N3",
     "number": 105,
     "japanese": "せいで",
-    "english": "because of; due to; as a result of~"
+    "english": "because of; due to; as a result of~",
+    "romaji": "sei de"
   },
   {
     "id": "N3-106",
     "level": "N3",
     "number": 106,
     "japanese": "せいぜい",
-    "english": "at the most; at best; to the utmost"
+    "english": "at the most; at best; to the utmost",
+    "romaji": "seizei"
   },
   {
     "id": "N3-107",
     "level": "N3",
     "number": 107,
     "japanese": "しばらく",
-    "english": "for a moment; for a while"
+    "english": "for a moment; for a while",
+    "romaji": "shibaraku"
   },
   {
     "id": "N3-108",
     "level": "N3",
     "number": 108,
     "japanese": "しかない",
-    "english": "have no choice but~"
+    "english": "have no choice but~",
+    "romaji": "shikanai"
   },
   {
     "id": "N3-109",
     "level": "N3",
     "number": 109,
     "japanese": "そのために",
-    "english": "hence; for that reason; because of~"
+    "english": "hence; for that reason; because of~",
+    "romaji": "sono tame ni"
   },
   {
     "id": "N3-110",
     "level": "N3",
     "number": 110,
     "japanese": "それとも",
-    "english": "or; or else"
+    "english": "or; or else",
+    "romaji": "soretomo"
   },
   {
     "id": "N3-111",
     "level": "N3",
     "number": 111,
     "japanese": "そうもない",
-    "english": "very unlikely to~; showing no signs of~"
+    "english": "very unlikely to~; showing no signs of~",
+    "romaji": "sou mo nai"
   },
   {
     "id": "N3-112",
     "level": "N3",
     "number": 112,
     "japanese": "すでに",
-    "english": "something has already been done"
+    "english": "something has already been done",
+    "romaji": "sude ni"
   },
   {
     "id": "N3-113",
     "level": "N3",
     "number": 113,
     "japanese": "すなわち",
-    "english": "in other words; namely"
+    "english": "in other words; namely",
+    "romaji": "sunawachi"
   },
   {
     "id": "N3-114",
     "level": "N3",
     "number": 114,
     "japanese": "数量 + は",
-    "english": "at least"
+    "english": "at least",
+    "romaji": "suuryou + wa"
   },
   {
     "id": "N3-115",
     "level": "N3",
     "number": 115,
     "japanese": "たものだ",
-    "english": "used to do; would often do"
+    "english": "used to do; would often do",
+    "romaji": "ta mono da"
   },
   {
     "id": "N3-116",
     "level": "N3",
     "number": 116,
     "japanese": "たとたん",
-    "english": "as soon as; just as"
+    "english": "as soon as; just as",
+    "romaji": "ta totan"
   },
   {
     "id": "N3-117",
     "level": "N3",
     "number": 117,
     "japanese": "たびに",
-    "english": "whenever; every time"
+    "english": "whenever; every time",
+    "romaji": "tabi ni"
   },
   {
     "id": "N3-118",
     "level": "N3",
     "number": 118,
     "japanese": "ために",
-    "english": "for; in order to; for the benefit of"
+    "english": "for; in order to; for the benefit of",
+    "romaji": "tame ni"
   },
   {
     "id": "N3-119",
     "level": "N3",
     "number": 119,
     "japanese": "確かに",
-    "english": "surely, certainly"
+    "english": "surely, certainly",
+    "romaji": "tashika ni"
   },
   {
     "id": "N3-120",
     "level": "N3",
     "number": 120,
     "japanese": "たて",
-    "english": "just done; freshly done; newly done"
+    "english": "just done; freshly done; newly done",
+    "romaji": "tate"
   },
   {
     "id": "N3-121",
     "level": "N3",
     "number": 121,
     "japanese": "たとえ～ても",
-    "english": "even if… is the case"
+    "english": "even if… is the case",
+    "romaji": "tatoe~temo"
   },
   {
     "id": "N3-122",
     "level": "N3",
     "number": 122,
     "japanese": "例えば",
-    "english": "for example"
+    "english": "for example",
+    "romaji": "tatoeba"
   },
   {
     "id": "N3-123",
     "level": "N3",
     "number": 123,
     "japanese": "たって",
-    "english": "even if; even though; no matter how"
+    "english": "even if; even though; no matter how",
+    "romaji": "tatte"
   },
   {
     "id": "N3-124",
     "level": "N3",
     "number": 124,
     "japanese": "てばかりいる",
-    "english": "only; nothing but~"
+    "english": "only; nothing but~",
+    "romaji": "te bakari iru"
   },
   {
     "id": "N3-125",
     "level": "N3",
     "number": 125,
     "japanese": "てごらん",
-    "english": "(please) try to; (please) look"
+    "english": "(please) try to; (please) look",
+    "romaji": "te goran"
   },
   {
     "id": "N3-126",
     "level": "N3",
     "number": 126,
     "japanese": "てはじめて",
-    "english": "not until; only after [x] did I"
+    "english": "not until; only after [x] did I",
+    "romaji": "te hajimete"
   },
   {
     "id": "N3-127",
     "level": "N3",
     "number": 127,
     "japanese": "てからでないと",
-    "english": "must first do; cannot do without~"
+    "english": "must first do; cannot do without~",
+    "romaji": "te kara de nai to"
   },
   {
     "id": "N3-128",
     "level": "N3",
     "number": 128,
     "japanese": "てしょうがない",
-    "english": "can't help but~; very; extremely"
+    "english": "can't help but~; very; extremely",
+    "romaji": "te shou ga nai"
   },
   {
     "id": "N3-129",
     "level": "N3",
     "number": 129,
     "japanese": "て済む",
-    "english": "sufficient by; resolve by~"
+    "english": "sufficient by; resolve by~",
+    "romaji": "te sumu"
   },
   {
     "id": "N3-130",
     "level": "N3",
     "number": 130,
     "japanese": "てはいけないから",
-    "english": "in order to not~"
+    "english": "in order to not~",
+    "romaji": "te wa ikenai kara"
   },
   {
     "id": "N3-131",
     "level": "N3",
     "number": 131,
     "japanese": "ている場合じゃない",
-    "english": "this is no time to be doing~"
+    "english": "this is no time to be doing~",
+    "romaji": "teiru baai janai"
   },
   {
     "id": "N3-132",
     "level": "N3",
     "number": 132,
     "japanese": "的",
-    "english": "change noun into na-adjective"
+    "english": "change noun into na-adjective",
+    "romaji": "teki"
   },
   {
     "id": "N3-133",
     "level": "N3",
     "number": 133,
     "japanese": "ても始まらない",
-    "english": "even if you... it’s no use;"
+    "english": "even if you... it’s no use;",
+    "romaji": "temo hajimaranai"
   },
   {
     "id": "N3-134",
     "level": "N3",
     "number": 134,
     "japanese": "てもかまわない",
-    "english": "it doesn't matter if ~"
+    "english": "it doesn't matter if ~",
+    "romaji": "temo kamawanai"
   },
   {
     "id": "N3-135",
     "level": "N3",
     "number": 135,
     "japanese": "てもしょうがない",
-    "english": "there's no point to~; it's no use to~"
+    "english": "there's no point to~; it's no use to~",
+    "romaji": "temo shou ga nai"
   },
   {
     "id": "N3-136",
     "level": "N3",
     "number": 136,
     "japanese": "と言えば",
-    "english": "speaking of; when you talk of~"
+    "english": "speaking of; when you talk of~",
+    "romaji": "to ieba"
   },
   {
     "id": "N3-137",
     "level": "N3",
     "number": 137,
     "japanese": "といい / たらいい",
-    "english": "it would be nice if; should; I hope~"
+    "english": "it would be nice if; should; I hope~",
+    "romaji": "to ii / tara ii"
   },
   {
     "id": "N3-138",
     "level": "N3",
     "number": 138,
     "japanese": "といっても",
-    "english": "although I say; although one might say~"
+    "english": "although I say; although one might say~",
+    "romaji": "to ittemo"
   },
   {
     "id": "N3-139",
     "level": "N3",
     "number": 139,
     "japanese": "ということだ",
-    "english": "I heard; it means~; in other words~"
+    "english": "I heard; it means~; in other words~",
+    "romaji": "to iu koto da"
   },
   {
     "id": "N3-140",
     "level": "N3",
     "number": 140,
     "japanese": "というのは",
-    "english": "this means~; because~; that is to say"
+    "english": "this means~; because~; that is to say",
+    "romaji": "to iu nowa"
   },
   {
     "id": "N3-141",
     "level": "N3",
     "number": 141,
     "japanese": "と言うと",
-    "english": "speaking of; when you say~"
+    "english": "speaking of; when you say~",
+    "romaji": "to iu to"
   },
   {
     "id": "N3-142",
     "level": "N3",
     "number": 142,
     "japanese": "というより",
-    "english": "rather than~"
+    "english": "rather than~",
+    "romaji": "to iu yori"
   },
   {
     "id": "N3-143",
     "level": "N3",
     "number": 143,
     "japanese": "とみえる / とみえて",
-    "english": "it seems that~"
+    "english": "it seems that~",
+    "romaji": "to mieru / to miete"
   },
   {
     "id": "N3-144",
     "level": "N3",
     "number": 144,
     "japanese": "とすれば",
-    "english": "in the case of~; assuming~; if A then B"
+    "english": "in the case of~; assuming~; if A then B",
+    "romaji": "to sureba"
   },
   {
     "id": "N3-145",
     "level": "N3",
     "number": 145,
     "japanese": "と共に",
-    "english": "together with; at the same time as"
+    "english": "together with; at the same time as",
+    "romaji": "to tomo ni"
   },
   {
     "id": "N3-146",
     "level": "N3",
     "number": 146,
     "japanese": "途中で",
-    "english": "on the way; in the middle of~"
+    "english": "on the way; in the middle of~",
+    "romaji": "tochuu de"
   },
   {
     "id": "N3-147",
     "level": "N3",
     "number": 147,
     "japanese": "ところで",
-    "english": "by the way~"
+    "english": "by the way~",
+    "romaji": "tokoro de"
   },
   {
     "id": "N3-148",
     "level": "N3",
     "number": 148,
     "japanese": "ところが",
-    "english": "even so; however; even though~"
+    "english": "even so; however; even though~",
+    "romaji": "tokoro ga"
   },
   {
     "id": "N3-149",
     "level": "N3",
     "number": 149,
     "japanese": "とおりに",
-    "english": "in the same way as; in the way; as~"
+    "english": "in the same way as; in the way; as~",
+    "romaji": "toori ni"
   },
   {
     "id": "N3-150",
     "level": "N3",
     "number": 150,
     "japanese": "通す",
-    "english": "to do until the end; to continually do"
+    "english": "to do until the end; to continually do",
+    "romaji": "toosu"
   },
   {
     "id": "N3-151",
     "level": "N3",
     "number": 151,
     "japanese": "として",
-    "english": "as~; in the role of~"
+    "english": "as~; in the role of~",
+    "romaji": "toshite"
   },
   {
     "id": "N3-152",
     "level": "N3",
     "number": 152,
     "japanese": "とても～ない",
-    "english": "cannot possibly be; hardly~"
+    "english": "cannot possibly be; hardly~",
+    "romaji": "totemo~nai"
   },
   {
     "id": "N3-153",
     "level": "N3",
     "number": 153,
     "japanese": "とは限らない",
-    "english": "not necessarily so; is not always true"
+    "english": "not necessarily so; is not always true",
+    "romaji": "towa kagiranai"
   },
   {
     "id": "N3-154",
     "level": "N3",
     "number": 154,
     "japanese": "つい",
-    "english": "accidentally; unintentionally"
+    "english": "accidentally; unintentionally",
+    "romaji": "tsui"
   },
   {
     "id": "N3-155",
     "level": "N3",
     "number": 155,
     "japanese": "ついに",
-    "english": "finally ~; at last ~; in the end"
+    "english": "finally ~; at last ~; in the end",
+    "romaji": "tsui ni"
   },
   {
     "id": "N3-156",
     "level": "N3",
     "number": 156,
     "japanese": "ついでに",
-    "english": "while, incidentally, at the same time"
+    "english": "while, incidentally, at the same time",
+    "romaji": "tsuide ni"
   },
   {
     "id": "N3-157",
     "level": "N3",
     "number": 157,
     "japanese": "つまり",
-    "english": "in other words; in summary; in short"
+    "english": "in other words; in summary; in short",
+    "romaji": "tsumari"
   },
   {
     "id": "N3-158",
     "level": "N3",
     "number": 158,
     "japanese": "つもりだった",
-    "english": "I thought I~; I believe I did~"
+    "english": "I thought I~; I believe I did~",
+    "romaji": "tsumori datta"
   },
   {
     "id": "N3-159",
     "level": "N3",
     "number": 159,
     "japanese": "つもりで",
-    "english": "with the intention of doing~"
+    "english": "with the intention of doing~",
+    "romaji": "tsumori de"
   },
   {
     "id": "N3-160",
     "level": "N3",
     "number": 160,
     "japanese": "うちに",
-    "english": "while; before~"
+    "english": "while; before~",
+    "romaji": "uchi ni"
   },
   {
     "id": "N3-161",
     "level": "N3",
     "number": 161,
     "japanese": "上で",
-    "english": "upon; after; when; for; in order to"
+    "english": "upon; after; when; for; in order to",
+    "romaji": "ue de"
   },
   {
     "id": "N3-162",
     "level": "N3",
     "number": 162,
     "japanese": "上に",
-    "english": "as well; not only… but also"
+    "english": "as well; not only… but also",
+    "romaji": "ue ni"
   },
   {
     "id": "N3-163",
     "level": "N3",
     "number": 163,
     "japanese": "は別として",
-    "english": "aside from; whether or not~"
+    "english": "aside from; whether or not~",
+    "romaji": "wa betsu toshite"
   },
   {
     "id": "N3-164",
     "level": "N3",
     "number": 164,
     "japanese": "はもちろん",
-    "english": "not to mention; not only; but also~"
+    "english": "not to mention; not only; but also~",
+    "romaji": "wa mochiron"
   },
   {
     "id": "N3-165",
     "level": "N3",
     "number": 165,
     "japanese": "は～で有名",
-    "english": "famous for~"
+    "english": "famous for~",
+    "romaji": "wa~de yuumei"
   },
   {
     "id": "N3-166",
     "level": "N3",
     "number": 166,
     "japanese": "わけだ",
-    "english": "for that reason; no wonder"
+    "english": "for that reason; no wonder",
+    "romaji": "wake da"
   },
   {
     "id": "N3-167",
     "level": "N3",
     "number": 167,
     "japanese": "わけではない",
-    "english": "it doesn’t mean that~"
+    "english": "it doesn’t mean that~",
+    "romaji": "wake dewa nai"
   },
   {
     "id": "N3-168",
     "level": "N3",
     "number": 168,
     "japanese": "わけがない",
-    "english": "there is no way that~"
+    "english": "there is no way that~",
+    "romaji": "wake ga nai"
   },
   {
     "id": "N3-169",
     "level": "N3",
     "number": 169,
     "japanese": "わけにはいかない",
-    "english": "must not; cannot afford to; must~"
+    "english": "must not; cannot afford to; must~",
+    "romaji": "wake niwa ikanai"
   },
   {
     "id": "N3-170",
     "level": "N3",
     "number": 170,
     "japanese": "割に",
-    "english": "considering; relatively; unexpectedly"
+    "english": "considering; relatively; unexpectedly",
+    "romaji": "wari ni"
   },
   {
     "id": "N3-171",
     "level": "N3",
     "number": 171,
     "japanese": "わざと",
-    "english": "on purpose; intentionally~"
+    "english": "on purpose; intentionally~",
+    "romaji": "wazato"
   },
   {
     "id": "N3-172",
     "level": "N3",
     "number": 172,
     "japanese": "わざわざ",
-    "english": "to go to the trouble of"
+    "english": "to go to the trouble of",
+    "romaji": "wazawaza"
   },
   {
     "id": "N3-173",
     "level": "N3",
     "number": 173,
     "japanese": "よりも",
-    "english": "rather than~; more than~"
+    "english": "rather than~; more than~",
+    "romaji": "yorimo"
   },
   {
     "id": "N3-174",
     "level": "N3",
     "number": 174,
     "japanese": "ようがない",
-    "english": "there is no way to; it’s impossible to~"
+    "english": "there is no way to; it’s impossible to~",
+    "romaji": "you ga nai"
   },
   {
     "id": "N3-175",
     "level": "N3",
     "number": 175,
     "japanese": "ような気がする",
-    "english": "have a feeling that; feels like; seems like"
+    "english": "have a feeling that; feels like; seems like",
+    "romaji": "you na ki ga suru"
   },
   {
     "id": "N3-176",
     "level": "N3",
     "number": 176,
     "japanese": "ように",
-    "english": "in order to, so that~"
+    "english": "in order to, so that~",
+    "romaji": "you ni"
   },
   {
     "id": "N3-177",
     "level": "N3",
     "number": 177,
     "japanese": "ように見える",
-    "english": "to look; to seem; to appear~"
+    "english": "to look; to seem; to appear~",
+    "romaji": "you ni mieru"
   },
   {
     "id": "N3-178",
     "level": "N3",
     "number": 178,
     "japanese": "ようとしない",
-    "english": "not try to; not make an effort to~"
+    "english": "not try to; not make an effort to~",
+    "romaji": "you to shinai"
   },
   {
     "id": "N3-179",
     "level": "N3",
     "number": 179,
     "japanese": "ようとする",
-    "english": "try to; attempt to; be about to~"
+    "english": "try to; attempt to; be about to~",
+    "romaji": "you to suru"
   },
   {
     "id": "N3-180",
     "level": "N3",
     "number": 180,
     "japanese": "ずに",
-    "english": "without doing~"
+    "english": "without doing~",
+    "romaji": "zuni"
   },
   {
     "id": "N3-181",
     "level": "N3",
     "number": 181,
     "japanese": "ずにはいられない",
-    "english": "can’t help but feel; can’t help but do"
+    "english": "can’t help but feel; can’t help but do",
+    "romaji": "zuni wa irarenai"
   },
   {
     "id": "N3-182",
     "level": "N3",
     "number": 182,
     "japanese": "ずつ",
-    "english": "apiece; each; at a time"
+    "english": "apiece; each; at a time",
+    "romaji": "zutsu"
   },
   {
     "id": "N2-1",
     "level": "N2",
     "number": 1,
     "japanese": "あげく",
-    "english": "to end up; in the end; finally; after all"
+    "english": "to end up; in the end; finally; after all",
+    "romaji": "ageku"
   },
   {
     "id": "N2-2",
     "level": "N2",
     "number": 2,
     "japanese": "あるいは",
-    "english": "or; either; maybe; perhaps; possibly"
+    "english": "or; either; maybe; perhaps; possibly",
+    "romaji": "aruiwa"
   },
   {
     "id": "N2-3",
     "level": "N2",
     "number": 3,
     "japanese": "ばかり",
-    "english": "about, approximately"
+    "english": "about, approximately",
+    "romaji": "bakari"
   },
   {
     "id": "N2-4",
     "level": "N2",
     "number": 4,
     "japanese": "ばかりだ",
-    "english": "continue to (go in negative direction)"
+    "english": "continue to (go in negative direction)",
+    "romaji": "bakari da"
   },
   {
     "id": "N2-5",
     "level": "N2",
     "number": 5,
     "japanese": "ばかりか",
-    "english": "not only.. but also; as well as"
+    "english": "not only.. but also; as well as",
+    "romaji": "bakari ka"
   },
   {
     "id": "N2-6",
     "level": "N2",
     "number": 6,
     "japanese": "ばかりに",
-    "english": "simply because; on account of"
+    "english": "simply because; on account of",
+    "romaji": "bakari ni"
   },
   {
     "id": "N2-7",
     "level": "N2",
     "number": 7,
     "japanese": "ちなみに",
-    "english": "by the way; incidentally"
+    "english": "by the way; incidentally",
+    "romaji": "chinamini"
   },
   {
     "id": "N2-8",
     "level": "N2",
     "number": 8,
     "japanese": "ちっとも～ない",
-    "english": "(not) at all; (not) in the least"
+    "english": "(not) at all; (not) in the least",
+    "romaji": "chitto mo~nai"
   },
   {
     "id": "N2-9",
     "level": "N2",
     "number": 9,
     "japanese": "だけあって",
-    "english": "being the case; precisely because"
+    "english": "being the case; precisely because",
+    "romaji": "dake atte"
   },
   {
     "id": "N2-10",
     "level": "N2",
     "number": 10,
     "japanese": "だけましだ",
-    "english": "it’s better than; should feel grateful for"
+    "english": "it’s better than; should feel grateful for",
+    "romaji": "dake mashi da"
   },
   {
     "id": "N2-11",
     "level": "N2",
     "number": 11,
     "japanese": "だけに",
-    "english": "being the case; precisely because"
+    "english": "being the case; precisely because",
+    "romaji": "dake ni"
   },
   {
     "id": "N2-12",
     "level": "N2",
     "number": 12,
     "japanese": "だけのことはある",
-    "english": "as expected of; not for nothing"
+    "english": "as expected of; not for nothing",
+    "romaji": "dake no koto wa aru"
   },
   {
     "id": "N2-13",
     "level": "N2",
     "number": 13,
     "japanese": "だけは",
-    "english": "to do all that one can"
+    "english": "to do all that one can",
+    "romaji": "dake wa"
   },
   {
     "id": "N2-14",
     "level": "N2",
     "number": 14,
     "japanese": "だって",
-    "english": "because; but; after all; even; too"
+    "english": "because; but; after all; even; too",
+    "romaji": "datte"
   },
   {
     "id": "N2-15",
     "level": "N2",
     "number": 15,
     "japanese": "でしかない",
-    "english": "merely; nothing but; no more than"
+    "english": "merely; nothing but; no more than",
+    "romaji": "de shika nai"
   },
   {
     "id": "N2-16",
     "level": "N2",
     "number": 16,
     "japanese": "どころではない",
-    "english": "not the time for; far from"
+    "english": "not the time for; far from",
+    "romaji": "dokoro dewa nai"
   },
   {
     "id": "N2-17",
     "level": "N2",
     "number": 17,
     "japanese": "どころか",
-    "english": "far from; anything but; let alone"
+    "english": "far from; anything but; let alone",
+    "romaji": "dokoro ka"
   },
   {
     "id": "N2-18",
     "level": "N2",
     "number": 18,
     "japanese": "どうやら",
-    "english": "apparently; seems like; somehow"
+    "english": "apparently; seems like; somehow",
+    "romaji": "dou yara"
   },
   {
     "id": "N2-19",
     "level": "N2",
     "number": 19,
     "japanese": "どうせ",
-    "english": "anyhow; in any case; at any rate"
+    "english": "anyhow; in any case; at any rate",
+    "romaji": "douse"
   },
   {
     "id": "N2-20",
     "level": "N2",
     "number": 20,
     "japanese": "得ない",
-    "english": "unable to; cannot; it is not possible to~"
+    "english": "unable to; cannot; it is not possible to~",
+    "romaji": "enai"
   },
   {
     "id": "N2-21",
     "level": "N2",
     "number": 21,
     "japanese": "得る",
-    "english": "can; to be able to; is possible to~"
+    "english": "can; to be able to; is possible to~",
+    "romaji": "eru / uru"
   },
   {
     "id": "N2-22",
     "level": "N2",
     "number": 22,
     "japanese": "再び",
-    "english": "again; once more"
+    "english": "again; once more",
+    "romaji": "futatabi"
   },
   {
     "id": "N2-23",
     "level": "N2",
     "number": 23,
     "japanese": "ふうに",
-    "english": "this way; that way; in such a way; how"
+    "english": "this way; that way; in such a way; how",
+    "romaji": "fuu ni"
   },
   {
     "id": "N2-24",
     "level": "N2",
     "number": 24,
     "japanese": "がきっかけで",
-    "english": "as a result of; taking advantage of"
+    "english": "as a result of; taking advantage of",
+    "romaji": "ga kikkake de"
   },
   {
     "id": "N2-25",
     "level": "N2",
     "number": 25,
     "japanese": "げ",
-    "english": "looks like; seems like; appears to"
+    "english": "looks like; seems like; appears to",
+    "romaji": "ge"
   },
   {
     "id": "N2-26",
     "level": "N2",
     "number": 26,
     "japanese": "逆に",
-    "english": "conversely; on the contrary"
+    "english": "conversely; on the contrary",
+    "romaji": "gyaku ni"
   },
   {
     "id": "N2-27",
     "level": "N2",
     "number": 27,
     "japanese": "反面",
-    "english": "while, although; on the other hand"
+    "english": "while, although; on the other hand",
+    "romaji": "hanmen"
   },
   {
     "id": "N2-28",
     "level": "N2",
     "number": 28,
     "japanese": "果たして",
-    "english": "as was expected; sure enough; really"
+    "english": "as was expected; sure enough; really",
+    "romaji": "hatashite"
   },
   {
     "id": "N2-29",
     "level": "N2",
     "number": 29,
     "japanese": "一応",
-    "english": "more or less; pretty much; roughly"
+    "english": "more or less; pretty much; roughly",
+    "romaji": "ichiou"
   },
   {
     "id": "N2-30",
     "level": "N2",
     "number": 30,
     "japanese": "以外",
-    "english": "with the exception of; excepting"
+    "english": "with the exception of; excepting",
+    "romaji": "igai"
   },
   {
     "id": "N2-31",
     "level": "N2",
     "number": 31,
     "japanese": "以上に",
-    "english": "more than; not less than; beyond"
+    "english": "more than; not less than; beyond",
+    "romaji": "ijou ni"
   },
   {
     "id": "N2-32",
     "level": "N2",
     "number": 32,
     "japanese": "以上は",
-    "english": "because; since; seeing that"
+    "english": "because; since; seeing that",
+    "romaji": "ijou wa"
   },
   {
     "id": "N2-33",
     "level": "N2",
     "number": 33,
     "japanese": "いきなり",
-    "english": "abruptly; suddenly; all of a sudden"
+    "english": "abruptly; suddenly; all of a sudden",
+    "romaji": "ikinari"
   },
   {
     "id": "N2-34",
     "level": "N2",
     "number": 34,
     "japanese": "一気に",
-    "english": "in one go; without stopping; all at once"
+    "english": "in one go; without stopping; all at once",
+    "romaji": "ikki ni"
   },
   {
     "id": "N2-35",
     "level": "N2",
     "number": 35,
     "japanese": "一方で",
-    "english": "on one hand, on the other hand"
+    "english": "on one hand, on the other hand",
+    "romaji": "ippou de"
   },
   {
     "id": "N2-36",
     "level": "N2",
     "number": 36,
     "japanese": "いわゆる",
-    "english": "what is called; as it is called; so-called"
+    "english": "what is called; as it is called; so-called",
+    "romaji": "iwayuru"
   },
   {
     "id": "N2-37",
     "level": "N2",
     "number": 37,
     "japanese": "いよいよ",
-    "english": "at last; finally; beyond doubt"
+    "english": "at last; finally; beyond doubt",
+    "romaji": "iyoiyo"
   },
   {
     "id": "N2-38",
     "level": "N2",
     "number": 38,
     "japanese": "上",
-    "english": "for the sake of; from the standpoint of"
+    "english": "for the sake of; from the standpoint of",
+    "romaji": "jou"
   },
   {
     "id": "N2-39",
     "level": "N2",
     "number": 39,
     "japanese": "かのように",
-    "english": "as if; just like"
+    "english": "as if; just like",
+    "romaji": "ka no you ni"
   },
   {
     "id": "N2-40",
     "level": "N2",
     "number": 40,
     "japanese": "かと思ったら",
-    "english": "just when; no sooner than"
+    "english": "just when; no sooner than",
+    "romaji": "ka to omottara"
   },
   {
     "id": "N2-41",
     "level": "N2",
     "number": 41,
     "japanese": "か～ないかのうちに",
-    "english": "just as; right after; as soon as"
+    "english": "just as; right after; as soon as",
+    "romaji": "ka~nai ka no uchi ni"
   },
   {
     "id": "N2-42",
     "level": "N2",
     "number": 42,
     "japanese": "かえって",
-    "english": "on the contrary; rather; all the more"
+    "english": "on the contrary; rather; all the more",
+    "romaji": "kaette"
   },
   {
     "id": "N2-43",
     "level": "N2",
     "number": 43,
     "japanese": "限り",
-    "english": "as long as; while… is the case; as far as"
+    "english": "as long as; while… is the case; as far as",
+    "romaji": "kagiri"
   },
   {
     "id": "N2-44",
     "level": "N2",
     "number": 44,
     "japanese": "甲斐がある",
-    "english": "it’s worth one’s efforts to do something"
+    "english": "it’s worth one’s efforts to do something",
+    "romaji": "kai ga aru"
   },
   {
     "id": "N2-45",
     "level": "N2",
     "number": 45,
     "japanese": "かねない",
-    "english": "(someone) might do something"
+    "english": "(someone) might do something",
+    "romaji": "kanenai"
   },
   {
     "id": "N2-46",
     "level": "N2",
     "number": 46,
     "japanese": "かねる",
-    "english": "unable to do something; can’t do~"
+    "english": "unable to do something; can’t do~",
+    "romaji": "kaneru"
   },
   {
     "id": "N2-47",
     "level": "N2",
     "number": 47,
     "japanese": "から言うと",
-    "english": "in terms of; from the point of view of"
+    "english": "in terms of; from the point of view of",
+    "romaji": "kara iu to"
   },
   {
     "id": "N2-48",
     "level": "N2",
     "number": 48,
     "japanese": "からこそ",
-    "english": "precisely because"
+    "english": "precisely because",
+    "romaji": "kara koso"
   },
   {
     "id": "N2-49",
     "level": "N2",
     "number": 49,
     "japanese": "から見ると",
-    "english": "from the point of view of; judging from"
+    "english": "from the point of view of; judging from",
+    "romaji": "kara miru to"
   },
   {
     "id": "N2-50",
     "level": "N2",
     "number": 50,
     "japanese": "からには",
-    "english": "now that; since; so long as; because"
+    "english": "now that; since; so long as; because",
+    "romaji": "kara niwa"
   },
   {
     "id": "N2-51",
     "level": "N2",
     "number": 51,
     "japanese": "からして",
-    "english": "judging from; based on; since; from"
+    "english": "judging from; based on; since; from",
+    "romaji": "kara shite"
   },
   {
     "id": "N2-52",
     "level": "N2",
     "number": 52,
     "japanese": "からすると",
-    "english": "judging from; considering"
+    "english": "judging from; considering",
+    "romaji": "kara suru to"
   },
   {
     "id": "N2-53",
     "level": "N2",
     "number": 53,
     "japanese": "からと言って",
-    "english": "just because; even if; even though~"
+    "english": "just because; even if; even though~",
+    "romaji": "kara to itte"
   },
   {
     "id": "N2-54",
     "level": "N2",
     "number": 54,
     "japanese": "っこない",
-    "english": "no chance of; definitely not possible"
+    "english": "no chance of; definitely not possible",
+    "romaji": "kkonai"
   },
   {
     "id": "N2-55",
     "level": "N2",
     "number": 55,
     "japanese": "ことだ",
-    "english": "should do~ (suggestions or advice)"
+    "english": "should do~ (suggestions or advice)",
+    "romaji": "koto da"
   },
   {
     "id": "N2-56",
     "level": "N2",
     "number": 56,
     "japanese": "ことだから",
-    "english": "because; since~"
+    "english": "because; since~",
+    "romaji": "koto dakara"
   },
   {
     "id": "N2-57",
     "level": "N2",
     "number": 57,
     "japanese": "ことか",
-    "english": "how…!; what…!"
+    "english": "how…!; what…!",
+    "romaji": "koto ka"
   },
   {
     "id": "N2-58",
     "level": "N2",
     "number": 58,
     "japanese": "ことなく",
-    "english": "without doing something even once"
+    "english": "without doing something even once",
+    "romaji": "koto naku"
   },
   {
     "id": "N2-59",
     "level": "N2",
     "number": 59,
     "japanese": "ことに",
-    "english": "emphasize speaker's feelings"
+    "english": "emphasize speaker's feelings",
+    "romaji": "koto ni"
   },
   {
     "id": "N2-60",
     "level": "N2",
     "number": 60,
     "japanese": "ことにはならない",
-    "english": "just because… doesn’t mean~"
+    "english": "just because… doesn’t mean~",
+    "romaji": "koto niwa naranai"
   },
   {
     "id": "N2-61",
     "level": "N2",
     "number": 61,
     "japanese": "くせして",
-    "english": "although~; despite the fact that~"
+    "english": "although~; despite the fact that~",
+    "romaji": "kuse shite"
   },
   {
     "id": "N2-62",
     "level": "N2",
     "number": 62,
     "japanese": "まだしも",
-    "english": "rather; better"
+    "english": "rather; better",
+    "romaji": "madashimo"
   },
   {
     "id": "N2-63",
     "level": "N2",
     "number": 63,
     "japanese": "まい",
-    "english": "will not; intend not to"
+    "english": "will not; intend not to",
+    "romaji": "mai"
   },
   {
     "id": "N2-64",
     "level": "N2",
     "number": 64,
     "japanese": "ままに",
-    "english": "as, to do as~"
+    "english": "as, to do as~",
+    "romaji": "mama ni"
   },
   {
     "id": "N2-65",
     "level": "N2",
     "number": 65,
     "japanese": "全く～ない",
-    "english": "not at all~"
+    "english": "not at all~",
+    "romaji": "mattaku~nai"
   },
   {
     "id": "N2-66",
     "level": "N2",
     "number": 66,
     "japanese": "もかまわず",
-    "english": "without caring; without worrying"
+    "english": "without caring; without worrying",
+    "romaji": "mo kamawazu"
   },
   {
     "id": "N2-67",
     "level": "N2",
     "number": 67,
     "japanese": "も当然だ",
-    "english": "it’s only natural; no wonder"
+    "english": "it’s only natural; no wonder",
+    "romaji": "mo touzen da"
   },
   {
     "id": "N2-68",
     "level": "N2",
     "number": 68,
     "japanese": "もの / もん",
-    "english": "because; reason/ excuse/dissatisfaction"
+    "english": "because; reason/ excuse/dissatisfaction",
+    "romaji": "mono / mon"
   },
   {
     "id": "N2-69",
     "level": "N2",
     "number": 69,
     "japanese": "ものだ",
-    "english": "describe feeling; express memories"
+    "english": "describe feeling; express memories",
+    "romaji": "mono da"
   },
   {
     "id": "N2-70",
     "level": "N2",
     "number": 70,
     "japanese": "ものだから",
-    "english": "so; therefore; the reason for something"
+    "english": "so; therefore; the reason for something",
+    "romaji": "mono dakara"
   },
   {
     "id": "N2-71",
     "level": "N2",
     "number": 71,
     "japanese": "ものではない",
-    "english": "shouldn’t do something; it’s impossible"
+    "english": "shouldn’t do something; it’s impossible",
+    "romaji": "mono dewa nai"
   },
   {
     "id": "N2-72",
     "level": "N2",
     "number": 72,
     "japanese": "ものがある",
-    "english": "there is such a thing; to be the case"
+    "english": "there is such a thing; to be the case",
+    "romaji": "mono ga aru"
   },
   {
     "id": "N2-73",
     "level": "N2",
     "number": 73,
     "japanese": "ものか / もんか",
-    "english": "as if; there's no way~"
+    "english": "as if; there's no way~",
+    "romaji": "mono ka / mon ka"
   },
   {
     "id": "N2-74",
     "level": "N2",
     "number": 74,
     "japanese": "ものなら",
-    "english": "if [A] is possible, then [B]"
+    "english": "if [A] is possible, then [B]",
+    "romaji": "mono nara"
   },
   {
     "id": "N2-75",
     "level": "N2",
     "number": 75,
     "japanese": "ものの",
-    "english": "but; although; even though~"
+    "english": "but; although; even though~",
+    "romaji": "monono"
   },
   {
     "id": "N2-76",
     "level": "N2",
     "number": 76,
     "japanese": "もっとも",
-    "english": "but then; although; though~"
+    "english": "but then; although; though~",
+    "romaji": "motto mo"
   },
   {
     "id": "N2-77",
     "level": "N2",
     "number": 77,
     "japanese": "もう少しで",
-    "english": "almost; nearly, close to~"
+    "english": "almost; nearly, close to~",
+    "romaji": "mou sukoshi de"
   },
   {
     "id": "N2-78",
     "level": "N2",
     "number": 78,
     "japanese": "ないではいられない",
-    "english": "can’t help but feel; can’t help but do"
+    "english": "can’t help but feel; can’t help but do",
+    "romaji": "nai dewa irarenai"
   },
   {
     "id": "N2-79",
     "level": "N2",
     "number": 79,
     "japanese": "ないことには～ない",
-    "english": "unless you~"
+    "english": "unless you~",
+    "romaji": "nai koto niwa~nai"
   },
   {
     "id": "N2-80",
     "level": "N2",
     "number": 80,
     "japanese": "中を /中では",
-    "english": "in; on; in the midst of; when; while~"
+    "english": "in; on; in the midst of; when; while~",
+    "romaji": "naka o /naka dewa"
   },
   {
     "id": "N2-81",
     "level": "N2",
     "number": 81,
     "japanese": "なくはない",
-    "english": "it’s not that; I may (double negative)"
+    "english": "it’s not that; I may (double negative)",
+    "romaji": "naku wa nai"
   },
   {
     "id": "N2-82",
     "level": "N2",
     "number": 82,
     "japanese": "なくて済む",
-    "english": "get by without doing~"
+    "english": "get by without doing~",
+    "romaji": "nakute sumu"
   },
   {
     "id": "N2-83",
     "level": "N2",
     "number": 83,
     "japanese": "何も～ない",
-    "english": "nothing; (not) ~ at all"
+    "english": "nothing; (not) ~ at all",
+    "romaji": "nani mo~nai"
   },
   {
     "id": "N2-84",
     "level": "N2",
     "number": 84,
     "japanese": "なお",
-    "english": "still; yet; furthermore; in addition~"
+    "english": "still; yet; furthermore; in addition~",
+    "romaji": "nao"
   },
   {
     "id": "N2-85",
     "level": "N2",
     "number": 85,
     "japanese": "ねばならない",
-    "english": "have to do; must; should~"
+    "english": "have to do; must; should~",
+    "romaji": "neba naranai"
   },
   {
     "id": "N2-86",
     "level": "N2",
     "number": 86,
     "japanese": "にあたって",
-    "english": "at the time; on the occasion of~"
+    "english": "at the time; on the occasion of~",
+    "romaji": "ni atatte"
   },
   {
     "id": "N2-87",
     "level": "N2",
     "number": 87,
     "japanese": "にほかならない",
-    "english": "nothing but; none other than~"
+    "english": "nothing but; none other than~",
+    "romaji": "ni hoka naranai"
   },
   {
     "id": "N2-88",
     "level": "N2",
     "number": 88,
     "japanese": "に限らず",
-    "english": "not just; not only.. but also~"
+    "english": "not just; not only.. but also~",
+    "romaji": "ni kagirazu"
   },
   {
     "id": "N2-89",
     "level": "N2",
     "number": 89,
     "japanese": "に限る",
-    "english": "is best; nothing is better than~"
+    "english": "is best; nothing is better than~",
+    "romaji": "ni kagiru"
   },
   {
     "id": "N2-90",
     "level": "N2",
     "number": 90,
     "japanese": "に限って",
-    "english": "only; in particular~"
+    "english": "only; in particular~",
+    "romaji": "ni kagitte"
   },
   {
     "id": "N2-91",
     "level": "N2",
     "number": 91,
     "japanese": "に関わらず",
-    "english": "in spite of; regardless of~"
+    "english": "in spite of; regardless of~",
+    "romaji": "ni kakawarazu"
   },
   {
     "id": "N2-92",
     "level": "N2",
     "number": 92,
     "japanese": "に関わる",
-    "english": "to relate to; to have to do with"
+    "english": "to relate to; to have to do with",
+    "romaji": "ni kakawaru"
   },
   {
     "id": "N2-93",
     "level": "N2",
     "number": 93,
     "japanese": "に決まっている",
-    "english": "certainly; I’m sure/certain that"
+    "english": "certainly; I’m sure/certain that",
+    "romaji": "ni kimatte iru"
   },
   {
     "id": "N2-94",
     "level": "N2",
     "number": 94,
     "japanese": "に越したことはない",
-    "english": "it’s best that, nothing better than"
+    "english": "it’s best that, nothing better than",
+    "romaji": "ni koshita koto wa nai"
   },
   {
     "id": "N2-95",
     "level": "N2",
     "number": 95,
     "japanese": "に応えて",
-    "english": "in response to"
+    "english": "in response to",
+    "romaji": "ni kotaete"
   },
   {
     "id": "N2-96",
     "level": "N2",
     "number": 96,
     "japanese": "に加えて",
-    "english": "in addition"
+    "english": "in addition",
+    "romaji": "ni kuwaete"
   },
   {
     "id": "N2-97",
     "level": "N2",
     "number": 97,
     "japanese": "に基づいて",
-    "english": "based on; on the basis of"
+    "english": "based on; on the basis of",
+    "romaji": "ni motozuite"
   },
   {
     "id": "N2-98",
     "level": "N2",
     "number": 98,
     "japanese": "に向かって",
-    "english": "to face; to go towards; to head to"
+    "english": "to face; to go towards; to head to",
+    "romaji": "ni mukatte"
   },
   {
     "id": "N2-99",
     "level": "N2",
     "number": 99,
     "japanese": "に応じて",
-    "english": "depending on; in accordance with"
+    "english": "depending on; in accordance with",
+    "romaji": "ni oujite"
   },
   {
     "id": "N2-100",
     "level": "N2",
     "number": 100,
     "japanese": "に際して",
-    "english": "on the occasion of; at the time of"
+    "english": "on the occasion of; at the time of",
+    "romaji": "ni saishite"
   },
   {
     "id": "N2-101",
     "level": "N2",
     "number": 101,
     "japanese": "に先立ち",
-    "english": "before; prior to"
+    "english": "before; prior to",
+    "romaji": "ni sakidachi"
   },
   {
     "id": "N2-102",
     "level": "N2",
     "number": 102,
     "japanese": "にせよ/ にしろ",
-    "english": "even if; regardless; whether... or"
+    "english": "even if; regardless; whether... or",
+    "romaji": "ni seyo/ ni shiro"
   },
   {
     "id": "N2-103",
     "level": "N2",
     "number": 103,
     "japanese": "にしろ～にしろ",
-    "english": "whether… or~"
+    "english": "whether… or~",
+    "romaji": "ni shiro~ni shiro"
   },
   {
     "id": "N2-104",
     "level": "N2",
     "number": 104,
     "japanese": "にしたら",
-    "english": "from one’s perspective"
+    "english": "from one’s perspective",
+    "romaji": "ni shitara"
   },
   {
     "id": "N2-105",
     "level": "N2",
     "number": 105,
     "japanese": "にしても",
-    "english": "regardless of whether"
+    "english": "regardless of whether",
+    "romaji": "ni shitemo"
   },
   {
     "id": "N2-106",
     "level": "N2",
     "number": 106,
     "japanese": "に沿って",
-    "english": "along with; in accordance with"
+    "english": "along with; in accordance with",
+    "romaji": "ni sotte"
   },
   {
     "id": "N2-107",
     "level": "N2",
     "number": 107,
     "japanese": "に相違ない",
-    "english": "without a doubt; certain; sure"
+    "english": "without a doubt; certain; sure",
+    "romaji": "ni soui nai"
   },
   {
     "id": "N2-108",
     "level": "N2",
     "number": 108,
     "japanese": "に過ぎない",
-    "english": "no more than; just; merely; only~"
+    "english": "no more than; just; merely; only~",
+    "romaji": "ni suginai"
   },
   {
     "id": "N2-109",
     "level": "N2",
     "number": 109,
     "japanese": "に伴って",
-    "english": "as; due to; with; along with; following"
+    "english": "as; due to; with; along with; following",
+    "romaji": "ni tomonatte"
   },
   {
     "id": "N2-110",
     "level": "N2",
     "number": 110,
     "japanese": "につけ",
-    "english": "every time; whenever; as; whether"
+    "english": "every time; whenever; as; whether",
+    "romaji": "ni tsuke"
   },
   {
     "id": "N2-111",
     "level": "N2",
     "number": 111,
     "japanese": "につき",
-    "english": "due to; because of; per; each"
+    "english": "due to; because of; per; each",
+    "romaji": "ni tsuki"
   },
   {
     "id": "N2-112",
     "level": "N2",
     "number": 112,
     "japanese": "にわたって",
-    "english": "throughout; over a period of"
+    "english": "throughout; over a period of",
+    "romaji": "ni watatte"
   },
   {
     "id": "N2-113",
     "level": "N2",
     "number": 113,
     "japanese": "にも関わらず",
-    "english": "despite; in spite of; nevertheless"
+    "english": "despite; in spite of; nevertheless",
+    "romaji": "nimo kakawarazu"
   },
   {
     "id": "N2-114",
     "level": "N2",
     "number": 114,
     "japanese": "にて",
-    "english": "in, at, with, by (formal particle)"
+    "english": "in, at, with, by (formal particle)",
+    "romaji": "nite"
   },
   {
     "id": "N2-115",
     "level": "N2",
     "number": 115,
     "japanese": "のももっともだ",
-    "english": "no wonder; …is only natural"
+    "english": "no wonder; …is only natural",
+    "romaji": "no mo motto mo da"
   },
   {
     "id": "N2-116",
     "level": "N2",
     "number": 116,
     "japanese": "の下で",
-    "english": "under; with~"
+    "english": "under; with~",
+    "romaji": "no moto de"
   },
   {
     "id": "N2-117",
     "level": "N2",
     "number": 117,
     "japanese": "の上では",
-    "english": "according to; from the viewpoint of~"
+    "english": "according to; from the viewpoint of~",
+    "romaji": "no ue de wa"
   },
   {
     "id": "N2-118",
     "level": "N2",
     "number": 118,
     "japanese": "のみならず",
-    "english": "not only; besides; as well as~"
+    "english": "not only; besides; as well as~",
+    "romaji": "nominarazu"
   },
   {
     "id": "N2-119",
     "level": "N2",
     "number": 119,
     "japanese": "ぬ",
-    "english": "negative verb conjugation (traditional)"
+    "english": "negative verb conjugation (traditional)",
+    "romaji": "nu"
   },
   {
     "id": "N2-120",
     "level": "N2",
     "number": 120,
     "japanese": "抜きにして",
-    "english": "without; leaving out; cutting out~"
+    "english": "without; leaving out; cutting out~",
+    "romaji": "nuki ni shite"
   },
   {
     "id": "N2-121",
     "level": "N2",
     "number": 121,
     "japanese": "抜く",
-    "english": "from beginning to end; completely"
+    "english": "from beginning to end; completely",
+    "romaji": "nuku"
   },
   {
     "id": "N2-122",
     "level": "N2",
     "number": 122,
     "japanese": "を契機に",
-    "english": "as a good opportunity/chance to"
+    "english": "as a good opportunity/chance to",
+    "romaji": "o keiki ni"
   },
   {
     "id": "N2-123",
     "level": "N2",
     "number": 123,
     "japanese": "をめぐって",
-    "english": "concerning; in regard to~"
+    "english": "concerning; in regard to~",
+    "romaji": "o megutte"
   },
   {
     "id": "N2-124",
     "level": "N2",
     "number": 124,
     "japanese": "をもとに",
-    "english": "based on; derived from; building on"
+    "english": "based on; derived from; building on",
+    "romaji": "o moto ni"
   },
   {
     "id": "N2-125",
     "level": "N2",
     "number": 125,
     "japanese": "を除いて",
-    "english": "except; with the exception of"
+    "english": "except; with the exception of",
+    "romaji": "o nozoite"
   },
   {
     "id": "N2-126",
     "level": "N2",
     "number": 126,
     "japanese": "を問わず",
-    "english": "regardless of; irrespective of; no matter"
+    "english": "regardless of; irrespective of; no matter",
+    "romaji": "o towazu"
   },
   {
     "id": "N2-127",
     "level": "N2",
     "number": 127,
     "japanese": "お～願う",
-    "english": "please do; could you please~"
+    "english": "please do; could you please~",
+    "romaji": "o~negau"
   },
   {
     "id": "N2-128",
     "level": "N2",
     "number": 128,
     "japanese": "おまけに",
-    "english": "to make matters worse; what's more"
+    "english": "to make matters worse; what's more",
+    "romaji": "omake ni"
   },
   {
     "id": "N2-129",
     "level": "N2",
     "number": 129,
     "japanese": "恐らく",
-    "english": "perhaps; likely; probably; I dare say~"
+    "english": "perhaps; likely; probably; I dare say~",
+    "romaji": "osoraku"
   },
   {
     "id": "N2-130",
     "level": "N2",
     "number": 130,
     "japanese": "恐れがある",
-    "english": "it is feared that; to be in danger of"
+    "english": "it is feared that; to be in danger of",
+    "romaji": "osore ga aru"
   },
   {
     "id": "N2-131",
     "level": "N2",
     "number": 131,
     "japanese": "及び",
-    "english": "and; as well as~"
+    "english": "and; as well as~",
+    "romaji": "oyobi"
   },
   {
     "id": "N2-132",
     "level": "N2",
     "number": 132,
     "japanese": "ろくに～ない",
-    "english": "not well; not enough; improperly"
+    "english": "not well; not enough; improperly",
+    "romaji": "roku ni~nai"
   },
   {
     "id": "N2-133",
     "level": "N2",
     "number": 133,
     "japanese": "幸いなことに",
-    "english": "fortunately; luckily; thankfully~"
+    "english": "fortunately; luckily; thankfully~",
+    "romaji": "saiwai na koto ni"
   },
   {
     "id": "N2-134",
     "level": "N2",
     "number": 134,
     "japanese": "せいか",
-    "english": "perhaps because~"
+    "english": "perhaps because~",
+    "romaji": "sei ka"
   },
   {
     "id": "N2-135",
     "level": "N2",
     "number": 135,
     "japanese": "せっかく",
-    "english": "especially; (thank you for) troubling to"
+    "english": "especially; (thank you for) troubling to",
+    "romaji": "sekkaku"
   },
   {
     "id": "N2-136",
     "level": "N2",
     "number": 136,
     "japanese": "せめて",
-    "english": "at least; at most~"
+    "english": "at least; at most~",
+    "romaji": "semete"
   },
   {
     "id": "N2-137",
     "level": "N2",
     "number": 137,
     "japanese": "次第",
-    "english": "as soon as, dependent upon"
+    "english": "as soon as, dependent upon",
+    "romaji": "shidai"
   },
   {
     "id": "N2-138",
     "level": "N2",
     "number": 138,
     "japanese": "次第で",
-    "english": "depending on; so~"
+    "english": "depending on; so~",
+    "romaji": "shidai de"
   },
   {
     "id": "N2-139",
     "level": "N2",
     "number": 139,
     "japanese": "次第に",
-    "english": "gradually; in sequence; in order"
+    "english": "gradually; in sequence; in order",
+    "romaji": "shidai ni"
   },
   {
     "id": "N2-140",
     "level": "N2",
     "number": 140,
     "japanese": "しかも",
-    "english": "moreover; furthermore; what’s more~"
+    "english": "moreover; furthermore; what’s more~",
+    "romaji": "shikamo"
   },
   {
     "id": "N2-141",
     "level": "N2",
     "number": 141,
     "japanese": "その上",
-    "english": "besides; in addition; furthermore~"
+    "english": "besides; in addition; furthermore~",
+    "romaji": "sono ue"
   },
   {
     "id": "N2-142",
     "level": "N2",
     "number": 142,
     "japanese": "それなのに",
-    "english": "and yet; despite this; but even so~"
+    "english": "and yet; despite this; but even so~",
+    "romaji": "sore na noni"
   },
   {
     "id": "N2-143",
     "level": "N2",
     "number": 143,
     "japanese": "それなら",
-    "english": "if that’s the case; if so~"
+    "english": "if that’s the case; if so~",
+    "romaji": "sore nara"
   },
   {
     "id": "N2-144",
     "level": "N2",
     "number": 144,
     "japanese": "それにしても",
-    "english": "nevertheless; at any rate; even so"
+    "english": "nevertheless; at any rate; even so",
+    "romaji": "sore ni shitemo"
   },
   {
     "id": "N2-145",
     "level": "N2",
     "number": 145,
     "japanese": "そう言えば",
-    "english": "come to think of it~"
+    "english": "come to think of it~",
+    "romaji": "sou ieba"
   },
   {
     "id": "N2-146",
     "level": "N2",
     "number": 146,
     "japanese": "そうすると",
-    "english": "having done that; if that is done"
+    "english": "having done that; if that is done",
+    "romaji": "sou suru to"
   },
   {
     "id": "N2-147",
     "level": "N2",
     "number": 147,
     "japanese": "末に",
-    "english": "finally; after; following; at the end"
+    "english": "finally; after; following; at the end",
+    "romaji": "sue ni"
   },
   {
     "id": "N2-148",
     "level": "N2",
     "number": 148,
     "japanese": "少しも～ない",
-    "english": "not one bit; not even a little~"
+    "english": "not one bit; not even a little~",
+    "romaji": "sukoshi mo~nai"
   },
   {
     "id": "N2-149",
     "level": "N2",
     "number": 149,
     "japanese": "少なくとも",
-    "english": "at least~"
+    "english": "at least~",
+    "romaji": "sukunaku tomo"
   },
   {
     "id": "N2-150",
     "level": "N2",
     "number": 150,
     "japanese": "直ちに",
-    "english": "at once; immediately; directly"
+    "english": "at once; immediately; directly",
+    "romaji": "tadachi ni"
   },
   {
     "id": "N2-151",
     "level": "N2",
     "number": 151,
     "japanese": "たまえ",
-    "english": "do~; order somebody to do something"
+    "english": "do~; order somebody to do something",
+    "romaji": "tamae"
   },
   {
     "id": "N2-152",
     "level": "N2",
     "number": 152,
     "japanese": "てばかりはいられない",
-    "english": "can’t keep doing~"
+    "english": "can’t keep doing~",
+    "romaji": "te bakari wa irarenai"
   },
   {
     "id": "N2-153",
     "level": "N2",
     "number": 153,
     "japanese": "てでも",
-    "english": "even if I have to; by all means~"
+    "english": "even if I have to; by all means~",
+    "romaji": "te demo"
   },
   {
     "id": "N2-154",
     "level": "N2",
     "number": 154,
     "japanese": "て以来",
-    "english": "since; henceforth~"
+    "english": "since; henceforth~",
+    "romaji": "te irai"
   },
   {
     "id": "N2-155",
     "level": "N2",
     "number": 155,
     "japanese": "ていては",
-    "english": "if one keeps doing~"
+    "english": "if one keeps doing~",
+    "romaji": "te ite wa"
   },
   {
     "id": "N2-156",
     "level": "N2",
     "number": 156,
     "japanese": "てこそ",
-    "english": "now that; since (something happened)"
+    "english": "now that; since (something happened)",
+    "romaji": "te koso"
   },
   {
     "id": "N2-157",
     "level": "N2",
     "number": 157,
     "japanese": "てまで",
-    "english": "even; will go far so as to~"
+    "english": "even; will go far so as to~",
+    "romaji": "te made"
   },
   {
     "id": "N2-158",
     "level": "N2",
     "number": 158,
     "japanese": "てならない",
-    "english": "can't help but; dying to; extremely~"
+    "english": "can't help but; dying to; extremely~",
+    "romaji": "te naranai"
   },
   {
     "id": "N2-159",
     "level": "N2",
     "number": 159,
     "japanese": "てたまらない",
-    "english": "can't help but; dying to; extremely~"
+    "english": "can't help but; dying to; extremely~",
+    "romaji": "te tamaranai"
   },
   {
     "id": "N2-160",
     "level": "N2",
     "number": 160,
     "japanese": "て当然だ",
-    "english": "natural; as a matter of course"
+    "english": "natural; as a matter of course",
+    "romaji": "te touzen da"
   },
   {
     "id": "N2-161",
     "level": "N2",
     "number": 161,
     "japanese": "ては / では",
-    "english": "whenever; if; when~; repetitive action"
+    "english": "whenever; if; when~; repetitive action",
+    "romaji": "tewa / dewa"
   },
   {
     "id": "N2-162",
     "level": "N2",
     "number": 162,
     "japanese": "てはいられない",
-    "english": "can’t afford to; unable to~"
+    "english": "can’t afford to; unable to~",
+    "romaji": "tewa irarenai"
   },
   {
     "id": "N2-163",
     "level": "N2",
     "number": 163,
     "japanese": "てはならない",
-    "english": "must not; cannot; should not~"
+    "english": "must not; cannot; should not~",
+    "romaji": "tewa naranai"
   },
   {
     "id": "N2-164",
     "level": "N2",
     "number": 164,
     "japanese": "ては～ては",
-    "english": "repetitive situations/actions"
+    "english": "repetitive situations/actions",
+    "romaji": "tewa~tewa"
   },
   {
     "id": "N2-165",
     "level": "N2",
     "number": 165,
     "japanese": "と同時に",
-    "english": "at the same time as; while"
+    "english": "at the same time as; while",
+    "romaji": "to douji ni"
   },
   {
     "id": "N2-166",
     "level": "N2",
     "number": 166,
     "japanese": "といった",
-    "english": "like; such as~"
+    "english": "like; such as~",
+    "romaji": "to itta"
   },
   {
     "id": "N2-167",
     "level": "N2",
     "number": 167,
     "japanese": "というふうに",
-    "english": "in such a way that~"
+    "english": "in such a way that~",
+    "romaji": "to iu fuu ni"
   },
   {
     "id": "N2-168",
     "level": "N2",
     "number": 168,
     "japanese": "ということは",
-    "english": "that is to say; in other words~"
+    "english": "that is to say; in other words~",
+    "romaji": "to iu koto wa"
   },
   {
     "id": "N2-169",
     "level": "N2",
     "number": 169,
     "japanese": "というものだ",
-    "english": "something like; something called~"
+    "english": "something like; something called~",
+    "romaji": "to iu mono da"
   },
   {
     "id": "N2-170",
     "level": "N2",
     "number": 170,
     "japanese": "というものではない",
-    "english": "there is no guarantee that~"
+    "english": "there is no guarantee that~",
+    "romaji": "to iu mono dewa nai"
   },
   {
     "id": "N2-171",
     "level": "N2",
     "number": 171,
     "japanese": "と考えられる",
-    "english": "one can think that; it is conceivable that"
+    "english": "one can think that; it is conceivable that",
+    "romaji": "to kangaerareru"
   },
   {
     "id": "N2-172",
     "level": "N2",
     "number": 172,
     "japanese": "とか（で）",
-    "english": "I heard that~"
+    "english": "I heard that~",
+    "romaji": "toka (de)"
   },
   {
     "id": "N2-173",
     "level": "N2",
     "number": 173,
     "japanese": "とっくに",
-    "english": "long ago; already; a long time ago"
+    "english": "long ago; already; a long time ago",
+    "romaji": "tokku ni"
   },
   {
     "id": "N2-174",
     "level": "N2",
     "number": 174,
     "japanese": "ところだった",
-    "english": "was just about to do something"
+    "english": "was just about to do something",
+    "romaji": "tokoro datta"
   },
   {
     "id": "N2-175",
     "level": "N2",
     "number": 175,
     "japanese": "ところに",
-    "english": "at the time; just as I was~"
+    "english": "at the time; just as I was~",
+    "romaji": "tokoro ni"
   },
   {
     "id": "N2-176",
     "level": "N2",
     "number": 176,
     "japanese": "ところを見ると",
-    "english": "judging from; seeing that~"
+    "english": "judging from; seeing that~",
+    "romaji": "tokoro o miru to"
   },
   {
     "id": "N2-177",
     "level": "N2",
     "number": 177,
     "japanese": "とも",
-    "english": "even if; no matter; though~"
+    "english": "even if; no matter; though~",
+    "romaji": "tomo"
   },
   {
     "id": "N2-178",
     "level": "N2",
     "number": 178,
     "japanese": "としても",
-    "english": "assuming; even if~"
+    "english": "assuming; even if~",
+    "romaji": "toshitemo"
   },
   {
     "id": "N2-179",
     "level": "N2",
     "number": 179,
     "japanese": "つつ",
-    "english": "while; even though; despite~"
+    "english": "while; even though; despite~",
+    "romaji": "tsutsu"
   },
   {
     "id": "N2-180",
     "level": "N2",
     "number": 180,
     "japanese": "つつある",
-    "english": "to be doing; in the process of doing~"
+    "english": "to be doing; in the process of doing~",
+    "romaji": "tsutsu aru"
   },
   {
     "id": "N2-181",
     "level": "N2",
     "number": 181,
     "japanese": "上は",
-    "english": "now that; since; as long as~"
+    "english": "now that; since; as long as~",
+    "romaji": "ue wa"
   },
   {
     "id": "N2-182",
     "level": "N2",
     "number": 182,
     "japanese": "はもとより",
-    "english": "also; let alone; from the beginning"
+    "english": "also; let alone; from the beginning",
+    "romaji": "wa moto yori"
   },
   {
     "id": "N2-183",
     "level": "N2",
     "number": 183,
     "japanese": "はともかく",
-    "english": "anyhow; anyway; regardless"
+    "english": "anyhow; anyway; regardless",
+    "romaji": "wa tomokaku"
   },
   {
     "id": "N2-184",
     "level": "N2",
     "number": 184,
     "japanese": "わずかに",
-    "english": "slightly; only; barely; narrowly~"
+    "english": "slightly; only; barely; narrowly~",
+    "romaji": "wazuka ni"
   },
   {
     "id": "N2-185",
     "level": "N2",
     "number": 185,
     "japanese": "やがて",
-    "english": "before long; soon; almost; eventually~"
+    "english": "before long; soon; almost; eventually~",
+    "romaji": "yagate"
   },
   {
     "id": "N2-186",
     "level": "N2",
     "number": 186,
     "japanese": "やら～やら",
-    "english": "such things as A and B; and so on~"
+    "english": "such things as A and B; and so on~",
+    "romaji": "yara~yara"
   },
   {
     "id": "N2-187",
     "level": "N2",
     "number": 187,
     "japanese": "よほど / よっぽど",
-    "english": "very; greatly; much; to a large extent"
+    "english": "very; greatly; much; to a large extent",
+    "romaji": "yohodo / yoppodo"
   },
   {
     "id": "N2-188",
     "level": "N2",
     "number": 188,
     "japanese": "より [2]",
-    "english": "from~ (a time, place, or person)"
+    "english": "from~ (a time, place, or person)",
+    "romaji": "yori"
   },
   {
     "id": "N2-189",
     "level": "N2",
     "number": 189,
     "japanese": "よりほかない",
-    "english": "to have no choice but~"
+    "english": "to have no choice but~",
+    "romaji": "yori hoka nai"
   },
   {
     "id": "N2-190",
     "level": "N2",
     "number": 190,
     "japanese": "ようでは",
-    "english": "if~ (bad result)"
+    "english": "if~ (bad result)",
+    "romaji": "you dewa"
   },
   {
     "id": "N2-191",
     "level": "N2",
     "number": 191,
     "japanese": "ようではないか",
-    "english": "let’s do (something); why don’t we~"
+    "english": "let’s do (something); why don’t we~",
+    "romaji": "you dewa nai ka"
   },
   {
     "id": "N2-192",
     "level": "N2",
     "number": 192,
     "japanese": "ようか～まいか",
-    "english": "whether or not; considering options"
+    "english": "whether or not; considering options",
+    "romaji": "you ka~mai ka"
   },
   {
     "id": "N2-193",
     "level": "N2",
     "number": 193,
     "japanese": "要するに",
-    "english": "in short; in a word; to sum up"
+    "english": "in short; in a word; to sum up",
+    "romaji": "you suru ni"
   },
   {
     "id": "N2-194",
     "level": "N2",
     "number": 194,
     "japanese": "ざるを得ない",
-    "english": "cannot help (doing); have no choice but"
+    "english": "cannot help (doing); have no choice but",
+    "romaji": "zaru o enai"
   },
   {
     "id": "N2-195",
     "level": "N2",
     "number": 195,
     "japanese": "ずに済む",
-    "english": "get by without doing~"
+    "english": "get by without doing~",
+    "romaji": "zu ni sumu"
   },
   {
     "id": "N1-1",
     "level": "N1",
     "number": 1,
     "japanese": "敢えて",
-    "english": "dare to; deliberately; purposely ~"
+    "english": "dare to; deliberately; purposely ~",
+    "romaji": "aete"
   },
   {
     "id": "N1-2",
     "level": "N1",
     "number": 2,
     "japanese": "あくまでも",
-    "english": "to the end; persistently; is still very ~"
+    "english": "to the end; persistently; is still very ~",
+    "romaji": "akumade mo"
   },
   {
     "id": "N1-3",
     "level": "N1",
     "number": 3,
     "japanese": "案の定",
-    "english": "just as one thought; sure enough"
+    "english": "just as one thought; sure enough",
+    "romaji": "an no jou"
   },
   {
     "id": "N1-4",
     "level": "N1",
     "number": 4,
     "japanese": "あらかじめ",
-    "english": "beforehand; in advance; previously"
+    "english": "beforehand; in advance; previously",
+    "romaji": "arakajime"
   },
   {
     "id": "N1-5",
     "level": "N1",
     "number": 5,
     "japanese": "あっての",
-    "english": "which can exist solely due to"
+    "english": "which can exist solely due to",
+    "romaji": "atte no"
   },
   {
     "id": "N1-6",
     "level": "N1",
     "number": 6,
     "japanese": "ばこそ",
-    "english": "only because ~"
+    "english": "only because ~",
+    "romaji": "ba koso"
   },
   {
     "id": "N1-7",
     "level": "N1",
     "number": 7,
     "japanese": "ばそれまでだ /たらそれまでだ",
-    "english": "if… then it’s over"
+    "english": "if… then it’s over",
+    "romaji": "ba sore made da / tara sore made da"
   },
   {
     "id": "N1-8",
     "level": "N1",
     "number": 8,
     "japanese": "べからず / べからざる",
-    "english": "must not; should not; do not ~"
+    "english": "must not; should not; do not ~",
+    "romaji": "bekarazu/ bekarazaru"
   },
   {
     "id": "N1-9",
     "level": "N1",
     "number": 9,
     "japanese": "べく",
-    "english": "in order to; for the purpose of ~"
+    "english": "in order to; for the purpose of ~",
+    "romaji": "beku"
   },
   {
     "id": "N1-10",
     "level": "N1",
     "number": 10,
     "japanese": "べくもない",
-    "english": "cannot possibly be ~"
+    "english": "cannot possibly be ~",
+    "romaji": "beku mo nai"
   },
   {
     "id": "N1-11",
     "level": "N1",
     "number": 11,
     "japanese": "べくして",
-    "english": "as it is bound to (happen)"
+    "english": "as it is bound to (happen)",
+    "romaji": "beku shite"
   },
   {
     "id": "N1-12",
     "level": "N1",
     "number": 12,
     "japanese": "びる / びて / びた",
-    "english": "to seem to be; to appear; to behave as ~"
+    "english": "to seem to be; to appear; to behave as ~",
+    "romaji": "biru / bite / bita"
   },
   {
     "id": "N1-13",
     "level": "N1",
     "number": 13,
     "japanese": "ぶり / っぷり",
-    "english": "style; manner; way"
+    "english": "style; manner; way",
+    "romaji": "buri / ppuri"
   },
   {
     "id": "N1-14",
     "level": "N1",
     "number": 14,
     "japanese": "ぶる / ぶって / ぶった",
-    "english": "behaving like; to pretend / act like ~"
+    "english": "behaving like; to pretend / act like ~",
+    "romaji": "buru / butte / butta"
   },
   {
     "id": "N1-15",
     "level": "N1",
     "number": 15,
     "japanese": "だに / だにしない",
-    "english": "even; not even ~"
+    "english": "even; not even ~",
+    "romaji": "dani / dani shinai"
   },
   {
     "id": "N1-16",
     "level": "N1",
     "number": 16,
     "japanese": "だの〜だの",
-    "english": "and; and the like; and so forth ~"
+    "english": "and; and the like; and so forth ~",
+    "romaji": "dano~dano"
   },
   {
     "id": "N1-17",
     "level": "N1",
     "number": 17,
     "japanese": "だろうに",
-    "english": "(1) surely..., but ~ (2) should have ~"
+    "english": "(1) surely..., but ~ (2) should have ~",
+    "romaji": "darou ni"
   },
   {
     "id": "N1-18",
     "level": "N1",
     "number": 18,
     "japanese": "であれ / であろうと",
-    "english": "whoever; whatever; however; even ~"
+    "english": "whoever; whatever; however; even ~",
+    "romaji": "de are / de arou to"
   },
   {
     "id": "N1-19",
     "level": "N1",
     "number": 19,
     "japanese": "であれ〜であれ",
-    "english": "whether [A] or [B]"
+    "english": "whether [A] or [B]",
+    "romaji": "de are~de are"
   },
   {
     "id": "N1-20",
     "level": "N1",
     "number": 20,
     "japanese": "でもあり〜でもある",
-    "english": "to also be; both… and ~"
+    "english": "to also be; both… and ~",
+    "romaji": "demo ari~demo aru"
   },
   {
     "id": "N1-21",
     "level": "N1",
     "number": 21,
     "japanese": "でも何でもない /くも何ともない",
-    "english": "not in the least; nothing like that"
+    "english": "not in the least; nothing like that",
+    "romaji": "demo nan demo nai / kumo nan tomo nai"
   },
   {
     "id": "N1-22",
     "level": "N1",
     "number": 22,
     "japanese": "でなくてなんだろう",
-    "english": "must be; is definitely ~"
+    "english": "must be; is definitely ~",
+    "romaji": "denakute nan darou"
   },
   {
     "id": "N1-23",
     "level": "N1",
     "number": 23,
     "japanese": "ではあるまいか",
-    "english": "isn't it; I wonder if it’s not ~"
+    "english": "isn't it; I wonder if it’s not ~",
+    "romaji": "dewa arumai ka"
   },
   {
     "id": "N1-24",
     "level": "N1",
     "number": 24,
     "japanese": "ではあるまいし",
-    "english": "it’s not like; it isn’t as if ~"
+    "english": "it’s not like; it isn’t as if ~",
+    "romaji": "dewa arumai shi"
   },
   {
     "id": "N1-25",
     "level": "N1",
     "number": 25,
     "japanese": "では済まない",
-    "english": "it doesn’t end with just ~"
+    "english": "it doesn’t end with just ~",
+    "romaji": "dewa sumanai"
   },
   {
     "id": "N1-26",
     "level": "N1",
     "number": 26,
     "japanese": "どうにも〜ない",
-    "english": "not … by any means"
+    "english": "not … by any means",
+    "romaji": "dou nimo~nai"
   },
   {
     "id": "N1-27",
     "level": "N1",
     "number": 27,
     "japanese": "が早いか",
-    "english": "no sooner than; as soon as ~"
+    "english": "no sooner than; as soon as ~",
+    "romaji": "ga hayai ka"
   },
   {
     "id": "N1-28",
     "level": "N1",
     "number": 28,
     "japanese": "が/も〜なら、〜も〜だ",
-    "english": "negative connection/comparison"
+    "english": "negative connection/comparison",
+    "romaji": "ga/mo~nara, ~mo~da"
   },
   {
     "id": "N1-29",
     "level": "N1",
     "number": 29,
     "japanese": "がましい",
-    "english": "look like; sound like; somewhat like ~"
+    "english": "look like; sound like; somewhat like ~",
+    "romaji": "gamashii"
   },
   {
     "id": "N1-30",
     "level": "N1",
     "number": 30,
     "japanese": "がてら",
-    "english": "while; at the same time; coincidentally"
+    "english": "while; at the same time; coincidentally",
+    "romaji": "gatera"
   },
   {
     "id": "N1-31",
     "level": "N1",
     "number": 31,
     "japanese": "ごとき/ごとく/ごとし",
-    "english": "like; as if; the same as ~"
+    "english": "like; as if; the same as ~",
+    "romaji": "gotoki/gotoku/gotoshi"
   },
   {
     "id": "N1-32",
     "level": "N1",
     "number": 32,
     "japanese": "ぐるみ",
-    "english": "together (with); -wide"
+    "english": "together (with); -wide",
+    "romaji": "gurumi"
   },
   {
     "id": "N1-33",
     "level": "N1",
     "number": 33,
     "japanese": "羽目になる",
-    "english": "to get stuck with (unpleasant)"
+    "english": "to get stuck with (unpleasant)",
+    "romaji": "hame ni naru"
   },
   {
     "id": "N1-34",
     "level": "N1",
     "number": 34,
     "japanese": "ほどのことではない",
-    "english": "it's not worth; no need to ~"
+    "english": "it's not worth; no need to ~",
+    "romaji": "hodo no koto dewa nai"
   },
   {
     "id": "N1-35",
     "level": "N1",
     "number": 35,
     "japanese": "ほうがましだ",
-    "english": "better than; would rather ~"
+    "english": "better than; would rather ~",
+    "romaji": "hou ga mashi da"
   },
   {
     "id": "N1-36",
     "level": "N1",
     "number": 36,
     "japanese": "放題",
-    "english": "doing as one pleases; uncontrolled"
+    "english": "doing as one pleases; uncontrolled",
+    "romaji": "houdai"
   },
   {
     "id": "N1-37",
     "level": "N1",
     "number": 37,
     "japanese": "いかんだ / いかんでは/ いかんによっては",
-    "english": "in accordance with; depending on ~"
+    "english": "in accordance with; depending on ~",
+    "romaji": "ikan da / ikan dewa / ikan ni yotte wa"
   },
   {
     "id": "N1-38",
     "level": "N1",
     "number": 38,
     "japanese": "いかんにかかわらず /いかんによらず /いかんをとわず",
-    "english": "regardless of; whether or not ~"
+    "english": "regardless of; whether or not ~",
+    "romaji": "ikan ni kakawarazu / ikan ni yorazu /ikan o towazu"
   },
   {
     "id": "N1-39",
     "level": "N1",
     "number": 39,
     "japanese": "いかなる",
-    "english": "any kind of; every; whatever"
+    "english": "any kind of; every; whatever",
+    "romaji": "ikanaru"
   },
   {
     "id": "N1-40",
     "level": "N1",
     "number": 40,
     "japanese": "いかに",
-    "english": "how; in what way; to what extent"
+    "english": "how; in what way; to what extent",
+    "romaji": "ikani"
   },
   {
     "id": "N1-41",
     "level": "N1",
     "number": 41,
     "japanese": "いかにも",
-    "english": "indeed; really; just (like); very ~"
+    "english": "indeed; really; just (like); very ~",
+    "romaji": "ikani mo"
   },
   {
     "id": "N1-42",
     "level": "N1",
     "number": 42,
     "japanese": "いずれにしても / いずれにしろ / いずれにせよ",
-    "english": "anyhow; anyway; in any case ~"
+    "english": "anyhow; anyway; in any case ~",
+    "romaji": "izure ni shitemo / izure ni shiro / izure ni seyo"
   },
   {
     "id": "N1-43",
     "level": "N1",
     "number": 43,
     "japanese": "じみた",
-    "english": "to become; to appear like; to look like ~"
+    "english": "to become; to appear like; to look like ~",
+    "romaji": "jimita"
   },
   {
     "id": "N1-44",
     "level": "N1",
     "number": 44,
     "japanese": "か否か",
-    "english": "whether or not ~"
+    "english": "whether or not ~",
+    "romaji": "ka ina ka"
   },
   {
     "id": "N1-45",
     "level": "N1",
     "number": 45,
     "japanese": "かと思いきや",
-    "english": "contrary to expectations"
+    "english": "contrary to expectations",
+    "romaji": "ka to omoikiya"
   },
   {
     "id": "N1-46",
     "level": "N1",
     "number": 46,
     "japanese": "限りだ",
-    "english": "to feel strongly"
+    "english": "to feel strongly",
+    "romaji": "kagiri da"
   },
   {
     "id": "N1-47",
     "level": "N1",
     "number": 47,
     "japanese": "甲斐もなく",
-    "english": "despite; even though ~"
+    "english": "despite; even though ~",
+    "romaji": "kai mo naku"
   },
   {
     "id": "N1-48",
     "level": "N1",
     "number": 48,
     "japanese": "可能性がある",
-    "english": "may/might; there’s a possibility that ~"
+    "english": "may/might; there’s a possibility that ~",
+    "romaji": "kanousei ga aru"
   },
   {
     "id": "N1-49",
     "level": "N1",
     "number": 49,
     "japanese": "からある / からする/ からの",
-    "english": "at least; as much as; as many as ~"
+    "english": "at least; as much as; as many as ~",
+    "romaji": "kara aru / kara suru / kara no"
   },
   {
     "id": "N1-50",
     "level": "N1",
     "number": 50,
     "japanese": "かれ〜かれ",
-    "english": "sooner or later; more or less"
+    "english": "sooner or later; more or less",
+    "romaji": "kare~kare"
   },
   {
     "id": "N1-51",
     "level": "N1",
     "number": 51,
     "japanese": "かたがた",
-    "english": "while; at the same time; incidentally ~"
+    "english": "while; at the same time; incidentally ~",
+    "romaji": "katagata"
   },
   {
     "id": "N1-52",
     "level": "N1",
     "number": 52,
     "japanese": "かたわら",
-    "english": "while; at the same time; in addition"
+    "english": "while; at the same time; in addition",
+    "romaji": "katawara"
   },
   {
     "id": "N1-53",
     "level": "N1",
     "number": 53,
     "japanese": "かつて",
-    "english": "once; before; formerly; former; ex-"
+    "english": "once; before; formerly; former; ex-",
+    "romaji": "katsute"
   },
   {
     "id": "N1-54",
     "level": "N1",
     "number": 54,
     "japanese": "嫌いがある",
-    "english": "bad habit; to have a tendency to ~"
+    "english": "bad habit; to have a tendency to ~",
+    "romaji": "kirai ga aru"
   },
   {
     "id": "N1-55",
     "level": "N1",
     "number": 55,
     "japanese": "切りがない",
-    "english": "endless; boundless; there’s no end to ~"
+    "english": "endless; boundless; there’s no end to ~",
+    "romaji": "kiri ga nai"
   },
   {
     "id": "N1-56",
     "level": "N1",
     "number": 56,
     "japanese": "きっての",
-    "english": "the most / greatest … of all"
+    "english": "the most / greatest … of all",
+    "romaji": "kitte no"
   },
   {
     "id": "N1-57",
     "level": "N1",
     "number": 57,
     "japanese": "極まる / 極まりない",
-    "english": "extremely; very ~"
+    "english": "extremely; very ~",
+    "romaji": "kiwamaru/ kiwamarinai"
   },
   {
     "id": "N1-58",
     "level": "N1",
     "number": 58,
     "japanese": "こそあれ",
-    "english": "although; even though ~"
+    "english": "although; even though ~",
+    "romaji": "koso are"
   },
   {
     "id": "N1-59",
     "level": "N1",
     "number": 59,
     "japanese": "こそすれ",
-    "english": "and; although; but ~"
+    "english": "and; although; but ~",
+    "romaji": "koso sure"
   },
   {
     "id": "N1-60",
     "level": "N1",
     "number": 60,
     "japanese": "こそ「〜が・けれど」",
-    "english": "but; although (emphasis)"
+    "english": "but; although (emphasis)",
+    "romaji": "koso~ga/keredo"
   },
   {
     "id": "N1-61",
     "level": "N1",
     "number": 61,
     "japanese": "ことごとく",
-    "english": "altogether; entirely; completely ~"
+    "english": "altogether; entirely; completely ~",
+    "romaji": "koto gotoku"
   },
   {
     "id": "N1-62",
     "level": "N1",
     "number": 62,
     "japanese": "ことこの上ない / この上ない / この上なく",
-    "english": "the most of all; the best; nothing is more ... than ~"
+    "english": "the most of all; the best; nothing is more ... than ~",
+    "romaji": "koto kono ue nai / kono ue nai / kono ue naku"
   },
   {
     "id": "N1-63",
     "level": "N1",
     "number": 63,
     "japanese": "こともあって",
-    "english": "partly because; also because of ~"
+    "english": "partly because; also because of ~",
+    "romaji": "koto mo atte"
   },
   {
     "id": "N1-64",
     "level": "N1",
     "number": 64,
     "japanese": "ことなしに",
-    "english": "without doing something"
+    "english": "without doing something",
+    "romaji": "koto nashi ni"
   },
   {
     "id": "N1-65",
     "level": "N1",
     "number": 65,
     "japanese": "ことのないように",
-    "english": "so as not to; to not ~"
+    "english": "so as not to; to not ~",
+    "romaji": "koto no nai you ni"
   },
   {
     "id": "N1-66",
     "level": "N1",
     "number": 66,
     "japanese": "こととて",
-    "english": "because; since ~"
+    "english": "because; since ~",
+    "romaji": "koto tote"
   },
   {
     "id": "N1-67",
     "level": "N1",
     "number": 67,
     "japanese": "くらいなら",
-    "english": "rather than (do ...)"
+    "english": "rather than (do ...)",
+    "romaji": "kurai nara"
   },
   {
     "id": "N1-68",
     "level": "N1",
     "number": 68,
     "japanese": "くらいのものだ",
-    "english": "only (emphasis)"
+    "english": "only (emphasis)",
+    "romaji": "kurai no mono da"
   },
   {
     "id": "N1-69",
     "level": "N1",
     "number": 69,
     "japanese": "までだ / までのことだ",
-    "english": "only; just; nothing else"
+    "english": "only; just; nothing else",
+    "romaji": "made da/no koto da"
   },
   {
     "id": "N1-70",
     "level": "N1",
     "number": 70,
     "japanese": "までもない / までもなく",
-    "english": "there's no need to; not necessary to ~"
+    "english": "there's no need to; not necessary to ~",
+    "romaji": "made mo nai/naku"
   },
   {
     "id": "N1-71",
     "level": "N1",
     "number": 71,
     "japanese": "まじき",
-    "english": "should not; must not ~"
+    "english": "should not; must not ~",
+    "romaji": "majiki"
   },
   {
     "id": "N1-72",
     "level": "N1",
     "number": 72,
     "japanese": "まくる",
-    "english": "to do over and over again"
+    "english": "to do over and over again",
+    "romaji": "makuru"
   },
   {
     "id": "N1-73",
     "level": "N1",
     "number": 73,
     "japanese": "まみれ",
-    "english": "covered with; stained; smeared with ~"
+    "english": "covered with; stained; smeared with ~",
+    "romaji": "mamire"
   },
   {
     "id": "N1-74",
     "level": "N1",
     "number": 74,
     "japanese": "まるっきり",
-    "english": "completely; totally; (not) at all ~"
+    "english": "completely; totally; (not) at all ~",
+    "romaji": "marukkiri"
   },
   {
     "id": "N1-75",
     "level": "N1",
     "number": 75,
     "japanese": "めく",
-    "english": "seems; show signs of ~"
+    "english": "seems; show signs of ~",
+    "romaji": "meku"
   },
   {
     "id": "N1-76",
     "level": "N1",
     "number": 76,
     "japanese": "も同然だ",
-    "english": "just like; same as~"
+    "english": "just like; same as~",
+    "romaji": "mo douzen da"
   },
   {
     "id": "N1-77",
     "level": "N1",
     "number": 77,
     "japanese": "もさることながら",
-    "english": "not only... but also ~"
+    "english": "not only... but also ~",
+    "romaji": "mo saru koto nagara"
   },
   {
     "id": "N1-78",
     "level": "N1",
     "number": 78,
     "japanese": "もしないで",
-    "english": "without even doing ~"
+    "english": "without even doing ~",
+    "romaji": "mo shinai de"
   },
   {
     "id": "N1-79",
     "level": "N1",
     "number": 79,
     "japanese": "もはや",
-    "english": "already; now; no longer; not anymore"
+    "english": "already; now; no longer; not anymore",
+    "romaji": "mohaya"
   },
   {
     "id": "N1-80",
     "level": "N1",
     "number": 80,
     "japanese": "もので",
-    "english": "because; for that reason"
+    "english": "because; for that reason",
+    "romaji": "mono de"
   },
   {
     "id": "N1-81",
     "level": "N1",
     "number": 81,
     "japanese": "ものを",
-    "english": "if only (regret)"
+    "english": "if only (regret)",
+    "romaji": "mono o"
   },
   {
     "id": "N1-82",
     "level": "N1",
     "number": 82,
     "japanese": "ものと思われる /ものと見られる",
-    "english": "to think; to suppose; it is believed/expected that ~"
+    "english": "to think; to suppose; it is believed/expected that ~",
+    "romaji": "mono to omowareru/ mirareru"
   },
   {
     "id": "N1-83",
     "level": "N1",
     "number": 83,
     "japanese": "ものとする",
-    "english": "shall; to assume; understood as ~"
+    "english": "shall; to assume; understood as ~",
+    "romaji": "mono to suru"
   },
   {
     "id": "N1-84",
     "level": "N1",
     "number": 84,
     "japanese": "ものとして",
-    "english": "to assume; to suppose ~"
+    "english": "to assume; to suppose ~",
+    "romaji": "mono toshite"
   },
   {
     "id": "N1-85",
     "level": "N1",
     "number": 85,
     "japanese": "もしくは",
-    "english": "or; otherwise"
+    "english": "or; otherwise",
+    "romaji": "moshikuwa"
   },
   {
     "id": "N1-86",
     "level": "N1",
     "number": 86,
     "japanese": "んばかりに",
-    "english": "as if; as though ~"
+    "english": "as if; as though ~",
+    "romaji": "n bakari ni"
   },
   {
     "id": "N1-87",
     "level": "N1",
     "number": 87,
     "japanese": "んがために",
-    "english": "in order to ~"
+    "english": "in order to ~",
+    "romaji": "n ga tame ni"
   },
   {
     "id": "N1-88",
     "level": "N1",
     "number": 88,
     "japanese": "ながらに / ながらの",
-    "english": "while; without change"
+    "english": "while; without change",
+    "romaji": "nagara ni/no"
   },
   {
     "id": "N1-89",
     "level": "N1",
     "number": 89,
     "japanese": "ないまでも",
-    "english": "not to say; does not reach the level of~"
+    "english": "not to say; does not reach the level of~",
+    "romaji": "nai made mo"
   },
   {
     "id": "N1-90",
     "level": "N1",
     "number": 90,
     "japanese": "ないものでもない",
-    "english": "is not entirely impossible"
+    "english": "is not entirely impossible",
+    "romaji": "nai mono demo nai"
   },
   {
     "id": "N1-91",
     "level": "N1",
     "number": 91,
     "japanese": "ないものか /ないものだろうか",
-    "english": "isn't there; can’t we…?; can’t I…?"
+    "english": "isn't there; can’t we…?; can’t I…?",
+    "romaji": "nai mono ka / nai mono darou ka"
   },
   {
     "id": "N1-92",
     "level": "N1",
     "number": 92,
     "japanese": "ないとも限らない",
-    "english": "not necessarily; maybe; might ~"
+    "english": "not necessarily; maybe; might ~",
+    "romaji": "nai tomo kagiranai"
   },
   {
     "id": "N1-93",
     "level": "N1",
     "number": 93,
     "japanese": "なくしては",
-    "english": "cannot do without ~"
+    "english": "cannot do without ~",
+    "romaji": "nakushite wa"
   },
   {
     "id": "N1-94",
     "level": "N1",
     "number": 94,
     "japanese": "並み",
-    "english": "average; equal to; on par with ~"
+    "english": "average; equal to; on par with ~",
+    "romaji": "nami"
   },
   {
     "id": "N1-95",
     "level": "N1",
     "number": 95,
     "japanese": "なんという / なんと/ なんて",
-    "english": "how (beautiful, etc.); what a ~"
+    "english": "how (beautiful, etc.); what a ~",
+    "romaji": "nan to iu / nanto / nante"
   },
   {
     "id": "N1-96",
     "level": "N1",
     "number": 96,
     "japanese": "何しろ",
-    "english": "anyway; because; as you know ~"
+    "english": "anyway; because; as you know ~",
+    "romaji": "nani shiro"
   },
   {
     "id": "N1-97",
     "level": "N1",
     "number": 97,
     "japanese": "ならでは",
-    "english": "distinctive of; uniquely applying to ~"
+    "english": "distinctive of; uniquely applying to ~",
+    "romaji": "nara dewa"
   },
   {
     "id": "N1-98",
     "level": "N1",
     "number": 98,
     "japanese": "ならいざしらず /はいざしらず",
-    "english": "I don't know about ... but ~"
+    "english": "I don't know about ... but ~",
+    "romaji": "nara iza shirazu / wa iza shirazu"
   },
   {
     "id": "N1-99",
     "level": "N1",
     "number": 99,
     "japanese": "なり",
-    "english": "as soon as; right after ~"
+    "english": "as soon as; right after ~",
+    "romaji": "nari"
   },
   {
     "id": "N1-100",
     "level": "N1",
     "number": 100,
     "japanese": "なりに / なりの",
-    "english": "suitable; in one's own way/style"
+    "english": "suitable; in one's own way/style",
+    "romaji": "nari ni / nari no"
   },
   {
     "id": "N1-101",
     "level": "N1",
     "number": 101,
     "japanese": "なりとも",
-    "english": "at least; even just a little"
+    "english": "at least; even just a little",
+    "romaji": "nari tomo"
   },
   {
     "id": "N1-102",
     "level": "N1",
     "number": 102,
     "japanese": "なり〜なり",
-    "english": "[A] or [B] or something; for instance ~"
+    "english": "[A] or [B] or something; for instance ~",
+    "romaji": "nari~nari"
   },
   {
     "id": "N1-103",
     "level": "N1",
     "number": 103,
     "japanese": "なしに / なしで",
-    "english": "without; without doing ~"
+    "english": "without; without doing ~",
+    "romaji": "nashi ni / nashi de"
   },
   {
     "id": "N1-104",
     "level": "N1",
     "number": 104,
     "japanese": "に",
-    "english": "and; in addition to"
+    "english": "and; in addition to",
+    "romaji": "ni"
   },
   {
     "id": "N1-105",
     "level": "N1",
     "number": 105,
     "japanese": "に値する",
-    "english": "to be worth; to be worthy of ~"
+    "english": "to be worth; to be worthy of ~",
+    "romaji": "ni atai suru"
   },
   {
     "id": "N1-106",
     "level": "N1",
     "number": 106,
     "japanese": "にあって",
-    "english": "at; on; during; in the condition of ~"
+    "english": "at; on; during; in the condition of ~",
+    "romaji": "ni atte"
   },
   {
     "id": "N1-107",
     "level": "N1",
     "number": 107,
     "japanese": "に引き換え",
-    "english": "compared to; in contrast to; unlike ~"
+    "english": "compared to; in contrast to; unlike ~",
+    "romaji": "ni hikikae"
   },
   {
     "id": "N1-108",
     "level": "N1",
     "number": 108,
     "japanese": "に至る / に至った",
-    "english": "leads to; come to a conclusion"
+    "english": "leads to; come to a conclusion",
+    "romaji": "ni itaru / ni itatta"
   },
   {
     "id": "N1-109",
     "level": "N1",
     "number": 109,
     "japanese": "に至るまで",
-    "english": "as far as; everything from ... to ~"
+    "english": "as far as; everything from ... to ~",
+    "romaji": "ni itaru made"
   },
   {
     "id": "N1-110",
     "level": "N1",
     "number": 110,
     "japanese": "に至っても",
-    "english": "even if; although something ~"
+    "english": "even if; although something ~",
+    "romaji": "ni itattemo"
   },
   {
     "id": "N1-111",
     "level": "N1",
     "number": 111,
     "japanese": "に至っては",
-    "english": "when it comes to; as for ~"
+    "english": "when it comes to; as for ~",
+    "romaji": "ni ittate wa"
   },
   {
     "id": "N1-112",
     "level": "N1",
     "number": 112,
     "japanese": "に言わせれば",
-    "english": "if you ask; if one may say ~"
+    "english": "if you ask; if one may say ~",
+    "romaji": "ni iwasereba"
   },
   {
     "id": "N1-113",
     "level": "N1",
     "number": 113,
     "japanese": "に限ったことではない",
-    "english": "not limited to only ~"
+    "english": "not limited to only ~",
+    "romaji": "ni kagitta koto dewa nai"
   },
   {
     "id": "N1-114",
     "level": "N1",
     "number": 114,
     "japanese": "にかかっては /にかかったら / にかかると / かかれば",
-    "english": "when handled by (N), becomes a different result"
+    "english": "when handled by (N), becomes a different result",
+    "romaji": "ni kakatte wa / ni kakattara / ni kakaru to / kakareba"
   },
   {
     "id": "N1-115",
     "level": "N1",
     "number": 115,
     "japanese": "にかかっている",
-    "english": "depending on ~"
+    "english": "depending on ~",
+    "romaji": "ni kakatteiru"
   },
   {
     "id": "N1-116",
     "level": "N1",
     "number": 116,
     "japanese": "にかこつけて",
-    "english": "to use as a pretext; to use as an excuse"
+    "english": "to use as a pretext; to use as an excuse",
+    "romaji": "ni kako tsukete"
   },
   {
     "id": "N1-117",
     "level": "N1",
     "number": 117,
     "japanese": "にかまけて",
-    "english": "to be too busy; to focus only on ~"
+    "english": "to be too busy; to focus only on ~",
+    "romaji": "ni kamakete"
   },
   {
     "id": "N1-118",
     "level": "N1",
     "number": 118,
     "japanese": "に難くない",
-    "english": "easy to do; it’s not hard to ~"
+    "english": "easy to do; it’s not hard to ~",
+    "romaji": "ni katakunai"
   },
   {
     "id": "N1-119",
     "level": "N1",
     "number": 119,
     "japanese": "にまつわる",
-    "english": "to be related to; to concern with ~"
+    "english": "to be related to; to concern with ~",
+    "romaji": "ni matsuwaru"
   },
   {
     "id": "N1-120",
     "level": "N1",
     "number": 120,
     "japanese": "に則って",
-    "english": "based on; according to ~"
+    "english": "based on; according to ~",
+    "romaji": "ni nottotte"
   },
   {
     "id": "N1-121",
     "level": "N1",
     "number": 121,
     "japanese": "に先駆けて",
-    "english": "prior to; being ahead of ~"
+    "english": "prior to; being ahead of ~",
+    "romaji": "ni sakigakete"
   },
   {
     "id": "N1-122",
     "level": "N1",
     "number": 122,
     "japanese": "に忍びない",
-    "english": "cannot bring oneself (to do)"
+    "english": "cannot bring oneself (to do)",
+    "romaji": "ni shinobinai"
   },
   {
     "id": "N1-123",
     "level": "N1",
     "number": 123,
     "japanese": "にしたところで /としたところで",
-    "english": "even if; even supposing that ~"
+    "english": "even if; even supposing that ~",
+    "romaji": "ni shita tokoro de / to shita tokoro de"
   },
   {
     "id": "N1-124",
     "level": "N1",
     "number": 124,
     "japanese": "にして",
-    "english": "at/on/under conditions (time, position)"
+    "english": "at/on/under conditions (time, position)",
+    "romaji": "ni shite"
   },
   {
     "id": "N1-125",
     "level": "N1",
     "number": 125,
     "japanese": "に即して",
-    "english": "according to; to be based on ~"
+    "english": "according to; to be based on ~",
+    "romaji": "ni sokushite"
   },
   {
     "id": "N1-126",
     "level": "N1",
     "number": 126,
     "japanese": "に耐える / に耐えない",
-    "english": "worth doing; cannot bear doing ~"
+    "english": "worth doing; cannot bear doing ~",
+    "romaji": "ni taeru / ni taenai"
   },
   {
     "id": "N1-127",
     "level": "N1",
     "number": 127,
     "japanese": "に足らない/に足りない",
-    "english": "cannot; not worthy; not worth doing ~"
+    "english": "cannot; not worthy; not worth doing ~",
+    "romaji": "ni taranai/tarinai"
   },
   {
     "id": "N1-128",
     "level": "N1",
     "number": 128,
     "japanese": "に足る / に足りる",
-    "english": "can do; worthy; worth doing"
+    "english": "can do; worthy; worth doing",
+    "romaji": "ni taru/tariru"
   },
   {
     "id": "N1-129",
     "level": "N1",
     "number": 129,
     "japanese": "に照らして",
-    "english": "according to; in view of; in light of ~"
+    "english": "according to; in view of; in light of ~",
+    "romaji": "ni terashite"
   },
   {
     "id": "N1-130",
     "level": "N1",
     "number": 130,
     "japanese": "にとどまらず",
-    "english": "not limited to; not only… but also ~"
+    "english": "not limited to; not only… but also ~",
+    "romaji": "ni todomarazu"
   },
   {
     "id": "N1-131",
     "level": "N1",
     "number": 131,
     "japanese": "には無理がある",
-    "english": "difficult to do; is unreasonable"
+    "english": "difficult to do; is unreasonable",
+    "romaji": "ni wa muri ga aru"
   },
   {
     "id": "N1-132",
     "level": "N1",
     "number": 132,
     "japanese": "によらず",
-    "english": "regardless of ~"
+    "english": "regardless of ~",
+    "romaji": "ni yorazu"
   },
   {
     "id": "N1-133",
     "level": "N1",
     "number": 133,
     "japanese": "に〜を重ねて",
-    "english": "success after continuous (effort)"
+    "english": "success after continuous (effort)",
+    "romaji": "ni~o kasanete"
   },
   {
     "id": "N1-134",
     "level": "N1",
     "number": 134,
     "japanese": "にもほどがある",
-    "english": "to go too far"
+    "english": "to go too far",
+    "romaji": "nimo hodo ga aru"
   },
   {
     "id": "N1-135",
     "level": "N1",
     "number": 135,
     "japanese": "にも増して",
-    "english": "more than…; above ~"
+    "english": "more than…; above ~",
+    "romaji": "nimo mashite"
   },
   {
     "id": "N1-136",
     "level": "N1",
     "number": 136,
     "japanese": "には当たらない",
-    "english": "it’s not worth; there’s no need to ~"
+    "english": "it’s not worth; there’s no need to ~",
+    "romaji": "niwa ataranai"
   },
   {
     "id": "N1-137",
     "level": "N1",
     "number": 137,
     "japanese": "には及ばない",
-    "english": "there is no need to; no match for ~"
+    "english": "there is no need to; no match for ~",
+    "romaji": "niwa oyobanai"
   },
   {
     "id": "N1-138",
     "level": "N1",
     "number": 138,
     "japanese": "の至り",
-    "english": "utmost; extremely ~"
+    "english": "utmost; extremely ~",
+    "romaji": "no itari"
   },
   {
     "id": "N1-139",
     "level": "N1",
     "number": 139,
     "japanese": "の極み",
-    "english": "utmost; extremely ~"
+    "english": "utmost; extremely ~",
+    "romaji": "no kiwami"
   },
   {
     "id": "N1-140",
     "level": "N1",
     "number": 140,
     "japanese": "のなんのって",
-    "english": "extremely ~ (cannot express in words)"
+    "english": "extremely ~ (cannot express in words)",
+    "romaji": "no nan notte"
   },
   {
     "id": "N1-141",
     "level": "N1",
     "number": 141,
     "japanese": "のやら / ものやら /ことやら",
-    "english": "I wonder..; unsure; I don’t know ~"
+    "english": "I wonder..; unsure; I don’t know ~",
+    "romaji": "no yara / mono yara/ koto yara"
   },
   {
     "id": "N1-142",
     "level": "N1",
     "number": 142,
     "japanese": "のやら〜のやら",
-    "english": "or ~ (I don't know)"
+    "english": "or ~ (I don't know)",
+    "romaji": "no yara~no yara"
   },
   {
     "id": "N1-143",
     "level": "N1",
     "number": 143,
     "japanese": "を踏まえて",
-    "english": "to be based on; to take into account ~"
+    "english": "to be based on; to take into account ~",
+    "romaji": "o fumaete"
   },
   {
     "id": "N1-144",
     "level": "N1",
     "number": 144,
     "japanese": "を経て",
-    "english": "through; by way of; after; via ~"
+    "english": "through; by way of; after; via ~",
+    "romaji": "o hete"
   },
   {
     "id": "N1-145",
     "level": "N1",
     "number": 145,
     "japanese": "を控えて",
-    "english": "to be soon; the time has come to ~"
+    "english": "to be soon; the time has come to ~",
+    "romaji": "o hikaete"
   },
   {
     "id": "N1-146",
     "level": "N1",
     "number": 146,
     "japanese": "をいいことに",
-    "english": "to take advantage of ~"
+    "english": "to take advantage of ~",
+    "romaji": "o ii koto ni"
   },
   {
     "id": "N1-147",
     "level": "N1",
     "number": 147,
     "japanese": "を顧みず / も顧みず",
-    "english": "despite; regardless of ~"
+    "english": "despite; regardless of ~",
+    "romaji": "o/mo kaerimizu"
   },
   {
     "id": "N1-148",
     "level": "N1",
     "number": 148,
     "japanese": "を限りに",
-    "english": "starting from; the last time"
+    "english": "starting from; the last time",
+    "romaji": "o kagiri ni"
   },
   {
     "id": "N1-149",
     "level": "N1",
     "number": 149,
     "japanese": "を兼ねて",
-    "english": "also for the purpose of ~"
+    "english": "also for the purpose of ~",
+    "romaji": "o kanete"
   },
   {
     "id": "N1-150",
     "level": "N1",
     "number": 150,
     "japanese": "を皮切りに",
-    "english": "one after another; starting with ~"
+    "english": "one after another; starting with ~",
+    "romaji": "o kawakiri ni"
   },
   {
     "id": "N1-151",
     "level": "N1",
     "number": 151,
     "japanese": "を機に",
-    "english": "as an opportunity/chance to ~"
+    "english": "as an opportunity/chance to ~",
+    "romaji": "o ki ni"
   },
   {
     "id": "N1-152",
     "level": "N1",
     "number": 152,
     "japanese": "を禁じ得ない",
-    "english": "can’t help but; can’t refrain from ~"
+    "english": "can’t help but; can’t refrain from ~",
+    "romaji": "o kinji enai"
   },
   {
     "id": "N1-153",
     "level": "N1",
     "number": 153,
     "japanese": "をものともせずに",
-    "english": "in defiance; not losing to/worrying about ~"
+    "english": "in defiance; not losing to/worrying about ~",
+    "romaji": "o mono tomo sezuni"
   },
   {
     "id": "N1-154",
     "level": "N1",
     "number": 154,
     "japanese": "をもって /をもちまして",
-    "english": "by means of; with; on / at / as of (time)"
+    "english": "by means of; with; on / at / as of (time)",
+    "romaji": "o motte /o mochimashite"
   },
   {
     "id": "N1-155",
     "level": "N1",
     "number": 155,
     "japanese": "をおいて〜ない",
-    "english": "can only be; no alternative, only ~"
+    "english": "can only be; no alternative, only ~",
+    "romaji": "o oite~nai"
   },
   {
     "id": "N1-156",
     "level": "N1",
     "number": 156,
     "japanese": "を押して /を押し切って",
-    "english": "to overcome (opposition)"
+    "english": "to overcome (opposition)",
+    "romaji": "o oshite /o oshikitte"
   },
   {
     "id": "N1-157",
     "level": "N1",
     "number": 157,
     "japanese": "を境に",
-    "english": "since ~ (indicates large change)"
+    "english": "since ~ (indicates large change)",
+    "romaji": "o sakai ni"
   },
   {
     "id": "N1-158",
     "level": "N1",
     "number": 158,
     "japanese": "を余儀なくされる",
-    "english": "forced to do something (no choice)"
+    "english": "forced to do something (no choice)",
+    "romaji": "o yogi naku sareru"
   },
   {
     "id": "N1-159",
     "level": "N1",
     "number": 159,
     "japanese": "をよそに",
-    "english": "despite; without regards to ~"
+    "english": "despite; without regards to ~",
+    "romaji": "o yoso ni"
   },
   {
     "id": "N1-160",
     "level": "N1",
     "number": 160,
     "japanese": "を前提として",
-    "english": "with the intention to; on the condition"
+    "english": "with the intention to; on the condition",
+    "romaji": "o zentei toshite"
   },
   {
     "id": "N1-161",
     "level": "N1",
     "number": 161,
     "japanese": "思いをする",
-    "english": "to think; to feel ~"
+    "english": "to think; to feel ~",
+    "romaji": "omoi o suru"
   },
   {
     "id": "N1-162",
     "level": "N1",
     "number": 162,
     "japanese": "折に",
-    "english": "when; at the time; on the occasion ~"
+    "english": "when; at the time; on the occasion ~",
+    "romaji": "ori ni"
   },
   {
     "id": "N1-163",
     "level": "N1",
     "number": 163,
     "japanese": "およそ",
-    "english": "about; roughly; generally; completely ~"
+    "english": "about; roughly; generally; completely ~",
+    "romaji": "oyoso"
   },
   {
     "id": "N1-164",
     "level": "N1",
     "number": 164,
     "japanese": "さ",
-    "english": "ending particle; indicates assertion"
+    "english": "ending particle; indicates assertion",
+    "romaji": "sa"
   },
   {
     "id": "N1-165",
     "level": "N1",
     "number": 165,
     "japanese": "さも",
-    "english": "really (seem, appear, etc.); truly; as if ~"
+    "english": "really (seem, appear, etc.); truly; as if ~",
+    "romaji": "samo"
   },
   {
     "id": "N1-166",
     "level": "N1",
     "number": 166,
     "japanese": "さもないと",
-    "english": "otherwise; or else; if not ~"
+    "english": "otherwise; or else; if not ~",
+    "romaji": "samonaito"
   },
   {
     "id": "N1-167",
     "level": "N1",
     "number": 167,
     "japanese": "さぞ",
-    "english": "surely; certainly; no doubt; indeed ~"
+    "english": "surely; certainly; no doubt; indeed ~",
+    "romaji": "sazo"
   },
   {
     "id": "N1-168",
     "level": "N1",
     "number": 168,
     "japanese": "始末だ",
-    "english": "in the end; as a result (negative)"
+    "english": "in the end; as a result (negative)",
+    "romaji": "shimatsu da"
   },
   {
     "id": "N1-169",
     "level": "N1",
     "number": 169,
     "japanese": "そばから",
-    "english": "as soon as; right after ~"
+    "english": "as soon as; right after ~",
+    "romaji": "soba kara"
   },
   {
     "id": "N1-170",
     "level": "N1",
     "number": 170,
     "japanese": "そびれる",
-    "english": "to miss a chance; to fail to do ~"
+    "english": "to miss a chance; to fail to do ~",
+    "romaji": "sobireru"
   },
   {
     "id": "N1-171",
     "level": "N1",
     "number": 171,
     "japanese": "損なう / 損ねる /損じる",
-    "english": "to fail to; miss a chance"
+    "english": "to fail to; miss a chance",
+    "romaji": "sokonau / sokoneru/ sonjiru"
   },
   {
     "id": "N1-172",
     "level": "N1",
     "number": 172,
     "japanese": "術がない",
-    "english": "there is no way / means; cannot do ~"
+    "english": "there is no way / means; cannot do ~",
+    "romaji": "sube ga nai"
   },
   {
     "id": "N1-173",
     "level": "N1",
     "number": 173,
     "japanese": "すら / ですら",
-    "english": "even ~ (with emphasis)"
+    "english": "even ~ (with emphasis)",
+    "romaji": "sura / de sura"
   },
   {
     "id": "N1-174",
     "level": "N1",
     "number": 174,
     "japanese": "た弾みに /た拍子に",
-    "english": "the moment [A], unintentionally caused something to happen"
+    "english": "the moment [A], unintentionally caused something to happen",
+    "romaji": "ta hazumi ni / ta hyoushi ni"
   },
   {
     "id": "N1-175",
     "level": "N1",
     "number": 175,
     "japanese": "たことにする /たことになる",
-    "english": "pretend to; contrary to the truth ~"
+    "english": "pretend to; contrary to the truth ~",
+    "romaji": "ta koto ni suru / ta koto ni naru"
   },
   {
     "id": "N1-176",
     "level": "N1",
     "number": 176,
     "japanese": "たところで",
-    "english": "even if; no matter (who, what, when...)"
+    "english": "even if; no matter (who, what, when...)",
+    "romaji": "ta tokoro de"
   },
   {
     "id": "N1-177",
     "level": "N1",
     "number": 177,
     "japanese": "たつもりはない",
-    "english": "have no intention to / didn't mean to ~"
+    "english": "have no intention to / didn't mean to ~",
+    "romaji": "ta tsumori wa nai"
   },
   {
     "id": "N1-178",
     "level": "N1",
     "number": 178,
     "japanese": "ただ〜のみだ",
-    "english": "can do nothing but; only ~"
+    "english": "can do nothing but; only ~",
+    "romaji": "tada~nomi da"
   },
   {
     "id": "N1-179",
     "level": "N1",
     "number": 179,
     "japanese": "ためしがない",
-    "english": "is never the case; have never heard of ~"
+    "english": "is never the case; have never heard of ~",
+    "romaji": "tameshi ga nai"
   },
   {
     "id": "N1-180",
     "level": "N1",
     "number": 180,
     "japanese": "たら最後 / たが最後",
-    "english": "if you do... negative result"
+    "english": "if you do... negative result",
+    "romaji": "tara saigo / taga saigo"
   },
   {
     "id": "N1-181",
     "level": "N1",
     "number": 181,
     "japanese": "たら〜たで",
-    "english": "if / in the case... of course / should ~"
+    "english": "if / in the case... of course / should ~",
+    "romaji": "tara~tade"
   },
   {
     "id": "N1-182",
     "level": "N1",
     "number": 182,
     "japanese": "たら〜ところだ",
-    "english": "if... (counterfactual), then would be ~"
+    "english": "if... (counterfactual), then would be ~",
+    "romaji": "tara~tokoro da"
   },
   {
     "id": "N1-183",
     "level": "N1",
     "number": 183,
     "japanese": "たりとも",
-    "english": "not even; not any ~"
+    "english": "not even; not any ~",
+    "romaji": "tari tomo"
   },
   {
     "id": "N1-184",
     "level": "N1",
     "number": 184,
     "japanese": "たるもの / たる",
-    "english": "(that) which is; in capacity of ... should"
+    "english": "(that) which is; in capacity of ... should",
+    "romaji": "taru mono / taru"
   },
   {
     "id": "N1-185",
     "level": "N1",
     "number": 185,
     "japanese": "て敵わない",
-    "english": "can't bear to; unable to; troublesome to"
+    "english": "can't bear to; unable to; troublesome to",
+    "romaji": "te kanawanai"
   },
   {
     "id": "N1-186",
     "level": "N1",
     "number": 186,
     "japanese": "てからというもの",
-    "english": "ever since ~"
+    "english": "ever since ~",
+    "romaji": "te kara to iu mono"
   },
   {
     "id": "N1-187",
     "level": "N1",
     "number": 187,
     "japanese": "てみせる",
-    "english": "I’ll do my best; I'll show you ~"
+    "english": "I’ll do my best; I'll show you ~",
+    "romaji": "te miseru"
   },
   {
     "id": "N1-188",
     "level": "N1",
     "number": 188,
     "japanese": "てしかるべきだ",
-    "english": "should; appropriate; natural to do ~"
+    "english": "should; appropriate; natural to do ~",
+    "romaji": "te shikaru beki da"
   },
   {
     "id": "N1-189",
     "level": "N1",
     "number": 189,
     "japanese": "て済むことではない",
-    "english": "~ is not enough to solve the problem"
+    "english": "~ is not enough to solve the problem",
+    "romaji": "te sumu koto dewa nai"
   },
   {
     "id": "N1-190",
     "level": "N1",
     "number": 190,
     "japanese": "てやまない",
-    "english": "always; never stop; can’t help but ~"
+    "english": "always; never stop; can’t help but ~",
+    "romaji": "te yamanai"
   },
   {
     "id": "N1-191",
     "level": "N1",
     "number": 191,
     "japanese": "手前",
-    "english": "considering; before; one’s standpoint"
+    "english": "considering; before; one’s standpoint",
+    "romaji": "temae"
   },
   {
     "id": "N1-192",
     "level": "N1",
     "number": 192,
     "japanese": "てもどうにもならない",
-    "english": "it's no use; can't do anything"
+    "english": "it's no use; can't do anything",
+    "romaji": "temo dou ni mo naranai"
   },
   {
     "id": "N1-193",
     "level": "N1",
     "number": 193,
     "japanese": "ても差し支えない",
-    "english": "can ~; it’s okay if ~ (compromise)"
+    "english": "can ~; it’s okay if ~ (compromise)",
+    "romaji": "temo sashitsukaenai"
   },
   {
     "id": "N1-194",
     "level": "N1",
     "number": 194,
     "japanese": "ても知らない",
-    "english": "if continue... you'll end up / I don't care"
+    "english": "if continue... you'll end up / I don't care",
+    "romaji": "temo shiranai"
   },
   {
     "id": "N1-195",
     "level": "N1",
     "number": 195,
     "japanese": "と相まって",
-    "english": "together with..., more ~"
+    "english": "together with..., more ~",
+    "romaji": "to aimatte"
   },
   {
     "id": "N1-196",
     "level": "N1",
     "number": 196,
     "japanese": "とあれば",
-    "english": "if it is the case that; if ~"
+    "english": "if it is the case that; if ~",
+    "romaji": "to areba"
   },
   {
     "id": "N1-197",
     "level": "N1",
     "number": 197,
     "japanese": "とあって",
-    "english": "due to the fact that; because of ~"
+    "english": "due to the fact that; because of ~",
+    "romaji": "to atte"
   },
   {
     "id": "N1-198",
     "level": "N1",
     "number": 198,
     "japanese": "とばかりに",
-    "english": "as if to say; as though~"
+    "english": "as if to say; as though~",
+    "romaji": "to bakari ni"
   },
   {
     "id": "N1-199",
     "level": "N1",
     "number": 199,
     "japanese": "といえども",
-    "english": "even if; even though; despite ~"
+    "english": "even if; even though; despite ~",
+    "romaji": "to ie domo"
   },
   {
     "id": "N1-200",
     "level": "N1",
     "number": 200,
     "japanese": "と言えなくもない",
-    "english": "it can also be said that ~"
+    "english": "it can also be said that ~",
+    "romaji": "to ienaku mo nai"
   },
   {
     "id": "N1-201",
     "level": "N1",
     "number": 201,
     "japanese": "といい〜といい",
-    "english": "both ... and; whether it be ... or ~"
+    "english": "both ... and; whether it be ... or ~",
+    "romaji": "to ii~to ii"
   },
   {
     "id": "N1-202",
     "level": "N1",
     "number": 202,
     "japanese": "といったらない",
-    "english": "extremely; nothing more ... than this"
+    "english": "extremely; nothing more ... than this",
+    "romaji": "to ittara nai"
   },
   {
     "id": "N1-203",
     "level": "N1",
     "number": 203,
     "japanese": "という",
-    "english": "all; every single ~ (no exceptions)"
+    "english": "all; every single ~ (no exceptions)",
+    "romaji": "to iu"
   },
   {
     "id": "N1-204",
     "level": "N1",
     "number": 204,
     "japanese": "というか〜というか",
-    "english": "or rather; I mean ~"
+    "english": "or rather; I mean ~",
+    "romaji": "to iu ka~to iu ka"
   },
   {
     "id": "N1-205",
     "level": "N1",
     "number": 205,
     "japanese": "というもの",
-    "english": "during; for; since; over a period of time"
+    "english": "during; for; since; over a period of time",
+    "romaji": "to iu mono"
   },
   {
     "id": "N1-206",
     "level": "N1",
     "number": 206,
     "japanese": "というところだ /といったところだ",
-    "english": "at the most; no more than; roughly ~"
+    "english": "at the most; no more than; roughly ~",
+    "romaji": "to iu tokoro da / to itta tokoro da"
   },
   {
     "id": "N1-207",
     "level": "N1",
     "number": 207,
     "japanese": "というわけだ",
-    "english": "that's why; no wonder ~"
+    "english": "that's why; no wonder ~",
+    "romaji": "to iu wake da"
   },
   {
     "id": "N1-208",
     "level": "N1",
     "number": 208,
     "japanese": "というわけではない",
-    "english": "it’s not that; it doesn’t mean that ~"
+    "english": "it’s not that; it doesn’t mean that ~",
+    "romaji": "to iu wake dewa nai"
   },
   {
     "id": "N1-209",
     "level": "N1",
     "number": 209,
     "japanese": "といわず〜といわず",
-    "english": "both; not only A or B, but (overall) ~"
+    "english": "both; not only A or B, but (overall) ~",
+    "romaji": "to iwazu~to iwazu"
   },
   {
     "id": "N1-210",
     "level": "N1",
     "number": 210,
     "japanese": "ときている",
-    "english": "because of ~"
+    "english": "because of ~",
+    "romaji": "to kiteiru"
   },
   {
     "id": "N1-211",
     "level": "N1",
     "number": 211,
     "japanese": "とみると",
-    "english": "as soon as one realizes ..., then ~"
+    "english": "as soon as one realizes ..., then ~",
+    "romaji": "to miru to"
   },
   {
     "id": "N1-212",
     "level": "N1",
     "number": 212,
     "japanese": "と見るや",
-    "english": "at the sight of; after confirming ~"
+    "english": "at the sight of; after confirming ~",
+    "romaji": "to miru ya"
   },
   {
     "id": "N1-213",
     "level": "N1",
     "number": 213,
     "japanese": "となると / となれば",
-    "english": "when it comes to; in such a case"
+    "english": "when it comes to; in such a case",
+    "romaji": "to naru to / to nareba"
   },
   {
     "id": "N1-214",
     "level": "N1",
     "number": 214,
     "japanese": "とされる",
-    "english": "is considered to; it is said that ~"
+    "english": "is considered to; it is said that ~",
+    "romaji": "to sareru"
   },
   {
     "id": "N1-215",
     "level": "N1",
     "number": 215,
     "japanese": "ときたら",
-    "english": "when it comes to; concerning ~"
+    "english": "when it comes to; concerning ~",
+    "romaji": "tokitara"
   },
   {
     "id": "N1-216",
     "level": "N1",
     "number": 216,
     "japanese": "ところを",
-    "english": "although (it is a certain time/condition)"
+    "english": "although (it is a certain time/condition)",
+    "romaji": "tokoro o"
   },
   {
     "id": "N1-217",
     "level": "N1",
     "number": 217,
     "japanese": "ともあろうものが",
-    "english": "of all people... (surprise)"
+    "english": "of all people... (surprise)",
+    "romaji": "tomo arou mono ga"
   },
   {
     "id": "N1-218",
     "level": "N1",
     "number": 218,
     "japanese": "ともなく / ともなしに",
-    "english": "somehow; without knowing/thinking"
+    "english": "somehow; without knowing/thinking",
+    "romaji": "tomo naku/nashi ni"
   },
   {
     "id": "N1-219",
     "level": "N1",
     "number": 219,
     "japanese": "ともすれば",
-    "english": "apt to (do); tend to; liable to; prone to ~"
+    "english": "apt to (do); tend to; liable to; prone to ~",
+    "romaji": "tomo sureba"
   },
   {
     "id": "N1-220",
     "level": "N1",
     "number": 220,
     "japanese": "とも〜とも",
-    "english": "unable to draw a conclusion/ judge"
+    "english": "unable to draw a conclusion/ judge",
+    "romaji": "tomo~tomo"
   },
   {
     "id": "N1-221",
     "level": "N1",
     "number": 221,
     "japanese": "とりわけ",
-    "english": "especially; above all ~"
+    "english": "especially; above all ~",
+    "romaji": "toriwake"
   },
   {
     "id": "N1-222",
     "level": "N1",
     "number": 222,
     "japanese": "としたことが",
-    "english": "of all people, who would have thought?"
+    "english": "of all people, who would have thought?",
+    "romaji": "toshita koto ga"
   },
   {
     "id": "N1-223",
     "level": "N1",
     "number": 223,
     "japanese": "とっさに",
-    "english": "at once; right away; promptly"
+    "english": "at once; right away; promptly",
+    "romaji": "tossa ni"
   },
   {
     "id": "N1-224",
     "level": "N1",
     "number": 224,
     "japanese": "とて",
-    "english": "even; even if/though ~"
+    "english": "even; even if/though ~",
+    "romaji": "tote"
   },
   {
     "id": "N1-225",
     "level": "N1",
     "number": 225,
     "japanese": "とは",
-    "english": "I was surprised that; the fact that ~"
+    "english": "I was surprised that; the fact that ~",
+    "romaji": "towa"
   },
   {
     "id": "N1-226",
     "level": "N1",
     "number": 226,
     "japanese": "とはいえ",
-    "english": "though; although; nonetheless"
+    "english": "though; although; nonetheless",
+    "romaji": "towa ie"
   },
   {
     "id": "N1-227",
     "level": "N1",
     "number": 227,
     "japanese": "とは比べものにならない",
-    "english": "can't compare with ~"
+    "english": "can't compare with ~",
+    "romaji": "towa kurabemono ni naranai"
   },
   {
     "id": "N1-228",
     "level": "N1",
     "number": 228,
     "japanese": "とは打って変わって/ とは打って変わり",
-    "english": "unlike; very different from ~"
+    "english": "unlike; very different from ~",
+    "romaji": "towa utte kawatte / to wa utte kawari"
   },
   {
     "id": "N1-229",
     "level": "N1",
     "number": 229,
     "japanese": "つ〜つ",
-    "english": "and ~ (indicates 2 contrasting actions)"
+    "english": "and ~ (indicates 2 contrasting actions)",
+    "romaji": "tsu~tsu"
   },
   {
     "id": "N1-230",
     "level": "N1",
     "number": 230,
     "japanese": "尽くす",
-    "english": "to use up (completely)"
+    "english": "to use up (completely)",
+    "romaji": "tsukusu"
   },
   {
     "id": "N1-231",
     "level": "N1",
     "number": 231,
     "japanese": "ってば / ったら",
-    "english": "speaking of; I told you already"
+    "english": "speaking of; I told you already",
+    "romaji": "tteba / ttara"
   },
   {
     "id": "N1-232",
     "level": "N1",
     "number": 232,
     "japanese": "うちに入らない",
-    "english": "not really; can't be regarded as ~"
+    "english": "not really; can't be regarded as ~",
+    "romaji": "uchi ni hairanai"
   },
   {
     "id": "N1-233",
     "level": "N1",
     "number": 233,
     "japanese": "わ",
-    "english": "feminine sentence ending particle"
+    "english": "feminine sentence ending particle",
+    "romaji": "wa"
   },
   {
     "id": "N1-234",
     "level": "N1",
     "number": 234,
     "japanese": "はどうであれ",
-    "english": "however; whatever ~"
+    "english": "however; whatever ~",
+    "romaji": "wa dou de are"
   },
   {
     "id": "N1-235",
     "level": "N1",
     "number": 235,
     "japanese": "はおろか",
-    "english": "let alone; needless to say ~"
+    "english": "let alone; needless to say ~",
+    "romaji": "wa oroka"
   },
   {
     "id": "N1-236",
     "level": "N1",
     "number": 236,
     "japanese": "はさておき",
-    "english": "setting aside ~"
+    "english": "setting aside ~",
+    "romaji": "wa sateoki"
   },
   {
     "id": "N1-237",
     "level": "N1",
     "number": 237,
     "japanese": "はそっちのけで /をそっちのけで",
-    "english": "ignoring (one thing) for (another)"
+    "english": "ignoring (one thing) for (another)",
+    "romaji": "wa socchinoke de / o socchinoke de"
   },
   {
     "id": "N1-238",
     "level": "N1",
     "number": 238,
     "japanese": "わ〜わで",
-    "english": "and (list neg. things happening at same time)"
+    "english": "and (list neg. things happening at same time)",
+    "romaji": "wa~wade"
   },
   {
     "id": "N1-239",
     "level": "N1",
     "number": 239,
     "japanese": "や否や",
-    "english": "as soon as; the moment ~"
+    "english": "as soon as; the moment ~",
+    "romaji": "ya ina ya"
   },
   {
     "id": "N1-240",
     "level": "N1",
     "number": 240,
     "japanese": "やしない",
-    "english": "should do, but don't; there's no way ~"
+    "english": "should do, but don't; there's no way ~",
+    "romaji": "ya shinai"
   },
   {
     "id": "N1-241",
     "level": "N1",
     "number": 241,
     "japanese": "やれ〜やれ",
-    "english": "give 2 representative examples (negative)"
+    "english": "give 2 representative examples (negative)",
+    "romaji": "yare~yare"
   },
   {
     "id": "N1-242",
     "level": "N1",
     "number": 242,
     "japanese": "ようが / ようと",
-    "english": "even if; no matter how/what ~"
+    "english": "even if; no matter how/what ~",
+    "romaji": "you ga / you to"
   },
   {
     "id": "N1-243",
     "level": "N1",
     "number": 243,
     "japanese": "ようが〜ようが /ようと〜ようと",
-    "english": "no matter; whether; even if [A] or [B]"
+    "english": "no matter; whether; even if [A] or [B]",
+    "romaji": "you ga~you ga / you to~you to"
   }
 ]

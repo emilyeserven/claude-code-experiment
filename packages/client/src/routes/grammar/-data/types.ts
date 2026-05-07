@@ -5,8 +5,11 @@ export interface GrammarPoint {
   level: JlptLevel;
   number: number;
   japanese: string;
+  romaji: string;
   english: string;
 }
+
+export const JLPT_LEVELS: JlptLevel[] = ["N5", "N4", "N3", "N2", "N1"];
 
 export type ResourceType = "textbook" | "website" | "drillbook";
 
